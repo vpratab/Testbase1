@@ -34,6 +34,7 @@ See:
 - `docs/RELEASE_READINESS.md`
 - `docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md`
 - `docs/PHASE1_GO_NO_GO.md`
+- `docs/EXTERNAL_ACCESS_PACKAGES.md`
 - `docs/WIRE_PROTOCOL.md`
 - `docs/WIN_GATES.md`
 - `SECURITY.md`

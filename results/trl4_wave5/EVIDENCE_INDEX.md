@@ -7,7 +7,7 @@
 | NV065 | 95.4 | 85 | radar equation, beam/slew/dwell/revisit scheduling, zero invalid schedules or deadlines | `wave5_campaign_results.json` |
 | NV063 | 96.8 | 83 | frozen regional transfer with preserved failed single-tier diagnostics and tiered alerts | `../frozen_region/frozen_region_results.json` |
 | QSPARX | 95.2 | 81 | 24 live services, PKCS#12/OpenSSH inventory, dependency-safe migration execution | `wave5_campaign_results.json` |
-| NV062 | 95.5 | 79 | Capella/Umbra returns, task-schema conformance, auth-negative tests, 15 control artifacts | `wave5_campaign_results.json` |
+| NV062 | 95.5 | 82 | Capella/Umbra returns, live provider schemas, sandbox path, auth-negative tests, 15 control artifacts | `wave5_campaign_results.json` |
 | NP002 | 95.5 | 77 | NASA acoustic classification plus custody-aware dense-crossing evidence | `../dense_crossing/dense_crossing_results.json` |
 
 Supporting artifacts:

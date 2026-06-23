@@ -229,7 +229,7 @@ probabilities and not the internal requirement-coverage scores.
 | NV065 | 85/100 | 94/100 | Excellent solicitation fit and bounded scheduler; generic radar parameters remain decisive |
 | NV063 | 83/100 | 93/100 | Strong compact/calibrated alert architecture; anomaly and operator truth remain synthetic or absent |
 | QSPARX | 81/100 | 93/100 | Strong crypto-agility execution; solicitation explicitly asks for AFDW inventory |
-| NV062 | 79/100 | 92/100 | Strong assurance layer, but incumbent providers already automate secure tasking |
+| NV062 | 82/100 | 92/100 | Strong assurance layer, live provider schemas and public sandbox path; incumbent providers already automate secure tasking |
 | NP002 | 77/100 | 91/100 | Custody-aware dense-crossing evidence improves tracking case; synchronized multimodal field truth remains missing |
 
 ## Topic-by-topic current proof and missing proof
@@ -369,8 +369,8 @@ Best current submission order:
 2. NV061
 3. NV065
 4. NV063
-5. QSPARX
-6. NV062
+5. NV062
+6. QSPARX
 7. NP002
 
 The practical award bottleneck is likely to move from code toward:

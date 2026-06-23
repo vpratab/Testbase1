@@ -22,9 +22,9 @@ but the technical objectives and deliverables must remain topic-specific.
 | NV059 | GO | under-five-second access target, DDIL leases, protocol adapters, protected audit evidence | current lab is not an accredited combat network |
 | NV061 | GO | cross-region forecasting, custody preservation, hierarchical prioritization, scale | public identifiers are not operational intent truth |
 | NV065 | GO | explainable marginal information value, bounded scheduler, operator advisory mode | generic radar parameters are not SSDS validation |
-| NV063 | CONDITIONAL GO | low-history state, frozen regional transfer, explainable watch/high-confidence tiers | injected anomaly and nominal proxies are not hostile-behavior ground truth |
+| NV063 | GO | low-history state, frozen regional transfer, explainable watch/high-confidence tiers | injected anomaly and nominal proxies are not hostile-behavior ground truth |
 | QSPARX | CONDITIONAL GO | dependency-aware migration execution, legacy-safe sequencing, measurable PQC readiness | local enterprise range is not AFDW inventory |
-| NV062 | PARTNER GO | purpose-bound tasking, provider abstraction, replay prevention, return-data integrity | no credentialed collection task or IL5/IL6 authorization |
+| NV062 | CONDITIONAL GO | purpose-bound tasking, live provider schemas, provider abstraction, replay prevention, return-data integrity | no credentialed collection task or IL5/IL6 authorization |
 | NP002 | PARTNER GO | scalable sensing/tracking/identification lane with low-cost embedded execution | no full Detect-Track-Identify-Assess-Neutralize chain or synchronized field truth |
 
 ## Phase I work-package pattern

@@ -9,9 +9,9 @@ Assessment date: June 23, 2026
 | NV059 | GO | 88/100 | Technically winnable now; proposal team and transition story become the main risks |
 | NV061 | GO | 88/100 | Technically winnable now; custody and cross-region evidence materially strengthen it |
 | NV065 | GO | 85/100 | Strong Phase I fit; generic radar assumptions must be presented as hypotheses |
-| NV063 | CONDITIONAL GO | 83/100 | Winnable if the two-tier alert workflow and failed single-tier transfer are presented honestly |
+| NV063 | GO | 83/100 | Phase I concept is winnable if the two-tier workflow and failed single-tier transfer are presented honestly |
+| NV062 | CONDITIONAL GO | 82/100 | Public provider sandboxes and live schemas make Phase I integration credible; live authority remains a proof task |
 | QSPARX | CONDITIONAL GO | 81/100 | Winnable with credible AFDW or sponsor-range access and cyber expertise |
-| NV062 | PARTNER GO | 79/100 | Submit with a credible commercial-provider or government-boundary integration path |
 | NP002 | PARTNER GO | 77/100 | Submit as a sensing, tracking, and identification lane with a field-data or C-UAS integration partner |
 
 These scores are technical-readiness judgments, not award probabilities.
@@ -56,7 +56,7 @@ Software work cannot honestly replace:
 
 ## Submission rule
 
-Submit the three GO topics first. Submit CONDITIONAL GO topics only when the
+Submit the four GO topics first. Submit CONDITIONAL GO topics only when the
 technical lead and first-month data-access plan are named. Submit PARTNER GO
 topics only when the proposal identifies a real integration or data partner,
 even if final credentials arrive after award.
