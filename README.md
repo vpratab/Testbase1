@@ -36,6 +36,7 @@ See:
 - `docs/PHASE1_GO_NO_GO.md`
 - `docs/EXTERNAL_ACCESS_PACKAGES.md`
 - `docs/NP002_FIELD_VALIDATION_PATH.md`
+- `docs/PARTNER_OUTREACH_TEMPLATES.md`
 - `docs/WIRE_PROTOCOL.md`
 - `docs/WIN_GATES.md`
 - `SECURITY.md`
