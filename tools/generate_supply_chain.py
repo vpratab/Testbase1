@@ -110,6 +110,11 @@ def main() -> None:
         ROOT / "native" / "assure-kernel" / "Cargo.lock",
         ROOT / "requirements-lock.txt",
         ROOT / "data" / "processed" / "noaa_ais_puget_sound_2020_02_15.csv",
+        ROOT / "data" / "processed" / "noaa_ais_new_york_2020_03_15.csv",
+        ROOT
+        / "data"
+        / "processed"
+        / "noaa_ais_new_york_2020_03_15.metadata.json",
         ROOT / "results" / "trl4_wave5" / "wave5_campaign_results.json",
         ROOT / "results" / "theory_campaign" / "theory_campaign_results.json",
         ROOT / "results" / "performance" / "native_kernel_benchmark.json",
@@ -122,6 +127,10 @@ def main() -> None:
         / "results"
         / "independent_benchmark"
         / "INDEPENDENT_BENCHMARK.md",
+        ROOT / "results" / "dense_crossing" / "dense_crossing_results.json",
+        ROOT / "results" / "dense_crossing" / "DENSE_CROSSING_REPORT.md",
+        ROOT / "results" / "frozen_region" / "frozen_region_results.json",
+        ROOT / "results" / "frozen_region" / "FROZEN_REGION_REPORT.md",
     ]
     release = {
         "format": "assureedge-release-manifest/v1",

@@ -6,12 +6,12 @@ make each technical volume difficult to dismiss on feasibility grounds.
 | Topic | Already strong | Highest-value next proof | Proposal consequence |
 | --- | --- | --- | --- |
 | NV059 | native decisions, DDIL leases, four protocol/security paths, signed evidence, anytime monitor | sponsor-approved network emulation with DoD identity and DDS Security governance | changes the story from generic ZT to combat-system enforcement |
-| NV061 | public real tracks, forecasting, custody, hierarchy, conformal regions, conservative fusion | de-identified composite-track corpus with analyst priorities and identity truth | validates operational prioritization rather than public-data forecasting |
+| NV061 | public real tracks, frozen cross-region forecasting, custody-aware dense crossings, hierarchy, conformal regions, conservative fusion | de-identified composite-track corpus with analyst priorities and identity truth | validates operational prioritization rather than public-data forecasting |
 | NV065 | bounded scheduler, named radar surrogates, explainability, zero constraint violations | approved radar/task parameters and fire-control-quality definitions | makes utility and real-time claims program-relevant |
-| NV063 | surface/air inputs, compact state, authenticated interface, FDR alert tiers | representative SSDS replay plus operator alert dispositions | converts injected deviations into meaningful false-alert evidence |
+| NV063 | surface/air inputs, frozen cross-region test, compact state, authenticated interface, FDR alert tiers | representative SSDS replay plus operator alert dispositions | converts nominal-proxy alert burden and injected deviations into meaningful false-alert evidence |
 | QSPARX | real PQC, inventory, dependency graph, safe migration execution | authorized AFDW inventory or sponsor-approved replica and rollback exercise | directly satisfies the solicitation's most specific Phase I task |
 | NV062 | hybrid secure tasking, provider schemas, lifecycle, control evidence | one credentialed sandbox task and approved boundary architecture | eliminates the largest credibility gap |
-| NP002 | real acoustic data, native tracking logic, swarm behavior, conservative fusion | synchronized EO/RF/acoustic/radar field collection with target and payload truth | broadens the solution from an acoustic/behavior lane into genuine C-UAS fusion |
+| NP002 | real acoustic data, custody-aware dense-crossing evidence, native tracking logic, swarm behavior, conservative fusion | synchronized EO/RF/acoustic/radar field collection with target and payload truth | broadens the solution from an acoustic/behavior lane into genuine C-UAS fusion |
 
 ## Technical-volume rules
 

@@ -1,14 +1,14 @@
 # Evidence Index
 
-| Topic | Current score | Strongest measured evidence | Primary artifact |
-| --- | ---: | --- | --- |
-| NV059 | 96.8 | secure OPC UA, Cyclone DDS, mTLS microsegmentation, Modbus/TCP, DDIL authorization | `../trl4_wave4/wave4_campaign_results.json` |
-| NV063 | 96.8 | grouped NOAA AIS F1 0.981, long-air F1 0.971, 50,000 authenticated composite messages | `wave5_campaign_results.json` |
-| NV061 | 96.4 | real AIS and OpenSky forecasting, custody-aware priority recall 0.924 | `../trl4_wave4/wave4_campaign_results.json` |
-| NP002 | 95.5 | NASA acoustic detection F1 0.983, type macro-F1 0.968, typed track association | `../trl4_wave4/wave4_campaign_results.json` |
-| NV062 | 95.5 | Capella/Umbra returns, official task-schema conformance, auth-negative tests, 15 control artifacts | `wave5_campaign_results.json` |
-| NV065 | 95.4 | radar equation, beam/slew/dwell/revisit scheduling, zero invalid schedules or deadlines | `wave5_campaign_results.json` |
-| QSPARX | 95.2 | 24 live services, PKCS#12/OpenSSH inventory, dependency-safe migration execution | `wave5_campaign_results.json` |
+| Topic | Internal coverage | Independent readiness | Strongest measured evidence | Primary artifact |
+| --- | ---: | ---: | --- | --- |
+| NV059 | 96.8 | 88 | secure OPC UA, Cyclone DDS, mTLS microsegmentation, Modbus/TCP, DDIL authorization | `../trl4_wave4/wave4_campaign_results.json` |
+| NV061 | 96.4 | 88 | frozen cross-region forecast improvement and custody-aware dense-crossing evidence | `../frozen_region/frozen_region_results.json` |
+| NV065 | 95.4 | 85 | radar equation, beam/slew/dwell/revisit scheduling, zero invalid schedules or deadlines | `wave5_campaign_results.json` |
+| NV063 | 96.8 | 83 | frozen regional transfer with preserved failed single-tier diagnostics and tiered alerts | `../frozen_region/frozen_region_results.json` |
+| QSPARX | 95.2 | 81 | 24 live services, PKCS#12/OpenSSH inventory, dependency-safe migration execution | `wave5_campaign_results.json` |
+| NV062 | 95.5 | 79 | Capella/Umbra returns, task-schema conformance, auth-negative tests, 15 control artifacts | `wave5_campaign_results.json` |
+| NP002 | 95.5 | 77 | NASA acoustic classification plus custody-aware dense-crossing evidence | `../dense_crossing/dense_crossing_results.json` |
 
 Supporting artifacts:
 
@@ -22,8 +22,13 @@ Supporting artifacts:
 - `../theory_campaign/theory_campaign_results.json`
 - `../performance/EFFICIENCY_REPORT.md`
 - `../performance/native_kernel_scaling.json`
+- `../independent_benchmark/INDEPENDENT_BENCHMARK.md`
+- `../dense_crossing/DENSE_CROSSING_REPORT.md`
+- `../frozen_region/FROZEN_REGION_REPORT.md`
 - `../supply_chain/component_inventory.json`
 - `../supply_chain/release_manifest.json`
 
-The campaign report and transition checklist must accompany any score excerpt
-so the remaining external boundaries are not lost.
+Internal coverage measures laboratory requirement mapping. Independent
+readiness incorporates data realism, external access, transition credibility,
+and failed tests. The campaign report, current assessment, and transition
+checklist must accompany any score excerpt so those boundaries are not lost.

@@ -16,6 +16,16 @@
       "sha256": "1487c1f3acc33da4deaf5014f22cfab82c78d316f327f2564459164ad12803ab"
     },
     {
+      "bytes": 17964986,
+      "path": "data/processed/noaa_ais_new_york_2020_03_15.csv",
+      "sha256": "f3fc0e67bd2fad224b7d22c9b911033672cb374c6d85b2322d6c1adef62aaaed"
+    },
+    {
+      "bytes": 476,
+      "path": "data/processed/noaa_ais_new_york_2020_03_15.metadata.json",
+      "sha256": "62344ff1052b83f846a334e4c52796bc5a2b68a6b7c973b20218c8476db908af"
+    },
+    {
       "bytes": 44938,
       "path": "results/trl4_wave5/wave5_campaign_results.json",
       "sha256": "9f1b02d782995e6465950d3f646c7c7b9b9d9147e7b9936ea65920fed583b3e9"
@@ -26,29 +36,49 @@
       "sha256": "765c40d969c2cae5f2e4de0db2ff59fbdf885447fec54541bbb6c7a397b742e5"
     },
     {
-      "bytes": 1424,
+      "bytes": 1449,
       "path": "results/performance/native_kernel_benchmark.json",
-      "sha256": "0e56766f15a9a7027f7b745bdbbf8b2a1d72d5e90104e2cf8eb91de56574e90b"
+      "sha256": "0ee812d21335f4291126e4bede976080d4f5acb05158733fc29279e14d54e570"
     },
     {
-      "bytes": 849,
+      "bytes": 854,
       "path": "results/performance/native_kernel_scaling.json",
-      "sha256": "0dde3d5fe23d7381ad0606eee3844f28a6a8242fe8119165e03ff49a1e6e83b7"
+      "sha256": "8fd410013ff0b28bbffc16cedf849ef452bf5c6a75e6c91bcb58e77540a68d1d"
     },
     {
-      "bytes": 66629,
+      "bytes": 66599,
       "path": "results/independent_benchmark/independent_benchmark.json",
-      "sha256": "fdafbcfe22779295e85981c21d6089246b94d90088cc0b4be11e6008cffa28e7"
+      "sha256": "afe153ca1cf9f8aec1ed15612cd96e53c51a070849cd3308e028b67f56738987"
     },
     {
-      "bytes": 2334,
+      "bytes": 2335,
       "path": "results/independent_benchmark/INDEPENDENT_BENCHMARK.md",
-      "sha256": "70c62589672db4d212dbc91f231ba94025fe1178fbabd85eb7ddaefad36c1ce0"
+      "sha256": "5ba831b5ff8afdeb8e2df064ccc6936f3d6dea83bc66a16408e620b47b11fb8c"
+    },
+    {
+      "bytes": 107514,
+      "path": "results/dense_crossing/dense_crossing_results.json",
+      "sha256": "bc81795f5c29eb786a55820a86aec4cb40ca5d64fef5783228c5e2e341604c20"
+    },
+    {
+      "bytes": 1851,
+      "path": "results/dense_crossing/DENSE_CROSSING_REPORT.md",
+      "sha256": "00cf28ef1a6e77ea9c4fb0d3182362a98e2aa453e586dfda15911a5af426b807"
+    },
+    {
+      "bytes": 3435,
+      "path": "results/frozen_region/frozen_region_results.json",
+      "sha256": "614c736656bbccfb521a0683ae9aadaaf521e07cc55bee1348ec679b1c82c7cf"
+    },
+    {
+      "bytes": 1581,
+      "path": "results/frozen_region/FROZEN_REGION_REPORT.md",
+      "sha256": "da048c3f8299b05cde04c966db66a0c1ea6344a4d0c3e39bfef7f11c900e7a5c"
     }
   ],
   "boundary": "local integrity manifest; signing, independent timestamping, and external artifact storage remain release-process tasks",
   "component_inventory_sha256": "ec7df1694ef245c600087a6aa24d67a2cfd0cb69453b8e602611c3ac8e48acca",
   "format": "assureedge-release-manifest/v1",
-  "source_files": 66,
-  "source_manifest_root_sha256": "89d0b63001dfd5de68cf614907198801ebeb248f3e59d77a57dd568ae96781c0"
+  "source_files": 71,
+  "source_manifest_root_sha256": "f745bf8c7834e8453d31f149341a947d0d09b5376df2e758300d86c239f9ceb4"
 }

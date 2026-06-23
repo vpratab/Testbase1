@@ -1,45 +1,45 @@
 {
   "association": [
     {
-      "ns_per_item": 209.104,
-      "ns_per_update": 20910.4,
+      "ns_per_item": 200.6875,
+      "ns_per_update": 20068.75,
       "size": 100
     },
     {
-      "ns_per_item": 355.9417,
-      "ns_per_update": 355941.7,
+      "ns_per_item": 342.74375,
+      "ns_per_update": 342743.75,
       "size": 1000
     },
     {
-      "ns_per_item": 415.195,
-      "ns_per_update": 2075975.0,
+      "ns_per_item": 399.49125,
+      "ns_per_update": 1997456.25,
       "size": 5000
     },
     {
-      "ns_per_item": 464.69917999999996,
-      "ns_per_update": 4646991.8,
+      "ns_per_item": 452.545,
+      "ns_per_update": 4525450.0,
       "size": 10000
     }
   ],
   "scheduler": [
     {
-      "ns_per_item": 15.180666666666667,
-      "ns_per_update": 910.84,
+      "ns_per_item": 20.229166666666668,
+      "ns_per_update": 1213.75,
       "size": 60
     },
     {
-      "ns_per_item": 14.708333333333334,
-      "ns_per_update": 3530.0,
+      "ns_per_item": 14.289958333333335,
+      "ns_per_update": 3429.59,
       "size": 240
     },
     {
-      "ns_per_item": 18.54990625,
-      "ns_per_update": 17807.91,
+      "ns_per_item": 17.733072916666668,
+      "ns_per_update": 17023.75,
       "size": 960
     },
     {
-      "ns_per_item": 59.346250000000005,
-      "ns_per_update": 227889.6,
+      "ns_per_item": 57.272135416666664,
+      "ns_per_update": 219925.0,
       "size": 3840
     }
   ]

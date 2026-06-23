@@ -1,0 +1,113 @@
+{
+  "datasets": {
+    "new_york": {
+      "accepted_tracks": 145,
+      "excluded_tracks": 158,
+      "loaded_tracks": 303,
+      "path": "data/processed/noaa_ais_new_york_2020_03_15.csv",
+      "sha256": "f3fc0e67bd2fad224b7d22c9b911033672cb374c6d85b2322d6c1adef62aaaed"
+    },
+    "puget": {
+      "accepted_tracks": 154,
+      "excluded_tracks": 40,
+      "loaded_tracks": 194,
+      "path": "data/processed/noaa_ais_puget_sound_2020_02_15.csv",
+      "sha256": "1487c1f3acc33da4deaf5014f22cfab82c78d316f327f2564459164ad12803ab"
+    }
+  },
+  "failed_single_tier_diagnostics": {
+    "single_tier_15_percent_alert_budget": {
+      "passed": false,
+      "threshold": 0.15,
+      "value": 0.20689655172413793
+    },
+    "single_tier_80_percent_recall": {
+      "passed": false,
+      "threshold": 0.8,
+      "value": 0.7172413793103448
+    }
+  },
+  "frozen_parameters": {
+    "forecast": {
+      "calibration_rmse_km": 3.623739521356269,
+      "calibration_tracks": 154,
+      "gain": 0.5,
+      "window": 2
+    },
+    "pol": {
+      "calibration_tracks": 154,
+      "high_confidence_threshold": 19.392810859114437,
+      "threshold": 10.975774875569774
+    }
+  },
+  "methodology": {
+    "calibration_date": "2020-02-15",
+    "calibration_region": "Puget Sound",
+    "evaluation_date": "2020-03-15",
+    "evaluation_region": "New York Harbor and approaches",
+    "parameters_frozen_before_evaluation": true,
+    "public_data_label_boundary": "quality-screened public AIS is treated as nominal only; anomalies are injected for controlled detection truth"
+  },
+  "new_york_results": {
+    "combined_processing_ms": 512.473084,
+    "forecast": {
+      "forecast_rmse_km": 5.107235480717923,
+      "hold_rmse_km": 6.4522261663514735,
+      "improvement_vs_hold_pct": 20.845374153927075,
+      "improvement_vs_raw_velocity_pct": 21.747940272895516,
+      "intervals": 12035,
+      "raw_velocity_rmse_km": 6.526646708762491,
+      "tracks": 145
+    },
+    "pol": {
+      "f1": 0.7455197132616487,
+      "false_negative_rate": 0.2827586206896552,
+      "false_negatives": 41,
+      "false_positive_rate": 0.20689655172413793,
+      "false_positives": 30,
+      "high_confidence_metrics": {
+        "f1": 0.3615819209039548,
+        "false_negative_rate": 0.7793103448275862,
+        "false_negatives": 113,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 0.2206896551724138,
+        "true_negatives": 145,
+        "true_positives": 32
+      },
+      "high_confidence_threshold": 19.392810859114437,
+      "injected_anomaly_tracks": 145,
+      "mean_detection_delay_steps": 6.451923076923077,
+      "nominal_tracks": 145,
+      "p95_detection_delay_steps": 22.69999999999999,
+      "precision": 0.7761194029850746,
+      "processing_us_per_track_update": 12.390399118773944,
+      "recall": 0.7172413793103448,
+      "threshold": 10.975774875569774,
+      "true_negatives": 115,
+      "true_positives": 104
+    }
+  },
+  "sanity_gates": {
+    "forecast_beats_hold": {
+      "passed": true,
+      "value_pct": 20.845374153927075
+    },
+    "frozen_pol_recall": {
+      "passed": true,
+      "threshold": 0.7,
+      "value": 0.7172413793103448
+    },
+    "high_confidence_alert_budget": {
+      "passed": true,
+      "threshold": 0.05,
+      "value": 0.0
+    },
+    "watch_queue_budget": {
+      "passed": true,
+      "threshold": 0.25,
+      "value": 0.20689655172413793
+    }
+  }
+}

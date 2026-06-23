@@ -17,7 +17,14 @@ SOURCE_URL = (
 )
 
 
-def prepare(source: Path, output: Path, maximum_rows: int = 180_000) -> dict:
+def prepare(
+    source: Path,
+    output: Path,
+    maximum_rows: int = 180_000,
+    latitude: tuple[float, float] = (46.8, 49.1),
+    longitude: tuple[float, float] = (-124.2, -121.6),
+    source_url: str = SOURCE_URL,
+) -> dict:
     columns = ["MMSI", "BaseDateTime", "LAT", "LON", "SOG", "COG", "Heading", "VesselType"]
     selected: list[pd.DataFrame] = []
     rows = 0
@@ -31,8 +38,8 @@ def prepare(source: Path, output: Path, maximum_rows: int = 180_000) -> dict:
                 low_memory=False,
             ):
                 region = chunk[
-                    chunk["LAT"].between(46.8, 49.1)
-                    & chunk["LON"].between(-124.2, -121.6)
+                    chunk["LAT"].between(*latitude)
+                    & chunk["LON"].between(*longitude)
                     & chunk["SOG"].between(0.0, 80.0)
                 ].copy()
                 if region.empty:
@@ -50,12 +57,12 @@ def prepare(source: Path, output: Path, maximum_rows: int = 180_000) -> dict:
     output.parent.mkdir(parents=True, exist_ok=True)
     frame.to_csv(output, index=False)
     metadata = {
-        "source_url": SOURCE_URL,
+        "source_url": source_url,
         "source_archive": str(source),
         "output": str(output),
         "region": {
-            "latitude": [46.8, 49.1],
-            "longitude": [-124.2, -121.6],
+            "latitude": list(latitude),
+            "longitude": list(longitude),
         },
         "rows": int(len(frame)),
         "vessels": int(frame["MMSI"].nunique()),
@@ -79,10 +86,32 @@ def main() -> None:
         default="data/processed/noaa_ais_puget_sound_2020_02_15.csv",
     )
     parser.add_argument("--maximum-rows", type=int, default=180_000)
+    parser.add_argument(
+        "--latitude",
+        type=float,
+        nargs=2,
+        metavar=("MIN", "MAX"),
+        default=(46.8, 49.1),
+    )
+    parser.add_argument(
+        "--longitude",
+        type=float,
+        nargs=2,
+        metavar=("MIN", "MAX"),
+        default=(-124.2, -121.6),
+    )
+    parser.add_argument("--source-url", default=SOURCE_URL)
     args = parser.parse_args()
     print(
         json.dumps(
-            prepare(Path(args.source), Path(args.output), args.maximum_rows),
+            prepare(
+                Path(args.source),
+                Path(args.output),
+                args.maximum_rows,
+                tuple(args.latitude),
+                tuple(args.longitude),
+                args.source_url,
+            ),
             indent=2,
             sort_keys=True,
         )

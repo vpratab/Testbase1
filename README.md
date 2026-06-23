@@ -33,6 +33,7 @@ See:
 - `docs/TOPIC_TECHNICAL_OBJECTIVES.md`
 - `docs/RELEASE_READINESS.md`
 - `docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md`
+- `docs/PHASE1_GO_NO_GO.md`
 - `docs/WIRE_PROTOCOL.md`
 - `docs/WIN_GATES.md`
 - `SECURITY.md`
@@ -54,6 +55,18 @@ Run the repeated, process-isolated native benchmark:
 
 ```bash
 make independent-benchmark
+```
+
+Run dense-crossing custody and assignment comparisons:
+
+```bash
+make dense-crossing
+```
+
+Run the frozen Puget-to-New-York trajectory evaluation:
+
+```bash
+make frozen-region
 ```
 
 Rerun the complete Wave 5 evidence campaign:
@@ -142,6 +155,10 @@ Outputs:
 
 - `results/independent_benchmark/independent_benchmark.json`
 - `results/independent_benchmark/INDEPENDENT_BENCHMARK.md`
+- `results/dense_crossing/dense_crossing_results.json`
+- `results/dense_crossing/DENSE_CROSSING_REPORT.md`
+- `results/frozen_region/frozen_region_results.json`
+- `results/frozen_region/FROZEN_REGION_REPORT.md`
 - `results/phase1_feasibility_results.json`
 - `results/phase1_feasibility_results.md`
 - `results/robustness_sweep.json`

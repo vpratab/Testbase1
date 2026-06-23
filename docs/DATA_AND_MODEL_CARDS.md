@@ -12,6 +12,18 @@
 - Prohibited claim: measured injected-anomaly performance equals hostile-contact
   detection performance.
 
+### Independent region/date holdout
+
+- Source: official NOAA/USCG AIS archive for March 15, 2020.
+- Region: New York Harbor and approaches.
+- Use: frozen-parameter transfer evaluation after all PoL thresholds and
+  forecast parameters were selected on the February 15, 2020 Puget Sound
+  subset.
+- Result boundary: public AIS does not provide malicious-behavior truth.
+  Reported nominal-proxy alert rates use quality-screened public tracks;
+  controlled anomalies provide detection truth.
+- Artifact: `results/frozen_region/frozen_region_results.json`.
+
 ## OpenSky aviation data
 
 - Purpose: air-track forecasting and cross-domain anomaly experiments.

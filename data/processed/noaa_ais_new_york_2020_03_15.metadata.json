@@ -1,0 +1,19 @@
+{
+  "first_timestamp": "2020-03-15 00:00:00+00:00",
+  "last_timestamp": "2020-03-15 22:17:38+00:00",
+  "output": "data/processed/noaa_ais_new_york_2020_03_15.csv",
+  "region": {
+    "latitude": [
+      39.5,
+      41.6
+    ],
+    "longitude": [
+      -74.8,
+      -71.3
+    ]
+  },
+  "rows": 239488,
+  "source_archive": "data/external/noaa_ais/AIS_2020_03_15.zip",
+  "source_url": "https://coast.noaa.gov/htdata/CMSP/AISDataHandler/2020/AIS_2020_03_15.zip",
+  "vessels": 472
+}

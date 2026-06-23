@@ -48,6 +48,8 @@ def load_real_ais_tracks(
     minimum_points: int = 35,
     maximum_tracks: int = 120,
     steps: int = 90,
+    lat0: float = 47.60,
+    lon0: float = -122.40,
 ) -> list[MaritimeTrack]:
     frame = pd.read_csv(path, parse_dates=["BaseDateTime"])
     tracks: list[MaritimeTrack] = []
@@ -66,6 +68,8 @@ def load_real_ais_tracks(
         raw_positions = latlon_to_local_km(
             group["LAT"].to_numpy(float),
             group["LON"].to_numpy(float),
+            lat0=lat0,
+            lon0=lon0,
         )
         uniform_time = np.linspace(timestamps[0], timestamps[-1], steps)
         positions = np.column_stack(

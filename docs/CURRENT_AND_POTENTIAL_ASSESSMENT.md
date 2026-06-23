@@ -78,6 +78,25 @@ gating. The current greedy sparse assignment prioritizes bounded execution; it
 does not replace a PMBM, GLMB, JPDA, or full multiple-hypothesis tracker in
 ambiguous high-density crossings.
 
+A separate controlled dense-crossing campaign now compares greedy assignment,
+dense Hungarian assignment, sparse component-optimal assignment, and
+custody-aware component assignment. In the 256-object case, custody-aware
+assignment achieved 85.2% mean accuracy versus 57.4% for greedy, reduced
+identity switches by 56.8%, and remained below 10 milliseconds mean p95 in
+Python. This is synthetic identity truth using a noisy stable-signature
+surrogate; it validates the custody hypothesis, not operational sensor
+performance.
+
+A second official NOAA AIS day and region was also evaluated. Parameters
+selected on February 15, 2020 Puget Sound data were frozen before evaluation
+on March 15, 2020 New York Harbor data. Frozen forecasting beat hold and raw
+velocity baselines by 20.8% and 21.7%. The original single-tier PoL targets
+failed: the nominal-proxy alert rate was 20.7% and injected-anomaly recall was
+71.7%. A two-tier contract kept the high-confidence nominal-proxy alert rate
+at zero in this sample, but high-confidence recall was only 22.1%; the watch
+tier carried broader recall. This is useful generalization evidence and a
+clear remaining NV063 operator-workflow risk.
+
 ## Online research findings that materially change positioning
 
 ### Solicitation status
@@ -206,12 +225,12 @@ probabilities and not the internal requirement-coverage scores.
 | Topic | Current technical position | Phase I potential with access | Main reason |
 | --- | ---: | ---: | --- |
 | NV059 | 88/100 | 95/100 | Strong enforcement architecture and timing; needs DoD identity and representative combat network |
-| NV061 | 86/100 | 94/100 | Strong uncertainty/custody/scale story; needs operational composite truth and analyst baseline |
+| NV061 | 88/100 | 95/100 | Strong uncertainty/custody/scale and cross-region forecast evidence; needs operational composite truth and analyst baseline |
 | NV065 | 85/100 | 94/100 | Excellent solicitation fit and bounded scheduler; generic radar parameters remain decisive |
 | NV063 | 83/100 | 93/100 | Strong compact/calibrated alert architecture; anomaly and operator truth remain synthetic or absent |
 | QSPARX | 81/100 | 93/100 | Strong crypto-agility execution; solicitation explicitly asks for AFDW inventory |
 | NV062 | 79/100 | 92/100 | Strong assurance layer, but incumbent providers already automate secure tasking |
-| NP002 | 75/100 | 91/100 | Good low-cost runtime and behavior evidence; missing synchronized multimodal field truth |
+| NP002 | 77/100 | 91/100 | Custody-aware dense-crossing evidence improves tracking case; synchronized multimodal field truth remains missing |
 
 ## Topic-by-topic current proof and missing proof
 
@@ -236,6 +255,7 @@ probabilities and not the internal requirement-coverage scores.
 **Proven now**
 
 - real public AIS/OpenSky ingestion;
+- frozen out-of-date/out-of-region NOAA AIS evaluation;
 - forecast baselines;
 - 90%-target conformal coverage with 92.9% measured held-out coverage;
 - unknown-correlation fusion improvement;
@@ -243,7 +263,7 @@ probabilities and not the internal requirement-coverage scores.
 
 **Not proven**
 
-- dense-clutter identity continuity;
+- operational dense-clutter identity continuity;
 - operational identity and intent;
 - improvement versus Navy analyst workflow;
 - PMBM/GLMB-class ambiguity performance.
@@ -273,6 +293,7 @@ improvement. That is a framework result, not a major performance claim.
 **Proven now**
 
 - public real surface/air trajectories;
+- frozen Puget-to-New-York transfer test with explicit failed single-tier gates;
 - authenticated composite interface;
 - compact state;
 - grouped-track validation;
@@ -363,11 +384,10 @@ The practical award bottleneck is likely to move from code toward:
 
 ## Highest-value next experiments
 
-1. **Independent date/region AIS test:** acquire a second NOAA AIS day and
-   geographically separate region; freeze all thresholds before evaluation.
-2. **Dense crossing benchmark:** compare sparse greedy association against
-   Hungarian assignment and a tractable PMBM/JPDA baseline; report accuracy,
-   identity switches, edges, memory, and latency.
+1. **Labeled regional replay:** obtain operator dispositions or authoritative
+   anomaly labels to replace nominal proxies and injected anomalies.
+2. **PMBM/JPDA comparison:** compare custody-aware sparse assignment with a
+   tractable Bayesian ambiguity baseline.
 3. **Linux x86 and ARM hardware matrix:** report cold start, p50/p95/p99/max,
    CPU, memory, and power where available.
 4. **Credentialed provider sandbox:** complete one actual NV062 task lifecycle.
