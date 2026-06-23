@@ -114,6 +114,14 @@ def main() -> None:
         ROOT / "results" / "theory_campaign" / "theory_campaign_results.json",
         ROOT / "results" / "performance" / "native_kernel_benchmark.json",
         ROOT / "results" / "performance" / "native_kernel_scaling.json",
+        ROOT
+        / "results"
+        / "independent_benchmark"
+        / "independent_benchmark.json",
+        ROOT
+        / "results"
+        / "independent_benchmark"
+        / "INDEPENDENT_BENCHMARK.md",
     ]
     release = {
         "format": "assureedge-release-manifest/v1",

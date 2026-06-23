@@ -26,19 +26,29 @@
       "sha256": "765c40d969c2cae5f2e4de0db2ff59fbdf885447fec54541bbb6c7a397b742e5"
     },
     {
-      "bytes": 1410,
+      "bytes": 1424,
       "path": "results/performance/native_kernel_benchmark.json",
-      "sha256": "f3945bf6d49d72840875c0b4e9b1664a44cce3322ded78e0f9a4c2ff99e4ce95"
+      "sha256": "0e56766f15a9a7027f7b745bdbbf8b2a1d72d5e90104e2cf8eb91de56574e90b"
     },
     {
-      "bytes": 844,
+      "bytes": 849,
       "path": "results/performance/native_kernel_scaling.json",
-      "sha256": "758cebf580ce586b895f71f1e1f65701313892a2e9a4dc9c93ce1f8b3060815f"
+      "sha256": "0dde3d5fe23d7381ad0606eee3844f28a6a8242fe8119165e03ff49a1e6e83b7"
+    },
+    {
+      "bytes": 66629,
+      "path": "results/independent_benchmark/independent_benchmark.json",
+      "sha256": "fdafbcfe22779295e85981c21d6089246b94d90088cc0b4be11e6008cffa28e7"
+    },
+    {
+      "bytes": 2334,
+      "path": "results/independent_benchmark/INDEPENDENT_BENCHMARK.md",
+      "sha256": "70c62589672db4d212dbc91f231ba94025fe1178fbabd85eb7ddaefad36c1ce0"
     }
   ],
   "boundary": "local integrity manifest; signing, independent timestamping, and external artifact storage remain release-process tasks",
   "component_inventory_sha256": "ec7df1694ef245c600087a6aa24d67a2cfd0cb69453b8e602611c3ac8e48acca",
   "format": "assureedge-release-manifest/v1",
-  "source_files": 63,
-  "source_manifest_root_sha256": "4a0a6a1fa239a6830e861fa168aea5dba4aec2896f50db8bb46e3a095340abc3"
+  "source_files": 66,
+  "source_manifest_root_sha256": "89d0b63001dfd5de68cf614907198801ebeb248f3e59d77a57dd568ae96781c0"
 }

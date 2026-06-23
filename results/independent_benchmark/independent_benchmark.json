@@ -1,0 +1,2352 @@
+{
+  "aggregate": {
+    "benchmark": {
+      "association_ns_per_operation": {
+        "coefficient_of_variation": 0.11514744639651345,
+        "maximum": 532496.1066666667,
+        "mean": 379529.194,
+        "median": 363098.32666666666,
+        "minimum": 336605.0,
+        "p95": 441298.8933333333,
+        "samples": 20
+      },
+      "custody_priority_ns_per_operation": {
+        "coefficient_of_variation": 0.4093827251495914,
+        "maximum": 16.720833333333335,
+        "mean": 6.133305,
+        "median": 5.304303333333333,
+        "minimum": 4.964166666666666,
+        "p95": 7.70722,
+        "samples": 20
+      },
+      "evidence_ns_per_operation": {
+        "coefficient_of_variation": 0.15645784731045248,
+        "maximum": 155.90388666666666,
+        "mean": 93.29612533333332,
+        "median": 90.61014,
+        "minimum": 85.03861333333333,
+        "p95": 93.92055333333333,
+        "samples": 20
+      },
+      "scheduler_ns_per_operation": {
+        "coefficient_of_variation": 0.17652836393105958,
+        "maximum": 5777.694,
+        "mean": 3583.4777000000004,
+        "median": 3323.7636666666667,
+        "minimum": 3155.0833333333335,
+        "p95": 4394.583333333333,
+        "samples": 20
+      },
+      "track_decode_ns_per_operation": {
+        "coefficient_of_variation": 0.07948046849979007,
+        "maximum": 1303.8366666666666,
+        "mean": 1044.6871800000001,
+        "median": 1018.3336066666666,
+        "minimum": 957.6433333333333,
+        "p95": 1216.8144466666668,
+        "samples": 20
+      }
+    },
+    "process_wall_ms": {
+      "benchmark": {
+        "coefficient_of_variation": 0.06980956760216059,
+        "maximum": 353.748959,
+        "mean": 301.71302505,
+        "median": 296.5503125,
+        "minimum": 274.893458,
+        "p95": 343.467709,
+        "samples": 20
+      },
+      "conformance": {
+        "coefficient_of_variation": 0.08750471191720662,
+        "maximum": 2.905208,
+        "mean": 2.32308335,
+        "median": 2.2280835,
+        "minimum": 2.155375,
+        "p95": 2.7625,
+        "samples": 20
+      },
+      "scaling": {
+        "coefficient_of_variation": 0.09183394324300409,
+        "maximum": 106.0365,
+        "mean": 83.27135266666667,
+        "median": 78.487625,
+        "minimum": 77.533666,
+        "p95": 106.0365,
+        "samples": 15
+      }
+    },
+    "scaling": {
+      "association": {
+        "100": {
+          "coefficient_of_variation": 0.10599109839982941,
+          "maximum": 29097.95,
+          "mean": 20988.193333333336,
+          "median": 20422.95,
+          "minimum": 19656.25,
+          "p95": 29097.95,
+          "samples": 15
+        },
+        "1000": {
+          "coefficient_of_variation": 0.09136784607260166,
+          "maximum": 463568.75,
+          "mean": 356017.0833333333,
+          "median": 340460.45,
+          "minimum": 336722.95,
+          "p95": 463568.75,
+          "samples": 15
+        },
+        "10000": {
+          "coefficient_of_variation": 0.05491947131409417,
+          "maximum": 5144358.4,
+          "mean": 4575043.893333334,
+          "median": 4393666.8,
+          "minimum": 4381191.6,
+          "p95": 5144358.4,
+          "samples": 15
+        },
+        "5000": {
+          "coefficient_of_variation": 0.11775056996825085,
+          "maximum": 2947258.35,
+          "mean": 2129929.5833333335,
+          "median": 1993887.5,
+          "minimum": 1973497.95,
+          "p95": 2947258.35,
+          "samples": 15
+        }
+      },
+      "scheduler": {
+        "240": {
+          "coefficient_of_variation": 0.23382665461545674,
+          "maximum": 6708.34,
+          "mean": 3685.418,
+          "median": 3345.83,
+          "minimum": 3305.83,
+          "p95": 6708.34,
+          "samples": 15
+        },
+        "3840": {
+          "coefficient_of_variation": 0.1997945341331013,
+          "maximum": 381708.35,
+          "mean": 234451.25333333333,
+          "median": 215960.4,
+          "minimum": 201700.0,
+          "p95": 381708.35,
+          "samples": 15
+        },
+        "60": {
+          "coefficient_of_variation": 0.39428379055537194,
+          "maximum": 2423.75,
+          "mean": 980.6386666666666,
+          "median": 877.08,
+          "minimum": 838.75,
+          "p95": 2423.75,
+          "samples": 15
+        },
+        "960": {
+          "coefficient_of_variation": 0.39439329959837266,
+          "maximum": 49598.33,
+          "mean": 20196.999333333333,
+          "median": 17570.0,
+          "minimum": 16902.5,
+          "p95": 49598.33,
+          "samples": 15
+        }
+      }
+    }
+  },
+  "configuration": {
+    "benchmark_runs": 20,
+    "conformance_runs": 20,
+    "iterations_per_benchmark_run": 150000,
+    "scaling_runs": 15
+  },
+  "metadata": {
+    "executable_bytes": 451808,
+    "executable_sha256": "27fe1adcd9d14a44618e6e1b7372c559c92342505a7f14a128767b77d7f32ad8",
+    "generated_at_utc": "2026-06-23T05:24:08.374928+00:00",
+    "machine": "arm64",
+    "measurement_scope": "release-mode host benchmark across independent processes; not target-hardware WCET",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "python": "3.9.6",
+    "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)",
+    "source_tree_sha256": "fdbe1ddf62ca0ed7874da146afb9c7db9a428673199e866c933ac22b8cb946b4"
+  },
+  "raw": {
+    "benchmark": [
+      {
+        "association_ns_per_operation": 415103.8933333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 6.35472,
+        "evidence_ns_per_operation": 93.26056,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 107.167,
+            "minimum": 90.25,
+            "operations_per_sample": 2000,
+            "p50": 90.375,
+            "p95": 93.9165,
+            "p99": 107.167,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 8977.5,
+            "minimum": 3311.66,
+            "operations_per_sample": 50,
+            "p50": 3453.32,
+            "p95": 4823.32,
+            "p99": 8977.5,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 419408.4,
+            "minimum": 348625.0,
+            "operations_per_sample": 5,
+            "p50": 358283.4,
+            "p95": 406541.6,
+            "p99": 419408.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1317.168,
+            "minimum": 1003.666,
+            "operations_per_sample": 500,
+            "p50": 1006.166,
+            "p95": 1038.5,
+            "p99": 1317.168,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3197.4166666666665,
+        "track_decode_ns_per_operation": 1303.8366666666666,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 398277.7733333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.221666666666667,
+        "evidence_ns_per_operation": 90.95583333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 727.917,
+            "minimum": 90.4795,
+            "operations_per_sample": 2000,
+            "p50": 95.375,
+            "p95": 198.771,
+            "p99": 727.917,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 7991.66,
+            "minimum": 3290.84,
+            "operations_per_sample": 50,
+            "p50": 3315.84,
+            "p95": 6638.34,
+            "p99": 7991.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 638250.0,
+            "minimum": 343208.2,
+            "operations_per_sample": 5,
+            "p50": 355691.6,
+            "p95": 412483.4,
+            "p99": 638250.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1346.5,
+            "minimum": 985.582,
+            "operations_per_sample": 500,
+            "p50": 1005.584,
+            "p95": 1090.5,
+            "p99": 1346.5,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 5777.694,
+        "track_decode_ns_per_operation": 1092.40944,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 348357.2133333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.131386666666667,
+        "evidence_ns_per_operation": 93.25528,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 109.2915,
+            "minimum": 88.9375,
+            "operations_per_sample": 2000,
+            "p50": 91.2915,
+            "p95": 94.5835,
+            "p99": 109.2915,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3584.16,
+            "minimum": 3129.16,
+            "operations_per_sample": 50,
+            "p50": 3139.18,
+            "p95": 3356.66,
+            "p99": 3584.16,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 362875.0,
+            "minimum": 328950.0,
+            "operations_per_sample": 5,
+            "p50": 339383.4,
+            "p95": 359541.8,
+            "p99": 362875.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1049.75,
+            "minimum": 955.166,
+            "operations_per_sample": 500,
+            "p50": 970.418,
+            "p95": 1000.584,
+            "p99": 1049.75,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3262.222,
+        "track_decode_ns_per_operation": 1077.0,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 343778.3333333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 6.27944,
+        "evidence_ns_per_operation": 86.84556,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 95.854,
+            "minimum": 85.75,
+            "operations_per_sample": 2000,
+            "p50": 85.854,
+            "p95": 93.1665,
+            "p99": 95.854,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3676.66,
+            "minimum": 3119.16,
+            "operations_per_sample": 50,
+            "p50": 3157.5,
+            "p95": 3355.82,
+            "p99": 3676.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 375000.0,
+            "minimum": 330366.6,
+            "operations_per_sample": 5,
+            "p50": 336941.6,
+            "p95": 368325.0,
+            "p99": 375000.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1026.0,
+            "minimum": 954.25,
+            "operations_per_sample": 500,
+            "p50": 966.834,
+            "p95": 1015.25,
+            "p99": 1026.0,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3214.8893333333335,
+        "track_decode_ns_per_operation": 971.3636066666667,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 336605.0,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.149166666666667,
+        "evidence_ns_per_operation": 85.75944666666666,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 88.417,
+            "minimum": 85.9165,
+            "operations_per_sample": 2000,
+            "p50": 85.9585,
+            "p95": 87.104,
+            "p99": 88.417,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3324.18,
+            "minimum": 3149.16,
+            "operations_per_sample": 50,
+            "p50": 3152.5,
+            "p95": 3158.32,
+            "p99": 3324.18,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 339200.0,
+            "minimum": 330133.4,
+            "operations_per_sample": 5,
+            "p50": 331016.8,
+            "p95": 333525.0,
+            "p99": 339200.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 989.75,
+            "minimum": 955.0,
+            "operations_per_sample": 500,
+            "p50": 956.668,
+            "p95": 968.0,
+            "p99": 989.75,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3174.6946666666668,
+        "track_decode_ns_per_operation": 965.3447266666667,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 344843.3333333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 4.96444,
+        "evidence_ns_per_operation": 85.03861333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 88.292,
+            "minimum": 85.9165,
+            "operations_per_sample": 2000,
+            "p50": 85.958,
+            "p95": 86.2085,
+            "p99": 88.292,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3229.16,
+            "minimum": 3133.32,
+            "operations_per_sample": 50,
+            "p50": 3136.66,
+            "p95": 3195.0,
+            "p99": 3229.16,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 343450.0,
+            "minimum": 341158.4,
+            "operations_per_sample": 5,
+            "p50": 342158.4,
+            "p95": 343400.0,
+            "p99": 343450.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1013.666,
+            "minimum": 954.5,
+            "operations_per_sample": 500,
+            "p50": 956.084,
+            "p95": 975.918,
+            "p99": 1013.666,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3166.0,
+        "track_decode_ns_per_operation": 958.9738866666667,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 532496.1066666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 4.964166666666666,
+        "evidence_ns_per_operation": 88.60389333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 644.6875,
+            "minimum": 93.6875,
+            "operations_per_sample": 2000,
+            "p50": 113.7705,
+            "p95": 513.0625,
+            "p99": 644.6875,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 38855.0,
+            "minimum": 3286.66,
+            "operations_per_sample": 50,
+            "p50": 8067.5,
+            "p95": 15539.18,
+            "p99": 38855.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 1228675.0,
+            "minimum": 339341.6,
+            "operations_per_sample": 5,
+            "p50": 410625.0,
+            "p95": 1105658.4,
+            "p99": 1228675.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 4193.582,
+            "minimum": 1006.5,
+            "operations_per_sample": 500,
+            "p50": 1830.25,
+            "p95": 3674.166,
+            "p99": 4193.582,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3155.0833333333335,
+        "track_decode_ns_per_operation": 957.6433333333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 406639.44,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 16.720833333333335,
+        "evidence_ns_per_operation": 155.90388666666666,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 104.25,
+            "minimum": 93.542,
+            "operations_per_sample": 2000,
+            "p50": 94.104,
+            "p95": 98.9375,
+            "p99": 104.25,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 6325.0,
+            "minimum": 3290.0,
+            "operations_per_sample": 50,
+            "p50": 3304.18,
+            "p95": 3989.16,
+            "p99": 6325.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 554308.4,
+            "minimum": 351416.8,
+            "operations_per_sample": 5,
+            "p50": 373591.8,
+            "p95": 479641.6,
+            "p99": 554308.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1930.084,
+            "minimum": 983.916,
+            "operations_per_sample": 500,
+            "p50": 1029.0,
+            "p95": 1595.084,
+            "p99": 1930.084,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 4283.805333333334,
+        "track_decode_ns_per_operation": 1216.8144466666668,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 390166.6666666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.748893333333333,
+        "evidence_ns_per_operation": 90.56833333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 128.8955,
+            "minimum": 90.4165,
+            "operations_per_sample": 2000,
+            "p50": 92.375,
+            "p95": 109.708,
+            "p99": 128.8955,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 6493.34,
+            "minimum": 3277.5,
+            "operations_per_sample": 50,
+            "p50": 3295.0,
+            "p95": 3695.84,
+            "p99": 6493.34,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 399066.6,
+            "minimum": 340941.6,
+            "operations_per_sample": 5,
+            "p50": 350483.4,
+            "p95": 397175.0,
+            "p99": 399066.6,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1065.0,
+            "minimum": 1000.082,
+            "operations_per_sample": 500,
+            "p50": 1014.25,
+            "p95": 1034.082,
+            "p99": 1065.0,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 4319.0,
+        "track_decode_ns_per_operation": 1101.45444,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 354738.8933333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.245833333333334,
+        "evidence_ns_per_operation": 93.405,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 91.2915,
+            "minimum": 90.417,
+            "operations_per_sample": 2000,
+            "p50": 90.5835,
+            "p95": 91.0625,
+            "p99": 91.2915,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3720.0,
+            "minimum": 3288.34,
+            "operations_per_sample": 50,
+            "p50": 3291.66,
+            "p95": 3315.84,
+            "p99": 3720.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 896125.0,
+            "minimum": 332466.8,
+            "operations_per_sample": 5,
+            "p50": 352541.6,
+            "p95": 549625.0,
+            "p99": 896125.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1027.0,
+            "minimum": 1003.5,
+            "operations_per_sample": 500,
+            "p50": 1006.0,
+            "p95": 1008.75,
+            "p99": 1027.0,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3315.8053333333332,
+        "track_decode_ns_per_operation": 1013.6488933333334,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 358801.12,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.203613333333333,
+        "evidence_ns_per_operation": 93.92055333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 94.854,
+            "minimum": 93.125,
+            "operations_per_sample": 2000,
+            "p50": 93.854,
+            "p95": 94.5625,
+            "p99": 94.854,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3759.16,
+            "minimum": 3278.34,
+            "operations_per_sample": 50,
+            "p50": 3285.84,
+            "p95": 3356.68,
+            "p99": 3759.16,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 375025.0,
+            "minimum": 348650.0,
+            "operations_per_sample": 5,
+            "p50": 350458.2,
+            "p95": 372016.8,
+            "p99": 375025.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1056.25,
+            "minimum": 984.25,
+            "operations_per_sample": 500,
+            "p50": 1006.082,
+            "p95": 1012.416,
+            "p99": 1056.25,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3309.8606666666665,
+        "track_decode_ns_per_operation": 1018.8002733333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 363101.1066666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.316666666666666,
+        "evidence_ns_per_operation": 90.65194666666666,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 93.2085,
+            "minimum": 89.3955,
+            "operations_per_sample": 2000,
+            "p50": 90.3125,
+            "p95": 91.0,
+            "p99": 93.2085,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3701.68,
+            "minimum": 3289.16,
+            "operations_per_sample": 50,
+            "p50": 3302.5,
+            "p95": 3316.66,
+            "p99": 3701.68,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 368650.0,
+            "minimum": 343808.2,
+            "operations_per_sample": 5,
+            "p50": 350458.2,
+            "p95": 356666.6,
+            "p99": 368650.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1014.584,
+            "minimum": 977.166,
+            "operations_per_sample": 500,
+            "p50": 1005.416,
+            "p95": 1009.084,
+            "p99": 1014.584,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3291.25,
+        "track_decode_ns_per_operation": 1059.1011133333334,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 370032.2266666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.216386666666667,
+        "evidence_ns_per_operation": 90.86222,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 137.8125,
+            "minimum": 90.4165,
+            "operations_per_sample": 2000,
+            "p50": 90.5,
+            "p95": 104.104,
+            "p99": 137.8125,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 5956.66,
+            "minimum": 3180.0,
+            "operations_per_sample": 50,
+            "p50": 3305.84,
+            "p95": 3701.66,
+            "p99": 5956.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 449858.4,
+            "minimum": 346908.4,
+            "operations_per_sample": 5,
+            "p50": 360108.4,
+            "p95": 418766.8,
+            "p99": 449858.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 2483.332,
+            "minimum": 969.75,
+            "operations_per_sample": 500,
+            "p50": 1006.084,
+            "p95": 1230.75,
+            "p99": 2483.332,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3718.5553333333332,
+        "track_decode_ns_per_operation": 1033.8186066666667,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 382735.56,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.6638866666666665,
+        "evidence_ns_per_operation": 88.60444,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 128.8125,
+            "minimum": 87.333,
+            "operations_per_sample": 2000,
+            "p50": 89.375,
+            "p95": 103.729,
+            "p99": 128.8125,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 14615.0,
+            "minimum": 3295.0,
+            "operations_per_sample": 50,
+            "p50": 3361.66,
+            "p95": 9515.0,
+            "p99": 14615.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 544316.8,
+            "minimum": 343291.8,
+            "operations_per_sample": 5,
+            "p50": 363516.8,
+            "p95": 403008.4,
+            "p99": 544316.8,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1259.582,
+            "minimum": 969.916,
+            "operations_per_sample": 500,
+            "p50": 1004.832,
+            "p95": 1131.916,
+            "p99": 1259.582,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 4394.583333333333,
+        "track_decode_ns_per_operation": 1042.8375,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 441298.8933333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.4825,
+        "evidence_ns_per_operation": 89.72333333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 142.479,
+            "minimum": 87.021,
+            "operations_per_sample": 2000,
+            "p50": 87.583,
+            "p95": 106.3545,
+            "p99": 142.479,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 4856.66,
+            "minimum": 3290.0,
+            "operations_per_sample": 50,
+            "p50": 3304.16,
+            "p95": 4441.66,
+            "p99": 4856.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 424300.0,
+            "minimum": 341141.6,
+            "operations_per_sample": 5,
+            "p50": 360191.6,
+            "p95": 416141.8,
+            "p99": 424300.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 7556.916,
+            "minimum": 969.5,
+            "operations_per_sample": 500,
+            "p50": 1009.916,
+            "p95": 1938.332,
+            "p99": 7556.916,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3398.4166666666665,
+        "track_decode_ns_per_operation": 1015.4838933333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 363095.5466666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 7.70722,
+        "evidence_ns_per_operation": 93.35888666666666,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 117.375,
+            "minimum": 90.271,
+            "operations_per_sample": 2000,
+            "p50": 90.979,
+            "p95": 100.375,
+            "p99": 117.375,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3690.0,
+            "minimum": 3284.16,
+            "operations_per_sample": 50,
+            "p50": 3287.5,
+            "p95": 3312.5,
+            "p99": 3690.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 383283.4,
+            "minimum": 352766.8,
+            "operations_per_sample": 5,
+            "p50": 356858.4,
+            "p95": 378941.6,
+            "p99": 383283.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1134.5,
+            "minimum": 1004.75,
+            "operations_per_sample": 500,
+            "p50": 1006.834,
+            "p95": 1074.834,
+            "p99": 1134.5,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3340.722,
+        "track_decode_ns_per_operation": 1017.86694,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 359006.1066666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.203613333333333,
+        "evidence_ns_per_operation": 91.27055333333334,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 91.354,
+            "minimum": 90.2705,
+            "operations_per_sample": 2000,
+            "p50": 90.4795,
+            "p95": 90.8335,
+            "p99": 91.354,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3983.32,
+            "minimum": 3253.34,
+            "operations_per_sample": 50,
+            "p50": 3295.82,
+            "p95": 3356.68,
+            "p99": 3983.32,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 780158.4,
+            "minimum": 339933.4,
+            "operations_per_sample": 5,
+            "p50": 373233.4,
+            "p95": 642583.2,
+            "p99": 780158.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1022.084,
+            "minimum": 984.416,
+            "operations_per_sample": 500,
+            "p50": 1006.166,
+            "p95": 1012.584,
+            "p99": 1022.084,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3327.0,
+        "track_decode_ns_per_operation": 1009.8227733333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 357976.6666666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.52778,
+        "evidence_ns_per_operation": 88.90194666666666,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 91.917,
+            "minimum": 86.25,
+            "operations_per_sample": 2000,
+            "p50": 90.6875,
+            "p95": 91.229,
+            "p99": 91.917,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3385.0,
+            "minimum": 3171.66,
+            "operations_per_sample": 50,
+            "p50": 3287.5,
+            "p95": 3303.34,
+            "p99": 3385.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 379216.6,
+            "minimum": 345833.4,
+            "operations_per_sample": 5,
+            "p50": 350991.6,
+            "p95": 373058.2,
+            "p99": 379216.6,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1030.75,
+            "minimum": 1000.084,
+            "operations_per_sample": 500,
+            "p50": 1013.75,
+            "p95": 1025.5,
+            "p99": 1030.75,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3350.3053333333332,
+        "track_decode_ns_per_operation": 1020.44528,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 358561.12,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.29194,
+        "evidence_ns_per_operation": 86.56694,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 91.3125,
+            "minimum": 85.896,
+            "operations_per_sample": 2000,
+            "p50": 87.396,
+            "p95": 89.7915,
+            "p99": 91.3125,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3760.84,
+            "minimum": 3290.0,
+            "operations_per_sample": 50,
+            "p50": 3295.0,
+            "p95": 3342.5,
+            "p99": 3760.84,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 1227158.4,
+            "minimum": 337716.6,
+            "operations_per_sample": 5,
+            "p50": 382200.0,
+            "p95": 1125325.0,
+            "p99": 1227158.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1014.584,
+            "minimum": 979.834,
+            "operations_per_sample": 500,
+            "p50": 1005.918,
+            "p95": 1010.918,
+            "p99": 1014.584,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3351.7226666666666,
+        "track_decode_ns_per_operation": 1006.2841666666667,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 364968.88,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 6.271946666666667,
+        "evidence_ns_per_operation": 88.46528,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 92.583,
+            "minimum": 88.229,
+            "operations_per_sample": 2000,
+            "p50": 90.458,
+            "p95": 91.2085,
+            "p99": 92.583,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3745.0,
+            "minimum": 3135.0,
+            "operations_per_sample": 50,
+            "p50": 3302.5,
+            "p95": 3320.84,
+            "p99": 3745.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 376708.2,
+            "minimum": 337125.0,
+            "operations_per_sample": 5,
+            "p50": 359125.0,
+            "p95": 369741.6,
+            "p99": 376708.2,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1018.75,
+            "minimum": 996.916,
+            "operations_per_sample": 500,
+            "p50": 1012.584,
+            "p95": 1014.25,
+            "p99": 1018.75,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3320.5273333333334,
+        "track_decode_ns_per_operation": 1010.7936133333334,
+        "track_frame_bytes": 136
+      }
+    ],
+    "benchmark_process_wall_ms": [
+      341.903375,
+      313.139209,
+      295.502875,
+      277.680917,
+      277.26675,
+      274.893458,
+      353.748959,
+      343.467709,
+      306.398166,
+      293.884125,
+      289.716584,
+      295.133125,
+      297.59775,
+      304.134,
+      301.703,
+      291.351417,
+      298.024166,
+      289.273708,
+      300.8755,
+      288.565708
+    ],
+    "conformance": [
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      },
+      {
+        "anytime_alarm": true,
+        "covariance_intersection_weight": 0.5,
+        "custody": 0.8144084199608845,
+        "evidence_decision": "reject",
+        "evidence_scores": [
+          3.4,
+          4.35
+        ],
+        "information_value": {
+          "information_gain": 0.4807692307692308,
+          "posterior_variance": 0.019230769230769232,
+          "utility": 0.4307692307692308
+        },
+        "priority": 0.6242653831735508,
+        "replay_rejected": true,
+        "schedule_selected": 2,
+        "tamper_rejected": true,
+        "track_frame_bytes": 136,
+        "track_round_trip": true
+      }
+    ],
+    "conformance_process_wall_ms": [
+      2.905208,
+      2.439167,
+      2.7625,
+      2.435917,
+      2.24075,
+      2.174834,
+      2.214833,
+      2.156708,
+      2.225042,
+      2.40275,
+      2.27475,
+      2.227,
+      2.182,
+      2.17025,
+      2.208042,
+      2.206041,
+      2.574708,
+      2.276625,
+      2.229167,
+      2.155375
+    ],
+    "scaling": [
+      {
+        "association": [
+          {
+            "ns_per_item": 206.5,
+            "ns_per_update": 20650.0,
+            "size": 100
+          },
+          {
+            "ns_per_item": 350.9375,
+            "ns_per_update": 350937.5,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 413.16208,
+            "ns_per_update": 2065810.4,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 459.53918,
+            "ns_per_update": 4595391.8,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 15.166666666666666,
+            "ns_per_update": 910.0,
+            "size": 60
+          },
+          {
+            "ns_per_item": 14.517375,
+            "ns_per_update": 3484.17,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.917104166666665,
+            "ns_per_update": 18160.42,
+            "size": 960
+          },
+          {
+            "ns_per_item": 53.16459635416666,
+            "ns_per_update": 204152.05,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 208.7915,
+            "ns_per_update": 20879.15,
+            "size": 100
+          },
+          {
+            "ns_per_item": 463.56875,
+            "ns_per_update": 463568.75,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 589.45167,
+            "ns_per_update": 2947258.35,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 468.60082,
+            "ns_per_update": 4686008.2,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 40.395833333333336,
+            "ns_per_update": 2423.75,
+            "size": 60
+          },
+          {
+            "ns_per_item": 27.951416666666667,
+            "ns_per_update": 6708.34,
+            "size": 240
+          },
+          {
+            "ns_per_item": 51.66492708333333,
+            "ns_per_update": 49598.33,
+            "size": 960
+          },
+          {
+            "ns_per_item": 61.4990234375,
+            "ns_per_update": 236156.25,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 210.25,
+            "ns_per_update": 21025.0,
+            "size": 100
+          },
+          {
+            "ns_per_item": 353.39165,
+            "ns_per_update": 353391.65,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 450.89292,
+            "ns_per_update": 2254464.6,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 462.6825,
+            "ns_per_update": 4626825.0,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.6945,
+            "ns_per_update": 881.67,
+            "size": 60
+          },
+          {
+            "ns_per_item": 14.932291666666666,
+            "ns_per_update": 3583.75,
+            "size": 240
+          },
+          {
+            "ns_per_item": 19.206593750000003,
+            "ns_per_update": 18438.33,
+            "size": 960
+          },
+          {
+            "ns_per_item": 61.38454427083333,
+            "ns_per_update": 235716.65,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 213.354,
+            "ns_per_update": 21335.4,
+            "size": 100
+          },
+          {
+            "ns_per_item": 354.6583,
+            "ns_per_update": 354658.3,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 416.8875,
+            "ns_per_update": 2084437.5,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 462.4525,
+            "ns_per_update": 4624525.0,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 15.534666666666668,
+            "ns_per_update": 932.08,
+            "size": 60
+          },
+          {
+            "ns_per_item": 14.522583333333333,
+            "ns_per_update": 3485.42,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.598520833333335,
+            "ns_per_update": 17854.58,
+            "size": 960
+          },
+          {
+            "ns_per_item": 61.41384114583333,
+            "ns_per_update": 235829.15,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 210.125,
+            "ns_per_update": 21012.5,
+            "size": 100
+          },
+          {
+            "ns_per_item": 356.2,
+            "ns_per_update": 356200.0,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 479.56165999999996,
+            "ns_per_update": 2397808.3,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 476.1575,
+            "ns_per_update": 4761575.0,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 15.507,
+            "ns_per_update": 930.42,
+            "size": 60
+          },
+          {
+            "ns_per_item": 18.951416666666667,
+            "ns_per_update": 4548.34,
+            "size": 240
+          },
+          {
+            "ns_per_item": 20.48740625,
+            "ns_per_update": 19667.91,
+            "size": 960
+          },
+          {
+            "ns_per_item": 80.7177734375,
+            "ns_per_update": 309956.25,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 207.4165,
+            "ns_per_update": 20741.65,
+            "size": 100
+          },
+          {
+            "ns_per_item": 360.10625,
+            "ns_per_update": 360106.25,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 433.62791,
+            "ns_per_update": 2168139.55,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 514.43584,
+            "ns_per_update": 5144358.4,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.576500000000001,
+            "ns_per_update": 874.59,
+            "size": 60
+          },
+          {
+            "ns_per_item": 14.46525,
+            "ns_per_update": 3471.66,
+            "size": 240
+          },
+          {
+            "ns_per_item": 23.295572916666668,
+            "ns_per_update": 22363.75,
+            "size": 960
+          },
+          {
+            "ns_per_item": 99.40321614583333,
+            "ns_per_update": 381708.35,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 290.97950000000003,
+            "ns_per_update": 29097.95,
+            "size": 100
+          },
+          {
+            "ns_per_item": 396.83125,
+            "ns_per_update": 396831.25,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 436.575,
+            "ns_per_update": 2182875.0,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 510.57084000000003,
+            "ns_per_update": 5105708.4,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.777666666666667,
+            "ns_per_update": 886.66,
+            "size": 60
+          },
+          {
+            "ns_per_item": 14.067708333333334,
+            "ns_per_update": 3376.25,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.627604166666668,
+            "ns_per_update": 17882.5,
+            "size": 960
+          },
+          {
+            "ns_per_item": 56.200624999999995,
+            "ns_per_update": 215810.4,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 196.5625,
+            "ns_per_update": 19656.25,
+            "size": 100
+          },
+          {
+            "ns_per_item": 340.46045000000004,
+            "ns_per_update": 340460.45,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 398.7775,
+            "ns_per_update": 1993887.5,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 439.01834,
+            "ns_per_update": 4390183.4,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 13.979166666666666,
+            "ns_per_update": 838.75,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.928833333333333,
+            "ns_per_update": 3342.92,
+            "size": 240
+          },
+          {
+            "ns_per_item": 17.606770833333332,
+            "ns_per_update": 16902.5,
+            "size": 960
+          },
+          {
+            "ns_per_item": 55.772578125,
+            "ns_per_update": 214166.7,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 202.979,
+            "ns_per_update": 20297.9,
+            "size": 100
+          },
+          {
+            "ns_per_item": 337.25834999999995,
+            "ns_per_update": 337258.35,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 395.79917,
+            "ns_per_update": 1978995.85,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 438.34666,
+            "ns_per_update": 4383466.6,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.409666666666668,
+            "ns_per_update": 864.58,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.774291666666667,
+            "ns_per_update": 3305.83,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.17144791666667,
+            "ns_per_update": 17444.59,
+            "size": 960
+          },
+          {
+            "ns_per_item": 56.270625,
+            "ns_per_update": 216079.2,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 200.229,
+            "ns_per_update": 20022.9,
+            "size": 100
+          },
+          {
+            "ns_per_item": 337.58125,
+            "ns_per_update": 337581.25,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 396.41375,
+            "ns_per_update": 1982068.75,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 438.1475,
+            "ns_per_update": 4381475.0,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.618,
+            "ns_per_update": 877.08,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.807291666666666,
+            "ns_per_update": 3313.75,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.302083333333332,
+            "ns_per_update": 17570.0,
+            "size": 960
+          },
+          {
+            "ns_per_item": 56.0546875,
+            "ns_per_update": 215250.0,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 197.146,
+            "ns_per_update": 19714.6,
+            "size": 100
+          },
+          {
+            "ns_per_item": 338.69165000000004,
+            "ns_per_update": 338691.65,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 395.71792,
+            "ns_per_update": 1978589.6,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 438.325,
+            "ns_per_update": 4383250.0,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.1945,
+            "ns_per_update": 851.67,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.84375,
+            "ns_per_update": 3322.5,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.221791666666665,
+            "ns_per_update": 17492.92,
+            "size": 960
+          },
+          {
+            "ns_per_item": 56.239687499999995,
+            "ns_per_update": 215960.4,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 204.2295,
+            "ns_per_update": 20422.95,
+            "size": 100
+          },
+          {
+            "ns_per_item": 337.8875,
+            "ns_per_update": 337887.5,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 398.00833,
+            "ns_per_update": 1990041.65,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 438.11915999999997,
+            "ns_per_update": 4381191.6,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.145833333333334,
+            "ns_per_update": 848.75,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.940958333333333,
+            "ns_per_update": 3345.83,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.268229166666668,
+            "ns_per_update": 17537.5,
+            "size": 960
+          },
+          {
+            "ns_per_item": 56.18924479166667,
+            "ns_per_update": 215766.7,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 199.5835,
+            "ns_per_update": 19958.35,
+            "size": 100
+          },
+          {
+            "ns_per_item": 338.8625,
+            "ns_per_update": 338862.5,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 394.81833,
+            "ns_per_update": 1974091.65,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 438.53332,
+            "ns_per_update": 4385333.2,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.631833333333333,
+            "ns_per_update": 877.91,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.93925,
+            "ns_per_update": 3345.42,
+            "size": 240
+          },
+          {
+            "ns_per_item": 17.71396875,
+            "ns_per_update": 17005.41,
+            "size": 960
+          },
+          {
+            "ns_per_item": 56.37587239583333,
+            "ns_per_update": 216483.35,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 198.7915,
+            "ns_per_update": 19879.15,
+            "size": 100
+          },
+          {
+            "ns_per_item": 336.72295,
+            "ns_per_update": 336722.95,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 394.69959,
+            "ns_per_update": 1973497.95,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 438.27,
+            "ns_per_update": 4382700.0,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.382,
+            "ns_per_update": 862.92,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.796875,
+            "ns_per_update": 3311.25,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.231333333333335,
+            "ns_per_update": 17502.08,
+            "size": 960
+          },
+          {
+            "ns_per_item": 52.526041666666664,
+            "ns_per_update": 201700.0,
+            "size": 3840
+          }
+        ]
+      },
+      {
+        "association": [
+          {
+            "ns_per_item": 201.2915,
+            "ns_per_update": 20129.15,
+            "size": 100
+          },
+          {
+            "ns_per_item": 337.09790000000004,
+            "ns_per_update": 337097.9,
+            "size": 1000
+          },
+          {
+            "ns_per_item": 395.39542,
+            "ns_per_update": 1976977.1,
+            "size": 5000
+          },
+          {
+            "ns_per_item": 439.36668,
+            "ns_per_update": 4393666.8,
+            "size": 10000
+          }
+        ],
+        "scheduler": [
+          {
+            "ns_per_item": 14.145833333333334,
+            "ns_per_update": 848.75,
+            "size": 60
+          },
+          {
+            "ns_per_item": 13.899333333333335,
+            "ns_per_update": 3335.84,
+            "size": 240
+          },
+          {
+            "ns_per_item": 18.264760416666665,
+            "ns_per_update": 17534.17,
+            "size": 960
+          },
+          {
+            "ns_per_item": 52.612851562500005,
+            "ns_per_update": 202033.35,
+            "size": 3840
+          }
+        ]
+      }
+    ],
+    "scaling_process_wall_ms": [
+      81.216584,
+      106.0365,
+      85.783083,
+      82.38725,
+      91.125292,
+      90.271125,
+      87.707542,
+      78.487625,
+      78.023166,
+      77.988417,
+      77.951166,
+      78.467458,
+      78.063291,
+      77.533666,
+      78.028125
+    ]
+  },
+  "sanity_gates": {
+    "authenticated_decode": {
+      "detail": "process p95 1.217 us < 50 us",
+      "passed": true
+    },
+    "bounded_scheduler": {
+      "detail": "3,840-candidate process p95 381.708 us < 5 ms",
+      "passed": true
+    },
+    "deterministic_conformance": {
+      "detail": "20 independent processes agreed",
+      "passed": true
+    },
+    "sparse_association": {
+      "detail": "10,000-object process p95 5.144 ms < 50 ms",
+      "passed": true
+    }
+  }
+}

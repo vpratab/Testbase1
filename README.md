@@ -32,6 +32,7 @@ See:
 - `docs/DATA_AND_MODEL_CARDS.md`
 - `docs/TOPIC_TECHNICAL_OBJECTIVES.md`
 - `docs/RELEASE_READINESS.md`
+- `docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md`
 - `docs/WIRE_PROTOCOL.md`
 - `docs/WIN_GATES.md`
 - `SECURITY.md`
@@ -47,6 +48,12 @@ Run every local test:
 
 ```bash
 make full
+```
+
+Run the repeated, process-isolated native benchmark:
+
+```bash
+make independent-benchmark
 ```
 
 Rerun the complete Wave 5 evidence campaign:
@@ -133,6 +140,8 @@ Run the all-topics-above-95 fifth wave:
 
 Outputs:
 
+- `results/independent_benchmark/independent_benchmark.json`
+- `results/independent_benchmark/INDEPENDENT_BENCHMARK.md`
 - `results/phase1_feasibility_results.json`
 - `results/phase1_feasibility_results.md`
 - `results/robustness_sweep.json`

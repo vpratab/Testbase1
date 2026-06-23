@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CARGO_MANIFEST := native/assure-kernel/Cargo.toml
 
-.PHONY: bootstrap test benchmark verify full campaign theory supply-chain
+.PHONY: bootstrap test benchmark independent-benchmark verify full campaign theory supply-chain
 
 bootstrap:
 	python3 -m venv .venv
@@ -13,6 +13,9 @@ test:
 
 benchmark:
 	cargo run --quiet --release --manifest-path $(CARGO_MANIFEST) -- benchmark 250000
+
+independent-benchmark:
+	$(PYTHON) tools/independent_benchmark.py
 
 verify:
 	$(PYTHON) tools/verify.py
