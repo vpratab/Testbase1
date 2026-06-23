@@ -1,10 +1,48 @@
 {
-  "association_ns_per_operation": 341847.5,
+  "association_ns_per_operation": 365801.68,
   "association_objects": 1000,
-  "binary_bytes": 418736,
-  "custody_priority_ns_per_operation": 4.97084,
-  "evidence_ns_per_operation": 85.81792,
+  "binary_bytes": 451808,
+  "custody_priority_ns_per_operation": 5.2025,
+  "evidence_ns_per_operation": 100.61542,
   "iterations": 100000,
+  "latency_distributions_ns": {
+    "evidence": {
+      "maximum": 102.375,
+      "minimum": 91.896,
+      "operations_per_sample": 2000,
+      "p50": 94.042,
+      "p95": 97.604,
+      "p99": 102.375,
+      "samples": 40
+    },
+    "scheduler": {
+      "maximum": 4335.84,
+      "minimum": 3243.32,
+      "operations_per_sample": 50,
+      "p50": 3285.0,
+      "p95": 3349.16,
+      "p99": 4335.84,
+      "samples": 40
+    },
+    "sparse_association": {
+      "maximum": 379658.2,
+      "minimum": 348558.4,
+      "operations_per_sample": 5,
+      "p50": 352216.8,
+      "p95": 371650.0,
+      "p99": 379658.2,
+      "samples": 30
+    },
+    "track_decode": {
+      "maximum": 1058.168,
+      "minimum": 993.668,
+      "operations_per_sample": 500,
+      "p50": 1009.75,
+      "p95": 1041.834,
+      "p99": 1058.168,
+      "samples": 40
+    }
+  },
   "metadata": {
     "machine": "arm64",
     "measurement_scope": "release-mode host benchmark; not target-hardware WCET",
@@ -12,7 +50,7 @@
     "python": "3.9.6"
   },
   "scheduler_candidates": 240,
-  "scheduler_ns_per_operation": 3158.875,
-  "track_decode_ns_per_operation": 972.6125,
+  "scheduler_ns_per_operation": 3345.458,
+  "track_decode_ns_per_operation": 1011.57166,
   "track_frame_bytes": 136
 }

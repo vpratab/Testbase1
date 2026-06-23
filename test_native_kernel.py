@@ -75,6 +75,22 @@ class NativeKernelTests(unittest.TestCase):
         self.assertLess(result["association_ns_per_operation"], 10_000_000)
         self.assertEqual(result["scheduler_candidates"], 240)
         self.assertEqual(result["association_objects"], 1_000)
+        distributions = result["latency_distributions_ns"]
+        self.assertLess(distributions["track_decode"]["p99"], 100_000)
+        self.assertLess(distributions["scheduler"]["p99"], 1_000_000)
+        self.assertLess(
+            distributions["sparse_association"]["p99"],
+            10_000_000,
+        )
+
+    def test_native_scaling_remains_bounded(self):
+        scaling = run_native_kernel("scaling", build=False)
+        association = scaling["association"]
+        scheduler = scaling["scheduler"]
+        self.assertEqual(association[-1]["size"], 10_000)
+        self.assertLess(association[-1]["ns_per_update"], 50_000_000)
+        self.assertEqual(scheduler[-1]["size"], 3_840)
+        self.assertLess(scheduler[-1]["ns_per_update"], 5_000_000)
 
     def test_wire_vector_is_independently_decodable(self):
         vector = run_native_kernel("vector", build=False)

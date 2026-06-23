@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CARGO_MANIFEST := native/assure-kernel/Cargo.toml
 
-.PHONY: bootstrap test benchmark verify full campaign theory
+.PHONY: bootstrap test benchmark verify full campaign theory supply-chain
 
 bootstrap:
 	python3 -m venv .venv
@@ -26,3 +26,6 @@ campaign:
 theory:
 	$(PYTHON) theory_campaign.py
 	$(PYTHON) -m unittest -v test_theory_campaign.py
+
+supply-chain:
+	$(PYTHON) tools/generate_supply_chain.py

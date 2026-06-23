@@ -1,6 +1,6 @@
 # Fifth-Wave TRL-4 Evidence Campaign
 
-Generated: 2026-06-22T19:37:07Z
+Generated: 2026-06-23T03:38:22Z
 
 Every topic now exceeds 95 on the evidence rubric. The minimum score is
 `95.2`. These remain technical requirement-match scores, not
@@ -34,12 +34,12 @@ certifications, operational approvals, or probabilities of award.
   retained mandatory operator confirmation.
 - **Shared native kernel:** fixed `136`-
   byte authenticated track frames; evidence update
-  `210.3` ns/op, custody and
-  priority `10.4`
+  `94.8` ns/op, custody and
+  priority `5.6`
   ns/op, authenticated decode
-  `1135.7` ns/op, and a
+  `991.3` ns/op, and a
   240-candidate bounded schedule in
-  `3210.5` ns/op on this host.
+  `3301.8` ns/op on this host.
 
 ## Remaining external boundaries
 

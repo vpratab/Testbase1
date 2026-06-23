@@ -1,0 +1,46 @@
+{
+  "association": [
+    {
+      "ns_per_item": 208.292,
+      "ns_per_update": 20829.2,
+      "size": 100
+    },
+    {
+      "ns_per_item": 356.72290000000004,
+      "ns_per_update": 356722.9,
+      "size": 1000
+    },
+    {
+      "ns_per_item": 419.695,
+      "ns_per_update": 2098475.0,
+      "size": 5000
+    },
+    {
+      "ns_per_item": 467.7525,
+      "ns_per_update": 4677525.0,
+      "size": 10000
+    }
+  ],
+  "scheduler": [
+    {
+      "ns_per_item": 15.027666666666667,
+      "ns_per_update": 901.66,
+      "size": 60
+    },
+    {
+      "ns_per_item": 14.671875,
+      "ns_per_update": 3521.25,
+      "size": 240
+    },
+    {
+      "ns_per_item": 19.232635416666668,
+      "ns_per_update": 18463.33,
+      "size": 960
+    },
+    {
+      "ns_per_item": 58.8818359375,
+      "ns_per_update": 226106.25,
+      "size": 3840
+    }
+  ]
+}

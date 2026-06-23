@@ -21,6 +21,9 @@ Supporting artifacts:
 - `../theory_campaign/THEORY_CAMPAIGN_REPORT.md`
 - `../theory_campaign/theory_campaign_results.json`
 - `../performance/EFFICIENCY_REPORT.md`
+- `../performance/native_kernel_scaling.json`
+- `../supply_chain/component_inventory.json`
+- `../supply_chain/release_manifest.json`
 
 The campaign report and transition checklist must accompany any score excerpt
 so the remaining external boundaries are not lost.

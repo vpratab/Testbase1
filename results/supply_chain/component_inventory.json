@@ -1,0 +1,300 @@
+{
+  "boundary": "lockfile-derived component inventory; not a vulnerability scan or third-party software-composition-analysis attestation",
+  "component_count": 35,
+  "components": [
+    {
+      "ecosystem": "pypi",
+      "name": "asyncua",
+      "purl": "pkg:pypi/asyncua@1.1.8",
+      "scope": "direct",
+      "version": "1.1.8"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "cryptography",
+      "purl": "pkg:pypi/cryptography@49.0.0",
+      "scope": "direct",
+      "version": "49.0.0"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "cyclonedds",
+      "purl": "pkg:pypi/cyclonedds@0.10.5",
+      "scope": "direct",
+      "version": "0.10.5"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "jsonschema",
+      "purl": "pkg:pypi/jsonschema@4.25.1",
+      "scope": "direct",
+      "version": "4.25.1"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "numpy",
+      "purl": "pkg:pypi/numpy@2.0.2",
+      "scope": "direct",
+      "version": "2.0.2"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "pandas",
+      "purl": "pkg:pypi/pandas@2.3.3",
+      "scope": "direct",
+      "version": "2.3.3"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "pqcrypto",
+      "purl": "pkg:pypi/pqcrypto@0.4.0",
+      "scope": "direct",
+      "version": "0.4.0"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "PyYAML",
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "scope": "direct",
+      "version": "6.0.3"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "remotezip",
+      "purl": "pkg:pypi/remotezip@0.12.3",
+      "scope": "direct",
+      "version": "0.12.3"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "scikit-learn",
+      "purl": "pkg:pypi/scikit-learn@1.6.1",
+      "scope": "direct",
+      "version": "1.6.1"
+    },
+    {
+      "ecosystem": "pypi",
+      "name": "scipy",
+      "purl": "pkg:pypi/scipy@1.13.1",
+      "scope": "direct",
+      "version": "1.13.1"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "Apache-2.0 OR MIT",
+      "name": "assure-kernel",
+      "purl": "pkg:cargo/assure-kernel@0.1.0",
+      "scope": "workspace",
+      "source": "workspace",
+      "version": "0.1.0"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "block-buffer",
+      "purl": "pkg:cargo/block-buffer@0.10.4",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.10.4"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "cfg-if",
+      "purl": "pkg:cargo/cfg-if@1.0.4",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.4"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "cpufeatures",
+      "purl": "pkg:cargo/cpufeatures@0.2.17",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.2.17"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "crypto-common",
+      "purl": "pkg:cargo/crypto-common@0.1.7",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.1.7"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "digest",
+      "purl": "pkg:cargo/digest@0.10.7",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.10.7"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT",
+      "name": "generic-array",
+      "purl": "pkg:cargo/generic-array@0.14.7",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.14.7"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "hmac",
+      "purl": "pkg:cargo/hmac@0.12.1",
+      "scope": "direct",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.12.1"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "itoa",
+      "purl": "pkg:cargo/itoa@1.0.18",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.18"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "libc",
+      "purl": "pkg:cargo/libc@0.2.186",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.2.186"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "Unlicense OR MIT",
+      "name": "memchr",
+      "purl": "pkg:cargo/memchr@2.8.2",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "2.8.2"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "proc-macro2",
+      "purl": "pkg:cargo/proc-macro2@1.0.106",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.106"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "quote",
+      "purl": "pkg:cargo/quote@1.0.46",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.46"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "serde",
+      "purl": "pkg:cargo/serde@1.0.228",
+      "scope": "direct",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.228"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "serde_core",
+      "purl": "pkg:cargo/serde_core@1.0.228",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.228"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "serde_derive",
+      "purl": "pkg:cargo/serde_derive@1.0.228",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.228"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "serde_json",
+      "purl": "pkg:cargo/serde_json@1.0.150",
+      "scope": "direct",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.150"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "sha2",
+      "purl": "pkg:cargo/sha2@0.10.9",
+      "scope": "direct",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.10.9"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "BSD-3-Clause",
+      "name": "subtle",
+      "purl": "pkg:cargo/subtle@2.6.1",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "2.6.1"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "syn",
+      "purl": "pkg:cargo/syn@2.0.118",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "2.0.118"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT OR Apache-2.0",
+      "name": "typenum",
+      "purl": "pkg:cargo/typenum@1.20.1",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.20.1"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "name": "unicode-ident",
+      "purl": "pkg:cargo/unicode-ident@1.0.24",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.24"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT/Apache-2.0",
+      "name": "version_check",
+      "purl": "pkg:cargo/version_check@0.9.5",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "0.9.5"
+    },
+    {
+      "ecosystem": "cargo",
+      "license": "MIT",
+      "name": "zmij",
+      "purl": "pkg:cargo/zmij@1.0.21",
+      "scope": "transitive",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "version": "1.0.21"
+    }
+  ],
+  "format": "assureedge-component-inventory/v1"
+}

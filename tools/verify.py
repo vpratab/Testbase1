@@ -191,6 +191,7 @@ def main() -> None:
             str(arguments.benchmark_iterations),
         ]
     )
+    scaling = capture_json([str(executable), "scaling"])
     benchmark["metadata"] = {
         "platform": platform.platform(),
         "machine": platform.machine(),
@@ -204,6 +205,10 @@ def main() -> None:
     output = RESULTS / "native_kernel_benchmark.json"
     output.write_text(json.dumps(benchmark, indent=2, sort_keys=True) + "\n")
     print(f"wrote {output.relative_to(ROOT)}")
+    scaling_output = RESULTS / "native_kernel_scaling.json"
+    scaling_output.write_text(json.dumps(scaling, indent=2, sort_keys=True) + "\n")
+    print(f"wrote {scaling_output.relative_to(ROOT)}")
+    distributions = benchmark["latency_distributions_ns"]
     report = RESULTS / "EFFICIENCY_REPORT.md"
     report.write_text(
         f"""# Native Kernel Efficiency Report
@@ -217,20 +222,24 @@ execution-time evidence.
 | --- | ---: |
 | Evidence update | {benchmark["evidence_ns_per_operation"]:.1f} ns/op |
 | Custody and priority | {benchmark["custody_priority_ns_per_operation"]:.1f} ns/op |
-| Authenticated track decode | {benchmark["track_decode_ns_per_operation"]:.1f} ns/op |
-| 240-candidate bounded schedule | {benchmark["scheduler_ns_per_operation"]:.1f} ns/op |
-| 1,000-object sparse association | {benchmark["association_ns_per_operation"] / 1_000.0:.1f} us/update |
+| Authenticated track decode mean / batch-p99 | {benchmark["track_decode_ns_per_operation"]:.1f} / {distributions["track_decode"]["p99"]:.1f} ns |
+| 240-candidate schedule mean / batch-p99 | {benchmark["scheduler_ns_per_operation"]:.1f} / {distributions["scheduler"]["p99"]:.1f} ns |
+| 1,000-object association mean / batch-p99 | {benchmark["association_ns_per_operation"] / 1_000.0:.1f} / {distributions["sparse_association"]["p99"] / 1_000.0:.1f} us |
+| 10,000-object sparse association | {scaling["association"][-1]["ns_per_update"] / 1_000_000.0:.2f} ms/update |
+| 3,840-candidate bounded schedule | {scaling["scheduler"][-1]["ns_per_update"] / 1_000.0:.1f} us/update |
 | Authenticated track frame | {benchmark["track_frame_bytes"]} bytes |
 | Release executable | {benchmark["binary_bytes"] / 1024.0:.1f} KiB |
 
 The verification gate is intentionally loose enough to tolerate shared CI
 hosts while still detecting major regressions. Representative x86 and ARM
-hardware profiling remains a Phase I transition task.
+hardware profiling remains a Phase I transition task. Percentiles are computed
+over repeated batch-average measurements and are not WCET proofs.
 """
     )
     print(f"wrote {report.relative_to(ROOT)}")
     manifest = write_source_manifest()
     print(f"wrote {manifest.relative_to(ROOT)}")
+    run([sys.executable, "tools/generate_supply_chain.py"])
 
     if arguments.campaign:
         run([sys.executable, "run_wave5_campaign.py"])

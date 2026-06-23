@@ -1,0 +1,44 @@
+{
+  "artifacts": [
+    {
+      "bytes": 5321,
+      "path": "native/assure-kernel/Cargo.lock",
+      "sha256": "bbe11d76290c2b066fa95795eac1f28f60257f1a566934483f326d7f4a579ca0"
+    },
+    {
+      "bytes": 350,
+      "path": "requirements-lock.txt",
+      "sha256": "e8170e2f26e0cbb39f03f5a4e6137f5a51cbf776e116ea87abd8870051f82e21"
+    },
+    {
+      "bytes": 13656520,
+      "path": "data/processed/noaa_ais_puget_sound_2020_02_15.csv",
+      "sha256": "1487c1f3acc33da4deaf5014f22cfab82c78d316f327f2564459164ad12803ab"
+    },
+    {
+      "bytes": 44938,
+      "path": "results/trl4_wave5/wave5_campaign_results.json",
+      "sha256": "9f1b02d782995e6465950d3f646c7c7b9b9d9147e7b9936ea65920fed583b3e9"
+    },
+    {
+      "bytes": 6093,
+      "path": "results/theory_campaign/theory_campaign_results.json",
+      "sha256": "765c40d969c2cae5f2e4de0db2ff59fbdf885447fec54541bbb6c7a397b742e5"
+    },
+    {
+      "bytes": 1410,
+      "path": "results/performance/native_kernel_benchmark.json",
+      "sha256": "f3945bf6d49d72840875c0b4e9b1664a44cce3322ded78e0f9a4c2ff99e4ce95"
+    },
+    {
+      "bytes": 844,
+      "path": "results/performance/native_kernel_scaling.json",
+      "sha256": "758cebf580ce586b895f71f1e1f65701313892a2e9a4dc9c93ce1f8b3060815f"
+    }
+  ],
+  "boundary": "local integrity manifest; signing, independent timestamping, and external artifact storage remain release-process tasks",
+  "component_inventory_sha256": "ec7df1694ef245c600087a6aa24d67a2cfd0cb69453b8e602611c3ac8e48acca",
+  "format": "assureedge-release-manifest/v1",
+  "source_files": 63,
+  "source_manifest_root_sha256": "4a0a6a1fa239a6830e861fa168aea5dba4aec2896f50db8bb46e3a095340abc3"
+}

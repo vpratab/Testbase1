@@ -35,6 +35,39 @@ struct BenchmarkReport {
     scheduler_candidates: usize,
     association_ns_per_operation: f64,
     association_objects: usize,
+    latency_distributions_ns: LatencyDistributions,
+}
+
+#[derive(Serialize)]
+struct Distribution {
+    samples: usize,
+    operations_per_sample: usize,
+    minimum: f64,
+    p50: f64,
+    p95: f64,
+    p99: f64,
+    maximum: f64,
+}
+
+#[derive(Serialize)]
+struct LatencyDistributions {
+    evidence: Distribution,
+    track_decode: Distribution,
+    scheduler: Distribution,
+    sparse_association: Distribution,
+}
+
+#[derive(Serialize)]
+struct ScalingPoint {
+    size: usize,
+    ns_per_update: f64,
+    ns_per_item: f64,
+}
+
+#[derive(Serialize)]
+struct ScalingReport {
+    association: Vec<ScalingPoint>,
+    scheduler: Vec<ScalingPoint>,
 }
 
 #[derive(Serialize)]
@@ -150,6 +183,34 @@ fn elapsed_ns_per_operation(iterations: usize, mut operation: impl FnMut()) -> f
         operation();
     }
     started.elapsed().as_nanos() as f64 / iterations as f64
+}
+
+fn distribution(
+    samples: usize,
+    operations_per_sample: usize,
+    mut operation: impl FnMut(),
+) -> Distribution {
+    let mut values = Vec::with_capacity(samples);
+    for _ in 0..samples {
+        values.push(elapsed_ns_per_operation(
+            operations_per_sample,
+            &mut operation,
+        ));
+    }
+    values.sort_by(|left, right| left.partial_cmp(right).unwrap());
+    let quantile = |fraction: f64| {
+        let index = ((values.len() - 1) as f64 * fraction).round() as usize;
+        values[index]
+    };
+    Distribution {
+        samples,
+        operations_per_sample,
+        minimum: values[0],
+        p50: quantile(0.50),
+        p95: quantile(0.95),
+        p99: quantile(0.99),
+        maximum: *values.last().unwrap(),
+    }
 }
 
 fn encode_hex(value: &[u8]) -> String {
@@ -280,6 +341,41 @@ fn benchmark(iterations: usize) -> BenchmarkReport {
         ))
         .unwrap();
     });
+    let latency_distributions_ns = LatencyDistributions {
+        evidence: distribution(40, 2_000, || {
+            black_box(update_evidence(
+                black_box(&channels),
+                black_box(&[1.0, 2.0, 0.5]),
+                black_box(&[3.0, 3.0, 2.0]),
+            ))
+            .unwrap();
+        }),
+        track_decode: distribution(40, 500, || {
+            black_box(CompositeTrack::decode_authenticated(
+                black_box(&frame),
+                black_box(key),
+            ))
+            .unwrap();
+        }),
+        scheduler: distribution(40, 50, || {
+            black_box(schedule_tasks(
+                black_box(&sensors),
+                black_box(&candidates),
+                4_096,
+            ))
+            .unwrap();
+        }),
+        sparse_association: distribution(30, 5, || {
+            black_box(associate_sparse_2d(
+                black_box(&tracks),
+                black_box(&detections),
+                3.0,
+                1.0,
+                10_000,
+            ))
+            .unwrap();
+        }),
+    };
 
     BenchmarkReport {
         iterations,
@@ -291,6 +387,93 @@ fn benchmark(iterations: usize) -> BenchmarkReport {
         scheduler_candidates: candidates.len(),
         association_ns_per_operation,
         association_objects,
+        latency_distributions_ns,
+    }
+}
+
+fn scaling() -> ScalingReport {
+    let association = [100, 1_000, 5_000, 10_000]
+        .into_iter()
+        .map(|size| {
+            let columns = (size as f64).sqrt().ceil() as usize;
+            let tracks: Vec<PredictedTrack2> = (0..size)
+                .map(|index| PredictedTrack2 {
+                    track_id: index as u64,
+                    position: [
+                        (index % columns) as f64 * 25.0,
+                        (index / columns) as f64 * 25.0,
+                    ],
+                    velocity: [1.0, 0.2],
+                })
+                .collect();
+            let detections: Vec<Detection2> = tracks
+                .iter()
+                .enumerate()
+                .rev()
+                .map(|(index, track)| Detection2 {
+                    detection_id: index as u64,
+                    position: [track.position[0] + 0.3, track.position[1] - 0.2],
+                    velocity: track.velocity,
+                })
+                .collect();
+            let iterations = if size >= 10_000 { 5 } else { 20 };
+            let elapsed = elapsed_ns_per_operation(iterations, || {
+                black_box(associate_sparse_2d(
+                    black_box(&tracks),
+                    black_box(&detections),
+                    3.0,
+                    1.0,
+                    size * 4,
+                ))
+                .unwrap();
+            });
+            ScalingPoint {
+                size,
+                ns_per_update: elapsed,
+                ns_per_item: elapsed / size as f64,
+            }
+        })
+        .collect();
+
+    let sensors: Vec<SensorSpec> = (0..4)
+        .map(|index| SensorSpec {
+            name: format!("sensor-{index}"),
+            frame_us: 1_000_000,
+            maximum_duty_ppm: 650_000,
+        })
+        .collect();
+    let scheduler = [60, 240, 960, 3_840]
+        .into_iter()
+        .map(|size| {
+            let candidates: Vec<TaskCandidate> = (0..size)
+                .map(|index| TaskCandidate {
+                    sensor_index: index % sensors.len(),
+                    track_id: index as u32,
+                    cost_us: 1_000 + (index % 17) as u64 * 100,
+                    deadline_us: 100_000 + (index % 8) as u64 * 50_000,
+                    utility: 1.0 + (index % 31) as f64 / 10.0,
+                    mode: u8::from(index % 3 == 0),
+                })
+                .collect();
+            let iterations = if size >= 3_840 { 20 } else { 100 };
+            let elapsed = elapsed_ns_per_operation(iterations, || {
+                black_box(schedule_tasks(
+                    black_box(&sensors),
+                    black_box(&candidates),
+                    4_096,
+                ))
+                .unwrap();
+            });
+            ScalingPoint {
+                size,
+                ns_per_update: elapsed,
+                ns_per_item: elapsed / size as f64,
+            }
+        })
+        .collect();
+    ScalingReport {
+        association,
+        scheduler,
     }
 }
 
@@ -310,8 +493,9 @@ fn main() {
             serde_json::to_string_pretty(&benchmark(iterations)).unwrap()
         }
         "vector" => serde_json::to_string_pretty(&wire_vector()).unwrap(),
+        "scaling" => serde_json::to_string_pretty(&scaling()).unwrap(),
         _ => {
-            eprintln!("usage: assure-kernel [conformance|benchmark [iterations]|vector]");
+            eprintln!("usage: assure-kernel [conformance|benchmark [iterations]|vector|scaling]");
             std::process::exit(2);
         }
     };

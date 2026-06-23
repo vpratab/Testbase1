@@ -597,13 +597,13 @@
     }
   },
   "evidence": {
-    "head": "6dd1f1957f5ee0d925cb5ffe7c30e42ee75a190859885ead24c70117b328af35",
+    "head": "44d453f887194ba932984281cf797414e8ffb5e3b1737be03611430b410433bd",
     "records": 4,
     "tamper_detected": true,
     "verified": true
   },
   "metadata": {
-    "generated_at": "2026-06-22T19:37:07Z",
+    "generated_at": "2026-06-23T03:38:22Z",
     "machine": "arm64",
     "platform": "macOS-26.1-arm64-arm-64bit",
     "processor": "arm",
@@ -611,12 +611,52 @@
   },
   "native_kernel": {
     "benchmark": {
-      "custody_priority_ns_per_operation": 10.43333,
-      "evidence_ns_per_operation": 210.33208,
+      "association_ns_per_operation": 356316.68,
+      "association_objects": 1000,
+      "custody_priority_ns_per_operation": 5.63125,
+      "evidence_ns_per_operation": 94.75,
       "iterations": 100000,
+      "latency_distributions_ns": {
+        "evidence": {
+          "maximum": 93.896,
+          "minimum": 87.2915,
+          "operations_per_sample": 2000,
+          "p50": 90.5415,
+          "p95": 92.3335,
+          "p99": 93.896,
+          "samples": 40
+        },
+        "scheduler": {
+          "maximum": 4213.32,
+          "minimum": 3170.84,
+          "operations_per_sample": 50,
+          "p50": 3175.84,
+          "p95": 3457.5,
+          "p99": 4213.32,
+          "samples": 40
+        },
+        "sparse_association": {
+          "maximum": 368200.0,
+          "minimum": 336183.4,
+          "operations_per_sample": 5,
+          "p50": 339250.0,
+          "p95": 365058.2,
+          "p99": 368200.0,
+          "samples": 30
+        },
+        "track_decode": {
+          "maximum": 1018.5,
+          "minimum": 968.916,
+          "operations_per_sample": 500,
+          "p50": 971.75,
+          "p95": 997.25,
+          "p99": 1018.5,
+          "samples": 40
+        }
+      },
       "scheduler_candidates": 240,
-      "scheduler_ns_per_operation": 3210.459,
-      "track_decode_ns_per_operation": 1135.68708,
+      "scheduler_ns_per_operation": 3301.792,
+      "track_decode_ns_per_operation": 991.34916,
       "track_frame_bytes": 136
     },
     "boundary": "release-mode host benchmark; target hardware and WCET remain separate transition gates",
@@ -737,7 +777,7 @@
         "messages": 50000,
         "old_version_cases": 200,
         "old_versions_rejected": 200,
-        "p95_decode_us": 11.583,
+        "p95_decode_us": 11.083,
         "schema_version": 2,
         "source_types": [
           "AIS",
@@ -840,7 +880,7 @@
         "automated_retasking": false,
         "boundary": "SSDS-oriented advisory contract, not SSDS",
         "operator_confirmation_required": true,
-        "p95_validation_us": 0.209,
+        "p95_validation_us": 0.208,
         "recommendations": 20000,
         "rejected_conflict": 1177,
         "rejected_stale": 0,
@@ -859,7 +899,7 @@
         "invalid_schedules": 0,
         "missed_revisit_deadlines": 0,
         "p95_revisit_lateness_s": 0.0,
-        "p95_scheduler_us": 118.83605,
+        "p95_scheduler_us": 110.05035000000001,
         "parameter_status": "traceable generic surrogate, not program-specific",
         "scenarios": 300,
         "search_updates": 2053,

@@ -7,14 +7,17 @@ execution-time evidence.
 
 | Measurement | Result |
 | --- | ---: |
-| Evidence update | 85.8 ns/op |
-| Custody and priority | 5.0 ns/op |
-| Authenticated track decode | 972.6 ns/op |
-| 240-candidate bounded schedule | 3158.9 ns/op |
-| 1,000-object sparse association | 341.8 us/update |
+| Evidence update | 100.6 ns/op |
+| Custody and priority | 5.2 ns/op |
+| Authenticated track decode mean / batch-p99 | 1011.6 / 1058.2 ns |
+| 240-candidate schedule mean / batch-p99 | 3345.5 / 4335.8 ns |
+| 1,000-object association mean / batch-p99 | 365.8 / 379.7 us |
+| 10,000-object sparse association | 4.68 ms/update |
+| 3,840-candidate bounded schedule | 226.1 us/update |
 | Authenticated track frame | 136 bytes |
-| Release executable | 408.9 KiB |
+| Release executable | 441.2 KiB |
 
 The verification gate is intentionally loose enough to tolerate shared CI
 hosts while still detecting major regressions. Representative x86 and ARM
-hardware profiling remains a Phase I transition task.
+hardware profiling remains a Phase I transition task. Percentiles are computed
+over repeated batch-average measurements and are not WCET proofs.

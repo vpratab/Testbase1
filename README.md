@@ -28,8 +28,13 @@ See:
 - `docs/DEPLOYMENT_ARCHITECTURE.md`
 - `docs/PROPOSAL_EXECUTION_STRATEGY.md`
 - `docs/STATE_OF_ART_AND_NOVELTY.md`
+- `docs/THREAT_MODEL.md`
+- `docs/DATA_AND_MODEL_CARDS.md`
+- `docs/TOPIC_TECHNICAL_OBJECTIVES.md`
+- `docs/RELEASE_READINESS.md`
 - `docs/WIRE_PROTOCOL.md`
 - `docs/WIN_GATES.md`
+- `SECURITY.md`
 - `native/assure-kernel/include/assure_kernel.h`
 
 ## Simplest verification
