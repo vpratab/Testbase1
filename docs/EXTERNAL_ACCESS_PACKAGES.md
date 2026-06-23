@@ -13,6 +13,9 @@ They do not assume classified or operational access before award.
 | NV065 | reference combat-system architecture, sensor task parameters, hard conflicts, deadline semantics, and track-quality definitions | classified waveform implementation or automatic sensor control | literature-grounded sensor surrogates with operator-advisory output |
 | NP002 | selected C-UAS platform/interface, synchronized sensor recordings, target class, custody truth, clutter/weather, and defeat-system handoff timestamps | defeat-system control authority or sensitive engagement logic | NASA acoustics plus synthetic synchronized radar/EO/RF evidence and bounded handoff contract |
 
+The concrete NP002 test-site, collection, metric, and Base/Option plan is in
+`docs/NP002_FIELD_VALIDATION_PATH.md`.
+
 ## NV062 public integration path
 
 Current public provider material makes a pre-credential Phase I integration

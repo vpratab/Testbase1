@@ -46,14 +46,14 @@
       "sha256": "8fd410013ff0b28bbffc16cedf849ef452bf5c6a75e6c91bcb58e77540a68d1d"
     },
     {
-      "bytes": 66717,
+      "bytes": 66663,
       "path": "results/independent_benchmark/independent_benchmark.json",
-      "sha256": "ca20a1bb39b98936bfbcf6ae85a609e1f32f9afb5cb409e5f948d4073cda8292"
+      "sha256": "d0e98a4b7978c3da90007deb88ffe52800b5562619890346d011c0258a971a13"
     },
     {
-      "bytes": 2332,
+      "bytes": 2333,
       "path": "results/independent_benchmark/INDEPENDENT_BENCHMARK.md",
-      "sha256": "6a7e7e95d47763dca14a9412c6ffe54e8efcbeb8f476d0835cbe4d0260c44a8a"
+      "sha256": "adb4de8999eff53d65d2f07416b8fc4efd2a4333973a805c5bc21c2008e066db"
     },
     {
       "bytes": 107514,
@@ -79,6 +79,6 @@
   "boundary": "local integrity manifest; signing, independent timestamping, and external artifact storage remain release-process tasks",
   "component_inventory_sha256": "ec7df1694ef245c600087a6aa24d67a2cfd0cb69453b8e602611c3ac8e48acca",
   "format": "assureedge-release-manifest/v1",
-  "source_files": 72,
-  "source_manifest_root_sha256": "35978fcdd6100300f2736ae77192bf0b476cefd9cdba8549c50d5ff10162cce0"
+  "source_files": 73,
+  "source_manifest_root_sha256": "d8b06f6c172f23c64d6b0fe9fc5e42e94b48d0990945c1f7140e786700c9eddb"
 }
