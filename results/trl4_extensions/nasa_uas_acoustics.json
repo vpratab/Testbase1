@@ -1,0 +1,113 @@
+{
+  "data_root": "data/external/nasa_uas_acoustics",
+  "dataset_manifest_sha256": "9dd92a2823e8dc20be2d2b70edcd17f71031d9fb83dc6e01df060f0f5a8a8bd1",
+  "detection": {
+    "f1": 0.982895540623091,
+    "false_negative_rate": 0.01650366748166259,
+    "false_negatives": 27,
+    "false_positive_rate": 0.14215686274509803,
+    "false_positives": 29,
+    "precision": 0.9822954822954822,
+    "recall": 0.9834963325183375,
+    "true_negatives": 175,
+    "true_positives": 1609
+  },
+  "evaluation_ms": 1317.090042,
+  "evidence": {
+    "head": "d75790e8169a72bd0110453316a7249834481923d50c7fd90f0badd0981a6620",
+    "records": 1,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "feature_count": 16,
+  "label_semantics": "near/far detection labels derive from vehicle-to-microphone distance; type labels derive from NASA recording filenames",
+  "limitations": [
+    "far windows still contain the same aircraft at lower signal level",
+    "four vehicle configurations from one NASA campaign",
+    "classification does not identify payload or establish hostility"
+  ],
+  "recording_level_folds": [
+    {
+      "detection_f1": 0.9728260869565217,
+      "fold": 0,
+      "held_out_recordings": [
+        "edge_flyover_043",
+        "hex_flyover_205",
+        "phantom_flyover_120",
+        "y6_hover_200"
+      ],
+      "type_accuracy": 0.920863309352518,
+      "type_macro_f1": 0.9201621986933994
+    },
+    {
+      "detection_f1": 0.9914089347079038,
+      "fold": 1,
+      "held_out_recordings": [
+        "edge_flyover_053",
+        "hex_flyover_206",
+        "phantom_flyover_121",
+        "y6_hover_201"
+      ],
+      "type_accuracy": 0.9914383561643836,
+      "type_macro_f1": 0.9900786721961753
+    },
+    {
+      "detection_f1": 0.9840954274353877,
+      "fold": 2,
+      "held_out_recordings": [
+        "edge_flyover_065",
+        "hex_flyover_216",
+        "phantom_flyover_122",
+        "y6_hover_202"
+      ],
+      "type_accuracy": 0.9919354838709677,
+      "type_macro_f1": 0.9946986909012225
+    }
+  ],
+  "recordings": 12,
+  "source": "NASA Langley Small UAS Acoustic Data",
+  "type_classification": {
+    "accuracy": 0.96760391198044,
+    "confusion_matrix": [
+      [
+        208,
+        0,
+        10,
+        2
+      ],
+      [
+        0,
+        115,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        618,
+        10
+      ],
+      [
+        8,
+        0,
+        18,
+        642
+      ]
+    ],
+    "labels": [
+      "edge",
+      "hex",
+      "phantom",
+      "y6"
+    ],
+    "macro_f1": 0.9676551526168191,
+    "majority_baseline_accuracy": 0.25
+  },
+  "vehicles": {
+    "edge": 3,
+    "hex": 3,
+    "phantom": 3,
+    "y6": 3
+  },
+  "windows": 1840
+}

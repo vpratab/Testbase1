@@ -1,0 +1,25 @@
+{
+  "constrained_invalid_sensor_schedules": 0,
+  "constraints": [
+    "frame-time budget",
+    "power budget",
+    "single simultaneous illumination task"
+  ],
+  "evidence": {
+    "head": "b9a84d34697c8642ab03065e7cc3cf99d79342f61b4355a87f5dd05ffe6f726c",
+    "records": 1,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "mean_constrained_utility": 0.11970423824674342,
+  "mean_naive_utility": 0.1239970560241607,
+  "naive_invalid_sensor_schedules": 225,
+  "scenarios": 100,
+  "scheduler_p95_us": 33.0851,
+  "sensors": [
+    "SPS-48 surrogate",
+    "SPQ-9B surrogate",
+    "MK-9 surrogate",
+    "SPY-6(V)3 surrogate"
+  ]
+}

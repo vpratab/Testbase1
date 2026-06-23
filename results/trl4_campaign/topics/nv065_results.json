@@ -1,0 +1,62 @@
+{
+  "ablation": {
+    "full_method_improvement_pct": 83.17216510559746,
+    "priority_only_improvement_pct": 48.239855761246524,
+    "uncertainty_only_improvement_pct": 59.05223722497419
+  },
+  "advisory_only": true,
+  "advisory_recommendations": 80,
+  "controllable_mode_surrogates": {
+    "MK-9 surrogate": [
+      "precision_track",
+      "illumination"
+    ],
+    "SPQ-9B surrogate": [
+      "horizon_search",
+      "sector_search",
+      "track_update"
+    ],
+    "SPS-48 surrogate": [
+      "volume_search",
+      "sector_search",
+      "track_update"
+    ],
+    "SPY-6(V)3 surrogate": [
+      "volume_search",
+      "precision_track",
+      "cueing"
+    ]
+  },
+  "evidence": {
+    "head": "e893816b479da8dcab2665c69dc34e15aff550880ef5debf6ab57b805b0065f0",
+    "records": 80,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "explanation_template": "Reallocate sensor task because weighted marginal covariance reduction exceeds competing tasks after track hostility and uncertainty changes.",
+  "explicit_limit": "Open, invented low-fidelity sensor surrogates; no claim that parameters represent classified or program-of-record radar performance.",
+  "four_sensor_surrogates": [
+    "SPS-48 surrogate",
+    "SPQ-9B surrogate",
+    "MK-9 surrogate",
+    "SPY-6(V)3 surrogate"
+  ],
+  "mean_fraction_of_tasks_reallocated": 0.7397163120567377,
+  "mean_track_covariance_adaptive": 0.05510590972173177,
+  "mean_track_covariance_fixed": 0.08982294594260191,
+  "model_provenance": "Open low-fidelity surrogates constrained by update capacity, measurement variance, task cost, priority, and named task modes.",
+  "novel_threat_covariance_adaptive": 0.0238050034750901,
+  "novel_threat_covariance_fixed": 0.14146206938961817,
+  "novel_threat_quality_improvement_pct": 83.17216510559746,
+  "overall_quality_improvement_pct": 38.65052059532182,
+  "recommendation_runtime_max_us": 570.167,
+  "recommendation_runtime_p95_us": 484.94199999999995,
+  "sensor_information_contribution_pct": {
+    "MK-9 surrogate": 8.590635043450256,
+    "SPQ-9B surrogate": 21.352299954704375,
+    "SPS-48 surrogate": 32.283449534656505,
+    "SPY-6(V)3 surrogate": 37.77361546718886
+  },
+  "steps": 75,
+  "tracks": 140
+}

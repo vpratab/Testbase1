@@ -1,0 +1,39 @@
+{
+  "authorization": {
+    "expected_attacks": 3000,
+    "f1": 1.0,
+    "false_negative_rate": 0.0,
+    "false_negatives": 0,
+    "false_positive_rate": 0.0,
+    "false_positives": 0,
+    "offline_decisions": 4125,
+    "precision": 1.0,
+    "recall": 1.0,
+    "requests": 6000,
+    "true_negatives": 3000,
+    "true_positives": 3000
+  },
+  "evidence": {
+    "head": "dab007e54ce4ec3e3f2fcd2f450aae509fb24043650b83aa86791ab36250fcb4",
+    "records": 6000,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "modbus_adapter": {
+    "malformed_blocked": 4,
+    "malformed_cases": 4,
+    "valid_frames_processed": 6000
+  },
+  "performance": {
+    "max_us": 237.042,
+    "p50_us": 5.542,
+    "p95_us": 13.208,
+    "p99_us": 27.049910000000175
+  },
+  "piv_surrogate": {
+    "certificate_chain_valid": true,
+    "challenge_response_valid": true,
+    "client_certificate_der_bytes": 331,
+    "revoked_certificate_rejected": true
+  }
+}

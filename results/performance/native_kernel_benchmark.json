@@ -1,0 +1,18 @@
+{
+  "association_ns_per_operation": 341847.5,
+  "association_objects": 1000,
+  "binary_bytes": 418736,
+  "custody_priority_ns_per_operation": 4.97084,
+  "evidence_ns_per_operation": 85.81792,
+  "iterations": 100000,
+  "metadata": {
+    "machine": "arm64",
+    "measurement_scope": "release-mode host benchmark; not target-hardware WCET",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "scheduler_candidates": 240,
+  "scheduler_ns_per_operation": 3158.875,
+  "track_decode_ns_per_operation": 972.6125,
+  "track_frame_bytes": 136
+}

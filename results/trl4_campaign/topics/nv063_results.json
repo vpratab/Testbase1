@@ -1,0 +1,36 @@
+{
+  "compact_state_estimate_bytes_per_track": 192,
+  "evidence": {
+    "head": "b2e982ea62268b6ad7758b69b854496f02b5c30b45ea66470f31cafb6a40e1ee",
+    "records": 96,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "f1": 0.7839195979899497,
+  "false_negative_rate": 0.24271844660194175,
+  "false_negatives": 25,
+  "false_positive_rate": 0.17475728155339806,
+  "false_positives": 18,
+  "high_confidence_alerts": 22,
+  "high_confidence_nominal_tracks": 154,
+  "high_confidence_threshold": 19.75781858373306,
+  "injected_attack_tracks": 103,
+  "mean_detection_delay_steps": 6.961538461538462,
+  "p95_detection_delay_steps": 25.0,
+  "precision": 0.8125,
+  "processing_us_per_track_update": 17.59522427184466,
+  "quality_screen_excluded_tracks": 40,
+  "real_nominal_tracks": 103,
+  "reason_counts": {
+    "acceleration change": 6,
+    "closing-rate increase": 13,
+    "cooperative identification loss": 21,
+    "heading change": 10,
+    "speed change": 46
+  },
+  "recall": 0.7572815533980582,
+  "threshold": 11.316968904928295,
+  "true_negatives": 85,
+  "true_positives": 78,
+  "unlabeled_tracks_seen": 194
+}

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+data/external/
+native/assure-kernel/target/
+.coverage
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+tmp/
+.DS_Store

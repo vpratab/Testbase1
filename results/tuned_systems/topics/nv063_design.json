@@ -1,0 +1,81 @@
+{
+  "action_mode": "escalate",
+  "decision_contract": [
+    "system_track_number",
+    "alert_tier",
+    "confidence",
+    "dominant_deviation",
+    "track_details",
+    "local_context",
+    "operator_action"
+  ],
+  "evidence": {
+    "excludes": [
+      "malicious intent from anomaly alone",
+      "global completeness of the local Pattern of Life"
+    ],
+    "proves": [
+      "which local baseline and persistent deviation caused the alert",
+      "which data-quality screen was applied"
+    ],
+    "retention": "retain compact route/motion state and alert evidence, not global raw history",
+    "verifier": "SSDS watchstander or decision-support service"
+  },
+  "example_decision": {
+    "action": "resolve_identity_and_cue_sensor",
+    "confidence": 0.99,
+    "evidence_payload": {
+      "alert_tier": "high_confidence",
+      "confidence": 0.99,
+      "dominant_deviation": "heading",
+      "local_context": "departure from established traffic lane",
+      "operator_action": "resolve_identity_and_cue_sensor",
+      "system_track_number": "STN-140",
+      "track_details": {
+        "course": 114,
+        "speed_knots": 17.2
+      }
+    },
+    "reasons": [
+      "heading_persistent_reject",
+      "closing_persistent_reject",
+      "identity_loss_persistent_reject"
+    ],
+    "state_digest": "e8bc9dbf39c6c1bcd1afafec82c48d50a26f7ff36ba5fdf6c8a1f3489a9bcbb4d26931ae610d3eec5095153aab19dffe",
+    "topic": "NV063"
+  },
+  "failure_posture": "flag_and_continue",
+  "fingerprint": "e497882e5d86c9d5b131406a2a35741cb07a65064d66bfef2af5ee688df7d04d",
+  "input_contract": [
+    "AIS and ADS-B reports",
+    "organic radar or composite tracks",
+    "system track number",
+    "local route and motion context",
+    "cooperative-identification continuity"
+  ],
+  "known_boundary": [
+    "anomaly does not establish hostility",
+    "requires ADS-B and SSDS composite-track evaluation"
+  ],
+  "maintained_state": [
+    "compact per-track motion model",
+    "compressed route primitives",
+    "persistent speed, heading, closing, and identity residuals",
+    "watch and high-confidence alert state"
+  ],
+  "mission_question": "Is this local air or surface contact persistently out of family for the current operating context despite limited historical storage?",
+  "philosophy_mapping": [
+    "RTVLAS online calibration learns local normal without a global archive",
+    "persistent evidence separates temporary maneuver from sustained deviation",
+    "PZDR receipts make machine reasoning reviewable without retaining all raw traffic"
+  ],
+  "primary_metrics": [
+    "alert precision, recall, and F1",
+    "watch and high-confidence false-alert rates",
+    "detection delay",
+    "bytes of state per track",
+    "track updates per second"
+  ],
+  "product_family": "RTVLAS Mission Assurance",
+  "topic": "NV063"
+}

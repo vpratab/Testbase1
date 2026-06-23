@@ -1,0 +1,1424 @@
+{
+  "baseline_scores": {
+    "NP002": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 0.8450284473727053,
+          "evidence": "0.845 association",
+          "name": "multi-target tracking",
+          "points": 10.14,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "swarm anomaly accuracy",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "recall 1.000",
+          "name": "hostile-swarm recall",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "91% Pd plus clutter",
+          "name": "clutter and missed detections",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "converge, split, encircle and benign patterns",
+          "name": "multiple swarm behaviors",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "73.8 ms/scenario",
+          "name": "real-time processing",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 0.95,
+          "evidence": "150 UAS stress; 0.85 ms p95 association",
+          "name": "scalability evidence",
+          "points": 6.65,
+          "weight": 7
+        },
+        {
+          "achieved": 0.48,
+          "evidence": "EO/RF/acoustic fusion interface tested with synthetic channel scores",
+          "name": "sensor front-end integration",
+          "points": 4.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "behavior only",
+          "name": "target identification/payload",
+          "points": 1.6,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed alert chain",
+          "name": "explainable signed alerts",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.15,
+          "evidence": "synthetic representative tracks",
+          "name": "real hardware or external UAS data",
+          "points": 1.8,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 75.99,
+      "score": 76.0
+    },
+    "NV059": {
+      "estimated_trl": 4.0,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "P-256 X.509 chain",
+          "name": "real credential chain",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "challenge and revoked serial",
+          "name": "key possession and revocation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "authorization correctness",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Modbus/TCP parser",
+          "name": "wire protocol adapter",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "4125 offline decisions",
+          "name": "DDIL local operation",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "eight attack classes",
+          "name": "adaptive attack coverage",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "13.2 us p95",
+          "name": "under-five-second access",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "immutable decision evidence",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.58,
+          "evidence": "protected OPC UA data node rejects direct writes; policy proxy mediates changes",
+          "name": "microsegmentation enforcement",
+          "points": 5.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "actual Modbus/TCP parser plus actual OPC UA client/server path",
+          "name": "heterogeneous combat protocols",
+          "points": 5.2,
+          "weight": 8
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "240 OPC UA transactions across connected, delayed, lossy, and partitioned conditions",
+          "name": "representative combat-system environment",
+          "points": 4.4,
+          "weight": 8
+        }
+      ],
+      "maximum_points": 100,
+      "points": 89.4,
+      "score": 89.4
+    },
+    "NV061": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "68.4% better than hold",
+          "name": "future-state forecasting",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.73,
+          "evidence": "0.730 recall",
+          "name": "automated prioritization",
+          "points": 8.76,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four priority tiers",
+          "name": "hierarchical target management",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.9909148868345553,
+          "evidence": "0.991 association",
+          "name": "track custody",
+          "points": 9.909,
+          "weight": 10
+        },
+        {
+          "achieved": 0.8,
+          "evidence": "RTVLAS persistence reused",
+          "name": "PoL and change detection",
+          "points": 6.4,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "50,000 vector update benchmark",
+          "name": "scalability",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "2667.7 us/object",
+          "name": "response time",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.78,
+          "evidence": "20 OpenSky air plus 20 NOAA AIS surface tracks and radar-surrogate observations",
+          "name": "multi-source sensor fusion",
+          "points": 7.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "source-aware custody accuracy 1.000; 0 identity switches",
+          "name": "object identification",
+          "points": 4.4,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "100 NOAA AIS tracks",
+          "name": "representative maritime data",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed hierarchy evidence",
+          "name": "signed decision evidence",
+          "points": 6.0,
+          "weight": 6
+        }
+      ],
+      "maximum_points": 100,
+      "points": 89.269,
+      "score": 89.3
+    },
+    "NV062": {
+      "estimated_trl": 3.7,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "X25519 + ML-KEM + AES-GCM",
+          "name": "hybrid PQC confidentiality",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Ed25519 + ML-DSA",
+          "name": "dual-signature authenticity",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four provider schemas",
+          "name": "commercial schema adapters",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "localhost HTTP gateway",
+          "name": "mock interface integration",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "adversarial envelopes",
+          "name": "tamper and replay rejection",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "8618.9 us p95",
+          "name": "transaction latency",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed audit evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "encrypted provider return envelopes verified",
+          "name": "return data path",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.78,
+          "evidence": "48 automated lifecycle transactions, cancellations, idempotency, and return manifests",
+          "name": "90 percent tasking-time goal",
+          "points": 7.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.45,
+          "evidence": "purpose-bound gateway and integrity manifests modeled; no accreditation",
+          "name": "IL-5/IL-6 architecture",
+          "points": 3.6,
+          "weight": 8
+        },
+        {
+          "achieved": 0.0,
+          "evidence": "no provider API or agreement",
+          "name": "real commercial provider",
+          "points": 0.0,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 78.4,
+      "score": 78.4
+    },
+    "NV063": {
+      "estimated_trl": 3.9,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "194 official AIS tracks screened",
+          "name": "real maritime data",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.815393715531486,
+          "evidence": "cross-seed persistent-alert F1 0.815",
+          "name": "anomaly accuracy",
+          "points": 12.231,
+          "weight": 15
+        },
+        {
+          "achieved": 0.7524271844660194,
+          "evidence": "cross-seed recall 0.752",
+          "name": "anomaly recall",
+          "points": 7.524,
+          "weight": 10
+        },
+        {
+          "achieved": 0.6310679611650485,
+          "evidence": "cross-seed FPR 0.092",
+          "name": "false-alert control",
+          "points": 6.311,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "192 bytes/track estimate",
+          "name": "low-history compact state",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "reason codes plus two thresholds",
+          "name": "explainable confidence alerts",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 0.9,
+          "evidence": "real NOAA AIS and live-captured OpenSky air-state ingestion",
+          "name": "surface and air coverage",
+          "points": 4.5,
+          "weight": 5
+        },
+        {
+          "achieved": 0.7,
+          "evidence": "mixed-domain crossing stress with cooperative dropout and radar noise",
+          "name": "notional radar/composite tracks",
+          "points": 3.5,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "17.6 us/update",
+          "name": "real-time processing",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.4,
+          "evidence": "data/display concept, no SSDS interface",
+          "name": "SSDS integration definition",
+          "points": 2.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed alert evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "40 unlabeled tracks excluded, not relabeled",
+          "name": "transparent data quality handling",
+          "points": 5.0,
+          "weight": 5
+        }
+      ],
+      "maximum_points": 100,
+      "points": 86.066,
+      "score": 86.1
+    },
+    "NV065": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "marginal covariance reduction",
+          "name": "sensor contribution characterization",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "83.2% novel-threat improvement",
+          "name": "resource reallocation benefit",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "hostility changes after onset",
+          "name": "novel scenario response",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four Phase I radar labels",
+          "name": "four named sensor surrogates",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "search, track, cueing, illumination",
+          "name": "controllable task modes",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "484.9 us p95",
+          "name": "real-time advisory output",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "utility and reason per recommendation",
+          "name": "explainable recommendations",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "full method beats ablations",
+          "name": "ablation evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.5,
+          "evidence": "four named surrogates now enforce time, power, and illumination constraints",
+          "name": "program-of-record radar realism",
+          "points": 10.0,
+          "weight": 20
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "0 invalid schedules after constraint enforcement",
+          "name": "SSDS integration constraints",
+          "points": 8.25,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 83.25,
+      "score": 83.2
+    },
+    "QSPARX": {
+      "estimated_trl": 3.6,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "labeled scanner fixtures",
+          "name": "crypto discovery validation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "201 real files",
+          "name": "existing-system inventory",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-KEM-768",
+          "name": "ML-KEM operation",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-DSA-65",
+          "name": "ML-DSA and tamper rejection",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 0.9812680115273775,
+          "evidence": "F1 0.981",
+          "name": "AI risk scoring",
+          "points": 11.775,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "all synthetic assets mapped",
+          "name": "migration mapping",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "measured local p95",
+          "name": "response time measurement",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.72,
+          "evidence": "1 active TLS endpoint plus 46 key/config files",
+          "name": "live enterprise discovery connector",
+          "points": 7.2,
+          "weight": 10
+        },
+        {
+          "achieved": 0.78,
+          "evidence": "2 verified configuration-to-key dependency edges plus migration waves",
+          "name": "key-management and legacy interoperability",
+          "points": 6.24,
+          "weight": 8
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "simulated, not an AFDW network",
+          "name": "AFDW-representative environment",
+          "points": 2.4,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 85.615,
+      "score": 85.6
+    }
+  },
+  "evidence": {
+    "head": "7c42a28770b5eff2ef5cf0e179a262ee8b448e643e6cde7c2c8c2d4ee211defe",
+    "records": 4,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "metadata": {
+    "generated_at": "2026-06-22T01:24:27Z",
+    "machine": "arm64",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.9.6"
+  },
+  "results": {
+    "NP002": {
+      "nasa_acoustics": {
+        "data_root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/phase1_rtvlas_feasibility/data/external/nasa_uas_acoustics",
+        "dataset_manifest_sha256": "9dd92a2823e8dc20be2d2b70edcd17f71031d9fb83dc6e01df060f0f5a8a8bd1",
+        "detection": {
+          "f1": 0.982895540623091,
+          "false_negative_rate": 0.01650366748166259,
+          "false_negatives": 27,
+          "false_positive_rate": 0.14215686274509803,
+          "false_positives": 29,
+          "precision": 0.9822954822954822,
+          "recall": 0.9834963325183375,
+          "true_negatives": 175,
+          "true_positives": 1609
+        },
+        "evaluation_ms": 1335.245958,
+        "evidence": {
+          "head": "d75790e8169a72bd0110453316a7249834481923d50c7fd90f0badd0981a6620",
+          "records": 1,
+          "tamper_detected": true,
+          "verified": true
+        },
+        "feature_count": 16,
+        "label_semantics": "near/far detection labels derive from vehicle-to-microphone distance; type labels derive from NASA recording filenames",
+        "limitations": [
+          "far windows still contain the same aircraft at lower signal level",
+          "four vehicle configurations from one NASA campaign",
+          "classification does not identify payload or establish hostility"
+        ],
+        "recording_level_folds": [
+          {
+            "detection_f1": 0.9728260869565217,
+            "fold": 0,
+            "held_out_recordings": [
+              "edge_flyover_043",
+              "hex_flyover_205",
+              "phantom_flyover_120",
+              "y6_hover_200"
+            ],
+            "type_accuracy": 0.920863309352518,
+            "type_macro_f1": 0.9201621986933994
+          },
+          {
+            "detection_f1": 0.9914089347079038,
+            "fold": 1,
+            "held_out_recordings": [
+              "edge_flyover_053",
+              "hex_flyover_206",
+              "phantom_flyover_121",
+              "y6_hover_201"
+            ],
+            "type_accuracy": 0.9914383561643836,
+            "type_macro_f1": 0.9900786721961753
+          },
+          {
+            "detection_f1": 0.9840954274353877,
+            "fold": 2,
+            "held_out_recordings": [
+              "edge_flyover_065",
+              "hex_flyover_216",
+              "phantom_flyover_122",
+              "y6_hover_202"
+            ],
+            "type_accuracy": 0.9919354838709677,
+            "type_macro_f1": 0.9946986909012225
+          }
+        ],
+        "recordings": 12,
+        "source": "NASA Langley Small UAS Acoustic Data",
+        "type_classification": {
+          "accuracy": 0.96760391198044,
+          "confusion_matrix": [
+            [
+              208,
+              0,
+              10,
+              2
+            ],
+            [
+              0,
+              115,
+              0,
+              5
+            ],
+            [
+              0,
+              0,
+              618,
+              10
+            ],
+            [
+              8,
+              0,
+              18,
+              642
+            ]
+          ],
+          "labels": [
+            "edge",
+            "hex",
+            "phantom",
+            "y6"
+          ],
+          "macro_f1": 0.9676551526168191,
+          "majority_baseline_accuracy": 0.25
+        },
+        "vehicles": {
+          "edge": 3,
+          "hex": 3,
+          "phantom": 3,
+          "y6": 3
+        },
+        "windows": 1840
+      }
+    },
+    "NV059": {
+      "dds": {
+        "attack_classes": [
+          "invalid Ed25519 signature",
+          "wrong compartment",
+          "sequence replay",
+          "forbidden action"
+        ],
+        "authorization": {
+          "f1": 1.0,
+          "false_negative_rate": 0.0,
+          "false_negatives": 0,
+          "false_positive_rate": 0.0,
+          "false_positives": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "true_negatives": 80,
+          "true_positives": 80
+        },
+        "evidence": {
+          "head": "8361288fc970948ef2b4dd92ae88deefb5579cf225824f2f75e37af51b21783a",
+          "records": 160,
+          "tamper_detected": true,
+          "verified": true
+        },
+        "implementation": "Eclipse Cyclone DDS Python binding",
+        "performance": {
+          "p50_us": 341.125,
+          "p95_us": 764.5725999999988
+        },
+        "requests": 160,
+        "transport": "DDS/RTPS local domain"
+      },
+      "secure_opcua": {
+        "client_certificate": "RSA-2048 self-signed laboratory application certificate",
+        "evidence": {
+          "head": "1d89f9fa478ae8b76e2d2e8d5642ec46e9d76769b427bde49c536e11b2222faa",
+          "records": 80,
+          "tamper_detected": true,
+          "verified": true
+        },
+        "message_security_mode": "SignAndEncrypt",
+        "performance": {
+          "p50_us": 1169.4585,
+          "p95_us": 1349.7952
+        },
+        "security_policy": "Basic256Sha256",
+        "server_certificate": "RSA-2048 self-signed laboratory application certificate",
+        "successful_round_trips": 80,
+        "transactions": 80,
+        "unsecured_client_rejected": true
+      }
+    },
+    "NV061": {
+      "opensky_forecast": {
+        "calibration_tracks": 27,
+        "evidence": {
+          "head": "30373ab1c4bd3a1a1acd078b4026031966807f8fc0d88ea464af4d80f0c6dd89",
+          "records": 1,
+          "tamper_detected": true,
+          "verified": true
+        },
+        "forecast_intervals": 1229,
+        "forecast_rmse_km": 0.08035056099042917,
+        "hold_rmse_km": 1.134217763476576,
+        "improvement_vs_hold_pct": 92.91577300428266,
+        "improvement_vs_raw_velocity_pct": 65.34128800845893,
+        "improvement_vs_reported_velocity_pct": 0.0,
+        "processing_ms": 13.98075,
+        "raw_observed_velocity_rmse_km": 0.2318336613606409,
+        "reported_velocity_rmse_km": 0.08035056099042917,
+        "selected_observed_velocity_blend": 0.0,
+        "source": "OpenSky Network live state-vector capture",
+        "tracks": 56
+      }
+    },
+    "NV062": {
+      "stac": {
+        "api": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+        "boundary": "real external discovery and data retrieval; not a commercial collection-order or accredited provider tasking interface",
+        "collection_tasking_claim": false,
+        "elapsed_ms": 738.163166,
+        "evidence": {
+          "head": "0be36808c44e6718d8d935a7645cdd7ace9644ecb2467d916b91f7a57915fa0e",
+          "records": 1,
+          "tamper_detected": true,
+          "verified": true
+        },
+        "external_acquired_at": "2026-06-20T19:18:31.024000Z",
+        "external_collection": "sentinel-2-l2a",
+        "external_item": "S2A_MSIL2A_20260620T191831_R056_T10UEU_20260621T032315",
+        "hybrid_return_verified": true,
+        "preview_bytes": 1785872,
+        "preview_sha384": "a3f6bf22918da901305d0c25b20a058585ddac436a94c41c93f0d2c68e95ae86d9a43957a88f7d3fd11255116224cbf9",
+        "provider": "Microsoft Planetary Computer",
+        "provider_api_reached": true
+      }
+    }
+  },
+  "wave3_scores": {
+    "NP002": {
+      "estimated_trl": 3.8,
+      "gates": [
+        {
+          "achieved": 0.8450284473727053,
+          "evidence": "0.845 association",
+          "name": "multi-target tracking",
+          "points": 10.14,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "swarm anomaly accuracy",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "recall 1.000",
+          "name": "hostile-swarm recall",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "91% Pd plus clutter",
+          "name": "clutter and missed detections",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "converge, split, encircle and benign patterns",
+          "name": "multiple swarm behaviors",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "73.8 ms/scenario",
+          "name": "real-time processing",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 0.95,
+          "evidence": "150 UAS stress; 0.85 ms p95 association",
+          "name": "scalability evidence",
+          "points": 6.65,
+          "weight": 7
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "12 NASA acoustic recordings; detection F1 0.983",
+          "name": "sensor front-end integration",
+          "points": 6.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.68,
+          "evidence": "four-UAS type macro-F1 0.968; no payload claim",
+          "name": "target identification/payload",
+          "points": 5.44,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed alert chain",
+          "name": "explainable signed alerts",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.75,
+          "evidence": "NASA Langley calibrated microphones, vehicle GPS/RTK, 12 recordings",
+          "name": "real hardware or external UAS data",
+          "points": 9.0,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 88.73,
+      "score": 88.7
+    },
+    "NV059": {
+      "estimated_trl": 4.2,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "P-256 X.509 chain",
+          "name": "real credential chain",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "challenge and revoked serial",
+          "name": "key possession and revocation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "authorization correctness",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Modbus/TCP parser",
+          "name": "wire protocol adapter",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "4125 offline decisions",
+          "name": "DDIL local operation",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "eight attack classes",
+          "name": "adaptive attack coverage",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "13.2 us p95",
+          "name": "under-five-second access",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "immutable decision evidence",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.68,
+          "evidence": "protected OPC UA mediation plus SignAndEncrypt secure channel",
+          "name": "microsegmentation enforcement",
+          "points": 6.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.9,
+          "evidence": "actual Modbus/TCP, OPC UA SignAndEncrypt, and Cyclone DDS/RTPS",
+          "name": "heterogeneous combat protocols",
+          "points": 7.2,
+          "weight": 8
+        },
+        {
+          "achieved": 0.68,
+          "evidence": "three protocol paths, offline leases, impairment tests, and signed decisions",
+          "name": "representative combat-system environment",
+          "points": 5.44,
+          "weight": 8
+        }
+      ],
+      "maximum_points": 100,
+      "points": 93.44,
+      "score": 93.4
+    },
+    "NV061": {
+      "estimated_trl": 3.8,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "68.4% better than hold",
+          "name": "future-state forecasting",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.73,
+          "evidence": "0.730 recall",
+          "name": "automated prioritization",
+          "points": 8.76,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four priority tiers",
+          "name": "hierarchical target management",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.9909148868345553,
+          "evidence": "0.991 association",
+          "name": "track custody",
+          "points": 9.909,
+          "weight": 10
+        },
+        {
+          "achieved": 0.8,
+          "evidence": "RTVLAS persistence reused",
+          "name": "PoL and change detection",
+          "points": 6.4,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "50,000 vector update benchmark",
+          "name": "scalability",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "2667.7 us/object",
+          "name": "response time",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.88,
+          "evidence": "56 held-out live OpenSky trajectories, NOAA AIS, and radar-surrogate crossing stress",
+          "name": "multi-source sensor fusion",
+          "points": 8.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.68,
+          "evidence": "1229 ICAO-bound real-air forecast intervals plus source-aware custody",
+          "name": "object identification",
+          "points": 5.44,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "100 NOAA AIS tracks",
+          "name": "representative maritime data",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed hierarchy evidence",
+          "name": "signed decision evidence",
+          "points": 6.0,
+          "weight": 6
+        }
+      ],
+      "maximum_points": 100,
+      "points": 91.309,
+      "score": 91.3
+    },
+    "NV062": {
+      "estimated_trl": 3.8,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "X25519 + ML-KEM + AES-GCM",
+          "name": "hybrid PQC confidentiality",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Ed25519 + ML-DSA",
+          "name": "dual-signature authenticity",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four provider schemas",
+          "name": "commercial schema adapters",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "localhost HTTP gateway",
+          "name": "mock interface integration",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "adversarial envelopes",
+          "name": "tamper and replay rejection",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "8618.9 us p95",
+          "name": "transaction latency",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed audit evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "encrypted provider return envelopes verified",
+          "name": "return data path",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.82,
+          "evidence": "automated lifecycle plus live external STAC discovery and return retrieval",
+          "name": "90 percent tasking-time goal",
+          "points": 8.2,
+          "weight": 10
+        },
+        {
+          "achieved": 0.45,
+          "evidence": "purpose-bound gateway and integrity manifests modeled; no accreditation",
+          "name": "IL-5/IL-6 architecture",
+          "points": 3.6,
+          "weight": 8
+        },
+        {
+          "achieved": 0.18,
+          "evidence": "real Microsoft API and 1785872 byte data return; not collection tasking",
+          "name": "real commercial provider",
+          "points": 2.7,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 81.5,
+      "score": 81.5
+    },
+    "NV063": {
+      "estimated_trl": 4.0,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "194 official AIS tracks screened",
+          "name": "real maritime data",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.815393715531486,
+          "evidence": "cross-seed persistent-alert F1 0.815",
+          "name": "anomaly accuracy",
+          "points": 12.231,
+          "weight": 15
+        },
+        {
+          "achieved": 0.7524271844660194,
+          "evidence": "cross-seed recall 0.752",
+          "name": "anomaly recall",
+          "points": 7.524,
+          "weight": 10
+        },
+        {
+          "achieved": 0.6310679611650485,
+          "evidence": "cross-seed FPR 0.092",
+          "name": "false-alert control",
+          "points": 6.311,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "192 bytes/track estimate",
+          "name": "low-history compact state",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "reason codes plus two thresholds",
+          "name": "explainable confidence alerts",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "real NOAA AIS and 36-snapshot live OpenSky trajectory capture",
+          "name": "surface and air coverage",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.7,
+          "evidence": "mixed-domain crossing stress with cooperative dropout and radar noise",
+          "name": "notional radar/composite tracks",
+          "points": 3.5,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "17.6 us/update",
+          "name": "real-time processing",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.4,
+          "evidence": "data/display concept, no SSDS interface",
+          "name": "SSDS integration definition",
+          "points": 2.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed alert evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "40 unlabeled tracks excluded, not relabeled",
+          "name": "transparent data quality handling",
+          "points": 5.0,
+          "weight": 5
+        }
+      ],
+      "maximum_points": 100,
+      "points": 86.566,
+      "score": 86.6
+    },
+    "NV065": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "marginal covariance reduction",
+          "name": "sensor contribution characterization",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "83.2% novel-threat improvement",
+          "name": "resource reallocation benefit",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "hostility changes after onset",
+          "name": "novel scenario response",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four Phase I radar labels",
+          "name": "four named sensor surrogates",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "search, track, cueing, illumination",
+          "name": "controllable task modes",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "484.9 us p95",
+          "name": "real-time advisory output",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "utility and reason per recommendation",
+          "name": "explainable recommendations",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "full method beats ablations",
+          "name": "ablation evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.5,
+          "evidence": "four named surrogates now enforce time, power, and illumination constraints",
+          "name": "program-of-record radar realism",
+          "points": 10.0,
+          "weight": 20
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "0 invalid schedules after constraint enforcement",
+          "name": "SSDS integration constraints",
+          "points": 8.25,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 83.25,
+      "score": 83.2
+    },
+    "QSPARX": {
+      "estimated_trl": 3.6,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "labeled scanner fixtures",
+          "name": "crypto discovery validation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "201 real files",
+          "name": "existing-system inventory",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-KEM-768",
+          "name": "ML-KEM operation",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-DSA-65",
+          "name": "ML-DSA and tamper rejection",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 0.9812680115273775,
+          "evidence": "F1 0.981",
+          "name": "AI risk scoring",
+          "points": 11.775,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "all synthetic assets mapped",
+          "name": "migration mapping",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "measured local p95",
+          "name": "response time measurement",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.72,
+          "evidence": "1 active TLS endpoint plus 46 key/config files",
+          "name": "live enterprise discovery connector",
+          "points": 7.2,
+          "weight": 10
+        },
+        {
+          "achieved": 0.78,
+          "evidence": "2 verified configuration-to-key dependency edges plus migration waves",
+          "name": "key-management and legacy interoperability",
+          "points": 6.24,
+          "weight": 8
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "simulated, not an AFDW network",
+          "name": "AFDW-representative environment",
+          "points": 2.4,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 85.615,
+      "score": 85.6
+    }
+  }
+}

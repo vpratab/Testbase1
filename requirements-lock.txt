@@ -1,0 +1,13 @@
+# Reproducible top-level dependency constraints for the measured June 22, 2026 lab.
+# Install with: python -m pip install -r requirements.txt -c requirements-lock.txt
+asyncua==1.1.8
+cryptography==49.0.0
+cyclonedds==0.10.5
+jsonschema==4.25.1
+numpy==2.0.2
+pandas==2.3.3
+pqcrypto==0.4.0
+PyYAML==6.0.3
+remotezip==0.12.3
+scikit-learn==1.6.1
+scipy==1.13.1

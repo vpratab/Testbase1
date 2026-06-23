@@ -1,0 +1,38 @@
+{
+  "adversarial": {
+    "replay_blocked": 30,
+    "replay_cases": 30,
+    "tamper_blocked": 30,
+    "tamper_cases": 30
+  },
+  "evidence": {
+    "head": "83c97f3c5641eaa27898ccaa9ca22b1188fa5795c2f0c07da759158f9b72a0fe",
+    "records": 120,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "http_integration": {
+    "accepted": 120,
+    "max_us": 22654.667,
+    "p50_us": 5533.9794999999995,
+    "p95_us": 8618.904499999999,
+    "p99_us": 10663.647500000003,
+    "return_data_verified": 120,
+    "tasks": 120
+  },
+  "hybrid_crypto": {
+    "aead": "AES-256-GCM",
+    "classical_kem": "X25519",
+    "classical_signature": "Ed25519",
+    "kdf": "HKDF-SHA384",
+    "pqc_kem": "ML-KEM-768 / FIPS 203",
+    "pqc_signature": "ML-DSA-65 / FIPS 204"
+  },
+  "provider_adapters": 4,
+  "workflow_model": {
+    "automated_p95_hours": 28.5,
+    "manual_baseline_hours": 336.0,
+    "reduction_pct": 91.52,
+    "status": "modeled, not measured against a commercial provider"
+  }
+}

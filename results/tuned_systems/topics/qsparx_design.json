@@ -1,0 +1,82 @@
+{
+  "action_mode": "migrate",
+  "decision_contract": [
+    "asset_id",
+    "risk_score",
+    "risk_factors",
+    "migration_target",
+    "migration_wave",
+    "dependency_impact"
+  ],
+  "evidence": {
+    "excludes": [
+      "proof that an unscanned asset does not exist",
+      "FIPS validation of the chosen implementation"
+    ],
+    "proves": [
+      "what cryptographic material was observed",
+      "which risk basis produced the recommendation",
+      "which dependency ordering constrained migration"
+    ],
+    "retention": "retain inventory hashes and recommendations, not private keys",
+    "verifier": "cyber assessor or migration authority"
+  },
+  "example_decision": {
+    "action": "prioritize_crypto_migration",
+    "confidence": 0.99,
+    "evidence_payload": {
+      "asset_id": "mission-api",
+      "dependency_impact": [
+        "root-ca"
+      ],
+      "migration_target": "hybrid-ml-kem-768",
+      "migration_wave": 2,
+      "risk_factors": [
+        "quantum_vulnerable_algorithm",
+        "dependency_exposure"
+      ],
+      "risk_score": 96
+    },
+    "reasons": [
+      "highest mission-weighted quantum exposure"
+    ],
+    "state_digest": "1ad0f7bfef91766abeff8314c16e75b3ac50c9024f986a64c96382d2184b5f054fd3ab70d7da3733de5c25f5d5fca019",
+    "topic": "QSPARX"
+  },
+  "failure_posture": "advisory_only",
+  "fingerprint": "68a632f20c38417dd9d151f764a8682188bd9fde16bdc335af378ab285ae017c",
+  "input_contract": [
+    "software and configuration artifacts",
+    "certificate and key metadata",
+    "protocol observations",
+    "asset dependencies",
+    "mission criticality and data lifetime"
+  ],
+  "known_boundary": [
+    "requires enterprise discovery connectors",
+    "does not replace cryptographic module validation"
+  ],
+  "maintained_state": [
+    "cryptographic bill of materials",
+    "dependency graph",
+    "algorithm and key posture",
+    "quantum exposure score",
+    "migration wave state",
+    "compliance evidence lineage"
+  ],
+  "mission_question": "Which cryptographic dependencies create the greatest quantum-era mission risk, and what migration order reduces risk without breaking legacy operations?",
+  "philosophy_mapping": [
+    "PZDR minimizes retained secrets while preserving audit evidence",
+    "RTVLAS treats weak cryptographic indicators as accumulated mission risk",
+    "recommendations are evidence-bound rather than opaque scores"
+  ],
+  "primary_metrics": [
+    "inventory coverage",
+    "risk classification precision and recall",
+    "discovery latency",
+    "migration dependency conflicts",
+    "PQC operation latency"
+  ],
+  "product_family": "AssureEdge Cyber",
+  "topic": "QSPARX"
+}

@@ -1,0 +1,41 @@
+{
+  "NP002": {
+    "finding": "formation escalation requires persistence",
+    "sustained_action": "activate_protective_measure",
+    "transient_action": "continue_monitoring"
+  },
+  "NV059": {
+    "finding": "persistent low-and-slow evidence changes the authorization outcome",
+    "first_sample_action": "allow",
+    "persistent_sequence_action": "deny"
+  },
+  "NV061": {
+    "finding": "uncertain custody reduces confidence and ranking",
+    "strong_custody_confidence": 0.9840662824206979,
+    "strong_custody_priority": "high",
+    "weak_custody_confidence": 0.5917099573864889,
+    "weak_custody_priority": "watch"
+  },
+  "NV062": {
+    "finding": "purpose-bound single-use intent quarantines replay",
+    "first_use_action": "release_task",
+    "replay_action": "quarantine_task"
+  },
+  "NV063": {
+    "finding": "a transient deviation and a persistent deviation do not produce the same alert",
+    "sustained_alert_tier": "high_confidence",
+    "transient_alert_tier": "none"
+  },
+  "NV065": {
+    "finding": "resource conflicts can reverse an otherwise attractive recommendation",
+    "with_conflict": "retain_current_task",
+    "without_conflict": "recommend_reallocation"
+  },
+  "QSPARX": {
+    "dependency_aware_first_wave": "root",
+    "finding": "risk-only ordering breaks the dependency; tuned ordering does not",
+    "naive_highest_risk_first": "dependent",
+    "selected_asset": "dependent",
+    "selected_asset_wave": 2
+  }
+}

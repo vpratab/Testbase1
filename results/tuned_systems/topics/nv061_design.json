@@ -1,0 +1,84 @@
+{
+  "action_mode": "prioritize",
+  "decision_contract": [
+    "object_id",
+    "forecast_state",
+    "forecast_uncertainty",
+    "custody_confidence",
+    "priority_level",
+    "priority_reasons",
+    "recommended_investigation"
+  ],
+  "evidence": {
+    "excludes": [
+      "perfect identity across unobserved intervals",
+      "intent inferred solely from kinematics"
+    ],
+    "proves": [
+      "which forecast, uncertainty, behavior, and custody produced ranking",
+      "whether priority changed due to risk or reduced confidence"
+    ],
+    "retention": "retain compact state/covariance and ranking evidence",
+    "verifier": "Maritime Targeting Cell analyst or downstream tracker"
+  },
+  "example_decision": {
+    "action": "rank_high",
+    "confidence": 0.9536005245853563,
+    "evidence_payload": {
+      "custody_confidence": 0.896890054634125,
+      "forecast_state": [
+        18.2,
+        -4.1
+      ],
+      "forecast_uncertainty": 0.32,
+      "object_id": "contact-77",
+      "priority_level": "high",
+      "priority_reasons": [
+        "persistent_behavior_change",
+        "track_custody_supported"
+      ],
+      "recommended_investigation": true
+    },
+    "reasons": [
+      "persistent_behavior_change",
+      "track_custody_supported"
+    ],
+    "state_digest": "ffa76360658690cd921c6040d35f65efc617654e9f9e6288148cc811923631bfd54298e79eac892f38b652b313ce27c4",
+    "topic": "NV061"
+  },
+  "failure_posture": "preserve_custody",
+  "fingerprint": "ea64fb5d66f8d32c7b6e2002efab68caa69de6058b56f88e9a0049f7c919ef95",
+  "input_contract": [
+    "heterogeneous object observations",
+    "sensor uncertainty and source identity",
+    "track association candidates",
+    "historical local behavior",
+    "mission threat and protected-area context"
+  ],
+  "known_boundary": [
+    "requires broader sensor and identity data",
+    "kinematic forecast is not a complete adversary intent model"
+  ],
+  "maintained_state": [
+    "object state and covariance",
+    "multi-source custody confidence",
+    "future-state forecast distribution",
+    "behavior-change evidence",
+    "priority history and analyst disposition"
+  ],
+  "mission_question": "Where will each object probably be, how sure are we that it is the same object, and which uncertain forecast deserves analyst attention?",
+  "philosophy_mapping": [
+    "RTVLAS supplies prediction, covariance, persistence, and explicit uncertainty",
+    "weak custody reduces priority confidence instead of being hidden",
+    "PZDR receipts preserve why analysts were directed to one object"
+  ],
+  "primary_metrics": [
+    "forecast error",
+    "track custody accuracy",
+    "priority recall",
+    "false prioritization rate",
+    "objects processed per update"
+  ],
+  "product_family": "RTVLAS Mission Assurance",
+  "topic": "NV061"
+}

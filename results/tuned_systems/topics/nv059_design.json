@@ -1,0 +1,84 @@
+{
+  "action_mode": "authorize",
+  "decision_contract": [
+    "request_id",
+    "subject_id",
+    "resource_id",
+    "action",
+    "allowed",
+    "reasons",
+    "policy_version",
+    "offline_authority"
+  ],
+  "evidence": {
+    "excludes": [
+      "proof that the endpoint remains uncompromised after the decision",
+      "network isolation unless an enforcement adapter confirms it"
+    ],
+    "proves": [
+      "which identity, posture, policy, and behavior caused the decision",
+      "that the decision was not altered after issuance"
+    ],
+    "retention": "retain decision attributes and hashes, not protected data",
+    "verifier": "security operator, auditor, or downstream combat service"
+  },
+  "example_decision": {
+    "action": "allow",
+    "confidence": 0.9,
+    "evidence_payload": {
+      "action": "read",
+      "allowed": true,
+      "offline_authority": true,
+      "policy_version": "policy-7",
+      "reasons": [
+        "bounded_offline_authority_valid",
+        "evidence_within_expected_envelope"
+      ],
+      "request_id": "zt-1",
+      "resource_id": "sensor-track-17",
+      "subject_id": "operator-12"
+    },
+    "reasons": [
+      "bounded_offline_authority_valid",
+      "evidence_within_expected_envelope"
+    ],
+    "state_digest": "4a6b8c929c537d4f0fcd7cfb40c73608becbb3a95e42028c7ba1c1feeb2fe4c0b6c4245a97787e9b6d8d3c15cf6cf8ee",
+    "topic": "NV059"
+  },
+  "failure_posture": "fail_closed",
+  "fingerprint": "4db6a6431cafab4193d988a4c9deacd5c6638be3571d000fa6f5c042286546fe",
+  "input_contract": [
+    "credential chain and proof of key possession",
+    "subject clearance, role, and compartments",
+    "device attestation and health",
+    "data object, action, and protocol",
+    "network state and bounded trust lease",
+    "behavioral access evidence"
+  ],
+  "known_boundary": [
+    "requires real ICAM and segmentation integrations",
+    "local decisions cannot establish remote endpoint integrity"
+  ],
+  "maintained_state": [
+    "signed policy version",
+    "identity and revocation snapshot",
+    "bounded offline trust lease",
+    "per-subject behavioral baseline",
+    "decision receipt chain"
+  ],
+  "mission_question": "May this exact subject and device perform this exact action on this combat-data object now, including while disconnected?",
+  "philosophy_mapping": [
+    "PZDR provides minimal-disclosure signed transaction receipts",
+    "RTVLAS contributes persistence against low-and-slow access misuse",
+    "offline authority is explicit and expires rather than becoming implicit trust"
+  ],
+  "primary_metrics": [
+    "false allow and false deny rate",
+    "authorization latency",
+    "DDIL decision availability",
+    "stale-trust rejection",
+    "protocol enforcement coverage"
+  ],
+  "product_family": "AssureEdge Cyber",
+  "topic": "NV059"
+}

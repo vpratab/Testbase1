@@ -1,0 +1,1570 @@
+{
+  "baseline_scores": {
+    "NP002": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 0.8450284473727053,
+          "evidence": "0.845 association",
+          "name": "multi-target tracking",
+          "points": 10.14,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "swarm anomaly accuracy",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "recall 1.000",
+          "name": "hostile-swarm recall",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "91% Pd plus clutter",
+          "name": "clutter and missed detections",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "converge, split, encircle and benign patterns",
+          "name": "multiple swarm behaviors",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "73.8 ms/scenario",
+          "name": "real-time processing",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "up to roughly 40 UAS per scenario",
+          "name": "scalability evidence",
+          "points": 4.55,
+          "weight": 7
+        },
+        {
+          "achieved": 0.3,
+          "evidence": "kinematic detections, no EO/RF hardware",
+          "name": "sensor front-end integration",
+          "points": 3.0,
+          "weight": 10
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "behavior only",
+          "name": "target identification/payload",
+          "points": 1.6,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed alert chain",
+          "name": "explainable signed alerts",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.15,
+          "evidence": "synthetic representative tracks",
+          "name": "real hardware or external UAS data",
+          "points": 1.8,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 72.09,
+      "score": 72.1
+    },
+    "NV059": {
+      "estimated_trl": 4.0,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "P-256 X.509 chain",
+          "name": "real credential chain",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "challenge and revoked serial",
+          "name": "key possession and revocation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "authorization correctness",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Modbus/TCP parser",
+          "name": "wire protocol adapter",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "4125 offline decisions",
+          "name": "DDIL local operation",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "eight attack classes",
+          "name": "adaptive attack coverage",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "13.2 us p95",
+          "name": "under-five-second access",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "immutable decision evidence",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "data/action policy; no network enforcement",
+          "name": "microsegmentation enforcement",
+          "points": 3.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "real Modbus path; other adapters modeled",
+          "name": "heterogeneous combat protocols",
+          "points": 2.8,
+          "weight": 8
+        },
+        {
+          "achieved": 0.4,
+          "evidence": "surrogate OT transaction path",
+          "name": "representative combat-system environment",
+          "points": 3.2,
+          "weight": 8
+        }
+      ],
+      "maximum_points": 100,
+      "points": 83.5,
+      "score": 83.5
+    },
+    "NV061": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "68.4% better than hold",
+          "name": "future-state forecasting",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.73,
+          "evidence": "0.730 recall",
+          "name": "automated prioritization",
+          "points": 8.76,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four priority tiers",
+          "name": "hierarchical target management",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.9909148868345553,
+          "evidence": "0.991 association",
+          "name": "track custody",
+          "points": 9.909,
+          "weight": 10
+        },
+        {
+          "achieved": 0.8,
+          "evidence": "RTVLAS persistence reused",
+          "name": "PoL and change detection",
+          "points": 6.4,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "50,000 vector update benchmark",
+          "name": "scalability",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "2667.7 us/object",
+          "name": "response time",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.45,
+          "evidence": "no real heterogeneous feeds",
+          "name": "multi-source sensor fusion",
+          "points": 4.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.25,
+          "evidence": "track identity assumed after association",
+          "name": "object identification",
+          "points": 2.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "100 NOAA AIS tracks",
+          "name": "representative maritime data",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed hierarchy evidence",
+          "name": "signed decision evidence",
+          "points": 6.0,
+          "weight": 6
+        }
+      ],
+      "maximum_points": 100,
+      "points": 83.569,
+      "score": 83.6
+    },
+    "NV062": {
+      "estimated_trl": 3.7,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "X25519 + ML-KEM + AES-GCM",
+          "name": "hybrid PQC confidentiality",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Ed25519 + ML-DSA",
+          "name": "dual-signature authenticity",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four provider schemas",
+          "name": "commercial schema adapters",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "localhost HTTP gateway",
+          "name": "mock interface integration",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "adversarial envelopes",
+          "name": "tamper and replay rejection",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "8618.9 us p95",
+          "name": "transaction latency",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed audit evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "encrypted provider return envelopes verified",
+          "name": "return data path",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "workflow modeled, not provider-measured",
+          "name": "90 percent tasking-time goal",
+          "points": 6.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "classification boundary modeled",
+          "name": "IL-5/IL-6 architecture",
+          "points": 2.8,
+          "weight": 8
+        },
+        {
+          "achieved": 0.0,
+          "evidence": "no provider API or agreement",
+          "name": "real commercial provider",
+          "points": 0.0,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 76.3,
+      "score": 76.3
+    },
+    "NV063": {
+      "estimated_trl": 3.9,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "194 official AIS tracks screened",
+          "name": "real maritime data",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.7839195979899497,
+          "evidence": "F1 0.784",
+          "name": "anomaly accuracy",
+          "points": 11.759,
+          "weight": 15
+        },
+        {
+          "achieved": 0.7572815533980582,
+          "evidence": "recall 0.757",
+          "name": "anomaly recall",
+          "points": 7.573,
+          "weight": 10
+        },
+        {
+          "achieved": 0.30097087378640774,
+          "evidence": "FPR 0.175",
+          "name": "false-alert control",
+          "points": 3.01,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "192 bytes/track estimate",
+          "name": "low-history compact state",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "reason codes plus two thresholds",
+          "name": "explainable confidence alerts",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "real AIS plus synthetic air path from base lab",
+          "name": "surface and air coverage",
+          "points": 3.25,
+          "weight": 5
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "architecture only",
+          "name": "notional radar/composite tracks",
+          "points": 1.75,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "17.6 us/update",
+          "name": "real-time processing",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.4,
+          "evidence": "data/display concept, no SSDS interface",
+          "name": "SSDS integration definition",
+          "points": 2.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed alert evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "40 unlabeled tracks excluded, not relabeled",
+          "name": "transparent data quality handling",
+          "points": 5.0,
+          "weight": 5
+        }
+      ],
+      "maximum_points": 100,
+      "points": 79.341,
+      "score": 79.3
+    },
+    "NV065": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "marginal covariance reduction",
+          "name": "sensor contribution characterization",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "83.2% novel-threat improvement",
+          "name": "resource reallocation benefit",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "hostility changes after onset",
+          "name": "novel scenario response",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four Phase I radar labels",
+          "name": "four named sensor surrogates",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "search, track, cueing, illumination",
+          "name": "controllable task modes",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "484.9 us p95",
+          "name": "real-time advisory output",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "utility and reason per recommendation",
+          "name": "explainable recommendations",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "full method beats ablations",
+          "name": "ablation evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "open low-fidelity surrogates",
+          "name": "program-of-record radar realism",
+          "points": 7.0,
+          "weight": 20
+        },
+        {
+          "achieved": 0.3,
+          "evidence": "advisory concept only",
+          "name": "SSDS integration constraints",
+          "points": 4.5,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 76.5,
+      "score": 76.5
+    },
+    "QSPARX": {
+      "estimated_trl": 3.6,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "labeled scanner fixtures",
+          "name": "crypto discovery validation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "201 real files",
+          "name": "existing-system inventory",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-KEM-768",
+          "name": "ML-KEM operation",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-DSA-65",
+          "name": "ML-DSA and tamper rejection",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 0.9812680115273775,
+          "evidence": "F1 0.981",
+          "name": "AI risk scoring",
+          "points": 11.775,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "all synthetic assets mapped",
+          "name": "migration mapping",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "measured local p95",
+          "name": "response time measurement",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "128 host trust-store certificates plus repositories",
+          "name": "live enterprise discovery connector",
+          "points": 5.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "certificate and algorithm mapping; no enterprise dependency graph",
+          "name": "key-management and legacy interoperability",
+          "points": 5.2,
+          "weight": 8
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "simulated, not an AFDW network",
+          "name": "AFDW-representative environment",
+          "points": 2.4,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 82.875,
+      "score": 82.9
+    }
+  },
+  "data": {
+    "ais_path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/phase1_rtvlas_feasibility/data/processed/noaa_ais_puget_sound_2020_02_15.csv",
+    "opensky_path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/phase1_rtvlas_feasibility/data/external/opensky/puget_sound_states.json",
+    "opensky_sha256": "96ec4aeef12e4598d5ff7952f8f196ec0f87cd35c6044cde997e757e960881b3"
+  },
+  "evidence": {
+    "head": "b65575fe72c74fe2891111148f12dff5ead1ef76cba2f10083a55345f006854b",
+    "records": 7,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "extended_scores": {
+    "NP002": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 0.8450284473727053,
+          "evidence": "0.845 association",
+          "name": "multi-target tracking",
+          "points": 10.14,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "swarm anomaly accuracy",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "recall 1.000",
+          "name": "hostile-swarm recall",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "91% Pd plus clutter",
+          "name": "clutter and missed detections",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "converge, split, encircle and benign patterns",
+          "name": "multiple swarm behaviors",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "73.8 ms/scenario",
+          "name": "real-time processing",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 0.95,
+          "evidence": "150 UAS stress; 0.85 ms p95 association",
+          "name": "scalability evidence",
+          "points": 6.65,
+          "weight": 7
+        },
+        {
+          "achieved": 0.48,
+          "evidence": "EO/RF/acoustic fusion interface tested with synthetic channel scores",
+          "name": "sensor front-end integration",
+          "points": 4.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "behavior only",
+          "name": "target identification/payload",
+          "points": 1.6,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed alert chain",
+          "name": "explainable signed alerts",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.15,
+          "evidence": "synthetic representative tracks",
+          "name": "real hardware or external UAS data",
+          "points": 1.8,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 75.99,
+      "score": 76.0
+    },
+    "NV059": {
+      "estimated_trl": 4.0,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "P-256 X.509 chain",
+          "name": "real credential chain",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "challenge and revoked serial",
+          "name": "key possession and revocation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "authorization correctness",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Modbus/TCP parser",
+          "name": "wire protocol adapter",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "4125 offline decisions",
+          "name": "DDIL local operation",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "eight attack classes",
+          "name": "adaptive attack coverage",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "13.2 us p95",
+          "name": "under-five-second access",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "immutable decision evidence",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.58,
+          "evidence": "protected OPC UA data node rejects direct writes; policy proxy mediates changes",
+          "name": "microsegmentation enforcement",
+          "points": 5.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "actual Modbus/TCP parser plus actual OPC UA client/server path",
+          "name": "heterogeneous combat protocols",
+          "points": 5.2,
+          "weight": 8
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "240 OPC UA transactions across connected, delayed, lossy, and partitioned conditions",
+          "name": "representative combat-system environment",
+          "points": 4.4,
+          "weight": 8
+        }
+      ],
+      "maximum_points": 100,
+      "points": 89.4,
+      "score": 89.4
+    },
+    "NV061": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "68.4% better than hold",
+          "name": "future-state forecasting",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.73,
+          "evidence": "0.730 recall",
+          "name": "automated prioritization",
+          "points": 8.76,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four priority tiers",
+          "name": "hierarchical target management",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.9909148868345553,
+          "evidence": "0.991 association",
+          "name": "track custody",
+          "points": 9.909,
+          "weight": 10
+        },
+        {
+          "achieved": 0.8,
+          "evidence": "RTVLAS persistence reused",
+          "name": "PoL and change detection",
+          "points": 6.4,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "50,000 vector update benchmark",
+          "name": "scalability",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "2667.7 us/object",
+          "name": "response time",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.78,
+          "evidence": "20 OpenSky air plus 20 NOAA AIS surface tracks and radar-surrogate observations",
+          "name": "multi-source sensor fusion",
+          "points": 7.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "source-aware custody accuracy 1.000; 0 identity switches",
+          "name": "object identification",
+          "points": 4.4,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "100 NOAA AIS tracks",
+          "name": "representative maritime data",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed hierarchy evidence",
+          "name": "signed decision evidence",
+          "points": 6.0,
+          "weight": 6
+        }
+      ],
+      "maximum_points": 100,
+      "points": 89.269,
+      "score": 89.3
+    },
+    "NV062": {
+      "estimated_trl": 3.7,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "X25519 + ML-KEM + AES-GCM",
+          "name": "hybrid PQC confidentiality",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Ed25519 + ML-DSA",
+          "name": "dual-signature authenticity",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four provider schemas",
+          "name": "commercial schema adapters",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "localhost HTTP gateway",
+          "name": "mock interface integration",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "adversarial envelopes",
+          "name": "tamper and replay rejection",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "8618.9 us p95",
+          "name": "transaction latency",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed audit evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "encrypted provider return envelopes verified",
+          "name": "return data path",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.78,
+          "evidence": "48 automated lifecycle transactions, cancellations, idempotency, and return manifests",
+          "name": "90 percent tasking-time goal",
+          "points": 7.8,
+          "weight": 10
+        },
+        {
+          "achieved": 0.45,
+          "evidence": "purpose-bound gateway and integrity manifests modeled; no accreditation",
+          "name": "IL-5/IL-6 architecture",
+          "points": 3.6,
+          "weight": 8
+        },
+        {
+          "achieved": 0.0,
+          "evidence": "no provider API or agreement",
+          "name": "real commercial provider",
+          "points": 0.0,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 78.4,
+      "score": 78.4
+    },
+    "NV063": {
+      "estimated_trl": 3.9,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "194 official AIS tracks screened",
+          "name": "real maritime data",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.815393715531486,
+          "evidence": "cross-seed persistent-alert F1 0.815",
+          "name": "anomaly accuracy",
+          "points": 12.231,
+          "weight": 15
+        },
+        {
+          "achieved": 0.7524271844660194,
+          "evidence": "cross-seed recall 0.752",
+          "name": "anomaly recall",
+          "points": 7.524,
+          "weight": 10
+        },
+        {
+          "achieved": 0.6310679611650485,
+          "evidence": "cross-seed FPR 0.092",
+          "name": "false-alert control",
+          "points": 6.311,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "192 bytes/track estimate",
+          "name": "low-history compact state",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "reason codes plus two thresholds",
+          "name": "explainable confidence alerts",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 0.9,
+          "evidence": "real NOAA AIS and live-captured OpenSky air-state ingestion",
+          "name": "surface and air coverage",
+          "points": 4.5,
+          "weight": 5
+        },
+        {
+          "achieved": 0.7,
+          "evidence": "mixed-domain crossing stress with cooperative dropout and radar noise",
+          "name": "notional radar/composite tracks",
+          "points": 3.5,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "17.6 us/update",
+          "name": "real-time processing",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.4,
+          "evidence": "data/display concept, no SSDS interface",
+          "name": "SSDS integration definition",
+          "points": 2.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed alert evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "40 unlabeled tracks excluded, not relabeled",
+          "name": "transparent data quality handling",
+          "points": 5.0,
+          "weight": 5
+        }
+      ],
+      "maximum_points": 100,
+      "points": 86.066,
+      "score": 86.1
+    },
+    "NV065": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "marginal covariance reduction",
+          "name": "sensor contribution characterization",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "83.2% novel-threat improvement",
+          "name": "resource reallocation benefit",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "hostility changes after onset",
+          "name": "novel scenario response",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four Phase I radar labels",
+          "name": "four named sensor surrogates",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "search, track, cueing, illumination",
+          "name": "controllable task modes",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "484.9 us p95",
+          "name": "real-time advisory output",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "utility and reason per recommendation",
+          "name": "explainable recommendations",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "full method beats ablations",
+          "name": "ablation evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.5,
+          "evidence": "four named surrogates now enforce time, power, and illumination constraints",
+          "name": "program-of-record radar realism",
+          "points": 10.0,
+          "weight": 20
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "0 invalid schedules after constraint enforcement",
+          "name": "SSDS integration constraints",
+          "points": 8.25,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 83.25,
+      "score": 83.2
+    },
+    "QSPARX": {
+      "estimated_trl": 3.6,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "labeled scanner fixtures",
+          "name": "crypto discovery validation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "201 real files",
+          "name": "existing-system inventory",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-KEM-768",
+          "name": "ML-KEM operation",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-DSA-65",
+          "name": "ML-DSA and tamper rejection",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 0.9812680115273775,
+          "evidence": "F1 0.981",
+          "name": "AI risk scoring",
+          "points": 11.775,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "all synthetic assets mapped",
+          "name": "migration mapping",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "measured local p95",
+          "name": "response time measurement",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.72,
+          "evidence": "1 active TLS endpoint plus 46 key/config files",
+          "name": "live enterprise discovery connector",
+          "points": 7.2,
+          "weight": 10
+        },
+        {
+          "achieved": 0.78,
+          "evidence": "2 verified configuration-to-key dependency edges plus migration waves",
+          "name": "key-management and legacy interoperability",
+          "points": 6.24,
+          "weight": 8
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "simulated, not an AFDW network",
+          "name": "AFDW-representative environment",
+          "points": 2.4,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 85.615,
+      "score": 85.6
+    }
+  },
+  "metadata": {
+    "generated_at": "2026-06-22T00:50:52Z",
+    "machine": "arm64",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.9.6"
+  },
+  "results": {
+    "NP002": {
+      "evidence": {
+        "head": "d3d044025b79cb296ac47c9d26376240ab28f57378d1191f38bad4773caf091b",
+        "records": 1,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "maximum_uas": 150,
+      "scale": {
+        "100": {
+          "assignment_accuracy": 0.9988888888888889,
+          "p95_update_ms": 0.35616490000000006
+        },
+        "150": {
+          "assignment_accuracy": 0.9984990619136961,
+          "p95_update_ms": 0.84827675
+        },
+        "25": {
+          "assignment_accuracy": 1.0,
+          "p95_update_ms": 0.04504650000000003
+        },
+        "50": {
+          "assignment_accuracy": 1.0,
+          "p95_update_ms": 0.09334165000000001
+        }
+      },
+      "synthetic_front_end_fusion": {
+        "channels": [
+          "EO score",
+          "RF score",
+          "acoustic score"
+        ],
+        "f1": 0.9821848739495799,
+        "false_negative_rate": 0.026,
+        "false_negatives": 39,
+        "false_positive_rate": 0.009333333333333334,
+        "false_positives": 14,
+        "limitation": "channel scores are synthetic; no payload identity claim",
+        "precision": 0.9905084745762712,
+        "recall": 0.974,
+        "true_negatives": 1486,
+        "true_positives": 1461
+      }
+    },
+    "NV059": {
+      "authorization": {
+        "f1": 1.0,
+        "false_negative_rate": 0.0,
+        "false_negatives": 0,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "true_negatives": 135,
+        "true_positives": 105
+      },
+      "delivered_round_trips": 150,
+      "direct_protected_write_blocked": true,
+      "evidence": {
+        "head": "6dafed2e6238dc6364d7568f02bf621badf8616c90eb895d61352b54317e336e",
+        "records": 240,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "network_conditions": {
+        "connected": 60,
+        "delayed": 60,
+        "lossy": 60,
+        "partitioned": 60
+      },
+      "offline_partition_decisions": 60,
+      "performance": {
+        "p50_us": 894.5830000000001,
+        "p95_us": 3698.256249999995,
+        "p99_us": 13818.62174999998
+      },
+      "protocol": "OPC UA via asyncua",
+      "requests": 240,
+      "transport_security": "unencrypted localhost laboratory endpoint; authorization and write mediation are under test, not OPC UA transport encryption"
+    },
+    "NV061": {
+      "air_tracks": 20,
+      "assignments": 480,
+      "cooperative_dropout_probability": 0.18,
+      "evidence": {
+        "head": "6d35dd37510e7d82f88854e6f09a294dda6537d4ca45b6778611579f4dc5ce97",
+        "records": 1,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "fused_position_rmse_km": 0.393800305388691,
+      "position_only_accuracy": 0.9625,
+      "position_only_identity_switches": 36,
+      "radar_noise_km": 0.6,
+      "source": "NOAA AIS plus live-captured OpenSky state vectors and radar surrogate",
+      "source_aware_accuracy": 1.0,
+      "source_aware_identity_switches": 0,
+      "surface_tracks": 20
+    },
+    "NV062": {
+      "accepted": 48,
+      "binary_return_bytes": 2818048,
+      "cancelled_before_collection": 5,
+      "duplicate_blocked": 48,
+      "evidence": {
+        "head": "a58d9deca03440c2902df79335e1b9ae6c0da673968677e6107d05b56a7b6f92",
+        "records": 48,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "performance": {
+        "p50_us": 2837.3334999999997,
+        "p95_us": 3840.7233499999993
+      },
+      "provider_adapters": 4,
+      "return_integrity_verified": 43,
+      "tampered_return_blocked": 43,
+      "tasks": 48,
+      "workflow_states": [
+        "authorized",
+        "released",
+        "accepted",
+        "cancelled_before_collection",
+        "return_verified"
+      ]
+    },
+    "NV063": {
+      "calibration_tracks": 51,
+      "evaluation_nominal_tracks": 103,
+      "f1": 0.8064516129032259,
+      "false_negative_rate": 0.27184466019417475,
+      "false_negatives": 28,
+      "false_positive_rate": 0.07766990291262135,
+      "false_positives": 8,
+      "high_confidence_nominal_tracks": 154,
+      "injected_attack_tracks": 103,
+      "mean_detection_delay_steps": 12.546666666666667,
+      "p95_detection_delay_steps": 34.3,
+      "precision": 0.9036144578313253,
+      "recall": 0.7281553398058253,
+      "required_persistent_samples": 12,
+      "robustness": {
+        "f1_mean": 0.815393715531486,
+        "f1_minimum": 0.7759562841530055,
+        "false_positive_rate_maximum": 0.10679611650485436,
+        "false_positive_rate_mean": 0.09223300970873786,
+        "recall_mean": 0.7524271844660194,
+        "recall_minimum": 0.6893203883495146,
+        "runs": [
+          {
+            "calibration_tracks": 51,
+            "evaluation_nominal_tracks": 103,
+            "f1": 0.7759562841530055,
+            "false_negative_rate": 0.3106796116504854,
+            "false_negatives": 32,
+            "false_positive_rate": 0.08737864077669903,
+            "false_positives": 9,
+            "high_confidence_nominal_tracks": 154,
+            "injected_attack_tracks": 103,
+            "mean_detection_delay_steps": 12.732394366197184,
+            "p95_detection_delay_steps": 36.0,
+            "precision": 0.8875,
+            "recall": 0.6893203883495146,
+            "required_persistent_samples": 12,
+            "threshold": 10.656693749573902,
+            "true_negatives": 94,
+            "true_positives": 71,
+            "unlabeled_tracks_seen": 194
+          },
+          {
+            "calibration_tracks": 51,
+            "evaluation_nominal_tracks": 103,
+            "f1": 0.8186528497409326,
+            "false_negative_rate": 0.23300970873786409,
+            "false_negatives": 24,
+            "false_positive_rate": 0.10679611650485436,
+            "false_positives": 11,
+            "high_confidence_nominal_tracks": 154,
+            "injected_attack_tracks": 103,
+            "mean_detection_delay_steps": 11.734177215189874,
+            "p95_detection_delay_steps": 29.399999999999977,
+            "precision": 0.8777777777777778,
+            "recall": 0.7669902912621359,
+            "required_persistent_samples": 12,
+            "threshold": 10.003528874734597,
+            "true_negatives": 92,
+            "true_positives": 79,
+            "unlabeled_tracks_seen": 194
+          },
+          {
+            "calibration_tracks": 51,
+            "evaluation_nominal_tracks": 103,
+            "f1": 0.8350515463917526,
+            "false_negative_rate": 0.21359223300970873,
+            "false_negatives": 22,
+            "false_positive_rate": 0.0970873786407767,
+            "false_positives": 10,
+            "high_confidence_nominal_tracks": 154,
+            "injected_attack_tracks": 103,
+            "mean_detection_delay_steps": 11.82716049382716,
+            "p95_detection_delay_steps": 31.0,
+            "precision": 0.8901098901098901,
+            "recall": 0.7864077669902912,
+            "required_persistent_samples": 12,
+            "threshold": 9.465897590208888,
+            "true_negatives": 93,
+            "true_positives": 81,
+            "unlabeled_tracks_seen": 194
+          },
+          {
+            "calibration_tracks": 51,
+            "evaluation_nominal_tracks": 103,
+            "f1": 0.8229166666666666,
+            "false_negative_rate": 0.23300970873786409,
+            "false_negatives": 24,
+            "false_positive_rate": 0.0970873786407767,
+            "false_positives": 10,
+            "high_confidence_nominal_tracks": 154,
+            "injected_attack_tracks": 103,
+            "mean_detection_delay_steps": 12.544303797468354,
+            "p95_detection_delay_steps": 35.0,
+            "precision": 0.8876404494382022,
+            "recall": 0.7669902912621359,
+            "required_persistent_samples": 12,
+            "threshold": 9.614870500167697,
+            "true_negatives": 93,
+            "true_positives": 79,
+            "unlabeled_tracks_seen": 194
+          },
+          {
+            "calibration_tracks": 51,
+            "evaluation_nominal_tracks": 103,
+            "f1": 0.8333333333333333,
+            "false_negative_rate": 0.22330097087378642,
+            "false_negatives": 23,
+            "false_positive_rate": 0.08737864077669903,
+            "false_positives": 9,
+            "high_confidence_nominal_tracks": 154,
+            "injected_attack_tracks": 103,
+            "mean_detection_delay_steps": 12.3,
+            "p95_detection_delay_steps": 30.249999999999986,
+            "precision": 0.898876404494382,
+            "recall": 0.7766990291262136,
+            "required_persistent_samples": 12,
+            "threshold": 10.241196868394264,
+            "true_negatives": 94,
+            "true_positives": 80,
+            "unlabeled_tracks_seen": 194
+          },
+          {
+            "calibration_tracks": 51,
+            "evaluation_nominal_tracks": 103,
+            "f1": 0.8064516129032259,
+            "false_negative_rate": 0.27184466019417475,
+            "false_negatives": 28,
+            "false_positive_rate": 0.07766990291262135,
+            "false_positives": 8,
+            "high_confidence_nominal_tracks": 154,
+            "injected_attack_tracks": 103,
+            "mean_detection_delay_steps": 12.546666666666667,
+            "p95_detection_delay_steps": 34.3,
+            "precision": 0.9036144578313253,
+            "recall": 0.7281553398058253,
+            "required_persistent_samples": 12,
+            "threshold": 10.589539426513337,
+            "true_negatives": 95,
+            "true_positives": 75,
+            "unlabeled_tracks_seen": 194
+          }
+        ],
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          63
+        ]
+      },
+      "threshold": 10.589539426513337,
+      "true_negatives": 95,
+      "true_positives": 75,
+      "unlabeled_tracks_seen": 194
+    },
+    "NV065": {
+      "constrained_invalid_sensor_schedules": 0,
+      "constraints": [
+        "frame-time budget",
+        "power budget",
+        "single simultaneous illumination task"
+      ],
+      "evidence": {
+        "head": "b9a84d34697c8642ab03065e7cc3cf99d79342f61b4355a87f5dd05ffe6f726c",
+        "records": 1,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "mean_constrained_utility": 0.11970423824674342,
+      "mean_naive_utility": 0.1239970560241607,
+      "naive_invalid_sensor_schedules": 225,
+      "scenarios": 100,
+      "scheduler_p95_us": 33.0851,
+      "sensors": [
+        "SPS-48 surrogate",
+        "SPQ-9B surrogate",
+        "MK-9 surrogate",
+        "SPY-6(V)3 surrogate"
+      ]
+    },
+    "QSPARX": {
+      "active_tls_discovery": {
+        "certificate_sha256": "22b17d5164366af015adfb90d266d71d24cde208fa61c0aca7abab5c6ccd13eb",
+        "certificate_signature_hash": "sha256",
+        "certificate_subject": "CN=localhost",
+        "cipher": "ECDHE-ECDSA-CHACHA20-POLY1305",
+        "endpoints_scanned": 1,
+        "handshakes_succeeded": 1,
+        "http_response_observed": true,
+        "public_key_bits": 256,
+        "public_key_type": "ECPublicKey",
+        "scan_latency_us": 528542.625,
+        "tls_version": "TLSv1.2"
+      },
+      "evidence": {
+        "head": "2ebd2f932e3a43c5adc4d2c7024a23ee2d4ec15d4cf172fcb0295735021a903f",
+        "records": 1,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "key_and_config_dependencies": {
+        "dependency_edges": 2,
+        "dependency_nodes": 46,
+        "files_scanned": 46,
+        "formats": {
+          ".crt": 1,
+          ".json": 14,
+          ".key": 1,
+          ".toml": 25,
+          ".yaml": 3,
+          ".yml": 2
+        },
+        "reference_hits": 2,
+        "sample_edges": [
+          [
+            "tmp5xxm188_:deployment.yaml",
+            "tmp5xxm188_:service.crt"
+          ],
+          [
+            "tmp5xxm188_:deployment.yaml",
+            "tmp5xxm188_:service.key"
+          ]
+        ]
+      }
+    }
+  }
+}

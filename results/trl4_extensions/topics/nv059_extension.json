@@ -1,0 +1,36 @@
+{
+  "authorization": {
+    "f1": 1.0,
+    "false_negative_rate": 0.0,
+    "false_negatives": 0,
+    "false_positive_rate": 0.0,
+    "false_positives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "true_negatives": 135,
+    "true_positives": 105
+  },
+  "delivered_round_trips": 150,
+  "direct_protected_write_blocked": true,
+  "evidence": {
+    "head": "6dafed2e6238dc6364d7568f02bf621badf8616c90eb895d61352b54317e336e",
+    "records": 240,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "network_conditions": {
+    "connected": 60,
+    "delayed": 60,
+    "lossy": 60,
+    "partitioned": 60
+  },
+  "offline_partition_decisions": 60,
+  "performance": {
+    "p50_us": 894.5830000000001,
+    "p95_us": 3698.256249999995,
+    "p99_us": 13818.62174999998
+  },
+  "protocol": "OPC UA via asyncua",
+  "requests": 240,
+  "transport_security": "unencrypted localhost laboratory endpoint; authorization and write mediation are under test, not OPC UA transport encryption"
+}

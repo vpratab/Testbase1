@@ -1,0 +1,19 @@
+{
+  "air_tracks": 20,
+  "assignments": 480,
+  "cooperative_dropout_probability": 0.18,
+  "evidence": {
+    "head": "6d35dd37510e7d82f88854e6f09a294dda6537d4ca45b6778611579f4dc5ce97",
+    "records": 1,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "fused_position_rmse_km": 0.393800305388691,
+  "position_only_accuracy": 0.9625,
+  "position_only_identity_switches": 36,
+  "radar_noise_km": 0.6,
+  "source": "NOAA AIS plus live-captured OpenSky state vectors and radar surrogate",
+  "source_aware_accuracy": 1.0,
+  "source_aware_identity_switches": 0,
+  "surface_tracks": 20
+}

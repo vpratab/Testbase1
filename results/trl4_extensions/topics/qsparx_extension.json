@@ -1,0 +1,45 @@
+{
+  "active_tls_discovery": {
+    "certificate_sha256": "22b17d5164366af015adfb90d266d71d24cde208fa61c0aca7abab5c6ccd13eb",
+    "certificate_signature_hash": "sha256",
+    "certificate_subject": "CN=localhost",
+    "cipher": "ECDHE-ECDSA-CHACHA20-POLY1305",
+    "endpoints_scanned": 1,
+    "handshakes_succeeded": 1,
+    "http_response_observed": true,
+    "public_key_bits": 256,
+    "public_key_type": "ECPublicKey",
+    "scan_latency_us": 528542.625,
+    "tls_version": "TLSv1.2"
+  },
+  "evidence": {
+    "head": "2ebd2f932e3a43c5adc4d2c7024a23ee2d4ec15d4cf172fcb0295735021a903f",
+    "records": 1,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "key_and_config_dependencies": {
+    "dependency_edges": 2,
+    "dependency_nodes": 46,
+    "files_scanned": 46,
+    "formats": {
+      ".crt": 1,
+      ".json": 14,
+      ".key": 1,
+      ".toml": 25,
+      ".yaml": 3,
+      ".yml": 2
+    },
+    "reference_hits": 2,
+    "sample_edges": [
+      [
+        "tmp5xxm188_:deployment.yaml",
+        "tmp5xxm188_:service.crt"
+      ],
+      [
+        "tmp5xxm188_:deployment.yaml",
+        "tmp5xxm188_:service.key"
+      ]
+    ]
+  }
+}

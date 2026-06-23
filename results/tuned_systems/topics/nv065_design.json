@@ -1,0 +1,77 @@
+{
+  "action_mode": "advisory",
+  "decision_contract": [
+    "sensor_id",
+    "released_task",
+    "recommended_task",
+    "affected_track",
+    "marginal_information_gain",
+    "conflict_penalty",
+    "explanation"
+  ],
+  "evidence": {
+    "excludes": [
+      "actual radar performance beyond the supplied model",
+      "authority to retask sensors automatically"
+    ],
+    "proves": [
+      "the estimated marginal track-quality contribution",
+      "why the alternative task had greater weighted mission value"
+    ],
+    "retention": "retain recommendation inputs, utility, and operator response",
+    "verifier": "sensor manager, combat-system operator, or resource allocator"
+  },
+  "example_decision": {
+    "action": "recommend_reallocation",
+    "confidence": 0.98,
+    "evidence_payload": {
+      "affected_track": "air-track-204",
+      "conflict_penalty": 0.03,
+      "explanation": "candidate task has positive mission-weighted marginal information value",
+      "marginal_information_gain": 0.4626506024096385,
+      "recommended_task": "cue-novel-high-priority-track",
+      "released_task": "repeat-update-well-known-track",
+      "sensor_id": "SPY-6(V)3-surrogate"
+    },
+    "reasons": [
+      "candidate task has positive mission-weighted marginal information value"
+    ],
+    "state_digest": "146e74223b85f37625aad4fe476d9575ac3eed2725a99ab665efa9ff24f9f9e72213ab25d63e06cadea4d20d2b985171",
+    "topic": "NV065"
+  },
+  "failure_posture": "advisory_only",
+  "fingerprint": "e6c97ed10002b13f84af1fbd5c00ed6c9dda7d52614cfa746cb1ee119151b263",
+  "input_contract": [
+    "composite-track covariance and quality",
+    "sensor measurement uncertainty",
+    "task mode, capacity, cost, and conflicts",
+    "track hostility and mission priority",
+    "controllable search, cueing, tracking, and illumination options"
+  ],
+  "known_boundary": [
+    "requires traceable program-of-record sensor models",
+    "Phase I recommendations remain advisory"
+  ],
+  "maintained_state": [
+    "sensor-track contribution matrix",
+    "diminishing-return state",
+    "resource conflicts",
+    "candidate task utility",
+    "recommendation history and operator disposition"
+  ],
+  "mission_question": "Which sensor task contributes the least additional track information, and where would that finite resource create greater mission value?",
+  "philosophy_mapping": [
+    "RTVLAS covariance becomes marginal evidence value rather than a trust score",
+    "persistent priority changes prevent task thrashing",
+    "PZDR receipts preserve exactly why scarce sensor time was moved"
+  ],
+  "primary_metrics": [
+    "track-quality improvement",
+    "novel-threat response",
+    "resource conflicts avoided",
+    "recommendation latency",
+    "operator acceptance and override rate"
+  ],
+  "product_family": "RTVLAS Mission Assurance",
+  "topic": "NV065"
+}

@@ -1,0 +1,2049 @@
+{
+  "campaign_evidence": {
+    "head": "cbfc41618c08fd570a7f333ddae7e9bf896777a7dd76d9ee4db22094e3a718e1",
+    "records": [
+      {
+        "event": {
+          "estimated_trl": 3.6,
+          "result_hash": "40f268f1996ed5b1315ddf7f897d5ffd7f252c7c62de4c51c287fbc6ae67f0a5",
+          "score": 82.9
+        },
+        "event_hash": "20d0d5d9881919fda0ca3d624b9996ac4e15f0883d0a63a7cd1593dacc209ecf",
+        "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "sequence": 0,
+        "signature": "eb687916cf273770033b1c34ff38d01f7b1ca5078860210f84d42c5513af413ebd48cea4da506c9d3bc1be1291c334c9009d7f963bb6a70cde99abcdd0691c0d",
+        "topic": "QSPARX"
+      },
+      {
+        "event": {
+          "estimated_trl": 4.0,
+          "result_hash": "c3e1f09c218e7793888b1665cc46f67bf567c0f7176de4f35acb14599ed1533b",
+          "score": 83.5
+        },
+        "event_hash": "733cfb7bf4ea5838c26008f4346f6aee810d2ebc89089249644b63a7945d9c7c",
+        "previous_hash": "20d0d5d9881919fda0ca3d624b9996ac4e15f0883d0a63a7cd1593dacc209ecf",
+        "sequence": 1,
+        "signature": "0977573ea445d9690b005dfd39e32f80d222d2b7eec8a14d10555ad423891813f51de674f0e63a78a8d6f8387619fb4be18761e32e84aafa5222bcacf388c50f",
+        "topic": "NV059"
+      },
+      {
+        "event": {
+          "estimated_trl": 3.7,
+          "result_hash": "9eb732f563983ffe920bdf5ec28fa043c0c705bcd6ceb4df1a9a7ec8a523d21e",
+          "score": 76.3
+        },
+        "event_hash": "ed4b375e4ea0d03c099b48cd626b96001c48f946ccafdc8b7f86b4df87e241c2",
+        "previous_hash": "733cfb7bf4ea5838c26008f4346f6aee810d2ebc89089249644b63a7945d9c7c",
+        "sequence": 2,
+        "signature": "35b7f87181e5ff8996f10afb4c7225b7bed8cf8ab54f33e653ded04b439643e519bd091f2263f7f8ee4ed62fc32a7b6452d34429639f6c95ba01cdea35c58d01",
+        "topic": "NV062"
+      },
+      {
+        "event": {
+          "estimated_trl": 3.5,
+          "result_hash": "fcba1ffd480d24ed90bd6c9eab0e9b308679b876ff0205ba95ddb4764594355e",
+          "score": 72.1
+        },
+        "event_hash": "5db61085e6161d805a8a29e58739bbeed869040cc28e23e97357ae85a067bf2f",
+        "previous_hash": "ed4b375e4ea0d03c099b48cd626b96001c48f946ccafdc8b7f86b4df87e241c2",
+        "sequence": 3,
+        "signature": "0cddda8deccf230204d2a646c780e6fcf73fb3f6eac5a7234100bdc11ab0d6cbb8905553f4f37ba508bf7bb53cf05224b924a514fa493dd8b71a985e041d3702",
+        "topic": "NP002"
+      },
+      {
+        "event": {
+          "estimated_trl": 3.5,
+          "result_hash": "9991858a1c4cec076670f6c028145161993f4384ebe709775722b27d71eb5af9",
+          "score": 83.6
+        },
+        "event_hash": "65de32cc5bf8f9fcfe2d91145289607b7cc6b8f8a20175bcfe083eac3e6b1ba2",
+        "previous_hash": "5db61085e6161d805a8a29e58739bbeed869040cc28e23e97357ae85a067bf2f",
+        "sequence": 4,
+        "signature": "8fc5db4b536b0a0dbef9ba981a37dfc2e24debcba16574b4d3ce334c6d1be6f315ee28a91baafe23d19b80ff1b87023bb8443bc8c6e16bda592259f10dc9f309",
+        "topic": "NV061"
+      },
+      {
+        "event": {
+          "estimated_trl": 3.9,
+          "result_hash": "1deee930028ac39f4e3dddfcfdec00d60f43b9d21307950da8f092e4a215b75c",
+          "score": 79.3
+        },
+        "event_hash": "052531c9717831eaee927748dfad3033c5c8fc47d073225ea8665db60be1f01d",
+        "previous_hash": "65de32cc5bf8f9fcfe2d91145289607b7cc6b8f8a20175bcfe083eac3e6b1ba2",
+        "sequence": 5,
+        "signature": "068b17f064b47009f7595c11cf79dd8f18f9000140db17709346beb77a93ff64484eca4d0e074ed3dcca06b3ee5b8ada01b8402700c83714c6da1ae47456a203",
+        "topic": "NV063"
+      },
+      {
+        "event": {
+          "estimated_trl": 3.5,
+          "result_hash": "cca045f49ea20e56d98ccc36433cb724c1b387f6ea2335cef3f83e5438b6d070",
+          "score": 76.5
+        },
+        "event_hash": "cbfc41618c08fd570a7f333ddae7e9bf896777a7dd76d9ee4db22094e3a718e1",
+        "previous_hash": "052531c9717831eaee927748dfad3033c5c8fc47d073225ea8665db60be1f01d",
+        "sequence": 6,
+        "signature": "b646d64a33fb576406fee3c321fad6419fcf89b28e2c77701cb8d983f5e75d71181b2ee3cb3c63a2e330f908c639b2c44a0e33f3a7abb47369f500ed730a0706",
+        "topic": "NV065"
+      }
+    ],
+    "tamper_detected": true,
+    "verified": true
+  },
+  "dataset": {
+    "bytes": 13656520,
+    "metadata": {
+      "first_timestamp": "2020-02-15 00:00:00+00:00",
+      "last_timestamp": "2020-02-15 09:17:50+00:00",
+      "output": "data/processed/noaa_ais_puget_sound_2020_02_15.csv",
+      "region": {
+        "latitude": [
+          46.8,
+          49.1
+        ],
+        "longitude": [
+          -124.2,
+          -121.6
+        ]
+      },
+      "rows": 179043,
+      "source_archive": "data/external/noaa_ais/AIS_2020_02_15.zip",
+      "source_url": "https://coast.noaa.gov/htdata/CMSP/AISDataHandler/2020/AIS_2020_02_15.zip",
+      "vessels": 1128
+    },
+    "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/phase1_rtvlas_feasibility/data/processed/noaa_ais_puget_sound_2020_02_15.csv",
+    "sha256": "1487c1f3acc33da4deaf5014f22cfab82c78d316f327f2564459164ad12803ab"
+  },
+  "metadata": {
+    "generated_at": "2026-06-21T21:23:25Z",
+    "machine": "arm64",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.9.6"
+  },
+  "results": {
+    "NP002": {
+      "behavior_detection": {
+        "f1": 1.0,
+        "false_negative_rate": 0.0,
+        "false_negatives": 0,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "mean_detection_delay_steps": 4.76,
+        "p95_detection_delay_steps": 9.649999999999991,
+        "precision": 1.0,
+        "recall": 1.0,
+        "scenarios": 100,
+        "threshold": 25.931136156932364,
+        "true_negatives": 50,
+        "true_positives": 50
+      },
+      "evidence": {
+        "head": "74fda1f068b6c1809901e9b96cd36cce09023bccde91a215a7db7e9046ef7a1d",
+        "records": 50,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "performance": {
+        "scenario_runtime_p50_ms": 43.1749585,
+        "scenario_runtime_p95_ms": 73.7879559
+      },
+      "track_association": {
+        "detection_probability": 0.91,
+        "mean_assignment_accuracy": 0.8450284473727053,
+        "mean_clutter_per_frame": 2.0,
+        "minimum_assignment_accuracy": 0.6298026998961579,
+        "total_identity_switches": 31405
+      }
+    },
+    "NV059": {
+      "authorization": {
+        "expected_attacks": 3000,
+        "f1": 1.0,
+        "false_negative_rate": 0.0,
+        "false_negatives": 0,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "offline_decisions": 4125,
+        "precision": 1.0,
+        "recall": 1.0,
+        "requests": 6000,
+        "true_negatives": 3000,
+        "true_positives": 3000
+      },
+      "evidence": {
+        "head": "dab007e54ce4ec3e3f2fcd2f450aae509fb24043650b83aa86791ab36250fcb4",
+        "records": 6000,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "modbus_adapter": {
+        "malformed_blocked": 4,
+        "malformed_cases": 4,
+        "valid_frames_processed": 6000
+      },
+      "performance": {
+        "max_us": 237.042,
+        "p50_us": 5.542,
+        "p95_us": 13.208,
+        "p99_us": 27.049910000000175
+      },
+      "piv_surrogate": {
+        "certificate_chain_valid": true,
+        "challenge_response_valid": true,
+        "client_certificate_der_bytes": 331,
+        "revoked_certificate_rejected": true
+      }
+    },
+    "NV061": {
+      "evidence": {
+        "head": "f2ec27b48145b28a526102d6542d13c6064bbcdd763bbeb9885494caa791550b",
+        "records": 50,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "forecast": {
+        "hold_baseline_rmse_km": 6.453232023191298,
+        "improvement_vs_hold_pct": 68.39099044332109,
+        "improvement_vs_raw_velocity_pct": 69.44384129444379,
+        "raw_velocity_baseline_rmse_km": 6.675586242960216,
+        "rmse_km": 2.0398027269252013
+      },
+      "hierarchy": {
+        "critical": 49,
+        "high": 18,
+        "priority_recall_at_threat_count": 0.73,
+        "routine": 374,
+        "watch": 59
+      },
+      "objects": 500,
+      "performance": {
+        "scale_ms_per_update": {
+          "1000": 0.028566666666666667,
+          "10000": 0.257875,
+          "5000": 0.1290764,
+          "50000": 1.2372194333333333
+        },
+        "total_ms": 1333.839708,
+        "us_per_object": 2667.679416
+      },
+      "real_ais_forecast": {
+        "calibration_tracks": 50,
+        "forecast_horizon_steps": 5,
+        "forecast_rmse_km": 3.533537477247773,
+        "hold_baseline_rmse_km": 3.768831296078846,
+        "improvement_vs_hold_pct": 6.243150736831248,
+        "improvement_vs_raw_velocity_pct": 19.164909651836084,
+        "processing_ms": 148.234916,
+        "raw_velocity_baseline_rmse_km": 4.371291554235311,
+        "selected_velocity_gain": 0.6,
+        "selected_velocity_window": 2,
+        "source": "NOAA AIS 2020-02-15 Puget Sound subset",
+        "tracks": 100
+      },
+      "track_custody": {
+        "assignment_accuracy": 0.9909148868345553,
+        "detection_probability": 0.93,
+        "identity_switches": 57,
+        "mean_clutter_per_frame": 2.0,
+        "objects": 100
+      }
+    },
+    "NV062": {
+      "adversarial": {
+        "replay_blocked": 30,
+        "replay_cases": 30,
+        "tamper_blocked": 30,
+        "tamper_cases": 30
+      },
+      "evidence": {
+        "head": "83c97f3c5641eaa27898ccaa9ca22b1188fa5795c2f0c07da759158f9b72a0fe",
+        "records": 120,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "http_integration": {
+        "accepted": 120,
+        "max_us": 22654.667,
+        "p50_us": 5533.9794999999995,
+        "p95_us": 8618.904499999999,
+        "p99_us": 10663.647500000003,
+        "return_data_verified": 120,
+        "tasks": 120
+      },
+      "hybrid_crypto": {
+        "aead": "AES-256-GCM",
+        "classical_kem": "X25519",
+        "classical_signature": "Ed25519",
+        "kdf": "HKDF-SHA384",
+        "pqc_kem": "ML-KEM-768 / FIPS 203",
+        "pqc_signature": "ML-DSA-65 / FIPS 204"
+      },
+      "provider_adapters": 4,
+      "workflow_model": {
+        "automated_p95_hours": 28.5,
+        "manual_baseline_hours": 336.0,
+        "reduction_pct": 91.52,
+        "status": "modeled, not measured against a commercial provider"
+      }
+    },
+    "NV063": {
+      "compact_state_estimate_bytes_per_track": 192,
+      "evidence": {
+        "head": "b2e982ea62268b6ad7758b69b854496f02b5c30b45ea66470f31cafb6a40e1ee",
+        "records": 96,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "f1": 0.7839195979899497,
+      "false_negative_rate": 0.24271844660194175,
+      "false_negatives": 25,
+      "false_positive_rate": 0.17475728155339806,
+      "false_positives": 18,
+      "high_confidence_alerts": 22,
+      "high_confidence_nominal_tracks": 154,
+      "high_confidence_threshold": 19.75781858373306,
+      "injected_attack_tracks": 103,
+      "mean_detection_delay_steps": 6.961538461538462,
+      "p95_detection_delay_steps": 25.0,
+      "precision": 0.8125,
+      "processing_us_per_track_update": 17.59522427184466,
+      "quality_screen_excluded_tracks": 40,
+      "real_nominal_tracks": 103,
+      "reason_counts": {
+        "acceleration change": 6,
+        "closing-rate increase": 13,
+        "cooperative identification loss": 21,
+        "heading change": 10,
+        "speed change": 46
+      },
+      "recall": 0.7572815533980582,
+      "threshold": 11.316968904928295,
+      "true_negatives": 85,
+      "true_positives": 78,
+      "unlabeled_tracks_seen": 194
+    },
+    "NV065": {
+      "ablation": {
+        "full_method_improvement_pct": 83.17216510559746,
+        "priority_only_improvement_pct": 48.239855761246524,
+        "uncertainty_only_improvement_pct": 59.05223722497419
+      },
+      "advisory_only": true,
+      "advisory_recommendations": 80,
+      "controllable_mode_surrogates": {
+        "MK-9 surrogate": [
+          "precision_track",
+          "illumination"
+        ],
+        "SPQ-9B surrogate": [
+          "horizon_search",
+          "sector_search",
+          "track_update"
+        ],
+        "SPS-48 surrogate": [
+          "volume_search",
+          "sector_search",
+          "track_update"
+        ],
+        "SPY-6(V)3 surrogate": [
+          "volume_search",
+          "precision_track",
+          "cueing"
+        ]
+      },
+      "evidence": {
+        "head": "e893816b479da8dcab2665c69dc34e15aff550880ef5debf6ab57b805b0065f0",
+        "records": 80,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "explanation_template": "Reallocate sensor task because weighted marginal covariance reduction exceeds competing tasks after track hostility and uncertainty changes.",
+      "explicit_limit": "Open, invented low-fidelity sensor surrogates; no claim that parameters represent classified or program-of-record radar performance.",
+      "four_sensor_surrogates": [
+        "SPS-48 surrogate",
+        "SPQ-9B surrogate",
+        "MK-9 surrogate",
+        "SPY-6(V)3 surrogate"
+      ],
+      "mean_fraction_of_tasks_reallocated": 0.7397163120567377,
+      "mean_track_covariance_adaptive": 0.05510590972173177,
+      "mean_track_covariance_fixed": 0.08982294594260191,
+      "model_provenance": "Open low-fidelity surrogates constrained by update capacity, measurement variance, task cost, priority, and named task modes.",
+      "novel_threat_covariance_adaptive": 0.0238050034750901,
+      "novel_threat_covariance_fixed": 0.14146206938961817,
+      "novel_threat_quality_improvement_pct": 83.17216510559746,
+      "overall_quality_improvement_pct": 38.65052059532182,
+      "recommendation_runtime_max_us": 570.167,
+      "recommendation_runtime_p95_us": 484.94199999999995,
+      "sensor_information_contribution_pct": {
+        "MK-9 surrogate": 8.590635043450256,
+        "SPQ-9B surrogate": 21.352299954704375,
+        "SPS-48 surrogate": 32.283449534656505,
+        "SPY-6(V)3 surrogate": 37.77361546718886
+      },
+      "steps": 75,
+      "tracks": 140
+    },
+    "QSPARX": {
+      "certificate_store": {
+        "certificates_parsed": 128,
+        "certificates_returned": 128,
+        "expired_certificates": 11,
+        "key_types": {
+          "EC-secp256r1": 4,
+          "EC-secp384r1": 19,
+          "RSAPublicKey-2048": 56,
+          "RSAPublicKey-4096": 49
+        },
+        "signature_hashes": {
+          "sha1": 41,
+          "sha256": 61,
+          "sha384": 26
+        },
+        "source": "Python/OpenSSL default host trust store",
+        "weak_certificates": 41
+      },
+      "evidence": {
+        "head": "757b36880fcb1b4d65d44827f37a39af4a1882c77c95c49a313d051680d52747",
+        "records": 2,
+        "tamper_detected": true,
+        "verified": true
+      },
+      "inventory": {
+        "bytes_scanned": 2455746,
+        "elapsed_ms": 3854.503084,
+        "files_per_second": 52.146799631410026,
+        "files_scanned": 201,
+        "finding_count": 78,
+        "findings": [
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              41
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              64
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              38
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "TLS",
+            "line_examples": [
+              48
+            ],
+            "occurrences": 2,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              89,
+              350
+            ],
+            "occurrences": 2,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/README.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              93
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/README.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              68
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/README.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              11
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/SECURITY.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "TLS",
+            "line_examples": [
+              24
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/SECURITY.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "TLS",
+            "line_examples": [
+              17
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/capture/07_Gap_Closure_Plan.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              13
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/compliance-exporter/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              6,
+              490,
+              634,
+              649
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/compliance-exporter/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              13,
+              625,
+              626,
+              653
+            ],
+            "occurrences": 6,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/compliance-exporter/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              27
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/pzdr-cli/src/commands/verify.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              19
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              33
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              4
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              117
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              12
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/proof-verifier/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              6,
+              913,
+              916,
+              917,
+              920
+            ],
+            "occurrences": 12,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/proof-verifier/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              8,
+              550,
+              558,
+              946
+            ],
+            "occurrences": 7,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/proof-verifier/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              3,
+              33,
+              51
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/commitment-module/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              8
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/zero-trust-access/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              3,
+              460
+            ],
+            "occurrences": 2,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/zero-trust-access/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              5,
+              536
+            ],
+            "occurrences": 3,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/zero-trust-access/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              19
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/key-management/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              10,
+              12,
+              133,
+              151
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/key-management/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              4,
+              6,
+              99,
+              114
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/key-management/src/kms.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              10,
+              257
+            ],
+            "occurrences": 3,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/ledger-interface/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              13
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              24
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              11
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              8,
+              1482,
+              1529,
+              1587
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              16,
+              1381,
+              1409
+            ],
+            "occurrences": 3,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              3,
+              5,
+              20
+            ],
+            "occurrences": 16,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              12,
+              19,
+              215,
+              217
+            ],
+            "occurrences": 7,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              82
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/client.py",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "X25519",
+            "line_examples": [
+              12,
+              21,
+              29,
+              30,
+              33
+            ],
+            "occurrences": 5,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/_crypto.py",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              13,
+              21,
+              29,
+              42,
+              45
+            ],
+            "occurrences": 5,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/_crypto.py",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              25,
+              36
+            ],
+            "occurrences": 2,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/_crypto.py",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              1505
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/spec/PZDR_Patent_reworked2.txt",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "TLS",
+            "line_examples": [
+              1505
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/spec/PZDR_Patent_reworked2.txt",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              33
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/spec/PROOF_SCHEMA.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              110
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/docs/NAVY_ZERO_TRUST_ARCHITECTURE.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              21
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/docs/NAVY_ZERO_TRUST_FEASIBILITY.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              21
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/docs/NAVY_ZERO_TRUST_FEASIBILITY.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              14
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-workers/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              4
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-workers/src/workers/mod.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              14
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/attestation-service/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              7
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/attestation-service/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              39
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-service/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              3
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-service/tests/load.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              15
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              12
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              12
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "ChaCha20",
+            "line_examples": [
+              7,
+              9,
+              92
+            ],
+            "occurrences": 3,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/src/lib.rs",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              162
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/reports/PZDR_DARPA_VC_Assessment.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "TLS",
+            "line_examples": [
+              235
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/reports/PZDR_DARPA_VC_Assessment.md",
+            "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              20,
+              29
+            ],
+            "occurrences": 2,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/Cargo.toml",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              20,
+              135,
+              216,
+              227
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/README.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              20,
+              135,
+              140,
+              227
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/README.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              15,
+              21,
+              163,
+              230,
+              411
+            ],
+            "occurrences": 6,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/tools/independent_verify.py",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              8,
+              19,
+              119
+            ],
+            "occurrences": 3,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/tools/independent_verify.py",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              66
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/TEST_READINESS_MATRIX.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              19
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/PRE_PHASE1_ASSESSMENT.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              24,
+              34,
+              50,
+              73
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INDEPENDENT_VERIFICATION.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              14,
+              34,
+              61
+            ],
+            "occurrences": 3,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INDEPENDENT_VERIFICATION.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              52
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INTEGRATION_ICD.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              52
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INTEGRATION_ICD.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              19
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/CAPABILITY_SUMMARY.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              19
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/CAPABILITY_SUMMARY.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              11,
+              34,
+              35,
+              51,
+              115
+            ],
+            "occurrences": 5,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/FORENSICS.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              10,
+              14,
+              25,
+              44,
+              82
+            ],
+            "occurrences": 5,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/FORENSICS.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              20
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/scripts/README.md",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              74,
+              77
+            ],
+            "occurrences": 2,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/.github/workflows/ci.yml",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              3,
+              430,
+              583,
+              589,
+              600
+            ],
+            "occurrences": 5,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/src/attestation/evidence.rs",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "SHA-2",
+            "line_examples": [
+              5,
+              550,
+              558
+            ],
+            "occurrences": 4,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/src/attestation/evidence.rs",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          },
+          {
+            "algorithm": "Ed25519",
+            "line_examples": [
+              21
+            ],
+            "occurrences": 1,
+            "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/src/attestation/mod.rs",
+            "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+          }
+        ],
+        "occurrences_by_algorithm": {
+          "ChaCha20": 36,
+          "Ed25519": 72,
+          "SHA-2": 63,
+          "TLS": 6,
+          "X25519": 14
+        },
+        "pqc_occurrences": 0,
+        "quantum_vulnerable_occurrences": 86
+      },
+      "pqc_benchmark": {
+        "iterations": 120,
+        "ml_dsa_65": {
+          "keygen_p50_us": 207.89600000000002,
+          "keygen_p95_us": 336.89309999999995,
+          "public_key_bytes": 1952,
+          "secret_key_bytes": 4032,
+          "sign_p50_us": 703.771,
+          "sign_p95_us": 2611.2878,
+          "signature_bytes": 3309,
+          "tamper_rejected": 120,
+          "valid_signatures": 120,
+          "verify_p50_us": 195.79149999999998,
+          "verify_p95_us": 303.4288499999998
+        },
+        "ml_kem_768": {
+          "ciphertext_bytes": 1088,
+          "decapsulate_p50_us": 82.2085,
+          "decapsulate_p95_us": 153.8622,
+          "encapsulate_p50_us": 70.5835,
+          "encapsulate_p95_us": 109.7715,
+          "keygen_p50_us": 60.854,
+          "keygen_p95_us": 124.15174999999998,
+          "public_key_bytes": 1184,
+          "secret_key_bytes": 2400,
+          "valid_shared_secrets": 120
+        }
+      },
+      "risk_model": {
+        "assets_inventoried": 4200,
+        "explicit_limit": "This experiment inventories and maps migration risk. It does not claim a validated ML-KEM/ML-DSA implementation or operational AFDW scan.",
+        "f1": 0.9812680115273775,
+        "false_negatives": 6,
+        "false_positive_rate": 0.034904013961605584,
+        "false_positives": 20,
+        "high_risk_assets": 2315,
+        "inventory_coverage_pct": 100.0,
+        "migration_mapping_coverage_pct": 100.0,
+        "model_training_and_inference_ms": 235.853208,
+        "modeled_parallel_migration_days": 1120.1999999999998,
+        "modeled_schedule_reduction_pct": 91.48628929288016,
+        "modeled_serial_migration_days": 13157.6,
+        "pqc_ready_assets": 491,
+        "precision": 0.9714693295292439,
+        "recall": 0.9912663755458515,
+        "standards_mapping": {
+          "hash_based_signatures": "NIST FIPS 205 SLH-DSA",
+          "key_establishment": "NIST FIPS 203 ML-KEM",
+          "primary_signatures": "NIST FIPS 204 ML-DSA"
+        },
+        "topic": "DAF26BZ03-NV017 QSPARX",
+        "true_negatives": 553,
+        "true_positives": 681
+      },
+      "scanner_validation": {
+        "exact_snippet_accuracy": 1.0,
+        "f1": 1.0,
+        "false_negative_rate": 0.0,
+        "false_negatives": 0,
+        "false_positive_rate": 0.0,
+        "false_positives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "snippets": 5,
+        "true_negatives": 50,
+        "true_positives": 5
+      }
+    }
+  },
+  "robustness": {
+    "NP002": {
+      "metrics": {
+        "association_accuracy": {
+          "maximum": 0.8514666054123972,
+          "mean": 0.8447003177706893,
+          "median": 0.8492604324045507,
+          "minimum": 0.8345466163294405
+        },
+        "behavior_f1": {
+          "maximum": 1.0,
+          "mean": 0.9966101694915255,
+          "median": 1.0,
+          "minimum": 0.983050847457627
+        }
+      },
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "NV059": {
+      "metrics": {
+        "authorization_f1": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "minimum": 1.0
+        },
+        "p95_us": {
+          "maximum": 5.75,
+          "mean": 4.722333333333333,
+          "median": 4.292,
+          "minimum": 4.125
+        }
+      },
+      "seeds": [
+        10,
+        11,
+        12
+      ]
+    },
+    "NV061": {
+      "metrics": {
+        "association_accuracy": {
+          "maximum": 0.992797695262484,
+          "mean": 0.9908614430567304,
+          "median": 0.9907804800508663,
+          "minimum": 0.9888977002379065
+        },
+        "forecast_improvement": {
+          "maximum": 68.6122718425776,
+          "mean": 66.02271632774503,
+          "median": 65.67203784371686,
+          "minimum": 64.62645924238709
+        },
+        "priority_recall": {
+          "maximum": 0.7333333333333333,
+          "mean": 0.6533333333333333,
+          "median": 0.6333333333333333,
+          "minimum": 0.6166666666666667
+        }
+      },
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "NV062": {
+      "metrics": {
+        "http_p95_us": {
+          "maximum": 5302.5351,
+          "mean": 5094.7257,
+          "median": 5092.58575,
+          "minimum": 4889.05625
+        },
+        "tamper_block_rate": {
+          "maximum": 1.0,
+          "mean": 1.0,
+          "median": 1.0,
+          "minimum": 1.0
+        }
+      },
+      "seeds": [
+        10,
+        11,
+        12
+      ]
+    },
+    "NV063": {
+      "metrics": {
+        "f1": {
+          "maximum": 0.7999999999999999,
+          "mean": 0.7838942223302412,
+          "median": 0.7867298578199052,
+          "minimum": 0.7589743589743588
+        },
+        "false_positive_rate": {
+          "maximum": 0.2815533980582524,
+          "mean": 0.24271844660194172,
+          "median": 0.24271844660194175,
+          "minimum": 0.17475728155339806
+        },
+        "recall": {
+          "maximum": 0.8543689320388349,
+          "mean": 0.8019417475728154,
+          "median": 0.8058252427184466,
+          "minimum": 0.7184466019417476
+        }
+      },
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "NV065": {
+      "metrics": {
+        "novel_improvement": {
+          "maximum": 84.58435850514371,
+          "mean": 82.76530205890984,
+          "median": 82.67059159968353,
+          "minimum": 80.9999263437767
+        },
+        "p95_us": {
+          "maximum": 687.9749999999999,
+          "mean": 590.38334,
+          "median": 582.5169,
+          "minimum": 535.8499999999999
+        }
+      },
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "QSPARX": {
+      "metrics": {
+        "risk_f1": {
+          "maximum": 0.987707881417209,
+          "mean": 0.981102743052646,
+          "median": 0.9796205200281096,
+          "minimum": 0.9769784172661871
+        },
+        "risk_recall": {
+          "maximum": 0.9927007299270073,
+          "mean": 0.9893456620209085,
+          "median": 0.9912408759124087,
+          "minimum": 0.9844632768361582
+        }
+      },
+      "seeds": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  "scores": {
+    "NP002": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 0.8450284473727053,
+          "evidence": "0.845 association",
+          "name": "multi-target tracking",
+          "points": 10.14,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "swarm anomaly accuracy",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "recall 1.000",
+          "name": "hostile-swarm recall",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "91% Pd plus clutter",
+          "name": "clutter and missed detections",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "converge, split, encircle and benign patterns",
+          "name": "multiple swarm behaviors",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "73.8 ms/scenario",
+          "name": "real-time processing",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "up to roughly 40 UAS per scenario",
+          "name": "scalability evidence",
+          "points": 4.55,
+          "weight": 7
+        },
+        {
+          "achieved": 0.3,
+          "evidence": "kinematic detections, no EO/RF hardware",
+          "name": "sensor front-end integration",
+          "points": 3.0,
+          "weight": 10
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "behavior only",
+          "name": "target identification/payload",
+          "points": 1.6,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed alert chain",
+          "name": "explainable signed alerts",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.15,
+          "evidence": "synthetic representative tracks",
+          "name": "real hardware or external UAS data",
+          "points": 1.8,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 72.09,
+      "score": 72.1
+    },
+    "NV059": {
+      "estimated_trl": 4.0,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "P-256 X.509 chain",
+          "name": "real credential chain",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "challenge and revoked serial",
+          "name": "key possession and revocation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "F1 1.000",
+          "name": "authorization correctness",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Modbus/TCP parser",
+          "name": "wire protocol adapter",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "4125 offline decisions",
+          "name": "DDIL local operation",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "eight attack classes",
+          "name": "adaptive attack coverage",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "13.2 us p95",
+          "name": "under-five-second access",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "immutable decision evidence",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "data/action policy; no network enforcement",
+          "name": "microsegmentation enforcement",
+          "points": 3.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "real Modbus path; other adapters modeled",
+          "name": "heterogeneous combat protocols",
+          "points": 2.8,
+          "weight": 8
+        },
+        {
+          "achieved": 0.4,
+          "evidence": "surrogate OT transaction path",
+          "name": "representative combat-system environment",
+          "points": 3.2,
+          "weight": 8
+        }
+      ],
+      "maximum_points": 100,
+      "points": 83.5,
+      "score": 83.5
+    },
+    "NV061": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "68.4% better than hold",
+          "name": "future-state forecasting",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.73,
+          "evidence": "0.730 recall",
+          "name": "automated prioritization",
+          "points": 8.76,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four priority tiers",
+          "name": "hierarchical target management",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.9909148868345553,
+          "evidence": "0.991 association",
+          "name": "track custody",
+          "points": 9.909,
+          "weight": 10
+        },
+        {
+          "achieved": 0.8,
+          "evidence": "RTVLAS persistence reused",
+          "name": "PoL and change detection",
+          "points": 6.4,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "50,000 vector update benchmark",
+          "name": "scalability",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "2667.7 us/object",
+          "name": "response time",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.45,
+          "evidence": "no real heterogeneous feeds",
+          "name": "multi-source sensor fusion",
+          "points": 4.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.25,
+          "evidence": "track identity assumed after association",
+          "name": "object identification",
+          "points": 2.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "100 NOAA AIS tracks",
+          "name": "representative maritime data",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed hierarchy evidence",
+          "name": "signed decision evidence",
+          "points": 6.0,
+          "weight": 6
+        }
+      ],
+      "maximum_points": 100,
+      "points": 83.569,
+      "score": 83.6
+    },
+    "NV062": {
+      "estimated_trl": 3.7,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "X25519 + ML-KEM + AES-GCM",
+          "name": "hybrid PQC confidentiality",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "Ed25519 + ML-DSA",
+          "name": "dual-signature authenticity",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four provider schemas",
+          "name": "commercial schema adapters",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "localhost HTTP gateway",
+          "name": "mock interface integration",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "adversarial envelopes",
+          "name": "tamper and replay rejection",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "8618.9 us p95",
+          "name": "transaction latency",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed audit evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "encrypted provider return envelopes verified",
+          "name": "return data path",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "workflow modeled, not provider-measured",
+          "name": "90 percent tasking-time goal",
+          "points": 6.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "classification boundary modeled",
+          "name": "IL-5/IL-6 architecture",
+          "points": 2.8,
+          "weight": 8
+        },
+        {
+          "achieved": 0.0,
+          "evidence": "no provider API or agreement",
+          "name": "real commercial provider",
+          "points": 0.0,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 76.3,
+      "score": 76.3
+    },
+    "NV063": {
+      "estimated_trl": 3.9,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "194 official AIS tracks screened",
+          "name": "real maritime data",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 0.7839195979899497,
+          "evidence": "F1 0.784",
+          "name": "anomaly accuracy",
+          "points": 11.759,
+          "weight": 15
+        },
+        {
+          "achieved": 0.7572815533980582,
+          "evidence": "recall 0.757",
+          "name": "anomaly recall",
+          "points": 7.573,
+          "weight": 10
+        },
+        {
+          "achieved": 0.30097087378640774,
+          "evidence": "FPR 0.175",
+          "name": "false-alert control",
+          "points": 3.01,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "192 bytes/track estimate",
+          "name": "low-history compact state",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "reason codes plus two thresholds",
+          "name": "explainable confidence alerts",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "real AIS plus synthetic air path from base lab",
+          "name": "surface and air coverage",
+          "points": 3.25,
+          "weight": 5
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "architecture only",
+          "name": "notional radar/composite tracks",
+          "points": 1.75,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "17.6 us/update",
+          "name": "real-time processing",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.4,
+          "evidence": "data/display concept, no SSDS interface",
+          "name": "SSDS integration definition",
+          "points": 2.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed alert evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "40 unlabeled tracks excluded, not relabeled",
+          "name": "transparent data quality handling",
+          "points": 5.0,
+          "weight": 5
+        }
+      ],
+      "maximum_points": 100,
+      "points": 79.341,
+      "score": 79.3
+    },
+    "NV065": {
+      "estimated_trl": 3.5,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "marginal covariance reduction",
+          "name": "sensor contribution characterization",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "83.2% novel-threat improvement",
+          "name": "resource reallocation benefit",
+          "points": 15.0,
+          "weight": 15
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "hostility changes after onset",
+          "name": "novel scenario response",
+          "points": 10.0,
+          "weight": 10
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "four Phase I radar labels",
+          "name": "four named sensor surrogates",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "search, track, cueing, illumination",
+          "name": "controllable task modes",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "484.9 us p95",
+          "name": "real-time advisory output",
+          "points": 7.0,
+          "weight": 7
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "utility and reason per recommendation",
+          "name": "explainable recommendations",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "full method beats ablations",
+          "name": "ablation evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.35,
+          "evidence": "open low-fidelity surrogates",
+          "name": "program-of-record radar realism",
+          "points": 7.0,
+          "weight": 20
+        },
+        {
+          "achieved": 0.3,
+          "evidence": "advisory concept only",
+          "name": "SSDS integration constraints",
+          "points": 4.5,
+          "weight": 15
+        }
+      ],
+      "maximum_points": 100,
+      "points": 76.5,
+      "score": 76.5
+    },
+    "QSPARX": {
+      "estimated_trl": 3.6,
+      "gates": [
+        {
+          "achieved": 1.0,
+          "evidence": "labeled scanner fixtures",
+          "name": "crypto discovery validation",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "201 real files",
+          "name": "existing-system inventory",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-KEM-768",
+          "name": "ML-KEM operation",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "actual ML-DSA-65",
+          "name": "ML-DSA and tamper rejection",
+          "points": 12.0,
+          "weight": 12
+        },
+        {
+          "achieved": 0.9812680115273775,
+          "evidence": "F1 0.981",
+          "name": "AI risk scoring",
+          "points": 11.775,
+          "weight": 12
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "all synthetic assets mapped",
+          "name": "migration mapping",
+          "points": 8.0,
+          "weight": 8
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "measured local p95",
+          "name": "response time measurement",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 1.0,
+          "evidence": "signed chain",
+          "name": "signed evidence",
+          "points": 5.0,
+          "weight": 5
+        },
+        {
+          "achieved": 0.55,
+          "evidence": "128 host trust-store certificates plus repositories",
+          "name": "live enterprise discovery connector",
+          "points": 5.5,
+          "weight": 10
+        },
+        {
+          "achieved": 0.65,
+          "evidence": "certificate and algorithm mapping; no enterprise dependency graph",
+          "name": "key-management and legacy interoperability",
+          "points": 5.2,
+          "weight": 8
+        },
+        {
+          "achieved": 0.2,
+          "evidence": "simulated, not an AFDW network",
+          "name": "AFDW-representative environment",
+          "points": 2.4,
+          "weight": 12
+        }
+      ],
+      "maximum_points": 100,
+      "points": 82.875,
+      "score": 82.9
+    }
+  }
+}

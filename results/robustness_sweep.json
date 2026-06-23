@@ -1,0 +1,148 @@
+{
+  "NP002": {
+    "f1": {
+      "maximum": 1.0,
+      "mean": 0.9954494015980249,
+      "median": 0.995850622406639,
+      "minimum": 0.9917355371900827
+    },
+    "false_positive_rate": {
+      "maximum": 0.016666666666666666,
+      "mean": 0.009166666666666667,
+      "median": 0.008333333333333333,
+      "minimum": 0.0
+    },
+    "mean_detection_delay_steps": {
+      "maximum": 1.6416666666666666,
+      "mean": 1.0933333333333333,
+      "median": 1.0458333333333334,
+      "minimum": 0.8916666666666667
+    },
+    "recall": {
+      "maximum": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "minimum": 1.0
+    }
+  },
+  "NV059": {
+    "false_allows": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0
+    },
+    "false_denies": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0
+    },
+    "local_decision_p95_us": {
+      "maximum": 132.87709999999996,
+      "mean": 118.30523999999998,
+      "median": 117.021,
+      "minimum": 105.958
+    }
+  },
+  "NV061": {
+    "forecast_improvement_vs_hold_pct": {
+      "maximum": 68.4415059070099,
+      "mean": 67.05565591197843,
+      "median": 67.18997209929904,
+      "minimum": 65.29172524193568
+    },
+    "priority_recall_at_threat_count": {
+      "maximum": 0.7875,
+      "mean": 0.735,
+      "median": 0.73125,
+      "minimum": 0.6875
+    }
+  },
+  "NV062": {
+    "measured_crypto_roundtrip_p95_us": {
+      "maximum": 809.3351,
+      "mean": 796.783125,
+      "median": 798.6547999999999,
+      "minimum": 780.9181500000001
+    },
+    "modeled_tasking_time_reduction_pct": {
+      "maximum": 91.41106763764296,
+      "mean": 91.39901072588479,
+      "median": 91.40029849190093,
+      "minimum": 91.38111277308964
+    },
+    "tamper_block_rate": {
+      "maximum": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "minimum": 1.0
+    }
+  },
+  "NV063": {
+    "f1": {
+      "maximum": 0.8806584362139918,
+      "mean": 0.8182904691540671,
+      "median": 0.8082618529424317,
+      "minimum": 0.7647058823529412
+    },
+    "false_positive_rate": {
+      "maximum": 0.06666666666666667,
+      "mean": 0.04416666666666667,
+      "median": 0.041666666666666664,
+      "minimum": 0.025
+    },
+    "recall": {
+      "maximum": 0.8916666666666667,
+      "mean": 0.7558333333333334,
+      "median": 0.7458333333333333,
+      "minimum": 0.65
+    }
+  },
+  "NV065": {
+    "novel_threat_quality_improvement_pct": {
+      "maximum": 84.58435850514371,
+      "mean": 82.69477000323272,
+      "median": 82.55499530626682,
+      "minimum": 80.9999263437767
+    },
+    "recommendation_runtime_p95_us": {
+      "maximum": 341.0623,
+      "mean": 331.31417,
+      "median": 330.73969999999997,
+      "minimum": 324.92949999999996
+    }
+  },
+  "QSPARX": {
+    "f1": {
+      "maximum": 0.987707881417209,
+      "mean": 0.9807719385880391,
+      "median": 0.9798764851796178,
+      "minimum": 0.9769784172661871
+    },
+    "modeled_schedule_reduction_pct": {
+      "maximum": 91.49456873387176,
+      "mean": 91.394344956602,
+      "median": 91.41464854444916,
+      "minimum": 91.20662998499385
+    },
+    "recall": {
+      "maximum": 0.9927007299270073,
+      "mean": 0.9883686309225101,
+      "median": 0.9896274120766246,
+      "minimum": 0.9818688981868898
+    }
+  },
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ]
+}

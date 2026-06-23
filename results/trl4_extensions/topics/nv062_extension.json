@@ -1,0 +1,27 @@
+{
+  "accepted": 48,
+  "binary_return_bytes": 2818048,
+  "cancelled_before_collection": 5,
+  "duplicate_blocked": 48,
+  "evidence": {
+    "head": "a58d9deca03440c2902df79335e1b9ae6c0da673968677e6107d05b56a7b6f92",
+    "records": 48,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "performance": {
+    "p50_us": 2837.3334999999997,
+    "p95_us": 3840.7233499999993
+  },
+  "provider_adapters": 4,
+  "return_integrity_verified": 43,
+  "tampered_return_blocked": 43,
+  "tasks": 48,
+  "workflow_states": [
+    "authorized",
+    "released",
+    "accepted",
+    "cancelled_before_collection",
+    "return_verified"
+  ]
+}

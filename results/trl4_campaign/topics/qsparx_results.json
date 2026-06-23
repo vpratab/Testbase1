@@ -1,0 +1,892 @@
+{
+  "certificate_store": {
+    "certificates_parsed": 128,
+    "certificates_returned": 128,
+    "expired_certificates": 11,
+    "key_types": {
+      "EC-secp256r1": 4,
+      "EC-secp384r1": 19,
+      "RSAPublicKey-2048": 56,
+      "RSAPublicKey-4096": 49
+    },
+    "signature_hashes": {
+      "sha1": 41,
+      "sha256": 61,
+      "sha384": 26
+    },
+    "source": "Python/OpenSSL default host trust store",
+    "weak_certificates": 41
+  },
+  "evidence": {
+    "head": "757b36880fcb1b4d65d44827f37a39af4a1882c77c95c49a313d051680d52747",
+    "records": 2,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "inventory": {
+    "bytes_scanned": 2455746,
+    "elapsed_ms": 3854.503084,
+    "files_per_second": 52.146799631410026,
+    "files_scanned": 201,
+    "finding_count": 78,
+    "findings": [
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          41
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          64
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          38
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "TLS",
+        "line_examples": [
+          48
+        ],
+        "occurrences": 2,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          89,
+          350
+        ],
+        "occurrences": 2,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/README.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          93
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/README.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          68
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/README.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          11
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/SECURITY.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "TLS",
+        "line_examples": [
+          24
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/SECURITY.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "TLS",
+        "line_examples": [
+          17
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/capture/07_Gap_Closure_Plan.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          13
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/compliance-exporter/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          6,
+          490,
+          634,
+          649
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/compliance-exporter/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          13,
+          625,
+          626,
+          653
+        ],
+        "occurrences": 6,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/compliance-exporter/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          27
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/tools/pzdr-cli/src/commands/verify.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          19
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          33
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          4
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          117
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/tee-enclave/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          12
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/proof-verifier/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          6,
+          913,
+          916,
+          917,
+          920
+        ],
+        "occurrences": 12,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/proof-verifier/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          8,
+          550,
+          558,
+          946
+        ],
+        "occurrences": 7,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/proof-verifier/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          3,
+          33,
+          51
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/commitment-module/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          8
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/zero-trust-access/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          3,
+          460
+        ],
+        "occurrences": 2,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/zero-trust-access/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          5,
+          536
+        ],
+        "occurrences": 3,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/zero-trust-access/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          19
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/key-management/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          10,
+          12,
+          133,
+          151
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/key-management/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          4,
+          6,
+          99,
+          114
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/key-management/src/kms.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          10,
+          257
+        ],
+        "occurrences": 3,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/ledger-interface/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          13
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          24
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          11
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          8,
+          1482,
+          1529,
+          1587
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          16,
+          1381,
+          1409
+        ],
+        "occurrences": 3,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          3,
+          5,
+          20
+        ],
+        "occurrences": 16,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          12,
+          19,
+          215,
+          217
+        ],
+        "occurrences": 7,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/crates/pzdr-common/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          82
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/client.py",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "X25519",
+        "line_examples": [
+          12,
+          21,
+          29,
+          30,
+          33
+        ],
+        "occurrences": 5,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/_crypto.py",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          13,
+          21,
+          29,
+          42,
+          45
+        ],
+        "occurrences": 5,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/_crypto.py",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          25,
+          36
+        ],
+        "occurrences": 2,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/sdks/python/pzdr/_crypto.py",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          1505
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/spec/PZDR_Patent_reworked2.txt",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "TLS",
+        "line_examples": [
+          1505
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/spec/PZDR_Patent_reworked2.txt",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          33
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/spec/PROOF_SCHEMA.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          110
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/docs/NAVY_ZERO_TRUST_ARCHITECTURE.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          21
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/docs/NAVY_ZERO_TRUST_FEASIBILITY.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          21
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/docs/NAVY_ZERO_TRUST_FEASIBILITY.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          14
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-workers/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          4
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-workers/src/workers/mod.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          14
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/attestation-service/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          7
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/attestation-service/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          39
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-service/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          3
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/pzdr-service/tests/load.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          15
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          12
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          12
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "ChaCha20",
+        "line_examples": [
+          7,
+          9,
+          92
+        ],
+        "occurrences": 3,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/services/kms-emulator/src/lib.rs",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          162
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/reports/PZDR_DARPA_VC_Assessment.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "TLS",
+        "line_examples": [
+          235
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/pzdr-reference/reports/PZDR_DARPA_VC_Assessment.md",
+        "root": "/Users/giansingh/Documents/GitHub/pzdr-reference"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          20,
+          29
+        ],
+        "occurrences": 2,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/Cargo.toml",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          20,
+          135,
+          216,
+          227
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/README.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          20,
+          135,
+          140,
+          227
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/README.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          15,
+          21,
+          163,
+          230,
+          411
+        ],
+        "occurrences": 6,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/tools/independent_verify.py",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          8,
+          19,
+          119
+        ],
+        "occurrences": 3,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/tools/independent_verify.py",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          66
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/TEST_READINESS_MATRIX.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          19
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/PRE_PHASE1_ASSESSMENT.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          24,
+          34,
+          50,
+          73
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INDEPENDENT_VERIFICATION.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          14,
+          34,
+          61
+        ],
+        "occurrences": 3,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INDEPENDENT_VERIFICATION.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          52
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INTEGRATION_ICD.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          52
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/INTEGRATION_ICD.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          19
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/CAPABILITY_SUMMARY.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          19
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/CAPABILITY_SUMMARY.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          11,
+          34,
+          35,
+          51,
+          115
+        ],
+        "occurrences": 5,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/FORENSICS.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          10,
+          14,
+          25,
+          44,
+          82
+        ],
+        "occurrences": 5,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/docs/FORENSICS.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          20
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/scripts/README.md",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          74,
+          77
+        ],
+        "occurrences": 2,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/.github/workflows/ci.yml",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          3,
+          430,
+          583,
+          589,
+          600
+        ],
+        "occurrences": 5,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/src/attestation/evidence.rs",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "SHA-2",
+        "line_examples": [
+          5,
+          550,
+          558
+        ],
+        "occurrences": 4,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/src/attestation/evidence.rs",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      },
+      {
+        "algorithm": "Ed25519",
+        "line_examples": [
+          21
+        ],
+        "occurrences": 1,
+        "path": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main/src/attestation/mod.rs",
+        "root": "/Users/giansingh/Documents/GitHub/codex-audit-pzd-rtvlas/RTVLASOPEN-main"
+      }
+    ],
+    "occurrences_by_algorithm": {
+      "ChaCha20": 36,
+      "Ed25519": 72,
+      "SHA-2": 63,
+      "TLS": 6,
+      "X25519": 14
+    },
+    "pqc_occurrences": 0,
+    "quantum_vulnerable_occurrences": 86
+  },
+  "pqc_benchmark": {
+    "iterations": 120,
+    "ml_dsa_65": {
+      "keygen_p50_us": 207.89600000000002,
+      "keygen_p95_us": 336.89309999999995,
+      "public_key_bytes": 1952,
+      "secret_key_bytes": 4032,
+      "sign_p50_us": 703.771,
+      "sign_p95_us": 2611.2878,
+      "signature_bytes": 3309,
+      "tamper_rejected": 120,
+      "valid_signatures": 120,
+      "verify_p50_us": 195.79149999999998,
+      "verify_p95_us": 303.4288499999998
+    },
+    "ml_kem_768": {
+      "ciphertext_bytes": 1088,
+      "decapsulate_p50_us": 82.2085,
+      "decapsulate_p95_us": 153.8622,
+      "encapsulate_p50_us": 70.5835,
+      "encapsulate_p95_us": 109.7715,
+      "keygen_p50_us": 60.854,
+      "keygen_p95_us": 124.15174999999998,
+      "public_key_bytes": 1184,
+      "secret_key_bytes": 2400,
+      "valid_shared_secrets": 120
+    }
+  },
+  "risk_model": {
+    "assets_inventoried": 4200,
+    "explicit_limit": "This experiment inventories and maps migration risk. It does not claim a validated ML-KEM/ML-DSA implementation or operational AFDW scan.",
+    "f1": 0.9812680115273775,
+    "false_negatives": 6,
+    "false_positive_rate": 0.034904013961605584,
+    "false_positives": 20,
+    "high_risk_assets": 2315,
+    "inventory_coverage_pct": 100.0,
+    "migration_mapping_coverage_pct": 100.0,
+    "model_training_and_inference_ms": 235.853208,
+    "modeled_parallel_migration_days": 1120.1999999999998,
+    "modeled_schedule_reduction_pct": 91.48628929288016,
+    "modeled_serial_migration_days": 13157.6,
+    "pqc_ready_assets": 491,
+    "precision": 0.9714693295292439,
+    "recall": 0.9912663755458515,
+    "standards_mapping": {
+      "hash_based_signatures": "NIST FIPS 205 SLH-DSA",
+      "key_establishment": "NIST FIPS 203 ML-KEM",
+      "primary_signatures": "NIST FIPS 204 ML-DSA"
+    },
+    "topic": "DAF26BZ03-NV017 QSPARX",
+    "true_negatives": 553,
+    "true_positives": 681
+  },
+  "scanner_validation": {
+    "exact_snippet_accuracy": 1.0,
+    "f1": 1.0,
+    "false_negative_rate": 0.0,
+    "false_negatives": 0,
+    "false_positive_rate": 0.0,
+    "false_positives": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "snippets": 5,
+    "true_negatives": 50,
+    "true_positives": 5
+  }
+}

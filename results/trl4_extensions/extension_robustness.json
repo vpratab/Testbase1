@@ -1,0 +1,133 @@
+{
+  "NP002": {
+    "metrics": {
+      "association_150": {
+        "maximum": 0.9977553310886644,
+        "mean": 0.9961984340058365,
+        "minimum": 0.9950943396226415
+      },
+      "fusion_f1": {
+        "maximum": 0.9879032258064516,
+        "mean": 0.984760354018632,
+        "minimum": 0.9817936614969656
+      },
+      "p95_ms_150": {
+        "maximum": 2.5964250000000004,
+        "mean": 2.4064727400000003,
+        "minimum": 2.2801253000000004
+      }
+    },
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "NV059": {
+    "metrics": {
+      "direct_write_blocked": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      },
+      "f1": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      },
+      "p95_us": {
+        "maximum": 10803.31845,
+        "mean": 7745.2115,
+        "minimum": 5335.224699999998
+      }
+    },
+    "seeds": [
+      5901,
+      5902,
+      5903
+    ]
+  },
+  "NV061": {
+    "metrics": {
+      "position_accuracy": {
+        "maximum": 0.975,
+        "mean": 0.96,
+        "minimum": 0.9416666666666667
+      },
+      "position_switches": {
+        "maximum": 56.0,
+        "mean": 38.4,
+        "minimum": 24.0
+      },
+      "source_accuracy": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      },
+      "source_switches": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0
+      }
+    },
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "NV062": {
+    "metrics": {
+      "p95_us": {
+        "maximum": 16992.92725,
+        "mean": 13938.732750000001,
+        "minimum": 11943.969
+      },
+      "replay_block_rate": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      },
+      "return_tamper_block_rate": {
+        "maximum": 1.0,
+        "mean": 1.0,
+        "minimum": 1.0
+      }
+    },
+    "seeds": [
+      6201,
+      6202,
+      6203
+    ]
+  },
+  "NV065": {
+    "metrics": {
+      "invalid_schedules": {
+        "maximum": 0.0,
+        "mean": 0.0,
+        "minimum": 0.0
+      },
+      "scheduler_p95_us": {
+        "maximum": 210.25384999999997,
+        "mean": 178.62992999999997,
+        "minimum": 145.9548
+      },
+      "utility_retention": {
+        "maximum": 0.9740141897236415,
+        "mean": 0.9699139746694788,
+        "minimum": 0.96537967984836
+      }
+    },
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+}

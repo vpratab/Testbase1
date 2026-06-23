@@ -1,0 +1,61 @@
+{
+  "NV063": {
+    "air_f1": {
+      "maximum": 1.0,
+      "mean": 0.9884978128667449,
+      "minimum": 0.9714285714285714
+    },
+    "air_fpr": {
+      "maximum": 0.058823529411764705,
+      "mean": 0.023529411764705882,
+      "minimum": 0.0
+    },
+    "interface_old_version_rejection": 1.0,
+    "interface_tamper_rate": 1.0,
+    "surface_f1": {
+      "maximum": 0.9805825242718447,
+      "mean": 0.980307377854644,
+      "minimum": 0.9797570850202428
+    },
+    "surface_minimum_fold_f1": {
+      "maximum": 0.975609756097561,
+      "mean": 0.974149387863902,
+      "minimum": 0.9714285714285714
+    },
+    "surface_recall": {
+      "maximum": 0.9837662337662337,
+      "mean": 0.9832251082251081,
+      "minimum": 0.9821428571428571
+    }
+  },
+  "NV065": {
+    "invalid_schedules": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0
+    },
+    "missed_revisit_deadlines": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0
+    },
+    "scheduler_p95_us": {
+      "maximum": 112.10450000000002,
+      "mean": 106.91603,
+      "minimum": 105.2521
+    }
+  },
+  "QSPARX": {
+    "inventory_accuracy": {
+      "maximum": 1.0,
+      "mean": 1.0,
+      "minimum": 1.0
+    },
+    "keystores_parsed": {
+      "maximum": 12.0,
+      "mean": 12.0,
+      "minimum": 12.0
+    },
+    "migration_complete_rate": 1.0
+  }
+}

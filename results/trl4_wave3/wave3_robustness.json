@@ -1,0 +1,45 @@
+{
+  "NP002": {
+    "detection_f1": 0.982895540623091,
+    "held_out_detection_f1": {
+      "maximum": 0.9914089347079038,
+      "mean": 0.9827768163666044,
+      "minimum": 0.9728260869565217
+    },
+    "held_out_type_macro_f1": {
+      "maximum": 0.9946986909012225,
+      "mean": 0.968313187263599,
+      "minimum": 0.9201621986933994
+    },
+    "type_macro_f1": 0.9676551526168191
+  },
+  "NV059": {
+    "dds_f1": {
+      "maximum": 1.0,
+      "mean": 1.0,
+      "minimum": 1.0
+    },
+    "dds_p95_us": {
+      "maximum": 1013.6374999999998,
+      "mean": 773.6549399999999,
+      "minimum": 630.3645999999999
+    },
+    "secure_opcua_p95_us": {
+      "maximum": 1749.30205,
+      "mean": 1531.0244166666669,
+      "minimum": 1408.6402500000002
+    },
+    "secure_opcua_success_rate": {
+      "maximum": 1.0,
+      "mean": 1.0,
+      "minimum": 1.0
+    },
+    "unsecured_rejection_rate": 1.0
+  },
+  "NV061": {
+    "forecast_intervals": 1229,
+    "forecast_rmse_km": 0.08035056099042917,
+    "improvement_vs_hold_pct": 92.91577300428266,
+    "tracks": 56
+  }
+}

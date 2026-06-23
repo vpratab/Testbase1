@@ -1,0 +1,34 @@
+{
+  "behavior_detection": {
+    "f1": 1.0,
+    "false_negative_rate": 0.0,
+    "false_negatives": 0,
+    "false_positive_rate": 0.0,
+    "false_positives": 0,
+    "mean_detection_delay_steps": 4.76,
+    "p95_detection_delay_steps": 9.649999999999991,
+    "precision": 1.0,
+    "recall": 1.0,
+    "scenarios": 100,
+    "threshold": 25.931136156932364,
+    "true_negatives": 50,
+    "true_positives": 50
+  },
+  "evidence": {
+    "head": "74fda1f068b6c1809901e9b96cd36cce09023bccde91a215a7db7e9046ef7a1d",
+    "records": 50,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "performance": {
+    "scenario_runtime_p50_ms": 43.1749585,
+    "scenario_runtime_p95_ms": 73.7879559
+  },
+  "track_association": {
+    "detection_probability": 0.91,
+    "mean_assignment_accuracy": 0.8450284473727053,
+    "mean_clutter_per_frame": 2.0,
+    "minimum_assignment_accuracy": 0.6298026998961579,
+    "total_identity_switches": 31405
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "action_mode": "broker",
+  "decision_contract": [
+    "task_id",
+    "purpose",
+    "provider_adapter",
+    "delivery_status",
+    "return_status",
+    "replay_status",
+    "cryptographic_profile"
+  ],
+  "evidence": {
+    "excludes": [
+      "proof of satellite execution without provider evidence",
+      "IL-5 or IL-6 accreditation"
+    ],
+    "proves": [
+      "the encrypted task matched the authorized purpose",
+      "the provider return corresponds to the same task",
+      "duplicate task use was rejected"
+    ],
+    "retention": "retain commitments and receipts; minimize task plaintext",
+    "verifier": "government task broker and commercial provider gateway"
+  },
+  "example_decision": {
+    "action": "release_task",
+    "confidence": 0.99,
+    "evidence_payload": {
+      "cryptographic_profile": "hybrid-ml-kem-768-x25519",
+      "delivery_status": "released",
+      "provider_adapter": "provider-alpha",
+      "purpose": "maritime collection",
+      "replay_status": "first_use",
+      "return_status": "pending",
+      "task_id": "commercial-task-4"
+    },
+    "reasons": [
+      "purpose_bound_intent_valid"
+    ],
+    "state_digest": "b83a8d903ad40053cd4a024c8cef06a5c0bad55c77b68cc80fda2dae4a61af51638147cdf7ed09c267b676db7b6dd705",
+    "topic": "NV062"
+  },
+  "failure_posture": "quarantine_transaction",
+  "fingerprint": "2d7100964907822d7e5a3ee624801559cab6e1fa93bae58112bbb8d28016163c",
+  "input_contract": [
+    "government task intent and classification boundary",
+    "commercial provider schema",
+    "provider and government cryptographic identities",
+    "collection window and area commitment",
+    "return-data expectation"
+  ],
+  "known_boundary": [
+    "requires a real provider API and accreditation path",
+    "cryptographic receipt is not proof of collection"
+  ],
+  "maintained_state": [
+    "single-use purpose-bound intent",
+    "provider adapter state",
+    "hybrid classical/PQC session",
+    "replay set",
+    "task and return receipt chain"
+  ],
+  "mission_question": "Can a purpose-bound government collection task cross a commercial boundary confidentially, authentically, quickly, and with replay-safe return evidence?",
+  "philosophy_mapping": [
+    "PZDR turns a sensitive task into a purpose-bound minimal-retention transaction",
+    "RTVLAS treats provider workflow state as an observable sequence with anomaly evidence",
+    "every boundary crossing produces independently verifiable receipts"
+  ],
+  "primary_metrics": [
+    "bidirectional transaction success",
+    "tamper and replay rejection",
+    "provider-adapter coverage",
+    "round-trip latency",
+    "workflow-time reduction"
+  ],
+  "product_family": "AssureEdge Cyber",
+  "topic": "NV062"
+}

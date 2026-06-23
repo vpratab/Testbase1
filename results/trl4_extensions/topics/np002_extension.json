@@ -1,0 +1,44 @@
+{
+  "evidence": {
+    "head": "d3d044025b79cb296ac47c9d26376240ab28f57378d1191f38bad4773caf091b",
+    "records": 1,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "maximum_uas": 150,
+  "scale": {
+    "100": {
+      "assignment_accuracy": 0.9988888888888889,
+      "p95_update_ms": 0.35616490000000006
+    },
+    "150": {
+      "assignment_accuracy": 0.9984990619136961,
+      "p95_update_ms": 0.84827675
+    },
+    "25": {
+      "assignment_accuracy": 1.0,
+      "p95_update_ms": 0.04504650000000003
+    },
+    "50": {
+      "assignment_accuracy": 1.0,
+      "p95_update_ms": 0.09334165000000001
+    }
+  },
+  "synthetic_front_end_fusion": {
+    "channels": [
+      "EO score",
+      "RF score",
+      "acoustic score"
+    ],
+    "f1": 0.9821848739495799,
+    "false_negative_rate": 0.026,
+    "false_negatives": 39,
+    "false_positive_rate": 0.009333333333333334,
+    "false_positives": 14,
+    "limitation": "channel scores are synthetic; no payload identity claim",
+    "precision": 0.9905084745762712,
+    "recall": 0.974,
+    "true_negatives": 1486,
+    "true_positives": 1461
+  }
+}

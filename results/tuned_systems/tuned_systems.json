@@ -1,0 +1,619 @@
+{
+  "evidence": {
+    "head": "2d8f0e77d0e844fc69a447a74781ef936920d74e753f0626c49a79ab062f0908",
+    "records": 7,
+    "tamper_detected": true,
+    "verified": true
+  },
+  "manifests": {
+    "NP002": {
+      "action_mode": "escalate",
+      "decision_contract": [
+        "swarm_id",
+        "risk_level",
+        "confidence",
+        "dominant_behavior",
+        "affected_asset",
+        "custody_quality",
+        "recommended_escalation"
+      ],
+      "evidence": {
+        "excludes": [
+          "UAS payload identity without a classifier",
+          "authority to neutralize a target"
+        ],
+        "proves": [
+          "which track geometry and persistence caused escalation",
+          "how missed detections and custody uncertainty affected confidence"
+        ],
+        "retention": "retain compact track features and alert evidence, not raw imagery by default",
+        "verifier": "C-UAS operator or protective-measure controller"
+      },
+      "example_decision": {
+        "action": "activate_protective_measure",
+        "confidence": 0.836,
+        "evidence_payload": {
+          "affected_asset": "ship-1",
+          "confidence": 0.836,
+          "custody_quality": 0.88,
+          "dominant_behavior": "members_toward_asset",
+          "recommended_escalation": "activate_protective_measure",
+          "risk_level": "reject",
+          "swarm_id": "swarm-3"
+        },
+        "reasons": [
+          "centroid_closing_persistent_reject",
+          "formation_contraction_persistent_reject",
+          "members_toward_asset_persistent_reject",
+          "zone_penetration_persistent_reject"
+        ],
+        "state_digest": "2f6b5850201bbb878810a163c49b65b545d21597e5c3c26eee7b7a1f300c0a9e760d17ac16ce194de43a96821fdd04bb",
+        "topic": "NP002"
+      },
+      "failure_posture": "flag_and_continue",
+      "fingerprint": "0c6324bb477f5e7cba6a0cd37c4e4547daf60ec720bdbdcf97f087cd7b58ec7b",
+      "input_contract": [
+        "timestamped UAS detections",
+        "position, velocity, and uncertainty",
+        "track association confidence",
+        "protected-area geometry",
+        "optional type, payload, RF, or imagery evidence"
+      ],
+      "known_boundary": [
+        "requires a real detection and identification front end",
+        "behavior inference is not target identity"
+      ],
+      "maintained_state": [
+        "multi-target custody hypotheses",
+        "swarm centroid and spread",
+        "formation coherence and contraction",
+        "member orientation and acceleration",
+        "persistent intent evidence"
+      ],
+      "mission_question": "Do noisy, intermittently observed UAS tracks collectively exhibit a persistent formation behavior consistent with escalating threat?",
+      "philosophy_mapping": [
+        "RTVLAS elevates formation behavior only after persistent contradictions",
+        "custody uncertainty lowers confidence instead of disappearing",
+        "PZDR evidence enables compact, tamper-evident post-event review"
+      ],
+      "primary_metrics": [
+        "track association accuracy",
+        "swarm behavior F1",
+        "false escalation rate",
+        "detection delay",
+        "UAS count and clutter scalability"
+      ],
+      "product_family": "RTVLAS Mission Assurance",
+      "topic": "NP002"
+    },
+    "NV059": {
+      "action_mode": "authorize",
+      "decision_contract": [
+        "request_id",
+        "subject_id",
+        "resource_id",
+        "action",
+        "allowed",
+        "reasons",
+        "policy_version",
+        "offline_authority"
+      ],
+      "evidence": {
+        "excludes": [
+          "proof that the endpoint remains uncompromised after the decision",
+          "network isolation unless an enforcement adapter confirms it"
+        ],
+        "proves": [
+          "which identity, posture, policy, and behavior caused the decision",
+          "that the decision was not altered after issuance"
+        ],
+        "retention": "retain decision attributes and hashes, not protected data",
+        "verifier": "security operator, auditor, or downstream combat service"
+      },
+      "example_decision": {
+        "action": "allow",
+        "confidence": 0.9,
+        "evidence_payload": {
+          "action": "read",
+          "allowed": true,
+          "offline_authority": true,
+          "policy_version": "policy-7",
+          "reasons": [
+            "bounded_offline_authority_valid",
+            "evidence_within_expected_envelope"
+          ],
+          "request_id": "zt-1",
+          "resource_id": "sensor-track-17",
+          "subject_id": "operator-12"
+        },
+        "reasons": [
+          "bounded_offline_authority_valid",
+          "evidence_within_expected_envelope"
+        ],
+        "state_digest": "4a6b8c929c537d4f0fcd7cfb40c73608becbb3a95e42028c7ba1c1feeb2fe4c0b6c4245a97787e9b6d8d3c15cf6cf8ee",
+        "topic": "NV059"
+      },
+      "failure_posture": "fail_closed",
+      "fingerprint": "4db6a6431cafab4193d988a4c9deacd5c6638be3571d000fa6f5c042286546fe",
+      "input_contract": [
+        "credential chain and proof of key possession",
+        "subject clearance, role, and compartments",
+        "device attestation and health",
+        "data object, action, and protocol",
+        "network state and bounded trust lease",
+        "behavioral access evidence"
+      ],
+      "known_boundary": [
+        "requires real ICAM and segmentation integrations",
+        "local decisions cannot establish remote endpoint integrity"
+      ],
+      "maintained_state": [
+        "signed policy version",
+        "identity and revocation snapshot",
+        "bounded offline trust lease",
+        "per-subject behavioral baseline",
+        "decision receipt chain"
+      ],
+      "mission_question": "May this exact subject and device perform this exact action on this combat-data object now, including while disconnected?",
+      "philosophy_mapping": [
+        "PZDR provides minimal-disclosure signed transaction receipts",
+        "RTVLAS contributes persistence against low-and-slow access misuse",
+        "offline authority is explicit and expires rather than becoming implicit trust"
+      ],
+      "primary_metrics": [
+        "false allow and false deny rate",
+        "authorization latency",
+        "DDIL decision availability",
+        "stale-trust rejection",
+        "protocol enforcement coverage"
+      ],
+      "product_family": "AssureEdge Cyber",
+      "topic": "NV059"
+    },
+    "NV061": {
+      "action_mode": "prioritize",
+      "decision_contract": [
+        "object_id",
+        "forecast_state",
+        "forecast_uncertainty",
+        "custody_confidence",
+        "priority_level",
+        "priority_reasons",
+        "recommended_investigation"
+      ],
+      "evidence": {
+        "excludes": [
+          "perfect identity across unobserved intervals",
+          "intent inferred solely from kinematics"
+        ],
+        "proves": [
+          "which forecast, uncertainty, behavior, and custody produced ranking",
+          "whether priority changed due to risk or reduced confidence"
+        ],
+        "retention": "retain compact state/covariance and ranking evidence",
+        "verifier": "Maritime Targeting Cell analyst or downstream tracker"
+      },
+      "example_decision": {
+        "action": "rank_high",
+        "confidence": 0.9536005245853563,
+        "evidence_payload": {
+          "custody_confidence": 0.896890054634125,
+          "forecast_state": [
+            18.2,
+            -4.1
+          ],
+          "forecast_uncertainty": 0.32,
+          "object_id": "contact-77",
+          "priority_level": "high",
+          "priority_reasons": [
+            "persistent_behavior_change",
+            "track_custody_supported"
+          ],
+          "recommended_investigation": true
+        },
+        "reasons": [
+          "persistent_behavior_change",
+          "track_custody_supported"
+        ],
+        "state_digest": "ffa76360658690cd921c6040d35f65efc617654e9f9e6288148cc811923631bfd54298e79eac892f38b652b313ce27c4",
+        "topic": "NV061"
+      },
+      "failure_posture": "preserve_custody",
+      "fingerprint": "ea64fb5d66f8d32c7b6e2002efab68caa69de6058b56f88e9a0049f7c919ef95",
+      "input_contract": [
+        "heterogeneous object observations",
+        "sensor uncertainty and source identity",
+        "track association candidates",
+        "historical local behavior",
+        "mission threat and protected-area context"
+      ],
+      "known_boundary": [
+        "requires broader sensor and identity data",
+        "kinematic forecast is not a complete adversary intent model"
+      ],
+      "maintained_state": [
+        "object state and covariance",
+        "multi-source custody confidence",
+        "future-state forecast distribution",
+        "behavior-change evidence",
+        "priority history and analyst disposition"
+      ],
+      "mission_question": "Where will each object probably be, how sure are we that it is the same object, and which uncertain forecast deserves analyst attention?",
+      "philosophy_mapping": [
+        "RTVLAS supplies prediction, covariance, persistence, and explicit uncertainty",
+        "weak custody reduces priority confidence instead of being hidden",
+        "PZDR receipts preserve why analysts were directed to one object"
+      ],
+      "primary_metrics": [
+        "forecast error",
+        "track custody accuracy",
+        "priority recall",
+        "false prioritization rate",
+        "objects processed per update"
+      ],
+      "product_family": "RTVLAS Mission Assurance",
+      "topic": "NV061"
+    },
+    "NV062": {
+      "action_mode": "broker",
+      "decision_contract": [
+        "task_id",
+        "purpose",
+        "provider_adapter",
+        "delivery_status",
+        "return_status",
+        "replay_status",
+        "cryptographic_profile"
+      ],
+      "evidence": {
+        "excludes": [
+          "proof of satellite execution without provider evidence",
+          "IL-5 or IL-6 accreditation"
+        ],
+        "proves": [
+          "the encrypted task matched the authorized purpose",
+          "the provider return corresponds to the same task",
+          "duplicate task use was rejected"
+        ],
+        "retention": "retain commitments and receipts; minimize task plaintext",
+        "verifier": "government task broker and commercial provider gateway"
+      },
+      "example_decision": {
+        "action": "release_task",
+        "confidence": 0.99,
+        "evidence_payload": {
+          "cryptographic_profile": "hybrid-ml-kem-768-x25519",
+          "delivery_status": "released",
+          "provider_adapter": "provider-alpha",
+          "purpose": "maritime collection",
+          "replay_status": "first_use",
+          "return_status": "pending",
+          "task_id": "commercial-task-4"
+        },
+        "reasons": [
+          "purpose_bound_intent_valid"
+        ],
+        "state_digest": "b83a8d903ad40053cd4a024c8cef06a5c0bad55c77b68cc80fda2dae4a61af51638147cdf7ed09c267b676db7b6dd705",
+        "topic": "NV062"
+      },
+      "failure_posture": "quarantine_transaction",
+      "fingerprint": "2d7100964907822d7e5a3ee624801559cab6e1fa93bae58112bbb8d28016163c",
+      "input_contract": [
+        "government task intent and classification boundary",
+        "commercial provider schema",
+        "provider and government cryptographic identities",
+        "collection window and area commitment",
+        "return-data expectation"
+      ],
+      "known_boundary": [
+        "requires a real provider API and accreditation path",
+        "cryptographic receipt is not proof of collection"
+      ],
+      "maintained_state": [
+        "single-use purpose-bound intent",
+        "provider adapter state",
+        "hybrid classical/PQC session",
+        "replay set",
+        "task and return receipt chain"
+      ],
+      "mission_question": "Can a purpose-bound government collection task cross a commercial boundary confidentially, authentically, quickly, and with replay-safe return evidence?",
+      "philosophy_mapping": [
+        "PZDR turns a sensitive task into a purpose-bound minimal-retention transaction",
+        "RTVLAS treats provider workflow state as an observable sequence with anomaly evidence",
+        "every boundary crossing produces independently verifiable receipts"
+      ],
+      "primary_metrics": [
+        "bidirectional transaction success",
+        "tamper and replay rejection",
+        "provider-adapter coverage",
+        "round-trip latency",
+        "workflow-time reduction"
+      ],
+      "product_family": "AssureEdge Cyber",
+      "topic": "NV062"
+    },
+    "NV063": {
+      "action_mode": "escalate",
+      "decision_contract": [
+        "system_track_number",
+        "alert_tier",
+        "confidence",
+        "dominant_deviation",
+        "track_details",
+        "local_context",
+        "operator_action"
+      ],
+      "evidence": {
+        "excludes": [
+          "malicious intent from anomaly alone",
+          "global completeness of the local Pattern of Life"
+        ],
+        "proves": [
+          "which local baseline and persistent deviation caused the alert",
+          "which data-quality screen was applied"
+        ],
+        "retention": "retain compact route/motion state and alert evidence, not global raw history",
+        "verifier": "SSDS watchstander or decision-support service"
+      },
+      "example_decision": {
+        "action": "resolve_identity_and_cue_sensor",
+        "confidence": 0.99,
+        "evidence_payload": {
+          "alert_tier": "high_confidence",
+          "confidence": 0.99,
+          "dominant_deviation": "heading",
+          "local_context": "departure from established traffic lane",
+          "operator_action": "resolve_identity_and_cue_sensor",
+          "system_track_number": "STN-140",
+          "track_details": {
+            "course": 114,
+            "speed_knots": 17.2
+          }
+        },
+        "reasons": [
+          "heading_persistent_reject",
+          "closing_persistent_reject",
+          "identity_loss_persistent_reject"
+        ],
+        "state_digest": "e8bc9dbf39c6c1bcd1afafec82c48d50a26f7ff36ba5fdf6c8a1f3489a9bcbb4d26931ae610d3eec5095153aab19dffe",
+        "topic": "NV063"
+      },
+      "failure_posture": "flag_and_continue",
+      "fingerprint": "e497882e5d86c9d5b131406a2a35741cb07a65064d66bfef2af5ee688df7d04d",
+      "input_contract": [
+        "AIS and ADS-B reports",
+        "organic radar or composite tracks",
+        "system track number",
+        "local route and motion context",
+        "cooperative-identification continuity"
+      ],
+      "known_boundary": [
+        "anomaly does not establish hostility",
+        "requires ADS-B and SSDS composite-track evaluation"
+      ],
+      "maintained_state": [
+        "compact per-track motion model",
+        "compressed route primitives",
+        "persistent speed, heading, closing, and identity residuals",
+        "watch and high-confidence alert state"
+      ],
+      "mission_question": "Is this local air or surface contact persistently out of family for the current operating context despite limited historical storage?",
+      "philosophy_mapping": [
+        "RTVLAS online calibration learns local normal without a global archive",
+        "persistent evidence separates temporary maneuver from sustained deviation",
+        "PZDR receipts make machine reasoning reviewable without retaining all raw traffic"
+      ],
+      "primary_metrics": [
+        "alert precision, recall, and F1",
+        "watch and high-confidence false-alert rates",
+        "detection delay",
+        "bytes of state per track",
+        "track updates per second"
+      ],
+      "product_family": "RTVLAS Mission Assurance",
+      "topic": "NV063"
+    },
+    "NV065": {
+      "action_mode": "advisory",
+      "decision_contract": [
+        "sensor_id",
+        "released_task",
+        "recommended_task",
+        "affected_track",
+        "marginal_information_gain",
+        "conflict_penalty",
+        "explanation"
+      ],
+      "evidence": {
+        "excludes": [
+          "actual radar performance beyond the supplied model",
+          "authority to retask sensors automatically"
+        ],
+        "proves": [
+          "the estimated marginal track-quality contribution",
+          "why the alternative task had greater weighted mission value"
+        ],
+        "retention": "retain recommendation inputs, utility, and operator response",
+        "verifier": "sensor manager, combat-system operator, or resource allocator"
+      },
+      "example_decision": {
+        "action": "recommend_reallocation",
+        "confidence": 0.98,
+        "evidence_payload": {
+          "affected_track": "air-track-204",
+          "conflict_penalty": 0.03,
+          "explanation": "candidate task has positive mission-weighted marginal information value",
+          "marginal_information_gain": 0.4626506024096385,
+          "recommended_task": "cue-novel-high-priority-track",
+          "released_task": "repeat-update-well-known-track",
+          "sensor_id": "SPY-6(V)3-surrogate"
+        },
+        "reasons": [
+          "candidate task has positive mission-weighted marginal information value"
+        ],
+        "state_digest": "146e74223b85f37625aad4fe476d9575ac3eed2725a99ab665efa9ff24f9f9e72213ab25d63e06cadea4d20d2b985171",
+        "topic": "NV065"
+      },
+      "failure_posture": "advisory_only",
+      "fingerprint": "e6c97ed10002b13f84af1fbd5c00ed6c9dda7d52614cfa746cb1ee119151b263",
+      "input_contract": [
+        "composite-track covariance and quality",
+        "sensor measurement uncertainty",
+        "task mode, capacity, cost, and conflicts",
+        "track hostility and mission priority",
+        "controllable search, cueing, tracking, and illumination options"
+      ],
+      "known_boundary": [
+        "requires traceable program-of-record sensor models",
+        "Phase I recommendations remain advisory"
+      ],
+      "maintained_state": [
+        "sensor-track contribution matrix",
+        "diminishing-return state",
+        "resource conflicts",
+        "candidate task utility",
+        "recommendation history and operator disposition"
+      ],
+      "mission_question": "Which sensor task contributes the least additional track information, and where would that finite resource create greater mission value?",
+      "philosophy_mapping": [
+        "RTVLAS covariance becomes marginal evidence value rather than a trust score",
+        "persistent priority changes prevent task thrashing",
+        "PZDR receipts preserve exactly why scarce sensor time was moved"
+      ],
+      "primary_metrics": [
+        "track-quality improvement",
+        "novel-threat response",
+        "resource conflicts avoided",
+        "recommendation latency",
+        "operator acceptance and override rate"
+      ],
+      "product_family": "RTVLAS Mission Assurance",
+      "topic": "NV065"
+    },
+    "QSPARX": {
+      "action_mode": "migrate",
+      "decision_contract": [
+        "asset_id",
+        "risk_score",
+        "risk_factors",
+        "migration_target",
+        "migration_wave",
+        "dependency_impact"
+      ],
+      "evidence": {
+        "excludes": [
+          "proof that an unscanned asset does not exist",
+          "FIPS validation of the chosen implementation"
+        ],
+        "proves": [
+          "what cryptographic material was observed",
+          "which risk basis produced the recommendation",
+          "which dependency ordering constrained migration"
+        ],
+        "retention": "retain inventory hashes and recommendations, not private keys",
+        "verifier": "cyber assessor or migration authority"
+      },
+      "example_decision": {
+        "action": "prioritize_crypto_migration",
+        "confidence": 0.99,
+        "evidence_payload": {
+          "asset_id": "mission-api",
+          "dependency_impact": [
+            "root-ca"
+          ],
+          "migration_target": "hybrid-ml-kem-768",
+          "migration_wave": 2,
+          "risk_factors": [
+            "quantum_vulnerable_algorithm",
+            "dependency_exposure"
+          ],
+          "risk_score": 96
+        },
+        "reasons": [
+          "highest mission-weighted quantum exposure"
+        ],
+        "state_digest": "1ad0f7bfef91766abeff8314c16e75b3ac50c9024f986a64c96382d2184b5f054fd3ab70d7da3733de5c25f5d5fca019",
+        "topic": "QSPARX"
+      },
+      "failure_posture": "advisory_only",
+      "fingerprint": "68a632f20c38417dd9d151f764a8682188bd9fde16bdc335af378ab285ae017c",
+      "input_contract": [
+        "software and configuration artifacts",
+        "certificate and key metadata",
+        "protocol observations",
+        "asset dependencies",
+        "mission criticality and data lifetime"
+      ],
+      "known_boundary": [
+        "requires enterprise discovery connectors",
+        "does not replace cryptographic module validation"
+      ],
+      "maintained_state": [
+        "cryptographic bill of materials",
+        "dependency graph",
+        "algorithm and key posture",
+        "quantum exposure score",
+        "migration wave state",
+        "compliance evidence lineage"
+      ],
+      "mission_question": "Which cryptographic dependencies create the greatest quantum-era mission risk, and what migration order reduces risk without breaking legacy operations?",
+      "philosophy_mapping": [
+        "PZDR minimizes retained secrets while preserving audit evidence",
+        "RTVLAS treats weak cryptographic indicators as accumulated mission risk",
+        "recommendations are evidence-bound rather than opaque scores"
+      ],
+      "primary_metrics": [
+        "inventory coverage",
+        "risk classification precision and recall",
+        "discovery latency",
+        "migration dependency conflicts",
+        "PQC operation latency"
+      ],
+      "product_family": "AssureEdge Cyber",
+      "topic": "QSPARX"
+    }
+  },
+  "philosophy_ablations": {
+    "NP002": {
+      "finding": "formation escalation requires persistence",
+      "sustained_action": "activate_protective_measure",
+      "transient_action": "continue_monitoring"
+    },
+    "NV059": {
+      "finding": "persistent low-and-slow evidence changes the authorization outcome",
+      "first_sample_action": "allow",
+      "persistent_sequence_action": "deny"
+    },
+    "NV061": {
+      "finding": "uncertain custody reduces confidence and ranking",
+      "strong_custody_confidence": 0.9840662824206979,
+      "strong_custody_priority": "high",
+      "weak_custody_confidence": 0.5917099573864889,
+      "weak_custody_priority": "watch"
+    },
+    "NV062": {
+      "finding": "purpose-bound single-use intent quarantines replay",
+      "first_use_action": "release_task",
+      "replay_action": "quarantine_task"
+    },
+    "NV063": {
+      "finding": "a transient deviation and a persistent deviation do not produce the same alert",
+      "sustained_alert_tier": "high_confidence",
+      "transient_alert_tier": "none"
+    },
+    "NV065": {
+      "finding": "resource conflicts can reverse an otherwise attractive recommendation",
+      "with_conflict": "retain_current_task",
+      "without_conflict": "recommend_reallocation"
+    },
+    "QSPARX": {
+      "dependency_aware_first_wave": "root",
+      "finding": "risk-only ordering breaks the dependency; tuned ordering does not",
+      "naive_highest_risk_first": "dependent",
+      "selected_asset": "dependent",
+      "selected_asset_wave": 2
+    }
+  },
+  "topic_count": 7,
+  "unique_design_fingerprints": 7
+}

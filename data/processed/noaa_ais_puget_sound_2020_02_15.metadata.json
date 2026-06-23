@@ -1,0 +1,19 @@
+{
+  "first_timestamp": "2020-02-15 00:00:00+00:00",
+  "last_timestamp": "2020-02-15 09:17:50+00:00",
+  "output": "data/processed/noaa_ais_puget_sound_2020_02_15.csv",
+  "region": {
+    "latitude": [
+      46.8,
+      49.1
+    ],
+    "longitude": [
+      -124.2,
+      -121.6
+    ]
+  },
+  "rows": 179043,
+  "source_archive": "data/external/noaa_ais/AIS_2020_02_15.zip",
+  "source_url": "https://coast.noaa.gov/htdata/CMSP/AISDataHandler/2020/AIS_2020_02_15.zip",
+  "vessels": 1128
+}

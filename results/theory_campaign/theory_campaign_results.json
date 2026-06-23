@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-23T03:11:22Z",
+    "machine": "arm64",
+    "platform": "macOS-26.1-arm64-arm-64bit",
+    "processor": "arm",
+    "python": "3.9.6"
+  },
+  "results": {
+    "anytime_access_monitor": {
+      "anytime_false_alarm_target": 0.01,
+      "attack_detection_rate": 0.9035,
+      "attack_event_rate": 0.15,
+      "attacked_sequences": 4000,
+      "boundary": "the anytime guarantee is valid under the specified nominal event model; misspecification requires conservative calibration",
+      "median_detection_delay_samples": 151.0,
+      "nominal_event_rate": 0.02,
+      "nominal_false_alarm_rate": 0.00375,
+      "nominal_sequences": 4000,
+      "p95_detection_delay_samples": 230.0
+    },
+    "conformal_alert_control": {
+      "alert_batch_size": 10,
+      "boundary": "FDR control assumes calibration nominal tracks represent future nominal traffic; injected deviations are not hostile ground truth",
+      "calibration_tracks": 48,
+      "evaluation_anomalous_tracks": 108,
+      "evaluation_nominal_tracks": 108,
+      "high_confidence": {
+        "discoveries": 57,
+        "empirical_false_discovery_proportion": 0.03508771929824561,
+        "false_discoveries": 2,
+        "recall": 0.5092592592592593,
+        "target_false_discovery_rate": 0.1,
+        "true_discoveries": 55
+      },
+      "minimum_p_value": 0.00014471950591935805,
+      "model": "256-tree grouped-track random forest with split-conformal wrapper",
+      "p_value_method": "randomized split-conformal track-level p-values",
+      "tuning_tracks": 38,
+      "watch": {
+        "discoveries": 75,
+        "empirical_false_discovery_proportion": 0.09333333333333334,
+        "false_discoveries": 7,
+        "recall": 0.6296296296296297,
+        "target_false_discovery_rate": 0.2,
+        "true_discoveries": 68
+      }
+    },
+    "conformal_trajectory": {
+      "boundary": "finite-sample empirical coverage on held-out public AIS tracks; exchangeability can fail under operational distribution shift",
+      "coverage_target": 0.9,
+      "examples": {
+        "calibration": 3984,
+        "evaluation": 8964
+      },
+      "forecast_horizon_steps": 5,
+      "global": {
+        "empirical_coverage": 0.928714859437751,
+        "mean_region_area_km2": 124.14583792071835,
+        "radius_km": 6.286242720316738
+      },
+      "independent_track_split": {
+        "calibration": 48,
+        "evaluation": 108,
+        "tuning": 38
+      },
+      "selected_gain": 0.6,
+      "selected_window": 2,
+      "speed_conditioned": {
+        "area_reduction_vs_global_pct": 7.920756029543097,
+        "empirical_coverage": 0.9077420794288265,
+        "high_speed_radius_km": 8.346214721034922,
+        "low_speed_radius_km": 0.07875932082581624,
+        "mean_region_area_km2": 114.31254897818629,
+        "speed_boundary_km_per_step": 0.013707900806198289
+      }
+    },
+    "crypto_agility": {
+      "assets": 200,
+      "boundary": "synthetic acyclic enterprise graph; authoritative AFDW dependencies and rollback procedures remain required",
+      "dependency_edges": 294,
+      "dependency_safe_violations": 0,
+      "estimated_parallel_effort_reduction_pct": 78.81621825408489,
+      "maximum_wave_total_effort": 23.000112738690312,
+      "migration_waves": 26,
+      "unresolved": [],
+      "unsafe_risk_order_dependency_violations": 91
+    },
+    "distribution_shift_stress": {
+      "boundary": "rolling recalibration uses only previously realized forecast errors; it cannot guarantee immediate coverage after abrupt shift",
+      "coverage_target": 0.9,
+      "rolling_window": 500,
+      "static_radius_km": 6.286242720316738,
+      "stress": [
+        {
+          "error_scale": 1.0,
+          "rolling_coverage_after_warmup": 0.8838610586011342,
+          "rolling_final_radius_km": 6.0016761845493845,
+          "static_coverage": 0.928714859437751,
+          "warmup_examples": 500
+        },
+        {
+          "error_scale": 1.25,
+          "rolling_coverage_after_warmup": 0.8838610586011342,
+          "rolling_final_radius_km": 7.502095230686731,
+          "static_coverage": 0.8952476572958501,
+          "warmup_examples": 500
+        },
+        {
+          "error_scale": 1.5,
+          "rolling_coverage_after_warmup": 0.8838610586011342,
+          "rolling_final_radius_km": 9.002514276824076,
+          "static_coverage": 0.8539714413208389,
+          "warmup_examples": 500
+        },
+        {
+          "error_scale": 2.0,
+          "rolling_coverage_after_warmup": 0.8838610586011342,
+          "rolling_final_radius_km": 12.003352369098769,
+          "static_coverage": 0.7978580990629184,
+          "warmup_examples": 500
+        }
+      ]
+    },
+    "robust_sensor_scheduling": {
+      "boundary": "synthetic degradation distributions; sponsor radar and ES sensor failure statistics are required for operational calibration",
+      "budget": 30.0,
+      "candidates": 120,
+      "nominal": {
+        "mean_utility": 45.261609511432546,
+        "p05_utility": 41.1993407606751
+      },
+      "nominal_selected": 37,
+      "robust": {
+        "mean_utility": 45.4854765838935,
+        "p05_utility": 41.32552235599203
+      },
+      "robust_p05_improvement_pct": 0.3062709086776749,
+      "robust_selected": 37,
+      "single_sensor_degradation": {
+        "minimum_utility_improvement_pct": 0.2623591294124594,
+        "nominal_minimum_utility": 43.96506692849248,
+        "robust_minimum_utility": 44.08041329533168
+      }
+    },
+    "unknown_correlation_fusion": {
+      "boundary": "synthetic correlated-Gaussian study; representative sensor cross-correlation must be measured with synchronized hardware",
+      "covariance_intersection": {
+        "mean_nees": 1.6733935281112078,
+        "nominal_95pct_ellipse_coverage": 0.97075,
+        "rmse": 1.6362853189398028,
+        "selected_weight": 0.5
+      },
+      "naive_independence": {
+        "mean_nees": 3.3467870562224156,
+        "nominal_95pct_ellipse_coverage": 0.83485,
+        "rmse": 1.6362853189398028
+      },
+      "trials": 20000,
+      "unknown_error_correlation": 0.85
+    }
+  }
+}

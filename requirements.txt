@@ -1,0 +1,11 @@
+asyncua>=1.1,<2
+cryptography>=46.0.0
+cyclonedds==0.10.5
+jsonschema>=4.0
+numpy>=2.0
+pandas>=2.0
+pqcrypto==0.4.0
+PyYAML>=6.0
+remotezip==0.12.3
+scikit-learn>=1.6
+scipy>=1.13

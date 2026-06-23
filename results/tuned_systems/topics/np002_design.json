@@ -1,0 +1,80 @@
+{
+  "action_mode": "escalate",
+  "decision_contract": [
+    "swarm_id",
+    "risk_level",
+    "confidence",
+    "dominant_behavior",
+    "affected_asset",
+    "custody_quality",
+    "recommended_escalation"
+  ],
+  "evidence": {
+    "excludes": [
+      "UAS payload identity without a classifier",
+      "authority to neutralize a target"
+    ],
+    "proves": [
+      "which track geometry and persistence caused escalation",
+      "how missed detections and custody uncertainty affected confidence"
+    ],
+    "retention": "retain compact track features and alert evidence, not raw imagery by default",
+    "verifier": "C-UAS operator or protective-measure controller"
+  },
+  "example_decision": {
+    "action": "activate_protective_measure",
+    "confidence": 0.836,
+    "evidence_payload": {
+      "affected_asset": "ship-1",
+      "confidence": 0.836,
+      "custody_quality": 0.88,
+      "dominant_behavior": "members_toward_asset",
+      "recommended_escalation": "activate_protective_measure",
+      "risk_level": "reject",
+      "swarm_id": "swarm-3"
+    },
+    "reasons": [
+      "centroid_closing_persistent_reject",
+      "formation_contraction_persistent_reject",
+      "members_toward_asset_persistent_reject",
+      "zone_penetration_persistent_reject"
+    ],
+    "state_digest": "2f6b5850201bbb878810a163c49b65b545d21597e5c3c26eee7b7a1f300c0a9e760d17ac16ce194de43a96821fdd04bb",
+    "topic": "NP002"
+  },
+  "failure_posture": "flag_and_continue",
+  "fingerprint": "0c6324bb477f5e7cba6a0cd37c4e4547daf60ec720bdbdcf97f087cd7b58ec7b",
+  "input_contract": [
+    "timestamped UAS detections",
+    "position, velocity, and uncertainty",
+    "track association confidence",
+    "protected-area geometry",
+    "optional type, payload, RF, or imagery evidence"
+  ],
+  "known_boundary": [
+    "requires a real detection and identification front end",
+    "behavior inference is not target identity"
+  ],
+  "maintained_state": [
+    "multi-target custody hypotheses",
+    "swarm centroid and spread",
+    "formation coherence and contraction",
+    "member orientation and acceleration",
+    "persistent intent evidence"
+  ],
+  "mission_question": "Do noisy, intermittently observed UAS tracks collectively exhibit a persistent formation behavior consistent with escalating threat?",
+  "philosophy_mapping": [
+    "RTVLAS elevates formation behavior only after persistent contradictions",
+    "custody uncertainty lowers confidence instead of disappearing",
+    "PZDR evidence enables compact, tamper-evident post-event review"
+  ],
+  "primary_metrics": [
+    "track association accuracy",
+    "swarm behavior F1",
+    "false escalation rate",
+    "detection delay",
+    "UAS count and clutter scalability"
+  ],
+  "product_family": "RTVLAS Mission Assurance",
+  "topic": "NP002"
+}

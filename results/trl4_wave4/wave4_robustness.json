@@ -1,0 +1,65 @@
+{
+  "NP002": {
+    "typed_accuracy": {
+      "maximum": 1.0,
+      "mean": 0.9995833333333334,
+      "minimum": 0.9979166666666667
+    },
+    "typed_identity_switches": {
+      "maximum": 4.0,
+      "mean": 0.8,
+      "minimum": 0.0
+    }
+  },
+  "NV059": {
+    "authorized_rate": 1.0,
+    "p95_us": 5327.277399999999,
+    "unauthorized_deny_rate": 1.0
+  },
+  "NV061": {
+    "priority_recall": {
+      "maximum": 0.9367088607594937,
+      "mean": 0.9291139240506329,
+      "minimum": 0.9240506329113924
+    }
+  },
+  "NV062": {
+    "control_f1": 1.0,
+    "evidence_verified": true
+  },
+  "NV063": {
+    "air_f1": {
+      "maximum": 1.0,
+      "mean": 1.0,
+      "minimum": 1.0
+    },
+    "air_fpr": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0
+    },
+    "interface_tamper_rate": 1.0
+  },
+  "NV065": {
+    "double_power_db": {
+      "maximum": 3.010299956639812,
+      "mean": 3.010299956639812,
+      "minimum": 3.010299956639812
+    },
+    "invalid_schedules": {
+      "maximum": 0.0,
+      "mean": 0.0,
+      "minimum": 0.0
+    },
+    "scheduler_p95_us": {
+      "maximum": 61.566699999999976,
+      "mean": 56.98673999999998,
+      "minimum": 53.68139999999999
+    }
+  },
+  "QSPARX": {
+    "active_endpoints": 16,
+    "dependency_edges": 48,
+    "inventory_accuracy": 1.0
+  }
+}
