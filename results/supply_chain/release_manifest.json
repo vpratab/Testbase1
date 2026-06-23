@@ -36,24 +36,24 @@
       "sha256": "765c40d969c2cae5f2e4de0db2ff59fbdf885447fec54541bbb6c7a397b742e5"
     },
     {
-      "bytes": 1414,
+      "bytes": 1438,
       "path": "results/performance/native_kernel_benchmark.json",
-      "sha256": "66c36557e9636fb9e272925ecb0718ef4af77f3cdfd7cc91ca517f81a2600333"
+      "sha256": "22a39dbb95d32060c8e42d4f0f7694569058fe6d9e64743e27ca5be0ab28e1ec"
     },
     {
       "bytes": 847,
       "path": "results/performance/native_kernel_scaling.json",
-      "sha256": "116086de96cf1eed39b0756728c66c51e55fad872921639cbfaab36c53a900c0"
+      "sha256": "cb7b447b0c85aacd5bd0337304970df93a70462214aa543e75144ff08d0737a5"
     },
     {
-      "bytes": 66676,
+      "bytes": 66668,
       "path": "results/independent_benchmark/independent_benchmark.json",
-      "sha256": "2f07c02b9329388018b4403f3567e6bc90cf4b07fac0c839344f23d681a5bad4"
+      "sha256": "8e03e176f86116f29a8003cae3716ce3df445692fc334fbb3089cb6386d8625a"
     },
     {
-      "bytes": 2333,
+      "bytes": 2334,
       "path": "results/independent_benchmark/INDEPENDENT_BENCHMARK.md",
-      "sha256": "3e5958e2eec4a2ebc34fdff3662d8b508a63b5b75969b4bf18d7ac3e40dbc994"
+      "sha256": "36430636317a3e01d934b529256c1cf1d9d9b25c4c569e6a11c57426149323a0"
     },
     {
       "bytes": 107514,
@@ -84,11 +84,21 @@
       "bytes": 12433,
       "path": "results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md",
       "sha256": "aaf51b743c052f1e48b84fa626cdcbea275801cee8c36df1964c0cf727600759"
+    },
+    {
+      "bytes": 5889,
+      "path": "results/completion_audit/completion_audit.json",
+      "sha256": "a21bc0a37c255f193589d4ba97384e5b470eee1b01a71c2f546b51c3a1992f40"
+    },
+    {
+      "bytes": 2179,
+      "path": "results/completion_audit/COMPLETION_AUDIT.md",
+      "sha256": "c8d3e8a2bbc44497ba95b799178ef88e230181b910b9379254b1564c359f31ab"
     }
   ],
   "boundary": "local integrity manifest; signing, independent timestamping, and external artifact storage remain release-process tasks",
   "component_inventory_sha256": "ec7df1694ef245c600087a6aa24d67a2cfd0cb69453b8e602611c3ac8e48acca",
   "format": "assureedge-release-manifest/v1",
-  "source_files": 76,
-  "source_manifest_root_sha256": "406edbfb3105084ee72e4397629903c2bbf1fd034b15ab66d88e1ff8d823584d"
+  "source_files": 78,
+  "source_manifest_root_sha256": "496c1c380fd62e623792010f510dfc96cb51a88fed9fcc14d87a423ae6931f18"
 }

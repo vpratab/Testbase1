@@ -136,6 +136,8 @@ def main() -> None:
         / "results"
         / "proposal_readiness"
         / "TOPIC_PROPOSAL_PACKETS.md",
+        ROOT / "results" / "completion_audit" / "completion_audit.json",
+        ROOT / "results" / "completion_audit" / "COMPLETION_AUDIT.md",
     ]
     release = {
         "format": "assureedge-release-manifest/v1",

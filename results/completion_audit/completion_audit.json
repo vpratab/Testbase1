@@ -1,0 +1,163 @@
+{
+  "artifacts": {
+    "current_assessment": {
+      "bytes": 17030,
+      "exists": true,
+      "path": "docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md"
+    },
+    "dense_crossing": {
+      "bytes": 1851,
+      "exists": true,
+      "path": "results/dense_crossing/DENSE_CROSSING_REPORT.md"
+    },
+    "evidence_index": {
+      "bytes": 2218,
+      "exists": true,
+      "path": "results/trl4_wave5/EVIDENCE_INDEX.md"
+    },
+    "external_access": {
+      "bytes": 3890,
+      "exists": true,
+      "path": "docs/EXTERNAL_ACCESS_PACKAGES.md"
+    },
+    "frozen_region": {
+      "bytes": 1581,
+      "exists": true,
+      "path": "results/frozen_region/FROZEN_REGION_REPORT.md"
+    },
+    "go_no_go": {
+      "bytes": 3230,
+      "exists": true,
+      "path": "docs/PHASE1_GO_NO_GO.md"
+    },
+    "independent_benchmark": {
+      "bytes": 2333,
+      "exists": true,
+      "path": "results/independent_benchmark/INDEPENDENT_BENCHMARK.md"
+    },
+    "np002_field_path": {
+      "bytes": 3524,
+      "exists": true,
+      "path": "docs/NP002_FIELD_VALIDATION_PATH.md"
+    },
+    "partner_templates": {
+      "bytes": 3384,
+      "exists": true,
+      "path": "docs/PARTNER_OUTREACH_TEMPLATES.md"
+    },
+    "release_manifest": {
+      "bytes": 3533,
+      "exists": true,
+      "path": "results/supply_chain/release_manifest.json"
+    },
+    "topic_packet_json": {
+      "bytes": 13775,
+      "exists": true,
+      "path": "results/proposal_readiness/topic_readiness.json"
+    },
+    "topic_packets": {
+      "bytes": 12433,
+      "exists": true,
+      "path": "results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md"
+    }
+  },
+  "excluded_external_proofs": {
+    "NP002": "synchronized C-UAS field truth and integration owner",
+    "NV059": "DoD identity and representative combat-network access",
+    "NV061": "operational composite tracks with identity truth and analyst dispositions",
+    "NV062": "credentialed live provider sandbox or collection lifecycle",
+    "NV063": "SSDS replay and operator alert dispositions",
+    "NV065": "approved radar/task parameters and fire-control-quality definitions",
+    "QSPARX": "AFDW inventory or sponsor-approved range access"
+  },
+  "format": "assureedge-completion-audit/v1",
+  "internal_scope_complete": true,
+  "objective": "Make all seven SBIR concepts Phase I proposal-ready and technically winnable by closing every evidence, benchmark, traceability, and clarity gap possible without sponsor-only credentials, classified data, or external partner commitments.",
+  "requirements": {
+    "all_seven_topics_present": true,
+    "external_blockers_explicit": true,
+    "required_artifacts_present": true,
+    "topic_artifacts_present": true,
+    "topic_packets_valid": true
+  },
+  "scope_boundary": "Completion means internally proposal-ready within the declared no-sponsor-credential/no-classified-data/no-partner-commitment boundary. It does not mean operational validation or award probability.",
+  "topics": {
+    "NP002": {
+      "base_demo_defined": true,
+      "external_proof_not_required_for_internal_completion": "synchronized C-UAS field truth and integration owner",
+      "failure_condition_defined": true,
+      "option_demo_defined": true,
+      "overclaim_boundary_defined": true,
+      "packet_complete": true,
+      "primary_artifacts_exist": true,
+      "readiness_score": 77,
+      "status": "PARTNER GO"
+    },
+    "NV059": {
+      "base_demo_defined": true,
+      "external_proof_not_required_for_internal_completion": "DoD identity and representative combat-network access",
+      "failure_condition_defined": true,
+      "option_demo_defined": true,
+      "overclaim_boundary_defined": true,
+      "packet_complete": true,
+      "primary_artifacts_exist": true,
+      "readiness_score": 88,
+      "status": "GO"
+    },
+    "NV061": {
+      "base_demo_defined": true,
+      "external_proof_not_required_for_internal_completion": "operational composite tracks with identity truth and analyst dispositions",
+      "failure_condition_defined": true,
+      "option_demo_defined": true,
+      "overclaim_boundary_defined": true,
+      "packet_complete": true,
+      "primary_artifacts_exist": true,
+      "readiness_score": 88,
+      "status": "GO"
+    },
+    "NV062": {
+      "base_demo_defined": true,
+      "external_proof_not_required_for_internal_completion": "credentialed live provider sandbox or collection lifecycle",
+      "failure_condition_defined": true,
+      "option_demo_defined": true,
+      "overclaim_boundary_defined": true,
+      "packet_complete": true,
+      "primary_artifacts_exist": true,
+      "readiness_score": 82,
+      "status": "CONDITIONAL GO"
+    },
+    "NV063": {
+      "base_demo_defined": true,
+      "external_proof_not_required_for_internal_completion": "SSDS replay and operator alert dispositions",
+      "failure_condition_defined": true,
+      "option_demo_defined": true,
+      "overclaim_boundary_defined": true,
+      "packet_complete": true,
+      "primary_artifacts_exist": true,
+      "readiness_score": 83,
+      "status": "GO"
+    },
+    "NV065": {
+      "base_demo_defined": true,
+      "external_proof_not_required_for_internal_completion": "approved radar/task parameters and fire-control-quality definitions",
+      "failure_condition_defined": true,
+      "option_demo_defined": true,
+      "overclaim_boundary_defined": true,
+      "packet_complete": true,
+      "primary_artifacts_exist": true,
+      "readiness_score": 85,
+      "status": "GO"
+    },
+    "QSPARX": {
+      "base_demo_defined": true,
+      "external_proof_not_required_for_internal_completion": "AFDW inventory or sponsor-approved range access",
+      "failure_condition_defined": true,
+      "option_demo_defined": true,
+      "overclaim_boundary_defined": true,
+      "packet_complete": true,
+      "primary_artifacts_exist": true,
+      "readiness_score": 81,
+      "status": "CONDITIONAL GO"
+    }
+  }
+}

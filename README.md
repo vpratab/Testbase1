@@ -78,6 +78,12 @@ Generate proposal-writer packets for all seven topics:
 make proposal-readiness
 ```
 
+Run the internal-scope completion audit:
+
+```bash
+make completion-audit
+```
+
 Rerun the complete Wave 5 evidence campaign:
 
 ```bash
@@ -170,6 +176,8 @@ Outputs:
 - `results/frozen_region/FROZEN_REGION_REPORT.md`
 - `results/proposal_readiness/topic_readiness.json`
 - `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md`
+- `results/completion_audit/completion_audit.json`
+- `results/completion_audit/COMPLETION_AUDIT.md`
 - `results/phase1_feasibility_results.json`
 - `results/phase1_feasibility_results.md`
 - `results/robustness_sweep.json`

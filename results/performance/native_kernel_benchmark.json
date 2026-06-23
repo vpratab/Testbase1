@@ -1,45 +1,45 @@
 {
-  "association_ns_per_operation": 356730.56,
+  "association_ns_per_operation": 330712.2266666667,
   "association_objects": 1000,
   "binary_bytes": 451808,
-  "custody_priority_ns_per_operation": 5.15806,
-  "evidence_ns_per_operation": 87.06805333333334,
+  "custody_priority_ns_per_operation": 4.945833333333334,
+  "evidence_ns_per_operation": 84.80416666666666,
   "iterations": 150000,
   "latency_distributions_ns": {
     "evidence": {
-      "maximum": 92.2085,
-      "minimum": 87.0835,
+      "maximum": 86.979,
+      "minimum": 84.2915,
       "operations_per_sample": 2000,
-      "p50": 87.146,
-      "p95": 90.354,
-      "p99": 92.2085,
+      "p50": 84.354,
+      "p95": 84.896,
+      "p99": 86.979,
       "samples": 40
     },
     "scheduler": {
-      "maximum": 3560.84,
-      "minimum": 3186.66,
+      "maximum": 3194.16,
+      "minimum": 3055.82,
       "operations_per_sample": 50,
-      "p50": 3192.5,
-      "p95": 3212.5,
-      "p99": 3560.84,
+      "p50": 3060.84,
+      "p95": 3113.32,
+      "p99": 3194.16,
       "samples": 40
     },
     "sparse_association": {
-      "maximum": 362425.0,
-      "minimum": 338683.2,
+      "maximum": 334208.2,
+      "minimum": 324441.6,
       "operations_per_sample": 5,
-      "p50": 341300.0,
-      "p95": 350383.4,
-      "p99": 362425.0,
+      "p50": 325716.6,
+      "p95": 332525.0,
+      "p99": 334208.2,
       "samples": 30
     },
     "track_decode": {
-      "maximum": 988.416,
-      "minimum": 968.834,
+      "maximum": 984.584,
+      "minimum": 936.75,
       "operations_per_sample": 500,
-      "p50": 970.666,
-      "p95": 980.25,
-      "p99": 988.416,
+      "p50": 938.918,
+      "p95": 957.0,
+      "p99": 984.584,
       "samples": 40
     }
   },
@@ -50,7 +50,7 @@
     "python": "3.9.6"
   },
   "scheduler_candidates": 240,
-  "scheduler_ns_per_operation": 3209.722,
-  "track_decode_ns_per_operation": 978.29278,
+  "scheduler_ns_per_operation": 3111.722,
+  "track_decode_ns_per_operation": 943.8086133333334,
   "track_frame_bytes": 136
 }

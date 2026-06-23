@@ -2,154 +2,154 @@
   "aggregate": {
     "benchmark": {
       "association_ns_per_operation": {
-        "coefficient_of_variation": 0.09944138221870251,
-        "maximum": 503222.7733333333,
-        "mean": 365926.47199999995,
-        "median": 355561.94666666666,
-        "minimum": 336275.0,
-        "p95": 408920.0,
+        "coefficient_of_variation": 0.11093574998385097,
+        "maximum": 489871.1066666667,
+        "mean": 363242.166,
+        "median": 354947.7733333333,
+        "minimum": 331288.3333333333,
+        "p95": 452110.0,
         "samples": 20
       },
       "custody_priority_ns_per_operation": {
-        "coefficient_of_variation": 0.074733079404648,
-        "maximum": 6.378886666666666,
-        "mean": 5.473222,
-        "median": 5.317916666666667,
-        "minimum": 4.94,
-        "p95": 6.184166666666667,
+        "coefficient_of_variation": 0.07867559195975002,
+        "maximum": 6.440833333333333,
+        "mean": 5.269013666666667,
+        "median": 5.204583333333334,
+        "minimum": 4.853886666666667,
+        "p95": 6.180553333333333,
         "samples": 20
       },
       "evidence_ns_per_operation": {
-        "coefficient_of_variation": 0.12535465228917436,
-        "maximum": 136.91888666666668,
-        "mean": 90.91644466666666,
-        "median": 90.08680333333334,
-        "minimum": 81.56028,
-        "p95": 96.315,
+        "coefficient_of_variation": 0.10369208805087234,
+        "maximum": 127.95278,
+        "mean": 91.06822233333334,
+        "median": 89.50986,
+        "minimum": 81.39166666666667,
+        "p95": 101.88416666666667,
         "samples": 20
       },
       "scheduler_ns_per_operation": {
-        "coefficient_of_variation": 0.13520322896348191,
-        "maximum": 5266.5,
-        "mean": 3423.3707000000004,
-        "median": 3315.764,
-        "minimum": 3113.722,
-        "p95": 4032.0273333333334,
+        "coefficient_of_variation": 0.1430333950158195,
+        "maximum": 5070.416666666667,
+        "mean": 3450.712433333333,
+        "median": 3294.8193333333334,
+        "minimum": 3094.8333333333335,
+        "p95": 4303.527333333333,
         "samples": 20
       },
       "track_decode_ns_per_operation": {
-        "coefficient_of_variation": 0.21741224847479163,
-        "maximum": 2041.72694,
-        "mean": 1069.7398876666666,
-        "median": 1009.00639,
-        "minimum": 946.7625,
-        "p95": 1223.60806,
+        "coefficient_of_variation": 0.17334474993984397,
+        "maximum": 1782.9961066666667,
+        "mean": 1042.706778,
+        "median": 1009.4213866666666,
+        "minimum": 940.4491666666667,
+        "p95": 1218.6088866666666,
         "samples": 20
       }
     },
     "process_wall_ms": {
       "benchmark": {
-        "coefficient_of_variation": 0.13710972315719583,
-        "maximum": 448.285,
-        "mean": 304.5178897,
-        "median": 290.35681250000005,
-        "minimum": 268.855417,
-        "p95": 371.721292,
+        "coefficient_of_variation": 0.10496555284362628,
+        "maximum": 408.267167,
+        "mean": 293.29817275,
+        "median": 288.2624165,
+        "minimum": 268.8285,
+        "p95": 328.221291,
         "samples": 20
       },
       "conformance": {
-        "coefficient_of_variation": 0.13292100796290643,
-        "maximum": 3.328833,
-        "mean": 2.52006665,
-        "median": 2.336792,
-        "minimum": 2.161291,
-        "p95": 3.107334,
+        "coefficient_of_variation": 0.08511647226786842,
+        "maximum": 2.851292,
+        "mean": 2.25074365,
+        "median": 2.1903544999999998,
+        "minimum": 2.088792,
+        "p95": 2.631208,
         "samples": 20
       },
       "scaling": {
-        "coefficient_of_variation": 0.032788176916172376,
-        "maximum": 87.495625,
-        "mean": 81.84064746666667,
-        "median": 81.182959,
-        "minimum": 78.685875,
-        "p95": 87.495625,
+        "coefficient_of_variation": 0.035737156419912645,
+        "maximum": 88.273375,
+        "mean": 81.51314993333334,
+        "median": 81.750167,
+        "minimum": 77.554375,
+        "p95": 88.273375,
         "samples": 15
       }
     },
     "scaling": {
       "association": {
         "100": {
-          "coefficient_of_variation": 0.11833736193874317,
-          "maximum": 30060.4,
-          "mean": 21335.97333333333,
-          "median": 21102.1,
-          "minimum": 19487.5,
-          "p95": 30060.4,
+          "coefficient_of_variation": 0.03604952262516719,
+          "maximum": 22297.9,
+          "mean": 20997.086666666666,
+          "median": 21070.85,
+          "minimum": 19935.4,
+          "p95": 22297.9,
           "samples": 15
         },
         "1000": {
-          "coefficient_of_variation": 0.07589675126820884,
-          "maximum": 450183.35,
-          "mean": 357506.11000000004,
-          "median": 351233.3,
-          "minimum": 335629.2,
-          "p95": 450183.35,
+          "coefficient_of_variation": 0.0269684790469755,
+          "maximum": 365722.95,
+          "mean": 350803.89333333337,
+          "median": 351179.2,
+          "minimum": 337054.15,
+          "p95": 365722.95,
           "samples": 15
         },
         "10000": {
-          "coefficient_of_variation": 0.02048112972924857,
-          "maximum": 4746333.4,
-          "mean": 4537668.92,
-          "median": 4539983.2,
-          "minimum": 4370391.8,
-          "p95": 4746333.4,
+          "coefficient_of_variation": 0.04150212580537613,
+          "maximum": 5151558.2,
+          "mean": 4566987.760000001,
+          "median": 4599708.2,
+          "minimum": 4365958.4,
+          "p95": 5151558.2,
           "samples": 15
         },
         "5000": {
-          "coefficient_of_variation": 0.033260134774278145,
-          "maximum": 2256679.15,
-          "mean": 2053960.8299999998,
-          "median": 2029637.5,
-          "minimum": 1984510.4,
-          "p95": 2256679.15,
+          "coefficient_of_variation": 0.05293271719048935,
+          "maximum": 2413406.25,
+          "mean": 2077873.6133333333,
+          "median": 2072875.0,
+          "minimum": 1974087.5,
+          "p95": 2413406.25,
           "samples": 15
         }
       },
       "scheduler": {
         "240": {
-          "coefficient_of_variation": 0.036242568842672754,
-          "maximum": 3683.75,
-          "mean": 3412.082,
-          "median": 3406.25,
-          "minimum": 3250.41,
-          "p95": 3683.75,
+          "coefficient_of_variation": 0.04816643317971107,
+          "maximum": 4012.08,
+          "mean": 3493.0826666666667,
+          "median": 3492.08,
+          "minimum": 3335.0,
+          "p95": 4012.08,
           "samples": 15
         },
         "3840": {
-          "coefficient_of_variation": 0.08578544664278463,
-          "maximum": 283977.05,
-          "mean": 230964.71333333335,
-          "median": 225360.4,
-          "minimum": 200204.15,
-          "p95": 283977.05,
+          "coefficient_of_variation": 0.04802751445309823,
+          "maximum": 239281.25,
+          "mean": 214836.39,
+          "median": 212137.5,
+          "minimum": 200945.85,
+          "p95": 239281.25,
           "samples": 15
         },
         "60": {
-          "coefficient_of_variation": 0.054492451586975375,
-          "maximum": 941.67,
-          "mean": 880.0833333333334,
-          "median": 887.08,
-          "minimum": 788.33,
-          "p95": 941.67,
+          "coefficient_of_variation": 0.05301724010394594,
+          "maximum": 989.17,
+          "mean": 886.2506666666667,
+          "median": 881.67,
+          "minimum": 803.75,
+          "p95": 989.17,
           "samples": 15
         },
         "960": {
-          "coefficient_of_variation": 0.07000614993842542,
-          "maximum": 20977.08,
-          "mean": 18358.444000000003,
-          "median": 17805.41,
-          "minimum": 16880.84,
-          "p95": 20977.08,
+          "coefficient_of_variation": 0.027623501718883697,
+          "maximum": 18902.08,
+          "mean": 17987.999333333333,
+          "median": 18072.5,
+          "minimum": 16940.84,
+          "p95": 18902.08,
           "samples": 15
         }
       }
@@ -164,1018 +164,1018 @@
   "metadata": {
     "executable_bytes": 451808,
     "executable_sha256": "27fe1adcd9d14a44618e6e1b7372c559c92342505a7f14a128767b77d7f32ad8",
-    "generated_at_utc": "2026-06-23T16:54:02.135381+00:00",
+    "generated_at_utc": "2026-06-23T16:57:59.426123+00:00",
     "machine": "arm64",
     "measurement_scope": "release-mode host benchmark across independent processes; not target-hardware WCET",
     "platform": "macOS-26.1-arm64-arm-64bit",
     "python": "3.9.6",
     "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)",
-    "source_tree_sha256": "4d28ba65b518f4f7c221ba3d88077ee3410dedbdc4379f5d78a97e2a60ed7e46"
+    "source_tree_sha256": "7eb72f877fee82107257b544fc3f584ed8a9b3fdc764515c70937ba887a5f36b"
   },
   "raw": {
     "benchmark": [
       {
-        "association_ns_per_operation": 345522.7733333333,
+        "association_ns_per_operation": 335592.7733333333,
         "association_objects": 1000,
-        "custody_priority_ns_per_operation": 4.94,
-        "evidence_ns_per_operation": 84.26639333333334,
+        "custody_priority_ns_per_operation": 4.888333333333334,
+        "evidence_ns_per_operation": 83.97694666666666,
         "iterations": 150000,
         "latency_distributions_ns": {
           "evidence": {
-            "maximum": 101.979,
-            "minimum": 84.3125,
-            "operations_per_sample": 2000,
-            "p50": 84.771,
-            "p95": 88.646,
-            "p99": 101.979,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3804.16,
-            "minimum": 3060.82,
-            "operations_per_sample": 50,
-            "p50": 3140.84,
-            "p95": 3337.5,
-            "p99": 3804.16,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 380433.4,
-            "minimum": 324550.0,
-            "operations_per_sample": 5,
-            "p50": 339666.6,
-            "p95": 373541.6,
-            "p99": 380433.4,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1019.5,
-            "minimum": 937.582,
-            "operations_per_sample": 500,
-            "p50": 961.668,
-            "p95": 1010.332,
-            "p99": 1019.5,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3131.4166666666665,
-        "track_decode_ns_per_operation": 952.7161066666666,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 350343.8933333333,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 6.184166666666667,
-        "evidence_ns_per_operation": 88.25833333333334,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 96.8125,
-            "minimum": 87.2915,
-            "operations_per_sample": 2000,
-            "p50": 91.0,
-            "p95": 93.896,
-            "p99": 96.8125,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3466.66,
-            "minimum": 3057.5,
-            "operations_per_sample": 50,
-            "p50": 3143.34,
-            "p95": 3450.84,
-            "p99": 3466.66,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 357425.0,
-            "minimum": 327791.8,
-            "operations_per_sample": 5,
-            "p50": 337950.0,
-            "p95": 349641.6,
-            "p99": 357425.0,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1017.418,
-            "minimum": 937.5,
-            "operations_per_sample": 500,
-            "p50": 962.084,
-            "p95": 1002.082,
-            "p99": 1017.418,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3218.3053333333332,
-        "track_decode_ns_per_operation": 966.9852733333333,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 342636.6666666667,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.0127733333333335,
-        "evidence_ns_per_operation": 86.24444666666666,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 94.6665,
-            "minimum": 84.3125,
-            "operations_per_sample": 2000,
-            "p50": 87.208,
-            "p95": 89.792,
-            "p99": 94.6665,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3232.5,
-            "minimum": 3060.84,
-            "operations_per_sample": 50,
-            "p50": 3145.0,
-            "p95": 3203.34,
-            "p99": 3232.5,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 359500.0,
-            "minimum": 324783.4,
-            "operations_per_sample": 5,
-            "p50": 329741.6,
-            "p95": 341750.0,
-            "p99": 359500.0,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1023.584,
-            "minimum": 937.334,
-            "operations_per_sample": 500,
-            "p50": 959.916,
-            "p95": 984.25,
-            "p99": 1023.584,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3229.472,
-        "track_decode_ns_per_operation": 977.5183333333333,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 339300.56,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.503606666666666,
-        "evidence_ns_per_operation": 84.67860666666667,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 86.979,
-            "minimum": 84.1875,
-            "operations_per_sample": 2000,
-            "p50": 84.479,
-            "p95": 86.6665,
-            "p99": 86.979,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3525.82,
-            "minimum": 3088.34,
-            "operations_per_sample": 50,
-            "p50": 3100.0,
-            "p95": 3174.16,
-            "p99": 3525.82,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 442333.4,
-            "minimum": 325008.2,
-            "operations_per_sample": 5,
-            "p50": 332275.0,
-            "p95": 416825.0,
-            "p99": 442333.4,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 978.666,
-            "minimum": 936.916,
-            "operations_per_sample": 500,
-            "p50": 944.834,
-            "p95": 973.0,
-            "p99": 978.666,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3113.722,
-        "track_decode_ns_per_operation": 947.8380533333333,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 336275.0,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 6.158333333333333,
-        "evidence_ns_per_operation": 81.56028,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 85.8335,
-            "minimum": 81.1455,
-            "operations_per_sample": 2000,
-            "p50": 81.1875,
-            "p95": 83.708,
-            "p99": 85.8335,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3405.82,
-            "minimum": 3079.18,
-            "operations_per_sample": 50,
-            "p50": 3094.16,
-            "p95": 3100.0,
-            "p99": 3405.82,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 353808.4,
-            "minimum": 321666.6,
-            "operations_per_sample": 5,
-            "p50": 325625.0,
-            "p95": 331125.0,
-            "p99": 353808.4,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 988.416,
-            "minimum": 936.584,
-            "operations_per_sample": 500,
-            "p50": 938.332,
-            "p95": 952.666,
-            "p99": 988.416,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3155.5273333333334,
-        "track_decode_ns_per_operation": 946.7625,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 352432.7733333333,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 6.160833333333334,
-        "evidence_ns_per_operation": 83.80361333333333,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 96.771,
-            "minimum": 84.2085,
-            "operations_per_sample": 2000,
-            "p50": 90.146,
-            "p95": 91.0625,
-            "p99": 96.771,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 35581.66,
-            "minimum": 3291.66,
-            "operations_per_sample": 50,
-            "p50": 3503.32,
-            "p95": 7872.5,
-            "p99": 35581.66,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 1577225.0,
-            "minimum": 354091.6,
-            "operations_per_sample": 5,
-            "p50": 789508.4,
-            "p95": 1302533.4,
-            "p99": 1577225.0,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1012.584,
-            "minimum": 938.332,
-            "operations_per_sample": 500,
-            "p50": 980.582,
-            "p95": 1009.916,
-            "p99": 1012.584,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3256.278,
-        "track_decode_ns_per_operation": 983.37694,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 350092.7866666667,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.219446666666666,
-        "evidence_ns_per_operation": 89.96055333333334,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 94.104,
-            "minimum": 87.9585,
-            "operations_per_sample": 2000,
-            "p50": 91.3545,
-            "p95": 93.5,
-            "p99": 94.104,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3457.5,
-            "minimum": 3065.84,
-            "operations_per_sample": 50,
-            "p50": 3214.18,
-            "p95": 3359.18,
-            "p99": 3457.5,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 367366.6,
-            "minimum": 330283.2,
-            "operations_per_sample": 5,
-            "p50": 344866.6,
-            "p95": 352583.4,
-            "p99": 367366.6,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1019.166,
-            "minimum": 970.75,
-            "operations_per_sample": 500,
-            "p50": 991.832,
-            "p95": 1006.084,
-            "p99": 1019.166,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3265.1106666666665,
-        "track_decode_ns_per_operation": 1024.3627733333333,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 404070.56,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.290553333333333,
-        "evidence_ns_per_operation": 90.30416666666666,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 111.0625,
-            "minimum": 87.2085,
-            "operations_per_sample": 2000,
-            "p50": 90.4375,
-            "p95": 107.417,
-            "p99": 111.0625,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 9595.0,
-            "minimum": 3254.18,
-            "operations_per_sample": 50,
-            "p50": 3447.5,
-            "p95": 6642.5,
-            "p99": 9595.0,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 1516541.6,
-            "minimum": 356300.0,
-            "operations_per_sample": 5,
-            "p50": 646283.4,
-            "p95": 1113950.0,
-            "p99": 1516541.6,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1574.25,
-            "minimum": 984.666,
-            "operations_per_sample": 500,
-            "p50": 1016.666,
-            "p95": 1330.082,
-            "p99": 1574.25,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3517.778,
-        "track_decode_ns_per_operation": 1170.44694,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 370285.0,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.2525,
-        "evidence_ns_per_operation": 136.91888666666668,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 118.9165,
-            "minimum": 92.125,
-            "operations_per_sample": 2000,
-            "p50": 94.6665,
-            "p95": 112.5415,
-            "p99": 118.9165,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 5545.0,
-            "minimum": 3257.5,
-            "operations_per_sample": 50,
-            "p50": 3293.32,
-            "p95": 4133.32,
-            "p99": 5545.0,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 433233.2,
-            "minimum": 346375.0,
-            "operations_per_sample": 5,
-            "p50": 373225.0,
-            "p95": 411341.8,
-            "p99": 433233.2,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1764.416,
-            "minimum": 970.0,
-            "operations_per_sample": 500,
-            "p50": 1043.332,
-            "p95": 1274.416,
-            "p99": 1764.416,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3362.472,
-        "track_decode_ns_per_operation": 1223.60806,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 408920.0,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.668613333333333,
-        "evidence_ns_per_operation": 92.1525,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 142.854,
-            "minimum": 87.125,
-            "operations_per_sample": 2000,
-            "p50": 90.3335,
-            "p95": 107.4795,
-            "p99": 142.854,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3561.66,
-            "minimum": 3150.84,
-            "operations_per_sample": 50,
-            "p50": 3180.0,
-            "p95": 3375.0,
-            "p99": 3561.66,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 396233.4,
-            "minimum": 345341.6,
-            "operations_per_sample": 5,
-            "p50": 355833.4,
-            "p95": 388391.6,
-            "p99": 396233.4,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1106.5,
-            "minimum": 969.5,
-            "operations_per_sample": 500,
-            "p50": 986.834,
-            "p95": 1063.5,
-            "p99": 1106.5,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3416.5273333333334,
-        "track_decode_ns_per_operation": 1035.5308333333332,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 357913.3333333333,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.34528,
-        "evidence_ns_per_operation": 92.5575,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 110.604,
-            "minimum": 92.375,
-            "operations_per_sample": 2000,
-            "p50": 93.75,
-            "p95": 95.2915,
-            "p99": 110.604,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 4080.0,
-            "minimum": 3145.0,
-            "operations_per_sample": 50,
-            "p50": 3287.5,
-            "p95": 3810.0,
-            "p99": 4080.0,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 381833.4,
-            "minimum": 339750.0,
-            "operations_per_sample": 5,
-            "p50": 354458.4,
-            "p95": 376400.0,
-            "p99": 381833.4,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1060.0,
-            "minimum": 937.5,
-            "operations_per_sample": 500,
-            "p50": 1005.916,
-            "p95": 1018.5,
-            "p99": 1060.0,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3376.5553333333332,
-        "track_decode_ns_per_operation": 1016.78472,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 358393.8933333333,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.253053333333333,
-        "evidence_ns_per_operation": 90.72694666666666,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 91.083,
-            "minimum": 90.4165,
-            "operations_per_sample": 2000,
-            "p50": 90.5,
-            "p95": 90.875,
-            "p99": 91.083,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3715.0,
-            "minimum": 3302.5,
-            "operations_per_sample": 50,
-            "p50": 3305.84,
-            "p95": 3319.16,
-            "p99": 3715.0,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 388916.8,
-            "minimum": 347125.0,
-            "operations_per_sample": 5,
-            "p50": 352508.2,
-            "p95": 376858.2,
-            "p99": 388916.8,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1110.418,
-            "minimum": 1004.334,
-            "operations_per_sample": 500,
-            "p50": 1006.084,
-            "p95": 1029.582,
-            "p99": 1110.418,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3317.556,
-        "track_decode_ns_per_operation": 1022.9141666666667,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 344562.7733333333,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.400553333333334,
-        "evidence_ns_per_operation": 96.315,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 98.521,
-            "minimum": 92.8125,
-            "operations_per_sample": 2000,
-            "p50": 93.0205,
-            "p95": 95.125,
-            "p99": 98.521,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3715.0,
-            "minimum": 3283.34,
-            "operations_per_sample": 50,
-            "p50": 3290.84,
-            "p95": 3309.18,
-            "p99": 3715.0,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 393500.0,
-            "minimum": 347841.6,
-            "operations_per_sample": 5,
-            "p50": 355825.0,
-            "p95": 368950.0,
-            "p99": 393500.0,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1020.5,
-            "minimum": 956.834,
-            "operations_per_sample": 500,
-            "p50": 1005.832,
-            "p95": 1012.584,
-            "p99": 1020.5,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3194.8886666666667,
-        "track_decode_ns_per_operation": 1026.7530533333334,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 355500.0,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.22972,
-        "evidence_ns_per_operation": 90.23833333333333,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 91.979,
+            "maximum": 92.2295,
             "minimum": 84.333,
             "operations_per_sample": 2000,
-            "p50": 90.5,
-            "p95": 91.4585,
-            "p99": 91.979,
+            "p50": 85.9585,
+            "p95": 90.0205,
+            "p99": 92.2295,
             "samples": 40
           },
           "scheduler": {
-            "maximum": 3625.0,
-            "minimum": 3171.66,
+            "maximum": 3450.84,
+            "minimum": 3088.32,
             "operations_per_sample": 50,
-            "p50": 3300.0,
-            "p95": 3330.0,
-            "p99": 3625.0,
+            "p50": 3095.0,
+            "p95": 3221.66,
+            "p99": 3450.84,
             "samples": 40
           },
           "sparse_association": {
-            "maximum": 888566.8,
-            "minimum": 332766.6,
+            "maximum": 392150.0,
+            "minimum": 327300.0,
             "operations_per_sample": 5,
-            "p50": 344358.4,
-            "p95": 642983.4,
-            "p99": 888566.8,
+            "p50": 333233.2,
+            "p95": 372516.8,
+            "p99": 392150.0,
             "samples": 30
           },
           "track_decode": {
-            "maximum": 1059.584,
-            "minimum": 938.416,
+            "maximum": 1005.0,
+            "minimum": 936.75,
             "operations_per_sample": 500,
-            "p50": 1006.084,
-            "p95": 1010.5,
-            "p99": 1059.584,
+            "p50": 938.5,
+            "p95": 968.334,
+            "p99": 1005.0,
             "samples": 40
           }
         },
         "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3282.0553333333332,
-        "track_decode_ns_per_operation": 1012.0591666666667,
+        "scheduler_ns_per_operation": 3173.6386666666667,
+        "track_decode_ns_per_operation": 942.00222,
         "track_frame_bytes": 136
       },
       {
-        "association_ns_per_operation": 355623.8933333333,
+        "association_ns_per_operation": 335501.1066666667,
         "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.4925,
-        "evidence_ns_per_operation": 83.51666666666667,
+        "custody_priority_ns_per_operation": 5.20972,
+        "evidence_ns_per_operation": 89.46055333333334,
         "iterations": 150000,
         "latency_distributions_ns": {
           "evidence": {
-            "maximum": 88.354,
-            "minimum": 84.3335,
+            "maximum": 88.375,
+            "minimum": 85.9165,
             "operations_per_sample": 2000,
-            "p50": 87.0625,
-            "p95": 87.604,
-            "p99": 88.354,
+            "p50": 85.958,
+            "p95": 86.0415,
+            "p99": 88.375,
             "samples": 40
           },
           "scheduler": {
-            "maximum": 3428.32,
+            "maximum": 3831.66,
+            "minimum": 3070.0,
+            "operations_per_sample": 50,
+            "p50": 3072.5,
+            "p95": 3492.5,
+            "p99": 3831.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 363358.4,
+            "minimum": 324925.0,
+            "operations_per_sample": 5,
+            "p50": 329791.6,
+            "p95": 354583.2,
+            "p99": 363358.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1018.832,
+            "minimum": 936.918,
+            "operations_per_sample": 500,
+            "p50": 943.166,
+            "p95": 961.668,
+            "p99": 1018.832,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3115.0,
+        "track_decode_ns_per_operation": 965.94028,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 335231.1066666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 4.853886666666667,
+        "evidence_ns_per_operation": 87.33583333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 90.021,
+            "minimum": 87.2085,
+            "operations_per_sample": 2000,
+            "p50": 87.396,
+            "p95": 89.7915,
+            "p99": 90.021,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3670.0,
+            "minimum": 3070.82,
+            "operations_per_sample": 50,
+            "p50": 3119.18,
+            "p95": 3225.0,
+            "p99": 3670.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 362950.0,
+            "minimum": 328975.0,
+            "operations_per_sample": 5,
+            "p50": 331583.4,
+            "p95": 353933.2,
+            "p99": 362950.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1005.916,
+            "minimum": 936.25,
+            "operations_per_sample": 500,
+            "p50": 938.668,
+            "p95": 981.25,
+            "p99": 1005.916,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3113.806,
+        "track_decode_ns_per_operation": 943.4588933333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 332210.56,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 6.180553333333333,
+        "evidence_ns_per_operation": 87.11333333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 92.6875,
+            "minimum": 87.208,
+            "operations_per_sample": 2000,
+            "p50": 88.875,
+            "p95": 91.8955,
+            "p99": 92.6875,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3156.66,
+            "minimum": 3060.84,
+            "operations_per_sample": 50,
+            "p50": 3062.5,
+            "p95": 3112.5,
+            "p99": 3156.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 348575.0,
+            "minimum": 325683.4,
+            "operations_per_sample": 5,
+            "p50": 331741.6,
+            "p95": 348150.0,
+            "p99": 348575.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 964.334,
+            "minimum": 936.916,
+            "operations_per_sample": 500,
+            "p50": 938.916,
+            "p95": 961.416,
+            "p99": 964.334,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3096.278,
+        "track_decode_ns_per_operation": 945.0263933333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 331288.3333333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 4.995833333333334,
+        "evidence_ns_per_operation": 83.81888666666667,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 91.4585,
+            "minimum": 84.3125,
+            "operations_per_sample": 2000,
+            "p50": 84.3335,
+            "p95": 87.354,
+            "p99": 91.4585,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3467.5,
+            "minimum": 3059.16,
+            "operations_per_sample": 50,
+            "p50": 3064.18,
+            "p95": 3103.34,
+            "p99": 3467.5,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 349933.4,
+            "minimum": 327600.0,
+            "operations_per_sample": 5,
+            "p50": 330041.6,
+            "p95": 333983.2,
+            "p99": 349933.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 982.916,
+            "minimum": 936.582,
+            "operations_per_sample": 500,
+            "p50": 938.832,
+            "p95": 973.5,
+            "p99": 982.916,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3095.1666666666665,
+        "track_decode_ns_per_operation": 942.1925,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 332846.6666666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 4.943613333333333,
+        "evidence_ns_per_operation": 87.61278,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 102.3125,
+            "minimum": 87.458,
+            "operations_per_sample": 2000,
+            "p50": 87.5415,
+            "p95": 89.2915,
+            "p99": 102.3125,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3251.66,
+            "minimum": 3065.82,
+            "operations_per_sample": 50,
+            "p50": 3069.16,
+            "p95": 3128.32,
+            "p99": 3251.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 335166.6,
+            "minimum": 325150.0,
+            "operations_per_sample": 5,
+            "p50": 326375.0,
+            "p95": 332941.8,
+            "p99": 335166.6,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 963.168,
+            "minimum": 936.75,
+            "operations_per_sample": 500,
+            "p50": 943.334,
+            "p95": 960.5,
+            "p99": 963.168,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3094.8333333333335,
+        "track_decode_ns_per_operation": 940.4491666666667,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 331992.2266666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.072226666666666,
+        "evidence_ns_per_operation": 87.86972,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 96.875,
+            "minimum": 87.2085,
+            "operations_per_sample": 2000,
+            "p50": 87.2705,
+            "p95": 89.2085,
+            "p99": 96.875,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3218.34,
+            "minimum": 3068.34,
+            "operations_per_sample": 50,
+            "p50": 3070.84,
+            "p95": 3138.34,
+            "p99": 3218.34,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 335391.6,
+            "minimum": 324216.6,
+            "operations_per_sample": 5,
+            "p50": 326391.6,
+            "p95": 332675.0,
+            "p99": 335391.6,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 962.332,
+            "minimum": 936.918,
+            "operations_per_sample": 500,
+            "p50": 938.25,
+            "p95": 956.416,
+            "p99": 962.332,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3095.5,
+        "track_decode_ns_per_operation": 941.9330533333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 452110.0,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 4.944166666666667,
+        "evidence_ns_per_operation": 81.39166666666667,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 417.9375,
+            "minimum": 83.9795,
+            "operations_per_sample": 2000,
+            "p50": 85.229,
+            "p95": 118.9375,
+            "p99": 417.9375,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3636.66,
+            "minimum": 3180.0,
+            "operations_per_sample": 50,
+            "p50": 3191.68,
+            "p95": 3206.66,
+            "p99": 3636.66,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 375433.4,
+            "minimum": 344941.6,
+            "operations_per_sample": 5,
+            "p50": 354066.8,
+            "p95": 370133.4,
+            "p99": 375433.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1241.918,
+            "minimum": 969.584,
+            "operations_per_sample": 500,
+            "p50": 971.834,
+            "p95": 1121.084,
+            "p99": 1241.918,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 5070.416666666667,
+        "track_decode_ns_per_operation": 1218.6088866666666,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 357883.8933333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.937226666666667,
+        "evidence_ns_per_operation": 90.38110666666667,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 96.667,
+            "minimum": 87.9165,
+            "operations_per_sample": 2000,
+            "p50": 90.896,
+            "p95": 95.625,
+            "p99": 96.667,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3533.34,
+            "minimum": 3276.66,
+            "operations_per_sample": 50,
+            "p50": 3330.0,
+            "p95": 3416.66,
+            "p99": 3533.34,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 564391.6,
+            "minimum": 337025.0,
+            "operations_per_sample": 5,
+            "p50": 350325.0,
+            "p95": 434125.0,
+            "p99": 564391.6,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1019.418,
+            "minimum": 968.666,
+            "operations_per_sample": 500,
+            "p50": 1006.0,
+            "p95": 1012.75,
+            "p99": 1019.418,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3307.472,
+        "track_decode_ns_per_operation": 1006.54972,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 355372.7733333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.2058333333333335,
+        "evidence_ns_per_operation": 87.58806,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 95.875,
+            "minimum": 90.4165,
+            "operations_per_sample": 2000,
+            "p50": 91.958,
+            "p95": 94.646,
+            "p99": 95.875,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3885.84,
+            "minimum": 3289.16,
+            "operations_per_sample": 50,
+            "p50": 3315.0,
+            "p95": 3445.82,
+            "p99": 3885.84,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 375033.4,
+            "minimum": 352216.6,
+            "operations_per_sample": 5,
+            "p50": 358208.2,
+            "p95": 372308.2,
+            "p99": 375033.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1239.416,
+            "minimum": 999.418,
+            "operations_per_sample": 500,
+            "p50": 1007.75,
+            "p95": 1033.0,
+            "p99": 1239.416,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3300.694,
+        "track_decode_ns_per_operation": 1004.2238933333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 354076.1066666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.208053333333333,
+        "evidence_ns_per_operation": 89.55916666666667,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 90.9375,
+            "minimum": 85.8335,
+            "operations_per_sample": 2000,
+            "p50": 90.2915,
+            "p95": 90.5,
+            "p99": 90.9375,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3420.0,
+            "minimum": 3256.68,
+            "operations_per_sample": 50,
+            "p50": 3293.34,
+            "p95": 3342.5,
+            "p99": 3420.0,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 365758.4,
+            "minimum": 349700.0,
+            "operations_per_sample": 5,
+            "p50": 355225.0,
+            "p95": 359791.6,
+            "p99": 365758.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1012.166,
+            "minimum": 985.916,
+            "operations_per_sample": 500,
+            "p50": 1006.082,
+            "p95": 1008.084,
+            "p99": 1012.166,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3203.5833333333335,
+        "track_decode_ns_per_operation": 1015.71278,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 347278.8933333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.31528,
+        "evidence_ns_per_operation": 87.11972,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 86.271,
+            "minimum": 83.979,
+            "operations_per_sample": 2000,
+            "p50": 84.021,
+            "p95": 85.3545,
+            "p99": 86.271,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3432.5,
+            "minimum": 3255.84,
+            "operations_per_sample": 50,
+            "p50": 3295.0,
+            "p95": 3368.32,
+            "p99": 3432.5,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 358816.6,
+            "minimum": 350083.2,
+            "operations_per_sample": 5,
+            "p50": 352258.4,
+            "p95": 358791.6,
+            "p99": 358816.6,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1008.834,
+            "minimum": 965.5,
+            "operations_per_sample": 500,
+            "p50": 970.916,
+            "p95": 985.416,
+            "p99": 1008.834,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3617.194,
+        "track_decode_ns_per_operation": 1022.55222,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 360688.88,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.204166666666667,
+        "evidence_ns_per_operation": 89.65861333333334,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 102.729,
+            "minimum": 85.9375,
+            "operations_per_sample": 2000,
+            "p50": 90.979,
+            "p95": 96.5835,
+            "p99": 102.729,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3680.84,
+            "minimum": 3124.16,
+            "operations_per_sample": 50,
+            "p50": 3290.0,
+            "p95": 3305.82,
+            "p99": 3680.84,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 454916.6,
+            "minimum": 329533.4,
+            "operations_per_sample": 5,
+            "p50": 350841.8,
+            "p95": 412091.6,
+            "p99": 454916.6,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1084.332,
+            "minimum": 955.75,
+            "operations_per_sample": 500,
+            "p50": 1005.582,
+            "p95": 1018.416,
+            "p99": 1084.332,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3300.944,
+        "track_decode_ns_per_operation": 1029.2275,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 354522.7733333333,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.041106666666667,
+        "evidence_ns_per_operation": 89.87472666666666,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 95.208,
+            "minimum": 89.0835,
+            "operations_per_sample": 2000,
+            "p50": 93.604,
+            "p95": 94.3125,
+            "p99": 95.208,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3798.34,
             "minimum": 3120.82,
             "operations_per_sample": 50,
-            "p50": 3187.5,
-            "p95": 3348.32,
-            "p99": 3428.32,
+            "p50": 3342.5,
+            "p95": 3441.66,
+            "p99": 3798.34,
             "samples": 40
           },
           "sparse_association": {
-            "maximum": 685083.4,
-            "minimum": 334841.6,
+            "maximum": 556750.0,
+            "minimum": 338025.0,
             "operations_per_sample": 5,
-            "p50": 350100.0,
-            "p95": 600925.0,
-            "p99": 685083.4,
+            "p50": 355358.4,
+            "p95": 445033.4,
+            "p99": 556750.0,
             "samples": 30
           },
           "track_decode": {
-            "maximum": 1016.916,
-            "minimum": 968.582,
+            "maximum": 1279.834,
+            "minimum": 977.0,
+            "operations_per_sample": 500,
+            "p50": 1009.0,
+            "p95": 1026.75,
+            "p99": 1279.834,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3288.9446666666668,
+        "track_decode_ns_per_operation": 996.93778,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 489871.1066666667,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.020833333333333,
+        "evidence_ns_per_operation": 90.11777333333333,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 212.5625,
+            "minimum": 93.604,
+            "operations_per_sample": 2000,
+            "p50": 95.979,
+            "p95": 192.5835,
+            "p99": 212.5625,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3797.5,
+            "minimum": 3288.34,
+            "operations_per_sample": 50,
+            "p50": 3298.34,
+            "p95": 3320.84,
+            "p99": 3797.5,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 787725.0,
+            "minimum": 346341.6,
+            "operations_per_sample": 5,
+            "p50": 372966.8,
+            "p95": 549408.2,
+            "p99": 787725.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1542.75,
+            "minimum": 998.666,
+            "operations_per_sample": 500,
+            "p50": 1006.168,
+            "p95": 1283.668,
+            "p99": 1542.75,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3879.222,
+        "track_decode_ns_per_operation": 1030.8233333333333,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 405161.12,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 6.440833333333333,
+        "evidence_ns_per_operation": 127.95278,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 206.5205,
+            "minimum": 90.25,
+            "operations_per_sample": 2000,
+            "p50": 91.583,
+            "p95": 182.125,
+            "p99": 206.5205,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3700.82,
+            "minimum": 3290.0,
+            "operations_per_sample": 50,
+            "p50": 3294.16,
+            "p95": 3312.5,
+            "p99": 3700.82,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 528358.4,
+            "minimum": 346600.0,
+            "operations_per_sample": 5,
+            "p50": 352216.8,
+            "p95": 525975.0,
+            "p99": 528358.4,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1442.0,
+            "minimum": 998.5,
+            "operations_per_sample": 500,
+            "p50": 1013.5,
+            "p95": 1360.918,
+            "p99": 1442.0,
+            "samples": 40
+          }
+        },
+        "scheduler_candidates": 240,
+        "scheduler_ns_per_operation": 3976.8613333333333,
+        "track_decode_ns_per_operation": 1055.77278,
+        "track_frame_bytes": 136
+      },
+      {
+        "association_ns_per_operation": 360975.0,
+        "association_objects": 1000,
+        "custody_priority_ns_per_operation": 5.20472,
+        "evidence_ns_per_operation": 101.88416666666667,
+        "iterations": 150000,
+        "latency_distributions_ns": {
+          "evidence": {
+            "maximum": 177.646,
+            "minimum": 89.9585,
+            "operations_per_sample": 2000,
+            "p50": 93.875,
+            "p95": 102.0835,
+            "p99": 177.646,
+            "samples": 40
+          },
+          "scheduler": {
+            "maximum": 3720.82,
+            "minimum": 3281.66,
+            "operations_per_sample": 50,
+            "p50": 3335.0,
+            "p95": 3455.84,
+            "p99": 3720.82,
+            "samples": 40
+          },
+          "sparse_association": {
+            "maximum": 418925.0,
+            "minimum": 347258.4,
+            "operations_per_sample": 5,
+            "p50": 354108.2,
+            "p95": 402866.6,
+            "p99": 418925.0,
+            "samples": 30
+          },
+          "track_decode": {
+            "maximum": 1252.25,
+            "minimum": 990.25,
             "operations_per_sample": 500,
             "p50": 1006.166,
-            "p95": 1014.166,
-            "p99": 1016.916,
+            "p95": 1015.166,
+            "p99": 1252.25,
             "samples": 40
           }
         },
         "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3340.3333333333335,
-        "track_decode_ns_per_operation": 1005.0894466666666,
+        "scheduler_ns_per_operation": 3407.4166666666665,
+        "track_decode_ns_per_operation": 1043.8163866666666,
         "track_frame_bytes": 136
       },
       {
-        "association_ns_per_operation": 359059.44,
+        "association_ns_per_operation": 370341.6666666667,
         "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.104446666666667,
-        "evidence_ns_per_operation": 83.54916666666666,
+        "custody_priority_ns_per_operation": 5.20722,
+        "evidence_ns_per_operation": 94.51055333333333,
         "iterations": 150000,
         "latency_distributions_ns": {
           "evidence": {
-            "maximum": 89.25,
-            "minimum": 82.75,
+            "maximum": 98.9585,
+            "minimum": 92.125,
             "operations_per_sample": 2000,
-            "p50": 87.0835,
-            "p95": 88.354,
-            "p99": 89.25,
+            "p50": 93.542,
+            "p95": 93.9165,
+            "p99": 98.9585,
             "samples": 40
           },
           "scheduler": {
-            "maximum": 3755.84,
-            "minimum": 3211.66,
+            "maximum": 4230.0,
+            "minimum": 3233.34,
             "operations_per_sample": 50,
-            "p50": 3298.32,
-            "p95": 3400.0,
-            "p99": 3755.84,
+            "p50": 3283.34,
+            "p95": 3448.34,
+            "p99": 4230.0,
             "samples": 40
           },
           "sparse_association": {
-            "maximum": 580850.0,
-            "minimum": 329275.0,
+            "maximum": 411741.6,
+            "minimum": 350566.8,
             "operations_per_sample": 5,
-            "p50": 360291.6,
-            "p95": 558491.8,
-            "p99": 580850.0,
+            "p50": 356591.6,
+            "p95": 387250.0,
+            "p99": 411741.6,
             "samples": 30
           },
           "track_decode": {
-            "maximum": 1017.666,
-            "minimum": 938.5,
+            "maximum": 1079.666,
+            "minimum": 998.75,
             "operations_per_sample": 500,
-            "p50": 1012.166,
-            "p95": 1015.334,
-            "p99": 1017.666,
+            "p50": 1007.168,
+            "p95": 1047.584,
+            "p99": 1079.666,
             "samples": 40
           }
         },
         "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3313.972,
-        "track_decode_ns_per_operation": 1002.0625,
+        "scheduler_ns_per_operation": 4303.527333333333,
+        "track_decode_ns_per_operation": 1782.9961066666667,
         "track_frame_bytes": 136
       },
       {
-        "association_ns_per_operation": 358467.7733333333,
+        "association_ns_per_operation": 359301.1066666667,
         "association_objects": 1000,
-        "custody_priority_ns_per_operation": 6.378886666666666,
-        "evidence_ns_per_operation": 83.55861333333333,
+        "custody_priority_ns_per_operation": 5.30222,
+        "evidence_ns_per_operation": 93.87861333333333,
         "iterations": 150000,
         "latency_distributions_ns": {
           "evidence": {
-            "maximum": 109.854,
-            "minimum": 84.042,
+            "maximum": 109.6045,
+            "minimum": 93.5415,
             "operations_per_sample": 2000,
-            "p50": 88.3125,
-            "p95": 91.833,
-            "p99": 109.854,
+            "p50": 94.75,
+            "p95": 96.104,
+            "p99": 109.6045,
             "samples": 40
           },
           "scheduler": {
-            "maximum": 3763.32,
-            "minimum": 3166.66,
+            "maximum": 3708.34,
+            "minimum": 3286.66,
             "operations_per_sample": 50,
-            "p50": 3298.32,
-            "p95": 3374.16,
-            "p99": 3763.32,
+            "p50": 3292.5,
+            "p95": 3310.82,
+            "p99": 3708.34,
             "samples": 40
           },
           "sparse_association": {
-            "maximum": 381241.8,
-            "minimum": 344758.4,
+            "maximum": 395025.0,
+            "minimum": 352841.8,
             "operations_per_sample": 5,
-            "p50": 352416.8,
-            "p95": 375183.4,
-            "p99": 381241.8,
+            "p50": 355833.2,
+            "p95": 372375.0,
+            "p99": 395025.0,
             "samples": 30
           },
           "track_decode": {
-            "maximum": 1072.918,
-            "minimum": 1004.416,
+            "maximum": 1110.584,
+            "minimum": 1003.918,
             "operations_per_sample": 500,
-            "p50": 1005.666,
-            "p95": 1015.168,
-            "p99": 1072.918,
+            "p50": 1014.25,
+            "p95": 1033.166,
+            "p99": 1110.584,
             "samples": 40
           }
         },
         "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3334.0,
-        "track_decode_ns_per_operation": 993.0269466666666,
+        "scheduler_ns_per_operation": 3379.528,
+        "track_decode_ns_per_operation": 1013.6186133333333,
         "track_frame_bytes": 136
       },
       {
-        "association_ns_per_operation": 372286.1066666667,
+        "association_ns_per_operation": 362597.2266666667,
         "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.289446666666667,
-        "evidence_ns_per_operation": 93.50666666666666,
+        "custody_priority_ns_per_operation": 5.204446666666667,
+        "evidence_ns_per_operation": 90.25944666666666,
         "iterations": 150000,
         "latency_distributions_ns": {
           "evidence": {
-            "maximum": 137.792,
-            "minimum": 89.2915,
+            "maximum": 96.25,
+            "minimum": 90.271,
             "operations_per_sample": 2000,
-            "p50": 95.854,
-            "p95": 111.1665,
-            "p99": 137.792,
+            "p50": 91.5205,
+            "p95": 94.1665,
+            "p99": 96.25,
             "samples": 40
           },
           "scheduler": {
-            "maximum": 3762.5,
-            "minimum": 3071.66,
+            "maximum": 3757.5,
+            "minimum": 3260.0,
             "operations_per_sample": 50,
-            "p50": 3295.82,
+            "p50": 3285.84,
             "p95": 3302.5,
-            "p99": 3762.5,
+            "p99": 3757.5,
             "samples": 40
           },
           "sparse_association": {
-            "maximum": 481950.0,
-            "minimum": 339775.0,
+            "maximum": 377216.6,
+            "minimum": 349450.0,
             "operations_per_sample": 5,
-            "p50": 348983.4,
-            "p95": 414750.0,
-            "p99": 481950.0,
+            "p50": 357250.0,
+            "p95": 375600.0,
+            "p99": 377216.6,
             "samples": 30
           },
           "track_decode": {
-            "maximum": 1396.334,
-            "minimum": 1002.334,
+            "maximum": 1016.166,
+            "minimum": 979.25,
             "operations_per_sample": 500,
-            "p50": 1007.0,
-            "p95": 1222.584,
-            "p99": 1396.334,
+            "p50": 1005.834,
+            "p95": 1008.084,
+            "p99": 1016.166,
             "samples": 40
           }
         },
         "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 4032.0273333333334,
-        "track_decode_ns_per_operation": 2041.72694,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 503222.7733333333,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.411393333333334,
-        "evidence_ns_per_operation": 95.99916666666667,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 98.625,
-            "minimum": 93.8125,
-            "operations_per_sample": 2000,
-            "p50": 96.0,
-            "p95": 97.5625,
-            "p99": 98.625,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 7088.34,
-            "minimum": 3166.66,
-            "operations_per_sample": 50,
-            "p50": 3381.66,
-            "p95": 5927.5,
-            "p99": 7088.34,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 468908.4,
-            "minimum": 335908.2,
-            "operations_per_sample": 5,
-            "p50": 349533.4,
-            "p95": 412650.0,
-            "p99": 468908.4,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1042.75,
-            "minimum": 971.834,
-            "operations_per_sample": 500,
-            "p50": 1011.084,
-            "p95": 1031.834,
-            "p99": 1042.75,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 5266.5,
-        "track_decode_ns_per_operation": 1039.2813866666668,
-        "track_frame_bytes": 136
-      },
-      {
-        "association_ns_per_operation": 353619.44,
-        "association_objects": 1000,
-        "custody_priority_ns_per_operation": 5.168333333333333,
-        "evidence_ns_per_operation": 90.21305333333333,
-        "iterations": 150000,
-        "latency_distributions_ns": {
-          "evidence": {
-            "maximum": 91.146,
-            "minimum": 85.854,
-            "operations_per_sample": 2000,
-            "p50": 90.396,
-            "p95": 91.0,
-            "p99": 91.146,
-            "samples": 40
-          },
-          "scheduler": {
-            "maximum": 3711.68,
-            "minimum": 3282.5,
-            "operations_per_sample": 50,
-            "p50": 3299.16,
-            "p95": 3352.5,
-            "p99": 3711.68,
-            "samples": 40
-          },
-          "sparse_association": {
-            "maximum": 388175.0,
-            "minimum": 338175.0,
-            "operations_per_sample": 5,
-            "p50": 347225.0,
-            "p95": 374158.4,
-            "p99": 388175.0,
-            "samples": 30
-          },
-          "track_decode": {
-            "maximum": 1041.916,
-            "minimum": 975.832,
-            "operations_per_sample": 500,
-            "p50": 1005.584,
-            "p95": 1025.918,
-            "p99": 1041.916,
-            "samples": 40
-          }
-        },
-        "scheduler_candidates": 240,
-        "scheduler_ns_per_operation": 3342.9166666666665,
-        "track_decode_ns_per_operation": 1005.9536133333334,
+        "scheduler_ns_per_operation": 3194.222,
+        "track_decode_ns_per_operation": 1012.2930533333333,
         "track_frame_bytes": 136
       }
     ],
     "benchmark_process_wall_ms": [
-      273.972542,
-      277.947834,
-      276.431834,
-      273.946666,
-      268.855417,
-      348.736667,
-      287.598708,
-      371.721292,
-      335.195416,
-      297.537792,
-      290.43875,
-      290.274875,
-      290.638584,
-      293.763125,
-      288.507958,
-      293.535125,
-      285.089417,
-      448.285,
-      310.946542,
-      286.93425
+      270.724292,
+      274.347416,
+      270.750667,
+      271.4905,
+      268.854333,
+      269.009083,
+      268.8285,
+      328.221291,
+      289.763541,
+      287.260625,
+      288.71075,
+      287.814083,
+      291.764208,
+      287.536458,
+      311.840958,
+      312.160208,
+      298.031,
+      408.267167,
+      291.661291,
+      288.927084
     ],
     "conformance": [
       {
@@ -1600,70 +1600,70 @@
       }
     ],
     "conformance_process_wall_ms": [
-      3.328833,
-      3.107334,
-      2.314667,
-      2.393917,
-      2.798417,
-      2.339375,
-      2.284875,
-      2.835167,
-      2.742458,
-      2.251833,
-      2.917583,
-      2.323166,
-      2.161291,
-      2.37875,
-      2.876667,
-      2.333875,
-      2.229042,
-      2.334209,
-      2.232541,
-      2.217333
+      2.631208,
+      2.252166,
+      2.204166,
+      2.199708,
+      2.102042,
+      2.191417,
+      2.1515,
+      2.178917,
+      2.322667,
+      2.178666,
+      2.146916,
+      2.117125,
+      2.088792,
+      2.189292,
+      2.105791,
+      2.512375,
+      2.851292,
+      2.279666,
+      2.209333,
+      2.101834
     ],
     "scaling": [
       {
         "association": [
           {
-            "ns_per_item": 211.521,
-            "ns_per_update": 21152.1,
+            "ns_per_item": 209.5835,
+            "ns_per_update": 20958.35,
             "size": 100
           },
           {
-            "ns_per_item": 358.1271,
-            "ns_per_update": 358127.1,
+            "ns_per_item": 351.55625,
+            "ns_per_update": 351556.25,
             "size": 1000
           },
           {
-            "ns_per_item": 418.25375,
-            "ns_per_update": 2091268.75,
+            "ns_per_item": 416.69458,
+            "ns_per_update": 2083472.9,
             "size": 5000
           },
           {
-            "ns_per_item": 474.63334000000003,
-            "ns_per_update": 4746333.4,
+            "ns_per_item": 463.0225,
+            "ns_per_update": 4630225.0,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.118166666666667,
-            "ns_per_update": 847.09,
+            "ns_per_item": 14.1875,
+            "ns_per_update": 851.25,
             "size": 60
           },
           {
-            "ns_per_item": 14.784708333333333,
-            "ns_per_update": 3548.33,
+            "ns_per_item": 14.614583333333334,
+            "ns_per_update": 3507.5,
             "size": 240
           },
           {
-            "ns_per_item": 19.16015625,
-            "ns_per_update": 18393.75,
+            "ns_per_item": 19.123697916666668,
+            "ns_per_update": 18358.75,
             "size": 960
           },
           {
-            "ns_per_item": 59.56325520833333,
-            "ns_per_update": 228722.9,
+            "ns_per_item": 59.141171875000005,
+            "ns_per_update": 227102.1,
             "size": 3840
           }
         ]
@@ -1671,45 +1671,45 @@
       {
         "association": [
           {
-            "ns_per_item": 211.4375,
-            "ns_per_update": 21143.75,
+            "ns_per_item": 212.9585,
+            "ns_per_update": 21295.85,
             "size": 100
           },
           {
-            "ns_per_item": 358.0,
-            "ns_per_update": 358000.0,
+            "ns_per_item": 359.55834999999996,
+            "ns_per_update": 359558.35,
             "size": 1000
           },
           {
-            "ns_per_item": 424.18042,
-            "ns_per_update": 2120902.1,
+            "ns_per_item": 413.49042000000003,
+            "ns_per_update": 2067452.1,
             "size": 5000
           },
           {
-            "ns_per_item": 465.19834000000003,
-            "ns_per_update": 4651983.4,
+            "ns_per_item": 460.2725,
+            "ns_per_update": 4602725.0,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 15.458333333333334,
-            "ns_per_update": 927.5,
+            "ns_per_item": 15.3055,
+            "ns_per_update": 918.33,
             "size": 60
           },
           {
-            "ns_per_item": 14.861083333333333,
-            "ns_per_update": 3566.66,
+            "ns_per_item": 16.717,
+            "ns_per_update": 4012.08,
             "size": 240
           },
           {
-            "ns_per_item": 18.493489583333332,
-            "ns_per_update": 17753.75,
+            "ns_per_item": 18.673614583333332,
+            "ns_per_update": 17926.67,
             "size": 960
           },
           {
-            "ns_per_item": 73.95235677083333,
-            "ns_per_update": 283977.05,
+            "ns_per_item": 55.244140625,
+            "ns_per_update": 212137.5,
             "size": 3840
           }
         ]
@@ -1717,45 +1717,45 @@
       {
         "association": [
           {
-            "ns_per_item": 300.60400000000004,
-            "ns_per_update": 30060.4,
+            "ns_per_item": 218.0,
+            "ns_per_update": 21800.0,
             "size": 100
           },
           {
-            "ns_per_item": 450.18334999999996,
-            "ns_per_update": 450183.35,
+            "ns_per_item": 359.55205,
+            "ns_per_update": 359552.05,
             "size": 1000
           },
           {
-            "ns_per_item": 451.33583,
-            "ns_per_update": 2256679.15,
+            "ns_per_item": 418.43125,
+            "ns_per_update": 2092156.25,
             "size": 5000
           },
           {
-            "ns_per_item": 446.43334000000004,
-            "ns_per_update": 4464333.4,
+            "ns_per_item": 515.1558200000001,
+            "ns_per_update": 5151558.2,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 15.485999999999999,
-            "ns_per_update": 929.16,
+            "ns_per_item": 14.25,
+            "ns_per_update": 855.0,
             "size": 60
           },
           {
-            "ns_per_item": 14.293416666666667,
-            "ns_per_update": 3430.42,
+            "ns_per_item": 14.550333333333333,
+            "ns_per_update": 3492.08,
             "size": 240
           },
           {
-            "ns_per_item": 17.942708333333332,
-            "ns_per_update": 17225.0,
+            "ns_per_item": 19.1640625,
+            "ns_per_update": 18397.5,
             "size": 960
           },
           {
-            "ns_per_item": 57.485898437500005,
-            "ns_per_update": 220745.85,
+            "ns_per_item": 53.804257812500005,
+            "ns_per_update": 206608.35,
             "size": 3840
           }
         ]
@@ -1763,45 +1763,45 @@
       {
         "association": [
           {
-            "ns_per_item": 198.9375,
-            "ns_per_update": 19893.75,
+            "ns_per_item": 203.0205,
+            "ns_per_update": 20302.05,
             "size": 100
           },
           {
-            "ns_per_item": 340.9896,
-            "ns_per_update": 340989.6,
+            "ns_per_item": 343.09375,
+            "ns_per_update": 343093.75,
             "size": 1000
           },
           {
-            "ns_per_item": 407.54666000000003,
-            "ns_per_update": 2037733.3,
+            "ns_per_item": 482.68125,
+            "ns_per_update": 2413406.25,
             "size": 5000
           },
           {
-            "ns_per_item": 464.87084000000004,
-            "ns_per_update": 4648708.4,
+            "ns_per_item": 462.7675,
+            "ns_per_update": 4627675.0,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 15.632,
-            "ns_per_update": 937.92,
+            "ns_per_item": 15.958333333333334,
+            "ns_per_update": 957.5,
             "size": 60
           },
           {
-            "ns_per_item": 14.477416666666667,
-            "ns_per_update": 3474.58,
+            "ns_per_item": 13.956583333333333,
+            "ns_per_update": 3349.58,
             "size": 240
           },
           {
-            "ns_per_item": 18.54730208333333,
-            "ns_per_update": 17805.41,
+            "ns_per_item": 18.825520833333332,
+            "ns_per_update": 18072.5,
             "size": 960
           },
           {
-            "ns_per_item": 59.2578125,
-            "ns_per_update": 227550.0,
+            "ns_per_item": 53.32736979166667,
+            "ns_per_update": 204777.1,
             "size": 3840
           }
         ]
@@ -1809,45 +1809,45 @@
       {
         "association": [
           {
-            "ns_per_item": 212.7915,
-            "ns_per_update": 21279.15,
+            "ns_per_item": 205.5,
+            "ns_per_update": 20550.0,
             "size": 100
           },
           {
-            "ns_per_item": 354.61045,
-            "ns_per_update": 354610.45,
+            "ns_per_item": 343.7292,
+            "ns_per_update": 343729.2,
             "size": 1000
           },
           {
-            "ns_per_item": 402.35458,
-            "ns_per_update": 2011772.9,
+            "ns_per_item": 405.80834,
+            "ns_per_update": 2029041.7,
             "size": 5000
           },
           {
-            "ns_per_item": 437.03918,
-            "ns_per_update": 4370391.8,
+            "ns_per_item": 466.73084000000006,
+            "ns_per_update": 4667308.4,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.110999999999999,
-            "ns_per_update": 846.66,
+            "ns_per_item": 16.486166666666666,
+            "ns_per_update": 989.17,
             "size": 60
           },
           {
-            "ns_per_item": 13.65275,
-            "ns_per_update": 3276.66,
+            "ns_per_item": 15.291666666666666,
+            "ns_per_update": 3670.0,
             "size": 240
           },
           {
-            "ns_per_item": 18.11328125,
-            "ns_per_update": 17388.75,
+            "ns_per_item": 19.689666666666668,
+            "ns_per_update": 18902.08,
             "size": 960
           },
           {
-            "ns_per_item": 57.4061328125,
-            "ns_per_update": 220439.55,
+            "ns_per_item": 55.42859375,
+            "ns_per_update": 212845.8,
             "size": 3840
           }
         ]
@@ -1855,45 +1855,45 @@
       {
         "association": [
           {
-            "ns_per_item": 204.875,
-            "ns_per_update": 20487.5,
+            "ns_per_item": 215.5415,
+            "ns_per_update": 21554.15,
             "size": 100
           },
           {
-            "ns_per_item": 343.65625,
-            "ns_per_update": 343656.25,
+            "ns_per_item": 360.60415,
+            "ns_per_update": 360604.15,
             "size": 1000
           },
           {
-            "ns_per_item": 396.90207999999996,
-            "ns_per_update": 1984510.4,
+            "ns_per_item": 415.71459,
+            "ns_per_update": 2078572.95,
             "size": 5000
           },
           {
-            "ns_per_item": 445.59,
-            "ns_per_update": 4455900.0,
+            "ns_per_item": 463.63,
+            "ns_per_update": 4636300.0,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.083333333333334,
-            "ns_per_update": 845.0,
+            "ns_per_item": 15.451500000000001,
+            "ns_per_update": 927.09,
             "size": 60
           },
           {
-            "ns_per_item": 14.269083333333333,
-            "ns_per_update": 3424.58,
+            "ns_per_item": 14.533,
+            "ns_per_update": 3487.92,
             "size": 240
           },
           {
-            "ns_per_item": 18.038197916666665,
-            "ns_per_update": 17316.67,
+            "ns_per_item": 18.82855208333333,
+            "ns_per_update": 18075.41,
             "size": 960
           },
           {
-            "ns_per_item": 56.038411458333336,
-            "ns_per_update": 215187.5,
+            "ns_per_item": 62.312825520833336,
+            "ns_per_update": 239281.25,
             "size": 3840
           }
         ]
@@ -1901,45 +1901,45 @@
       {
         "association": [
           {
-            "ns_per_item": 205.4375,
-            "ns_per_update": 20543.75,
+            "ns_per_item": 222.979,
+            "ns_per_update": 22297.9,
             "size": 100
           },
           {
-            "ns_per_item": 335.6292,
-            "ns_per_update": 335629.2,
+            "ns_per_item": 360.95625,
+            "ns_per_update": 360956.25,
             "size": 1000
           },
           {
-            "ns_per_item": 399.30042000000003,
-            "ns_per_update": 1996502.1,
+            "ns_per_item": 419.89,
+            "ns_per_update": 2099450.0,
             "size": 5000
           },
           {
-            "ns_per_item": 445.51167999999996,
-            "ns_per_update": 4455116.8,
+            "ns_per_item": 460.0975,
+            "ns_per_update": 4600975.0,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.458333333333334,
-            "ns_per_update": 867.5,
+            "ns_per_item": 14.6945,
+            "ns_per_update": 881.67,
             "size": 60
           },
           {
-            "ns_per_item": 13.625,
-            "ns_per_update": 3270.0,
+            "ns_per_item": 14.553833333333333,
+            "ns_per_update": 3492.92,
             "size": 240
           },
           {
-            "ns_per_item": 18.982635416666668,
-            "ns_per_update": 18223.33,
+            "ns_per_item": 19.138020833333332,
+            "ns_per_update": 18372.5,
             "size": 960
           },
           {
-            "ns_per_item": 52.13649739583333,
-            "ns_per_update": 200204.15,
+            "ns_per_item": 55.07106770833333,
+            "ns_per_update": 211472.9,
             "size": 3840
           }
         ]
@@ -1947,45 +1947,45 @@
       {
         "association": [
           {
-            "ns_per_item": 196.1455,
-            "ns_per_update": 19614.55,
+            "ns_per_item": 220.7295,
+            "ns_per_update": 22072.95,
             "size": 100
           },
           {
-            "ns_per_item": 337.38955,
-            "ns_per_update": 337389.55,
+            "ns_per_item": 351.17920000000004,
+            "ns_per_update": 351179.2,
             "size": 1000
           },
           {
-            "ns_per_item": 405.9275,
-            "ns_per_update": 2029637.5,
+            "ns_per_item": 433.30459,
+            "ns_per_update": 2166522.95,
             "size": 5000
           },
           {
-            "ns_per_item": 458.00167999999996,
-            "ns_per_update": 4580016.8,
+            "ns_per_item": 453.77584,
+            "ns_per_update": 4537758.4,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.819333333333333,
-            "ns_per_update": 889.16,
+            "ns_per_item": 14.847166666666668,
+            "ns_per_update": 890.83,
             "size": 60
           },
           {
-            "ns_per_item": 13.770833333333334,
-            "ns_per_update": 3305.0,
+            "ns_per_item": 14.661458333333334,
+            "ns_per_update": 3518.75,
             "size": 240
           },
           {
-            "ns_per_item": 20.463979166666665,
-            "ns_per_update": 19645.42,
+            "ns_per_item": 19.100260416666668,
+            "ns_per_update": 18336.25,
             "size": 960
           },
           {
-            "ns_per_item": 63.642031249999995,
-            "ns_per_update": 244385.4,
+            "ns_per_item": 55.0596875,
+            "ns_per_update": 211429.2,
             "size": 3840
           }
         ]
@@ -1993,45 +1993,45 @@
       {
         "association": [
           {
-            "ns_per_item": 211.021,
-            "ns_per_update": 21102.1,
+            "ns_per_item": 210.7085,
+            "ns_per_update": 21070.85,
             "size": 100
           },
           {
-            "ns_per_item": 342.44165000000004,
-            "ns_per_update": 342441.65,
+            "ns_per_item": 360.1771,
+            "ns_per_update": 360177.1,
             "size": 1000
           },
           {
-            "ns_per_item": 407.50084,
-            "ns_per_update": 2037504.2,
+            "ns_per_item": 414.575,
+            "ns_per_update": 2072875.0,
             "size": 5000
           },
           {
-            "ns_per_item": 453.99832000000004,
-            "ns_per_update": 4539983.2,
+            "ns_per_item": 459.97082,
+            "ns_per_update": 4599708.2,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.361166666666666,
-            "ns_per_update": 861.67,
+            "ns_per_item": 14.263833333333334,
+            "ns_per_update": 855.83,
             "size": 60
           },
           {
-            "ns_per_item": 13.543375,
-            "ns_per_update": 3250.41,
+            "ns_per_item": 14.838541666666666,
+            "ns_per_update": 3561.25,
             "size": 240
           },
           {
-            "ns_per_item": 17.584208333333333,
-            "ns_per_update": 16880.84,
+            "ns_per_item": 19.254343749999997,
+            "ns_per_update": 18484.17,
             "size": 960
           },
           {
-            "ns_per_item": 62.517903645833336,
-            "ns_per_update": 240068.75,
+            "ns_per_item": 55.20888020833333,
+            "ns_per_update": 212002.1,
             "size": 3840
           }
         ]
@@ -2039,45 +2039,45 @@
       {
         "association": [
           {
-            "ns_per_item": 195.396,
-            "ns_per_update": 19539.6,
+            "ns_per_item": 217.125,
+            "ns_per_update": 21712.5,
             "size": 100
           },
           {
-            "ns_per_item": 342.9875,
-            "ns_per_update": 342987.5,
+            "ns_per_item": 365.72295,
+            "ns_per_update": 365722.95,
             "size": 1000
           },
           {
-            "ns_per_item": 402.43667,
-            "ns_per_update": 2012183.35,
+            "ns_per_item": 434.06165999999996,
+            "ns_per_update": 2170308.3,
             "size": 5000
           },
           {
-            "ns_per_item": 445.99418,
-            "ns_per_update": 4459941.8,
+            "ns_per_item": 452.32832,
+            "ns_per_update": 4523283.2,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 13.138833333333334,
-            "ns_per_update": 788.33,
+            "ns_per_item": 15.215333333333332,
+            "ns_per_update": 912.92,
             "size": 60
           },
           {
-            "ns_per_item": 14.130208333333334,
-            "ns_per_update": 3391.25,
+            "ns_per_item": 14.701375,
+            "ns_per_update": 3528.33,
             "size": 240
           },
           {
-            "ns_per_item": 17.706593750000003,
-            "ns_per_update": 16998.33,
+            "ns_per_item": 18.037760416666668,
+            "ns_per_update": 17316.25,
             "size": 960
           },
           {
-            "ns_per_item": 56.904296875,
-            "ns_per_update": 218512.5,
+            "ns_per_item": 60.628255208333336,
+            "ns_per_update": 232812.5,
             "size": 3840
           }
         ]
@@ -2085,45 +2085,45 @@
       {
         "association": [
           {
-            "ns_per_item": 215.1875,
-            "ns_per_update": 21518.75,
+            "ns_per_item": 210.771,
+            "ns_per_update": 21077.1,
             "size": 100
           },
           {
-            "ns_per_item": 351.2333,
-            "ns_per_update": 351233.3,
+            "ns_per_item": 350.2208,
+            "ns_per_update": 350220.8,
             "size": 1000
           },
           {
-            "ns_per_item": 400.12916,
-            "ns_per_update": 2000645.8,
+            "ns_per_item": 399.09875,
+            "ns_per_update": 1995493.75,
             "size": 5000
           },
           {
-            "ns_per_item": 448.40918,
-            "ns_per_update": 4484091.8,
+            "ns_per_item": 436.9175,
+            "ns_per_update": 4369175.0,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 15.618166666666667,
-            "ns_per_update": 937.09,
+            "ns_per_item": 13.395833333333334,
+            "ns_per_update": 803.75,
             "size": 60
           },
           {
-            "ns_per_item": 14.192708333333334,
-            "ns_per_update": 3406.25,
+            "ns_per_item": 13.895833333333334,
+            "ns_per_update": 3335.0,
             "size": 240
           },
           {
-            "ns_per_item": 20.362416666666665,
-            "ns_per_update": 19547.92,
+            "ns_per_item": 18.325083333333335,
+            "ns_per_update": 17592.08,
             "size": 960
           },
           {
-            "ns_per_item": 58.68760416666667,
-            "ns_per_update": 225360.4,
+            "ns_per_item": 56.440976562500005,
+            "ns_per_update": 216733.35,
             "size": 3840
           }
         ]
@@ -2131,45 +2131,45 @@
       {
         "association": [
           {
-            "ns_per_item": 194.875,
-            "ns_per_update": 19487.5,
+            "ns_per_item": 200.6665,
+            "ns_per_update": 20066.65,
             "size": 100
           },
           {
-            "ns_per_item": 354.72915,
-            "ns_per_update": 354729.15,
+            "ns_per_item": 339.9625,
+            "ns_per_update": 339962.5,
             "size": 1000
           },
           {
-            "ns_per_item": 405.81791,
-            "ns_per_update": 2029089.55,
+            "ns_per_item": 395.225,
+            "ns_per_update": 1976125.0,
             "size": 5000
           },
           {
-            "ns_per_item": 451.73915999999997,
-            "ns_per_update": 4517391.6,
+            "ns_per_item": 437.09332,
+            "ns_per_update": 4370933.2,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.951333333333334,
-            "ns_per_update": 897.08,
+            "ns_per_item": 13.854166666666666,
+            "ns_per_update": 831.25,
             "size": 60
           },
           {
-            "ns_per_item": 13.574666666666667,
-            "ns_per_update": 3257.92,
+            "ns_per_item": 13.967,
+            "ns_per_update": 3352.08,
             "size": 240
           },
           {
-            "ns_per_item": 19.99609375,
-            "ns_per_update": 19196.25,
+            "ns_per_item": 17.646708333333333,
+            "ns_per_update": 16940.84,
             "size": 960
           },
           {
-            "ns_per_item": 66.640625,
-            "ns_per_update": 255900.0,
+            "ns_per_item": 56.04057291666666,
+            "ns_per_update": 215195.8,
             "size": 3840
           }
         ]
@@ -2177,45 +2177,45 @@
       {
         "association": [
           {
-            "ns_per_item": 195.8125,
-            "ns_per_update": 19581.25,
+            "ns_per_item": 199.354,
+            "ns_per_update": 19935.4,
             "size": 100
           },
           {
-            "ns_per_item": 379.77915,
-            "ns_per_update": 379779.15,
+            "ns_per_item": 339.59795,
+            "ns_per_update": 339597.95,
             "size": 1000
           },
           {
-            "ns_per_item": 405.18542,
-            "ns_per_update": 2025927.1,
+            "ns_per_item": 394.94333,
+            "ns_per_update": 1974716.65,
             "size": 5000
           },
           {
-            "ns_per_item": 454.63332,
-            "ns_per_update": 4546333.2,
+            "ns_per_item": 443.75917999999996,
+            "ns_per_update": 4437591.8,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 13.305666666666667,
-            "ns_per_update": 798.34,
+            "ns_per_item": 14.243,
+            "ns_per_update": 854.58,
             "size": 60
           },
           {
-            "ns_per_item": 15.348958333333334,
-            "ns_per_update": 3683.75,
+            "ns_per_item": 14.069458333333333,
+            "ns_per_update": 3376.67,
             "size": 240
           },
           {
-            "ns_per_item": 21.493052083333335,
-            "ns_per_update": 20633.33,
+            "ns_per_item": 18.552083333333332,
+            "ns_per_update": 17810.0,
             "size": 960
           },
           {
-            "ns_per_item": 64.16394531249999,
-            "ns_per_update": 246389.55,
+            "ns_per_item": 53.119570312499995,
+            "ns_per_update": 203979.15,
             "size": 3840
           }
         ]
@@ -2223,45 +2223,45 @@
       {
         "association": [
           {
-            "ns_per_item": 231.25,
-            "ns_per_update": 23125.0,
+            "ns_per_item": 201.396,
+            "ns_per_update": 20139.6,
             "size": 100
           },
           {
-            "ns_per_item": 363.975,
-            "ns_per_update": 363975.0,
+            "ns_per_item": 337.05415000000005,
+            "ns_per_update": 337054.15,
             "size": 1000
           },
           {
-            "ns_per_item": 426.1775,
-            "ns_per_update": 2130887.5,
+            "ns_per_item": 394.8175,
+            "ns_per_update": 1974087.5,
             "size": 5000
           },
           {
-            "ns_per_item": 456.30415999999997,
-            "ns_per_update": 4563041.6,
+            "ns_per_item": 436.59584,
+            "ns_per_update": 4365958.4,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 15.6945,
-            "ns_per_update": 941.67,
+            "ns_per_item": 14.680666666666667,
+            "ns_per_update": 880.84,
             "size": 60
           },
           {
-            "ns_per_item": 14.590291666666667,
-            "ns_per_update": 3501.67,
+            "ns_per_item": 14.055541666666667,
+            "ns_per_update": 3373.33,
             "size": 240
           },
           {
-            "ns_per_item": 21.851125000000003,
-            "ns_per_update": 20977.08,
+            "ns_per_item": 18.450947916666667,
+            "ns_per_update": 17712.91,
             "size": 960
           },
           {
-            "ns_per_item": 55.862630208333336,
-            "ns_per_update": 214512.5,
+            "ns_per_item": 52.329648437500005,
+            "ns_per_update": 200945.85,
             "size": 3840
           }
         ]
@@ -2269,75 +2269,75 @@
       {
         "association": [
           {
-            "ns_per_item": 215.1045,
-            "ns_per_update": 21510.45,
+            "ns_per_item": 201.2295,
+            "ns_per_update": 20122.95,
             "size": 100
           },
           {
-            "ns_per_item": 348.8604,
-            "ns_per_update": 348860.4,
+            "ns_per_item": 339.09375,
+            "ns_per_update": 339093.75,
             "size": 1000
           },
           {
-            "ns_per_item": 408.83375,
-            "ns_per_update": 2044168.75,
+            "ns_per_item": 394.88457999999997,
+            "ns_per_update": 1974422.9,
             "size": 5000
           },
           {
-            "ns_per_item": 458.14665999999994,
-            "ns_per_update": 4581466.6,
+            "ns_per_item": 438.36415999999997,
+            "ns_per_update": 4383641.6,
             "size": 10000
           }
         ],
         "scheduler": [
           {
-            "ns_per_item": 14.784666666666668,
-            "ns_per_update": 887.08,
+            "ns_per_item": 14.729166666666666,
+            "ns_per_update": 883.75,
             "size": 60
           },
           {
-            "ns_per_item": 14.140625,
-            "ns_per_update": 3393.75,
+            "ns_per_item": 13.911458333333334,
+            "ns_per_update": 3338.75,
             "size": 240
           },
           {
-            "ns_per_item": 18.115447916666668,
-            "ns_per_update": 17390.83,
+            "ns_per_item": 18.252166666666668,
+            "ns_per_update": 17522.08,
             "size": 960
           },
           {
-            "ns_per_item": 57.94651041666667,
-            "ns_per_update": 222514.6,
+            "ns_per_item": 56.04763020833333,
+            "ns_per_update": 215222.9,
             "size": 3840
           }
         ]
       }
     ],
     "scaling_process_wall_ms": [
-      83.289959,
-      84.412209,
-      86.797709,
-      81.182959,
-      78.974792,
-      78.742292,
-      78.685875,
-      81.000083,
-      80.909917,
-      79.208791,
-      80.432125,
-      81.31775,
-      87.495625,
-      83.741209,
-      81.418417
+      83.062959,
+      81.630125,
+      84.664,
+      88.273375,
+      81.006375,
+      82.582708,
+      82.24775,
+      83.07025,
+      81.750167,
+      83.912166,
+      78.770291,
+      78.151958,
+      77.877,
+      77.554375,
+      78.14375
     ]
   },
   "sanity_gates": {
     "authenticated_decode": {
-      "detail": "process p95 1.224 us < 50 us",
+      "detail": "process p95 1.219 us < 50 us",
       "passed": true
     },
     "bounded_scheduler": {
-      "detail": "3,840-candidate process p95 283.977 us < 5 ms",
+      "detail": "3,840-candidate process p95 239.281 us < 5 ms",
       "passed": true
     },
     "deterministic_conformance": {
@@ -2345,7 +2345,7 @@
       "passed": true
     },
     "sparse_association": {
-      "detail": "10,000-object process p95 4.746 ms < 50 ms",
+      "detail": "10,000-object process p95 5.152 ms < 50 ms",
       "passed": true
     }
   }
