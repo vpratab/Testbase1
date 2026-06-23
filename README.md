@@ -72,6 +72,12 @@ Run the frozen Puget-to-New-York trajectory evaluation:
 make frozen-region
 ```
 
+Generate proposal-writer packets for all seven topics:
+
+```bash
+make proposal-readiness
+```
+
 Rerun the complete Wave 5 evidence campaign:
 
 ```bash
@@ -162,6 +168,8 @@ Outputs:
 - `results/dense_crossing/DENSE_CROSSING_REPORT.md`
 - `results/frozen_region/frozen_region_results.json`
 - `results/frozen_region/FROZEN_REGION_REPORT.md`
+- `results/proposal_readiness/topic_readiness.json`
+- `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md`
 - `results/phase1_feasibility_results.json`
 - `results/phase1_feasibility_results.md`
 - `results/robustness_sweep.json`

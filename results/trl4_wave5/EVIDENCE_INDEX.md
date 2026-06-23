@@ -25,6 +25,7 @@ Supporting artifacts:
 - `../independent_benchmark/INDEPENDENT_BENCHMARK.md`
 - `../dense_crossing/DENSE_CROSSING_REPORT.md`
 - `../frozen_region/FROZEN_REGION_REPORT.md`
+- `../proposal_readiness/TOPIC_PROPOSAL_PACKETS.md`
 - `../supply_chain/component_inventory.json`
 - `../supply_chain/release_manifest.json`
 

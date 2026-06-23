@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CARGO_MANIFEST := native/assure-kernel/Cargo.toml
 
-.PHONY: bootstrap test benchmark independent-benchmark dense-crossing frozen-region verify full campaign theory supply-chain
+.PHONY: bootstrap test benchmark independent-benchmark dense-crossing frozen-region proposal-readiness verify full campaign theory supply-chain
 
 bootstrap:
 	python3 -m venv .venv
@@ -22,6 +22,9 @@ dense-crossing:
 
 frozen-region:
 	$(PYTHON) frozen_region_campaign.py
+
+proposal-readiness:
+	$(PYTHON) proposal_readiness.py
 
 verify:
 	$(PYTHON) tools/verify.py

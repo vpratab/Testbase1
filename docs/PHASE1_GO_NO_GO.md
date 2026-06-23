@@ -63,3 +63,7 @@ even if final credentials arrive after award.
 
 No synthetic score should be used to claim these external blockers have been
 solved.
+
+The proposal-writer packet for each topic is generated at
+`results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md` and validated by
+`test_proposal_readiness.py`.

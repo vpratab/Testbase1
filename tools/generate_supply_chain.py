@@ -131,6 +131,11 @@ def main() -> None:
         ROOT / "results" / "dense_crossing" / "DENSE_CROSSING_REPORT.md",
         ROOT / "results" / "frozen_region" / "frozen_region_results.json",
         ROOT / "results" / "frozen_region" / "FROZEN_REGION_REPORT.md",
+        ROOT / "results" / "proposal_readiness" / "topic_readiness.json",
+        ROOT
+        / "results"
+        / "proposal_readiness"
+        / "TOPIC_PROPOSAL_PACKETS.md",
     ]
     release = {
         "format": "assureedge-release-manifest/v1",
