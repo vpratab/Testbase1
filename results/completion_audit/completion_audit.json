@@ -31,7 +31,7 @@
       "path": "docs/PHASE1_GO_NO_GO.md"
     },
     "independent_benchmark": {
-      "bytes": 2333,
+      "bytes": 2334,
       "exists": true,
       "path": "results/independent_benchmark/INDEPENDENT_BENCHMARK.md"
     },
@@ -46,7 +46,7 @@
       "path": "docs/PARTNER_OUTREACH_TEMPLATES.md"
     },
     "release_manifest": {
-      "bytes": 3533,
+      "bytes": 3893,
       "exists": true,
       "path": "results/supply_chain/release_manifest.json"
     },

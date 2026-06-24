@@ -1,5 +1,9 @@
 # Seven-Topic Phase I / TRL 3-4 Feasibility Lab
 
+If you are opening this repository for the first time, start with
+`START_HERE.md`. It explains the topics, status, evidence, verification, and
+boundaries in plain language.
+
 This lab tests seven FY26 Phase I topic mappings using the smallest
 surrogate that answers each solicitation's feasibility question:
 
