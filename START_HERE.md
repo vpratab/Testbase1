@@ -46,19 +46,23 @@ Status meanings:
 
 Read these in order:
 
-1. `results/completion_audit/COMPLETION_AUDIT.md`  
+1. `results/completion_audit/COMPLETION_AUDIT.md`
    Final audit of what is complete and what still needs external access.
-2. `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md`  
+2. `results/go4_comparison/GO4_COMPETITIVE_ALIGNMENT.md`
+   Solicitation-aligned GO-4 evidence for NV059, NV061, NV063, and NV065.
+3. `results/go4_enhanced/GO4_ENHANCED_REPORT.md`
+   Harder generated metrics for the four highest-readiness topics.
+4. `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md`
    One proposal-ready packet per topic.
-3. `docs/PHASE1_GO_NO_GO.md`  
+5. `docs/PHASE1_GO_NO_GO.md`
    Topic status, scores, submission rule, and external blockers.
-4. `docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md`  
+6. `docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md`
    Truthful current-vs-potential assessment.
-5. `results/trl4_wave5/EVIDENCE_INDEX.md`  
+7. `results/trl4_wave5/EVIDENCE_INDEX.md`
    Map from topics to strongest measured evidence.
-6. `docs/EXTERNAL_ACCESS_PACKAGES.md`  
+8. `docs/EXTERNAL_ACCESS_PACKAGES.md`
    Exact first-month data and integration requests.
-7. `docs/PARTNER_OUTREACH_TEMPLATES.md`  
+9. `docs/PARTNER_OUTREACH_TEMPLATES.md`
    Draft outreach for the remaining partner-dependent paths.
 
 ## What is proven now
@@ -119,6 +123,12 @@ make proposal-readiness
 make completion-audit
 ```
 
+Regenerate the solicitation-aligned GO-4 evidence:
+
+```bash
+make go4
+```
+
 Important recent full verification result:
 
 - 79 Python tests passed.
@@ -134,6 +144,8 @@ Important recent full verification result:
 | Evidence | File |
 | --- | --- |
 | Completion audit | `results/completion_audit/COMPLETION_AUDIT.md` |
+| GO-4 solicitation alignment | `results/go4_comparison/GO4_COMPETITIVE_ALIGNMENT.md` |
+| GO-4 enhanced evidence | `results/go4_enhanced/GO4_ENHANCED_REPORT.md` |
 | Proposal packets | `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md` |
 | Independent benchmark | `results/independent_benchmark/INDEPENDENT_BENCHMARK.md` |
 | Dense crossing campaign | `results/dense_crossing/DENSE_CROSSING_REPORT.md` |

@@ -1,7 +1,7 @@
 PYTHON ?= .venv/bin/python
 CARGO_MANIFEST := native/assure-kernel/Cargo.toml
 
-.PHONY: bootstrap test benchmark independent-benchmark dense-crossing frozen-region proposal-readiness completion-audit verify full campaign theory supply-chain
+.PHONY: bootstrap test benchmark independent-benchmark dense-crossing frozen-region proposal-readiness completion-audit go4 verify full campaign theory supply-chain
 
 bootstrap:
 	python3 -m venv .venv
@@ -28,6 +28,11 @@ proposal-readiness:
 
 completion-audit:
 	$(PYTHON) completion_audit.py
+
+go4:
+	$(PYTHON) go4_enhancements.py
+	$(PYTHON) go4_comparison_report.py
+	$(PYTHON) -m unittest -v test_go4_enhanced.py
 
 verify:
 	$(PYTHON) tools/verify.py

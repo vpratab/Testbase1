@@ -36,24 +36,44 @@
       "sha256": "765c40d969c2cae5f2e4de0db2ff59fbdf885447fec54541bbb6c7a397b742e5"
     },
     {
-      "bytes": 1438,
+      "bytes": 1399,
       "path": "results/performance/native_kernel_benchmark.json",
-      "sha256": "22a39dbb95d32060c8e42d4f0f7694569058fe6d9e64743e27ca5be0ab28e1ec"
+      "sha256": "803aff979e94e70b34a8b5d257a975a48d767524a91ae3089c48c5d5924ed651"
     },
     {
-      "bytes": 847,
+      "bytes": 866,
       "path": "results/performance/native_kernel_scaling.json",
-      "sha256": "cb7b447b0c85aacd5bd0337304970df93a70462214aa543e75144ff08d0737a5"
+      "sha256": "36d58fcb018ac43554185017bc14f6b150d873b18dadd67416d1f7945b3f1d76"
     },
     {
-      "bytes": 66598,
+      "bytes": 49493,
       "path": "results/independent_benchmark/independent_benchmark.json",
-      "sha256": "c712d48fd2c69e5014d3fc7159ace33c495983e406d38c8cc9672fbca019c1ca"
+      "sha256": "886b19efa6a8a99c76fbb12759e7aa859ee3c4155cc5ba894973fc5780565f61"
     },
     {
-      "bytes": 2331,
+      "bytes": 2332,
       "path": "results/independent_benchmark/INDEPENDENT_BENCHMARK.md",
-      "sha256": "7a6a63b56acd187f432e472a9c4f66084acfb5dd94f1149e9e5fb199025d68a0"
+      "sha256": "bc6dbc54ac20d0cbfa663663d037a86ebd33e13663a44a725b01f30cbefa5ada"
+    },
+    {
+      "bytes": 13269,
+      "path": "results/go4_enhanced/go4_enhanced_results.json",
+      "sha256": "6f81edf7fc95a7f6e21efab6479955121e7f38340b5bddbd4ad8050a421e1f05"
+    },
+    {
+      "bytes": 2765,
+      "path": "results/go4_enhanced/GO4_ENHANCED_REPORT.md",
+      "sha256": "477c0679e8e58a1e116d0e6817393ecb39c19032221da39930575cf12200f752"
+    },
+    {
+      "bytes": 18942,
+      "path": "results/go4_comparison/go4_comparison_report.json",
+      "sha256": "e15c95ebde11b4c5578ffcf30f62e7590e769b4960beec367bbe79a9bb3965cd"
+    },
+    {
+      "bytes": 4843,
+      "path": "results/go4_comparison/GO4_COMPETITIVE_ALIGNMENT.md",
+      "sha256": "95aaa09067835ec362308bcda1aede440b02fa21e083723f90ad547e982b95ba"
     },
     {
       "bytes": 107514,
@@ -99,6 +119,6 @@
   "boundary": "local integrity manifest; signing, independent timestamping, and external artifact storage remain release-process tasks",
   "component_inventory_sha256": "ec7df1694ef245c600087a6aa24d67a2cfd0cb69453b8e602611c3ac8e48acca",
   "format": "assureedge-release-manifest/v1",
-  "source_files": 79,
-  "source_manifest_root_sha256": "3407623caaf1ca37799f5f2aeb3bbedac0d5c5f01cb781ae68e4515db5729a37"
+  "source_files": 82,
+  "source_manifest_root_sha256": "561e4d98d3cf26fb084555940ecd248b8ee9ec02d2a90503cb3a86bffac0c7c7"
 }

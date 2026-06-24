@@ -4,6 +4,10 @@ If you are opening this repository for the first time, start with
 `START_HERE.md`. It explains the topics, status, evidence, verification, and
 boundaries in plain language.
 
+The strongest four proposal paths also have a solicitation-driven GO-4 evidence
+layer. Run `make go4` or read
+`results/go4_comparison/GO4_COMPETITIVE_ALIGNMENT.md` after generation.
+
 This lab tests seven FY26 Phase I topic mappings using the smallest
 surrogate that answers each solicitation's feasibility question:
 

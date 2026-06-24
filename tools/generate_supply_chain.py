@@ -127,6 +127,10 @@ def main() -> None:
         / "results"
         / "independent_benchmark"
         / "INDEPENDENT_BENCHMARK.md",
+        ROOT / "results" / "go4_enhanced" / "go4_enhanced_results.json",
+        ROOT / "results" / "go4_enhanced" / "GO4_ENHANCED_REPORT.md",
+        ROOT / "results" / "go4_comparison" / "go4_comparison_report.json",
+        ROOT / "results" / "go4_comparison" / "GO4_COMPETITIVE_ALIGNMENT.md",
         ROOT / "results" / "dense_crossing" / "dense_crossing_results.json",
         ROOT / "results" / "dense_crossing" / "DENSE_CROSSING_REPORT.md",
         ROOT / "results" / "frozen_region" / "frozen_region_results.json",
