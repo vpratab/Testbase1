@@ -7,13 +7,13 @@ execution-time evidence.
 
 | Measurement | Result |
 | --- | ---: |
-| Evidence update | 86.0 ns/op |
+| Evidence update | 89.7 ns/op |
 | Custody and priority | 5.0 ns/op |
-| Authenticated track decode mean / batch-p99 | 960.2 / 971.5 ns |
-| 240-candidate schedule mean / batch-p99 | 3251.7 / 3670.8 ns |
-| 1,000-object association mean / batch-p99 | 358.6 / 361.5 us |
+| Authenticated track decode mean / batch-p99 | 965.9 / 1038.8 ns |
+| 240-candidate schedule mean / batch-p99 | 3334.8 / 3471.7 ns |
+| 1,000-object association mean / batch-p99 | 344.7 / 370.2 us |
 | 10,000-object sparse association | 4.56 ms/update |
-| 3,840-candidate bounded schedule | 217.3 us/update |
+| 3,840-candidate bounded schedule | 226.3 us/update |
 | Authenticated track frame | 136 bytes |
 | Release executable | 441.2 KiB |
 

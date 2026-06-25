@@ -108,14 +108,9 @@ class BehavioralAccumulator:
         return self.score >= self.threshold
 
 
-def _sign_chain_event(
-    signer: ed25519.Ed25519PrivateKey,
-    previous: bytes,
-    event: dict[str, Any],
-) -> tuple[bytes, bytes]:
-    payload = previous + json.dumps(event, sort_keys=True, separators=(",", ":")).encode()
-    event_hash = hashlib.sha256(payload).digest()
-    return event_hash, signer.sign(event_hash)
+def _hash_chain_event(previous: bytes, event: dict[str, Any]) -> bytes:
+    payload = json.dumps(event, sort_keys=True, separators=(",", ":")).encode()
+    return hashlib.sha256(previous + payload).digest()
 
 
 def run_nv059_enhanced(seed: int = 59) -> dict[str, Any]:
@@ -125,9 +120,11 @@ def run_nv059_enhanced(seed: int = 59) -> dict[str, Any]:
     signer = ed25519.Ed25519PrivateKey.generate()
     verifier = signer.public_key()
     previous = bytes(32)
-    receipts: list[tuple[bytes, bytes]] = []
-    latencies_us: list[float] = []
-    decision_events: list[dict[str, Any]] = []
+    batch_signature_interval = 100
+    batch_receipts: list[tuple[int, bytes, bytes]] = []
+    policy_latencies_us: list[float] = []
+    audit_latencies_us: list[float] = []
+    end_to_end_latencies_us: list[float] = []
     replay_seen: set[str] = set()
     behavioral: dict[str, BehavioralAccumulator] = {}
 
@@ -220,7 +217,8 @@ def run_nv059_enhanced(seed: int = 59) -> dict[str, Any]:
         )
         endpoint_ok = request["endpoint_integrity"] == "clean"
         allowed = lease_ok and replay_ok and endpoint_ok and not behavioral_block
-        latencies_us.append((time.perf_counter_ns() - started) / 1000.0)
+        policy_done = time.perf_counter_ns()
+        policy_latencies_us.append((policy_done - started) / 1000.0)
 
         if allowed:
             replay_seen.add(request["request_id"])
@@ -252,14 +250,18 @@ def run_nv059_enhanced(seed: int = 59) -> dict[str, Any]:
             "endpoint_ok": endpoint_ok,
             "behavioral_block": behavioral_block,
         }
-        previous, signature = _sign_chain_event(signer, previous, event)
-        receipts.append((previous, signature))
-        decision_events.append(event)
+        audit_started = time.perf_counter_ns()
+        previous = _hash_chain_event(previous, event)
+        if (index + 1) % batch_signature_interval == 0 or index == total - 1:
+            batch_receipts.append((index + 1, previous, signer.sign(previous)))
+        audit_done = time.perf_counter_ns()
+        audit_latencies_us.append((audit_done - audit_started) / 1000.0)
+        end_to_end_latencies_us.append((audit_done - started) / 1000.0)
 
     chain_verified = True
-    for event_hash, signature in receipts:
+    for _, batch_root, signature in batch_receipts:
         try:
-            verifier.verify(signature, event_hash)
+            verifier.verify(signature, batch_root)
         except InvalidSignature:
             chain_verified = False
             break
@@ -269,7 +271,15 @@ def run_nv059_enhanced(seed: int = 59) -> dict[str, Any]:
         for mode, stats in mode_stats.items()
     }
     attack_attempts = sum(stats["attempts"] for stats in vector_stats.values())
-    blockchain_style_root = evidence_root(decision_events)
+    tamper_rejected = False
+    if batch_receipts:
+        _, batch_root, signature = batch_receipts[-1]
+        tampered_root = bytearray(batch_root)
+        tampered_root[-1] ^= 1
+        try:
+            verifier.verify(signature, bytes(tampered_root))
+        except InvalidSignature:
+            tamper_rejected = True
 
     return {
         "topic": "DON26BZ03-NV059",
@@ -284,12 +294,20 @@ def run_nv059_enhanced(seed: int = 59) -> dict[str, Any]:
         "false_denies": false_denies,
         "legitimate_allowed": allowed_legitimate,
         "behavioral_detections": vector_stats["behavioral_exfiltration"]["blocked"],
-        "decision_p50_us": percentile(latencies_us, 0.50),
-        "decision_p95_us": percentile(latencies_us, 0.95),
-        "decision_p99_us": percentile(latencies_us, 0.99),
+        "decision_p50_us": percentile(policy_latencies_us, 0.50),
+        "decision_p95_us": percentile(policy_latencies_us, 0.95),
+        "decision_p99_us": percentile(policy_latencies_us, 0.99),
+        "audit_p95_us": percentile(audit_latencies_us, 0.95),
+        "end_to_end_p50_us": percentile(end_to_end_latencies_us, 0.50),
+        "end_to_end_p95_us": percentile(end_to_end_latencies_us, 0.95),
+        "end_to_end_p99_us": percentile(end_to_end_latencies_us, 0.99),
         "chain_verified": chain_verified,
-        "signed_receipts": len(receipts),
-        "blockchain_style_hash_root": blockchain_style_root,
+        "hash_chain_events": total,
+        "batch_signature_interval": batch_signature_interval,
+        "signed_batch_receipts": len(batch_receipts),
+        "signed_receipts": len(batch_receipts),
+        "tamper_rejected": tamper_rejected,
+        "blockchain_style_hash_root": previous.hex(),
         "ddil_accuracy": ddil_accuracy,
         "compartments_enforced": sorted(lease.compartments),
         "bounded_offline_lease_tested": True,
@@ -317,29 +335,44 @@ def _rotate_vector(vector: np.ndarray, theta: float) -> np.ndarray:
     return np.array([c * vector[0] - s * vector[1], s * vector[0] + c * vector[1]])
 
 
-def _imm_forecast_point(measurements: np.ndarray, index: int, horizon: int) -> tuple[np.ndarray, float]:
-    """Tiny CV/CT interacting-model forecast from only past measurements."""
+def _imm_forecasts_for_horizon(
+    measurements: np.ndarray,
+    kalman: np.ndarray,
+    horizon: int,
+    blend_weight: float = 0.05,
+) -> tuple[np.ndarray, np.ndarray]:
+    """Compute Kalman-anchored CV/CT IMM forecasts with less per-point allocation."""
 
-    start = max(1, index - 6)
-    velocities = np.diff(measurements[start : index + 1], axis=0)
-    if len(velocities) == 0:
-        return measurements[index], 0.0
-    velocity = np.mean(velocities[-3:], axis=0)
+    forecasts = np.full_like(measurements, np.nan)
+    ct_probabilities = np.zeros(len(measurements), dtype=float)
+    velocities = np.diff(measurements, axis=0)
     headings = np.arctan2(velocities[:, 1], velocities[:, 0])
-    if len(headings) > 2:
-        turns = angle_delta(headings[1:], headings[:-1])
-        turn_rate = float(np.clip(np.median(turns[-4:]), -0.12, 0.12))
-    else:
-        turn_rate = 0.0
-    ct_probability = float(1.0 / (1.0 + math.exp(-70.0 * (abs(turn_rate) - 0.018))))
-    cv = measurements[index] + horizon * velocity
-    curved = measurements[index].copy()
-    curved_velocity = velocity.copy()
-    for step in range(horizon):
-        curved_velocity = _rotate_vector(curved_velocity, turn_rate)
-        curved = curved + curved_velocity
-    forecast = (1.0 - ct_probability) * cv + ct_probability * curved
-    return forecast, ct_probability
+    turns = angle_delta(headings[1:], headings[:-1]) if len(headings) > 1 else np.array([])
+    if len(velocities) < 3:
+        return forecasts, ct_probabilities
+
+    velocity_cumsum = np.vstack((np.zeros((1, 2)), np.cumsum(velocities, axis=0)))
+    valid = np.arange(10, len(measurements) - horizon)
+    for index in valid:
+        velocity = (velocity_cumsum[index] - velocity_cumsum[index - 3]) / 3.0
+        turn_slice = turns[max(0, index - 5) : max(0, index - 1)]
+        turn_rate = (
+            float(np.clip(np.median(turn_slice), -0.12, 0.12))
+            if len(turn_slice)
+            else 0.0
+        )
+        ct_probability = float(
+            1.0 / (1.0 + math.exp(-70.0 * (abs(turn_rate) - 0.018)))
+        )
+        curved = measurements[index].copy()
+        curved_velocity = velocity.copy()
+        for _ in range(horizon):
+            curved_velocity = _rotate_vector(curved_velocity, turn_rate)
+            curved = curved + curved_velocity
+        weight = blend_weight * ct_probability
+        forecasts[index] = (1.0 - weight) * kalman[index] + weight * curved
+        ct_probabilities[index] = ct_probability
+    return forecasts, ct_probabilities
 
 
 def conformal_interval_radius(errors: list[float], alpha: float = 0.10) -> float:
@@ -360,7 +393,8 @@ def run_nv061_enhanced(seed: int = 61) -> dict[str, Any]:
         horizon: {"imm": [], "kalman": [], "hold": [], "raw_velocity": []}
         for horizon in horizons
     }
-    ct_track_flags: list[bool] = []
+    ct_track_scores: list[float] = []
+    recent_evidence_scores: list[float] = []
     priority_scores: list[float] = []
     custody_confidences: list[float] = []
     truths: list[bool] = []
@@ -377,24 +411,27 @@ def run_nv061_enhanced(seed: int = 61) -> dict[str, Any]:
         for horizon in horizons:
             valid = np.arange(10, len(measurements) - horizon)
             kalman = horizon_forecasts[horizon]
-            for index in valid:
-                target = track.positions[index + horizon]
-                ct_forecast, ct_prob = _imm_forecast_point(measurements, int(index), horizon)
-                track_ct_peak = max(track_ct_peak, ct_prob)
-                # Treat the existing Kalman forecast as the constant-velocity
-                # model in a tiny IMM stack, then only borrow from the constant
-                # turn model when recent heading evidence justifies it.  This
-                # preserves the strong CV baseline while still surfacing
-                # maneuver probability as a reviewer-auditable signal.
-                imm = (1.0 - 0.05 * ct_prob) * kalman[index] + (0.05 * ct_prob) * ct_forecast
-                hold = measurements[index]
-                raw_velocity = measurements[index] + horizon * (
-                    measurements[index] - measurements[index - 1]
-                )
-                errors[horizon]["imm"].append(float(np.linalg.norm(imm - target)))
-                errors[horizon]["kalman"].append(float(np.linalg.norm(kalman[index] - target)))
-                errors[horizon]["hold"].append(float(np.linalg.norm(hold - target)))
-                errors[horizon]["raw_velocity"].append(float(np.linalg.norm(raw_velocity - target)))
+            imm_forecasts, ct_probabilities = _imm_forecasts_for_horizon(
+                measurements, kalman, horizon
+            )
+            track_ct_peak = max(track_ct_peak, float(np.max(ct_probabilities[valid])))
+            target = track.positions[valid + horizon]
+            hold = measurements[valid]
+            raw_velocity = measurements[valid] + horizon * (
+                measurements[valid] - measurements[valid - 1]
+            )
+            errors[horizon]["imm"].extend(
+                np.linalg.norm(imm_forecasts[valid] - target, axis=1).tolist()
+            )
+            errors[horizon]["kalman"].extend(
+                np.linalg.norm(kalman[valid] - target, axis=1).tolist()
+            )
+            errors[horizon]["hold"].extend(
+                np.linalg.norm(hold - target, axis=1).tolist()
+            )
+            errors[horizon]["raw_velocity"].extend(
+                np.linalg.norm(raw_velocity - target, axis=1).tolist()
+            )
 
         persistent, _, _ = persistent_track_score(track)
         decision_time = min(track.anomaly_start + 18, len(track.positions) - 12)
@@ -427,7 +464,8 @@ def run_nv061_enhanced(seed: int = 61) -> dict[str, Any]:
         )
         priority_scores.append(float(priority))
         custody_confidences.append(custody)
-        ct_track_flags.append(track_ct_peak > 0.55)
+        ct_track_scores.append(track_ct_peak)
+        recent_evidence_scores.append(recent_persistence)
         truths.append(track.anomalous)
     elapsed_ms = (time.perf_counter_ns() - start_ns) / 1.0e6
 
@@ -456,12 +494,14 @@ def run_nv061_enhanced(seed: int = 61) -> dict[str, Any]:
     }
     analyst_review_tracks = hierarchy["critical"] + hierarchy["high"] + hierarchy["watch"]
     analyst_time_reduction = 100.0 * (1.0 - analyst_review_tracks / max(len(tracks), 1))
-    maneuver_truth = np.asarray(
-        [track.anomalous and track.anomaly_type in {"intercept", "route_deviation"} for track in tracks],
-        dtype=bool,
+    change_detection_threshold = 12.0
+    change_metrics = metrics(
+        truth,
+        np.asarray(recent_evidence_scores) >= change_detection_threshold,
     )
-    maneuver_detection_rate = float(
-        np.sum(maneuver_truth & np.asarray(ct_track_flags)) / max(np.sum(maneuver_truth), 1)
+    change_metrics["false_negative_rate"] = change_metrics["false_negatives"] / max(
+        change_metrics["false_negatives"] + change_metrics["true_positives"],
+        1,
     )
 
     h5 = rmse["5"]
@@ -479,7 +519,10 @@ def run_nv061_enhanced(seed: int = 61) -> dict[str, Any]:
         "conformal_target_coverage": 0.90,
         "conformal_coverage_h5": coverage,
         "conformal_radius_h5_km": radius,
-        "maneuver_detection_rate_ct_mode": maneuver_detection_rate,
+        "ct_mode_mean_probability": float(np.mean(ct_track_scores)),
+        "ct_mode_p95_probability": percentile(ct_track_scores, 0.95),
+        "change_detection_threshold": change_detection_threshold,
+        "change_detection": change_metrics,
         "priority_recall_at_threat_count": top_k_recall,
         "mean_custody_confidence": float(np.mean(custody_confidences)),
         "hierarchy": hierarchy,
@@ -555,6 +598,17 @@ def run_nv063_enhanced(seed: int = 63) -> dict[str, Any]:
     score_array = np.asarray(maxima)
     watch_metrics = metrics(truth, score_array > watch_threshold)
     hc_metrics = metrics(truth, score_array > high_confidence_threshold)
+    for tier_metrics in (watch_metrics, hc_metrics):
+        tier_metrics["false_negative_rate"] = tier_metrics["false_negatives"] / max(
+            tier_metrics["false_negatives"] + tier_metrics["true_positives"],
+            1,
+        )
+        tier_metrics["observed_false_discovery_proportion"] = tier_metrics[
+            "false_positives"
+        ] / max(
+            tier_metrics["false_positives"] + tier_metrics["true_positives"],
+            1,
+        )
     for counts in anomaly_breakdown.values():
         counts["watch_recall"] = counts["watch_hits"] / max(counts["tracks"], 1)
         counts["high_confidence_recall"] = counts["high_confidence_hits"] / max(counts["tracks"], 1)
@@ -611,6 +665,17 @@ CONFLICT_PAIRS = {
     frozenset({"MK-9 surrogate", "SPY-6(V)3 surrogate"}),
 }
 
+CONFLICT_BY_SENSOR = {
+    sensor.name: {
+        other
+        for pair in CONFLICT_PAIRS
+        if sensor.name in pair
+        for other in pair
+        if other != sensor.name
+    }
+    for sensor in SENSORS
+}
+
 
 def covariance_intersection(cov1: float, cov2: float, omega: float = 0.5) -> float:
     return 1.0 / (omega / max(cov1, EPS) + (1.0 - omega) / max(cov2, EPS))
@@ -622,16 +687,24 @@ def marginal_info_value(covariance: float, sensor: Sensor, priority: float) -> f
     return float(gain * (0.20 + 3.0 * priority) * saturation_penalty / sensor.cost)
 
 
+def marginal_info_values(
+    covariance: np.ndarray,
+    sensor: Sensor,
+    priority: np.ndarray,
+) -> np.ndarray:
+    posterior = 1.0 / (1.0 / np.maximum(covariance, EPS) + 1.0 / sensor.variance)
+    gain = 2.0 * (covariance - posterior)
+    saturation_penalty = 1.0 / (1.0 + 8.0 * np.maximum(0.0, 0.020 - posterior))
+    return gain * (0.20 + 3.0 * priority) * saturation_penalty / sensor.cost
+
+
 def _conflicts_with_existing(
     sensor_name: str,
     track_index: int,
     assigned_by_track: dict[int, set[str]],
 ) -> bool:
     current = assigned_by_track.get(track_index, set())
-    for existing in current:
-        if frozenset({sensor_name, existing}) in CONFLICT_PAIRS:
-            return True
-    return False
+    return bool(current & CONFLICT_BY_SENSOR[sensor_name])
 
 
 def _choose_adaptive_tasks(
@@ -645,9 +718,7 @@ def _choose_adaptive_tasks(
     for sensor_index, sensor in enumerate(SENSORS):
         if sensor.name not in available:
             continue
-        utilities = np.asarray(
-            [marginal_info_value(value, sensor, priority[idx]) for idx, value in enumerate(working)]
-        )
+        utilities = marginal_info_values(working, sensor, priority)
         order = np.argsort(utilities)[::-1]
         chosen = 0
         for track_index in order:
@@ -746,6 +817,7 @@ def _run_sensor_scenario(seed: int, degraded: bool, track_count: int, novel_coun
     burst_served: list[float] = []
     conflict_violations = 0
     total_contribution = {sensor.name: 0.0 for sensor in SENSORS}
+    novel_set = set(int(track) for track in novel_threats)
 
     for step in range(steps):
         priority = base_priority.copy()
@@ -775,7 +847,7 @@ def _run_sensor_scenario(seed: int, degraded: bool, track_count: int, novel_coun
             adaptive_novel.append(float(np.mean(2.0 * adaptive_cov[novel_threats])))
             baseline_novel.append(float(np.mean(2.0 * baseline_cov[novel_threats])))
             served = {
-                track for _, track, _ in adaptive_tasks if int(track) in set(novel_threats.tolist())
+                track for _, track, _ in adaptive_tasks if int(track) in novel_set
             }
             burst_served.append(len(served) / len(novel_threats))
 
@@ -802,21 +874,50 @@ def _run_sensor_scenario(seed: int, degraded: bool, track_count: int, novel_coun
     }
 
 
+def _sensor_scheduler_scaling(seed: int = 6500) -> dict[str, Any]:
+    rng = np.random.default_rng(seed)
+    profile: dict[str, Any] = {}
+    for track_count in (100, 300, 1000, 3000):
+        runtimes_us: list[float] = []
+        task_counts: list[int] = []
+        for _ in range(12):
+            covariance = rng.uniform(0.08, 0.34, track_count)
+            priority = rng.uniform(0.04, 1.0, track_count)
+            start_ns = time.perf_counter_ns()
+            tasks = _choose_adaptive_tasks(
+                covariance,
+                priority,
+                {sensor.name for sensor in SENSORS},
+            )
+            runtimes_us.append((time.perf_counter_ns() - start_ns) / 1000.0)
+            task_counts.append(len(tasks))
+        profile[str(track_count)] = {
+            "p50_runtime_us": percentile(runtimes_us, 0.50),
+            "p95_runtime_us": percentile(runtimes_us, 0.95),
+            "runtime_per_track_p95_us": percentile(runtimes_us, 0.95) / track_count,
+            "mean_tasks": float(np.mean(task_counts)),
+        }
+    return profile
+
+
 def run_nv065_enhanced(seed: int = 65) -> dict[str, Any]:
     nominal = _run_sensor_scenario(seed, degraded=False, track_count=200, novel_count=24)
     degraded = _run_sensor_scenario(seed + 1, degraded=True, track_count=200, novel_count=24)
     burst = _run_sensor_scenario(seed + 2, degraded=False, track_count=300, novel_count=50)
+    scaling = _sensor_scheduler_scaling(seed + 100)
     return {
         "topic": "DON26BZ03-NV065",
         "advisory_only": True,
         "phase_i_sensor_suite": [SENSOR_NAME_MAP[sensor.name] for sensor in SENSORS],
         "phase_ii_sensor_additions": ["SPS-49", "SPY-6(V)2", "SLQ-32(V)6"],
-        "conflict_pairs": [
-            sorted(SENSOR_NAME_MAP[name] for name in pair) for pair in CONFLICT_PAIRS
-        ],
+        "conflict_pairs": sorted(
+            [sorted(SENSOR_NAME_MAP[name] for name in pair) for pair in CONFLICT_PAIRS],
+            key=lambda pair: (pair[0], pair[1]),
+        ),
         "nominal": nominal,
         "degraded": degraded,
         "burst_stress": burst,
+        "scheduler_scaling": scaling,
         "worst_case_complexity": "O(k × n log n) per scheduling step",
         "ssds_tlr_mapping": {
             "SSDS_CS_TLR-289": "marginal information value assigns best sensor per air track confidence need",
@@ -879,8 +980,11 @@ external integration gaps are documented per topic.
 | False allows | {nv59["false_allows"]} |
 | False denies | {nv59["false_denies"]} |
 | Behavioral detections | {nv59["behavioral_detections"]} |
-| Decision p50 / p95 / p99 (µs) | {nv59["decision_p50_us"]:.2f} / {nv59["decision_p95_us"]:.2f} / {nv59["decision_p99_us"]:.2f} |
+| Policy decision p50 / p95 / p99 (µs) | {nv59["decision_p50_us"]:.2f} / {nv59["decision_p95_us"]:.2f} / {nv59["decision_p99_us"]:.2f} |
+| End-to-end decision+audit p50 / p95 / p99 (µs) | {nv59["end_to_end_p50_us"]:.2f} / {nv59["end_to_end_p95_us"]:.2f} / {nv59["end_to_end_p99_us"]:.2f} |
+| Hash-chain events / signed batch receipts | {nv59["hash_chain_events"]:,} / {nv59["signed_batch_receipts"]} |
 | Chain verified | {nv59["chain_verified"]} |
+| Tamper rejected | {nv59["tamper_rejected"]} |
 | DDIL accuracy — connected | {nv59["ddil_accuracy"]["connected"]:.4f} |
 | DDIL accuracy — degraded | {nv59["ddil_accuracy"]["degraded"]:.4f} |
 | DDIL accuracy — disconnected | {nv59["ddil_accuracy"]["disconnected"]:.4f} |
@@ -898,7 +1002,8 @@ external integration gaps are documented per topic.
 | IMM vs hold improvement (h=5) | {nv61["imm_vs_hold_improvement_h5_pct"]:.1f}% |
 | Conformal coverage h=5 (target 90%) | {nv61["conformal_coverage_h5"]:.3f} |
 | Conformal radius h=5 (km) | {nv61["conformal_radius_h5_km"]:.2f} |
-| Maneuver detection rate (CT mode) | {nv61["maneuver_detection_rate_ct_mode"]:.3f} |
+| Change detection precision / recall | {nv61["change_detection"]["precision"]:.3f} / {nv61["change_detection"]["recall"]:.3f} |
+| Change detection FPR / FNR | {nv61["change_detection"]["false_positive_rate"]:.3f} / {nv61["change_detection"]["false_negative_rate"]:.3f} |
 | Priority recall at threat count | {nv61["priority_recall_at_threat_count"]:.3f} |
 | Mean custody confidence | {nv61["mean_custody_confidence"]:.3f} |
 | Critical + High tier tracks | {nv61["hierarchy"]["critical"] + nv61["hierarchy"]["high"]} |
@@ -914,6 +1019,8 @@ external integration gaps are documented per topic.
 | Recall | {nv63["watch_tier"]["recall"]:.4f} | {nv63["high_confidence_tier"]["recall"]:.4f} |
 | F1 | {nv63["watch_tier"]["f1"]:.4f} | {nv63["high_confidence_tier"]["f1"]:.4f} |
 | False positive rate | {nv63["watch_tier"]["false_positive_rate"]:.4f} | {nv63["high_confidence_tier"]["false_positive_rate"]:.4f} |
+| False negative rate | {nv63["watch_tier"]["false_negative_rate"]:.4f} | {nv63["high_confidence_tier"]["false_negative_rate"]:.4f} |
+| Observed FDP | {nv63["watch_tier"]["observed_false_discovery_proportion"]:.4f} | {nv63["high_confidence_tier"]["observed_false_discovery_proportion"]:.4f} |
 | Total alerts | {nv63["watch_alerts"]} | {nv63["high_confidence_alerts"]} |
 
 State: {nv63["state_bytes_per_track"]} bytes/track → {nv63["state_kb_for_1000_tracks"]:.1f} KB for 1,000 tracks.  
@@ -931,6 +1038,10 @@ Processing: {nv63["processing_us_per_track_update"]:.2f} µs/track-update.
 
 Conflict pairs enforced: {len(nv65["conflict_pairs"])}.  
 Worst-case complexity: `{nv65["worst_case_complexity"]}`.
+
+Scaling p95: 100 tracks `{nv65["scheduler_scaling"]["100"]["p95_runtime_us"]:.1f} µs`;
+1,000 tracks `{nv65["scheduler_scaling"]["1000"]["p95_runtime_us"]:.1f} µs`;
+3,000 tracks `{nv65["scheduler_scaling"]["3000"]["p95_runtime_us"]:.1f} µs`.
 
 **Limit:** {nv65["explicit_limit"]}
 """

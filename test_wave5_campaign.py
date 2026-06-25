@@ -29,7 +29,11 @@ class WaveFiveTests(unittest.TestCase):
         result = run_provider_tasking_conformance()
         self.assertEqual(result["valid_schema_acceptance_rate"], 1.0)
         self.assertEqual(result["invalid_schema_rejection_rate"], 1.0)
-        self.assertTrue(result["authentication_boundary_enforced"])
+        self.assertTrue(result["authentication_boundary_or_offline_fail_closed"])
+        self.assertTrue(
+            result["capella_openapi_reached"]
+            or result["capella_openapi_shape_valid"]
+        )
         self.assertFalse(result["live_task_submitted"])
 
     def test_il5_control_evidence_is_not_authorization_claim(self):

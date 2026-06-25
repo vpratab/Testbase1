@@ -1,12 +1,12 @@
 # Independent Repeated Native Benchmark
 
-Generated: `2026-06-24T19:35:26.181926+00:00`
+Generated: `2026-06-25T22:59:08.508996+00:00`
 
 - Host: `macOS-26.1-arm64-arm-64bit`
 - Machine: `arm64`
 - Rust: `rustc 1.94.1 (e408947bf 2026-03-25)`
 - Executable SHA-256: `27fe1adcd9d14a44618e6e1b7372c559c92342505a7f14a128767b77d7f32ad8`
-- Source-tree SHA-256: `2d4a97b542898b4ccd0c6eeaca7d9168a7ebbf2b75f152a88934b23d8090e0bb`
+- Source-tree SHA-256: `d517e35138e126782270935424719636c577e2c3960270dca9f018156d9eec5e`
 
 ## Method
 
@@ -24,15 +24,15 @@ Generated: `2026-06-24T19:35:26.181926+00:00`
 
 | Path | Median | Process p95 | Process max | CV |
 | --- | ---: | ---: | ---: | ---: |
-| Authenticated 136-byte decode | 965.9 ns | 1.149 us | 1.149 us | 4.8% |
-| 240-candidate schedule | 3.224 us | 3.468 us | 3.468 us | 3.1% |
-| 1,000-object association | 349.855 us | 445.473 us | 445.473 us | 7.1% |
-| 10,000-object association | 4.604 ms | 4.995 ms | 4.995 ms | 2.8% |
-| 3,840-candidate schedule | 227.957 us | 302.402 us | 302.402 us | 13.6% |
+| Authenticated 136-byte decode | 1.019 us | 1.970 us | 1.970 us | 23.6% |
+| 240-candidate schedule | 3.301 us | 4.906 us | 4.906 us | 12.4% |
+| 1,000-object association | 363.837 us | 527.428 us | 527.428 us | 12.8% |
+| 10,000-object association | 4.493 ms | 5.117 ms | 5.117 ms | 4.7% |
+| 3,840-candidate schedule | 236.707 us | 274.175 us | 274.175 us | 8.7% |
 
 Median benchmark-process wall time was
-`215.33 ms`; median scaling-process wall time was
-`82.73 ms`.
+`223.90 ms`; median scaling-process wall time was
+`82.54 ms`.
 
 ## Sanity gates
 
@@ -42,9 +42,9 @@ host. They are not sponsor acceptance criteria.
 | Gate | Result | Evidence |
 | --- | --- | --- |
 | deterministic_conformance | PASS | 15 independent processes agreed |
-| authenticated_decode | PASS | process p95 1.149 us < 50 us |
-| bounded_scheduler | PASS | 3,840-candidate process p95 302.402 us < 5 ms |
-| sparse_association | PASS | 10,000-object process p95 4.995 ms < 50 ms |
+| authenticated_decode | PASS | process p95 1.970 us < 50 us |
+| bounded_scheduler | PASS | 3,840-candidate process p95 274.175 us < 5 ms |
+| sparse_association | PASS | 10,000-object process p95 5.117 ms < 50 ms |
 
 ## Interpretation limits
 

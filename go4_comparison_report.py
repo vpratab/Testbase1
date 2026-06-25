@@ -135,7 +135,10 @@ def build_alignment(enhanced: dict[str, Any], platform_info: dict[str, Any]) -> 
                 == nv59["attack_vector_stats"]["cross_compartment"]["attempts"],
                 "ai_ml_behavioral_detection": nv59["behavioral_detections"] > 0,
                 "degraded_operation": min(nv59["ddil_accuracy"].values()) >= 0.999,
-                "immutable_logging_surrogate": nv59["chain_verified"],
+                "immutable_logging_surrogate": nv59["chain_verified"]
+                and nv59["tamper_rejected"]
+                and nv59["signed_batch_receipts"] > 0,
+                "end_to_end_decision_audit_under_5s": nv59["end_to_end_p99_us"] / 1000.0 < 5000.0,
                 "nist_zero_trust_alignment": len(nv59["nist_sp_800_207_tenets"]) >= 5,
             },
             "remaining_external_access": [
@@ -150,6 +153,8 @@ def build_alignment(enhanced: dict[str, Any], platform_info: dict[str, Any]) -> 
                 "forecasting_beats_hold": nv61["imm_vs_hold_improvement_h5_pct"] > 50.0,
                 "forecasting_beats_raw_velocity": nv61["imm_vs_raw_velocity_improvement_h5_pct"] > 0.0,
                 "conformal_uncertainty_near_90": 0.86 <= nv61["conformal_coverage_h5"] <= 0.94,
+                "change_detection_recall": nv61["change_detection"]["recall"] >= 0.70,
+                "change_detection_fpr": nv61["change_detection"]["false_positive_rate"] <= 0.10,
                 "hierarchical_target_management": sum(nv61["hierarchy"].values()) == nv61["tracks"],
                 "priority_recall": nv61["priority_recall_at_threat_count"] >= 0.65,
                 "modeled_response_time_improvement": nv61["modeled_analyst_time_reduction_pct"] >= 50.0,
@@ -169,6 +174,7 @@ def build_alignment(enhanced: dict[str, Any], platform_info: dict[str, Any]) -> 
                 "watch_recall": nv63["watch_tier"]["recall"] >= 0.70,
                 "high_confidence_precision": nv63["high_confidence_tier"]["precision"] >= 0.95,
                 "high_confidence_fpr": nv63["high_confidence_tier"]["false_positive_rate"] <= 0.02,
+                "watch_false_negative_rate": nv63["watch_tier"]["false_negative_rate"] <= 0.30,
                 "ssds_tlr_mapping": len(nv63["ssds_tlr_mapping"]) == 3,
             },
             "remaining_external_access": [
@@ -187,6 +193,7 @@ def build_alignment(enhanced: dict[str, Any], platform_info: dict[str, Any]) -> 
                 "burst_runtime_under_10ms": nv65["burst_stress"]["p99_runtime_us"] < 10_000.0,
                 "conflicts_enforced": nv65["nominal"]["conflict_violations"] == 0
                 and nv65["degraded"]["conflict_violations"] == 0,
+                "scales_to_3000_tracks": nv65["scheduler_scaling"]["3000"]["p95_runtime_us"] < 20_000.0,
                 "ssds_tlr_mapping": len(nv65["ssds_tlr_mapping"]) == 5,
                 "explainable_complexity": "O(k" in nv65["worst_case_complexity"],
             },
@@ -266,10 +273,12 @@ use micro-segmentation, behavioral detection, and immutable audit evidence.
 | Attack vectors | {nv59["attack_vectors_tested"]} |
 | Attack block rate | {nv59["attack_block_rate"]:.4f} |
 | False allows / false denies | {nv59["false_allows"]} / {nv59["false_denies"]} |
-| Decision p95 | {nv59["decision_p95_us"]:.2f} µs |
+| Policy decision p95 | {nv59["decision_p95_us"]:.2f} µs |
+| End-to-end decision+audit p99 | {nv59["end_to_end_p99_us"]:.2f} µs |
+| Hash-chain events / signed batch receipts | {nv59["hash_chain_events"]:,} / {nv59["signed_batch_receipts"]} |
 | Full verify-cycle estimate | {platform_info["full_auth_verify_cycle_us"] / 1000.0:.4f} ms |
 | Min DDIL accuracy | {min(nv59["ddil_accuracy"].values()):.4f} |
-| Chain verified | {nv59["chain_verified"]} |
+| Chain verified / tamper rejected | {nv59["chain_verified"]} / {nv59["tamper_rejected"]} |
 
 KPI gates passed: {sum(alignment["NV059"]["kpis"].values())}/{len(alignment["NV059"]["kpis"])}
 
@@ -284,6 +293,8 @@ management, scalability, and response-time improvement.
 | Improvement vs hold, h=5 | {nv61["imm_vs_hold_improvement_h5_pct"]:.1f}% |
 | Improvement vs raw velocity, h=5 | {nv61["imm_vs_raw_velocity_improvement_h5_pct"]:.1f}% |
 | Conformal coverage / radius | {nv61["conformal_coverage_h5"]:.3f} / {nv61["conformal_radius_h5_km"]:.2f} km |
+| Change detection precision / recall | {nv61["change_detection"]["precision"]:.3f} / {nv61["change_detection"]["recall"]:.3f} |
+| Change detection FPR / FNR | {nv61["change_detection"]["false_positive_rate"]:.3f} / {nv61["change_detection"]["false_negative_rate"]:.3f} |
 | Priority recall at threat count | {nv61["priority_recall_at_threat_count"]:.3f} |
 | Analyst time reduction model | {nv61["modeled_analyst_time_reduction_pct"]:.1f}% |
 
@@ -295,10 +306,10 @@ Solicitation fit: 360-degree air/surface traffic review, no large onboard
 historical database, alert content with track number, reason, and confidence,
 and SSDS TLR mapping.
 
-| Tier | Precision | Recall | F1 | FPR |
-|---|---:|---:|---:|---:|
-| Watch | {nv63["watch_tier"]["precision"]:.3f} | {nv63["watch_tier"]["recall"]:.3f} | {nv63["watch_tier"]["f1"]:.3f} | {nv63["watch_tier"]["false_positive_rate"]:.3f} |
-| High confidence | {nv63["high_confidence_tier"]["precision"]:.3f} | {nv63["high_confidence_tier"]["recall"]:.3f} | {nv63["high_confidence_tier"]["f1"]:.3f} | {nv63["high_confidence_tier"]["false_positive_rate"]:.3f} |
+| Tier | Precision | Recall | F1 | FPR | FNR |
+|---|---:|---:|---:|---:|---:|
+| Watch | {nv63["watch_tier"]["precision"]:.3f} | {nv63["watch_tier"]["recall"]:.3f} | {nv63["watch_tier"]["f1"]:.3f} | {nv63["watch_tier"]["false_positive_rate"]:.3f} | {nv63["watch_tier"]["false_negative_rate"]:.3f} |
+| High confidence | {nv63["high_confidence_tier"]["precision"]:.3f} | {nv63["high_confidence_tier"]["recall"]:.3f} | {nv63["high_confidence_tier"]["f1"]:.3f} | {nv63["high_confidence_tier"]["false_positive_rate"]:.3f} | {nv63["high_confidence_tier"]["false_negative_rate"]:.3f} |
 
 State efficiency: {nv63["state_bytes_per_track"]} bytes/track; {nv63["processing_us_per_track_update"]:.2f} µs/track-update.
 
@@ -315,6 +326,10 @@ explainability, and worst-case complexity.
 | Nominal | {nv65["nominal"]["overall_quality_improvement_pct"]:.1f}% | {nv65["nominal"]["novel_threat_quality_improvement_pct"]:.1f}% | {nv65["nominal"]["p99_runtime_us"]:.1f} µs |
 | Degraded | {nv65["degraded"]["overall_quality_improvement_pct"]:.1f}% | {nv65["degraded"]["novel_threat_quality_improvement_pct"]:.1f}% | {nv65["degraded"]["p99_runtime_us"]:.1f} µs |
 | Burst stress | {nv65["burst_stress"]["overall_quality_improvement_pct"]:.1f}% | {nv65["burst_stress"]["novel_threat_quality_improvement_pct"]:.1f}% | {nv65["burst_stress"]["p99_runtime_us"]:.1f} µs |
+
+Scheduler scaling p95: 100 tracks `{nv65["scheduler_scaling"]["100"]["p95_runtime_us"]:.1f} µs`;
+1,000 tracks `{nv65["scheduler_scaling"]["1000"]["p95_runtime_us"]:.1f} µs`;
+3,000 tracks `{nv65["scheduler_scaling"]["3000"]["p95_runtime_us"]:.1f} µs`.
 
 KPI gates passed: {sum(alignment["NV065"]["kpis"].values())}/{len(alignment["NV065"]["kpis"])}
 

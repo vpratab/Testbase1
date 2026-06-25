@@ -1,6 +1,6 @@
 # GO-4 Competitive Benchmark and Solicitation Alignment Report
 
-Generated: 2026-06-24T19:29:33Z
+Generated: 2026-06-25T21:22:37Z
 
 This report ties the GO-4 enhanced evidence to public solicitation language and
 nearby public benchmarks. It is designed to help a proposal writer avoid vague
@@ -23,13 +23,13 @@ Python: `3.9.6`
 
 | Primitive | Measured result |
 |---|---:|
-| HMAC-SHA256 / 136B | 1.815 µs |
-| AES-256-GCM / 100B | 1.430 µs |
-| Ed25519 sign | 92.891 µs |
-| Ed25519 verify | 200.389 µs |
-| Full verify-cycle estimate | 203.635 µs |
-| Conservative ARM A72 estimate | 407.269 µs |
-| Reduction vs 15 s current baseline | 99.999% |
+| HMAC-SHA256 / 136B | 1.973 µs |
+| AES-256-GCM / 100B | 1.502 µs |
+| Ed25519 sign | 99.018 µs |
+| Ed25519 verify | 228.513 µs |
+| Full verify-cycle estimate | 231.988 µs |
+| Conservative ARM A72 estimate | 463.976 µs |
+| Reduction vs 15 s current baseline | 99.998% |
 
 Note: Representative SSDS COTS single-board computers are commonly x86-class; this host profile is a development proxy, not target WCET evidence.
 
@@ -45,12 +45,14 @@ use micro-segmentation, behavioral detection, and immutable audit evidence.
 | Attack vectors | 10 |
 | Attack block rate | 1.0000 |
 | False allows / false denies | 0 / 0 |
-| Decision p95 | 2.50 µs |
-| Full verify-cycle estimate | 0.2036 ms |
+| Policy decision p95 | 1.83 µs |
+| End-to-end decision+audit p99 | 62.17 µs |
+| Hash-chain events / signed batch receipts | 15,000 / 150 |
+| Full verify-cycle estimate | 0.2320 ms |
 | Min DDIL accuracy | 1.0000 |
-| Chain verified | True |
+| Chain verified / tamper rejected | True / True |
 
-KPI gates passed: 8/8
+KPI gates passed: 9/9
 
 ## NV061 — Predictive Movement / MTC
 
@@ -63,10 +65,12 @@ management, scalability, and response-time improvement.
 | Improvement vs hold, h=5 | 67.8% |
 | Improvement vs raw velocity, h=5 | 67.6% |
 | Conformal coverage / radius | 0.893 / 2.62 km |
+| Change detection precision / recall | 0.753 / 0.725 |
+| Change detection FPR / FNR | 0.079 / 0.275 |
 | Priority recall at threat count | 0.688 |
 | Analyst time reduction model | 72.2% |
 
-KPI gates passed: 6/6
+KPI gates passed: 8/8
 
 ## NV063 — Maritime Pattern-of-Life
 
@@ -74,14 +78,14 @@ Solicitation fit: 360-degree air/surface traffic review, no large onboard
 historical database, alert content with track number, reason, and confidence,
 and SSDS TLR mapping.
 
-| Tier | Precision | Recall | F1 | FPR |
-|---|---:|---:|---:|---:|
-| Watch | 0.794 | 0.819 | 0.806 | 0.106 |
-| High confidence | 0.974 | 0.700 | 0.815 | 0.009 |
+| Tier | Precision | Recall | F1 | FPR | FNR |
+|---|---:|---:|---:|---:|---:|
+| Watch | 0.794 | 0.819 | 0.806 | 0.106 | 0.181 |
+| High confidence | 0.974 | 0.700 | 0.815 | 0.009 | 0.300 |
 
-State efficiency: 176 bytes/track; 4.05 µs/track-update.
+State efficiency: 176 bytes/track; 4.36 µs/track-update.
 
-KPI gates passed: 7/7
+KPI gates passed: 8/8
 
 ## NV065 — Adaptive Sensor Management
 
@@ -91,11 +95,15 @@ explainability, and worst-case complexity.
 
 | Scenario | Overall improvement | Novel-threat improvement | p99 runtime |
 |---|---:|---:|---:|
-| Nominal | 25.8% | 91.2% | 923.2 µs |
-| Degraded | 24.0% | 90.1% | 925.7 µs |
-| Burst stress | 27.3% | 79.0% | 1331.7 µs |
+| Nominal | 25.8% | 91.2% | 1128.5 µs |
+| Degraded | 24.0% | 90.1% | 231.8 µs |
+| Burst stress | 27.3% | 79.0% | 261.2 µs |
 
-KPI gates passed: 7/7
+Scheduler scaling p95: 100 tracks `177.3 µs`;
+1,000 tracks `362.1 µs`;
+3,000 tracks `867.2 µs`.
+
+KPI gates passed: 8/8
 
 ## Nearby public benchmarks
 

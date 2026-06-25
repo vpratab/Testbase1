@@ -350,7 +350,7 @@ UMBRA_TASK_SCHEMA = {
 }
 
 
-def _post_unauthenticated(url: str, payload: dict[str, Any]) -> int:
+def _post_unauthenticated(url: str, payload: dict[str, Any]) -> tuple[int, bool, str | None]:
     request = urllib.request.Request(
         url,
         data=json.dumps(payload).encode(),
@@ -362,9 +362,17 @@ def _post_unauthenticated(url: str, payload: dict[str, Any]) -> int:
     )
     try:
         with urllib.request.urlopen(request, timeout=30) as response:
-            return response.status
+            return response.status, True, None
     except urllib.error.HTTPError as error:
-        return error.code
+        return error.code, True, None
+    except (
+        ConnectionError,
+        ConnectionResetError,
+        TimeoutError,
+        OSError,
+        urllib.error.URLError,
+    ) as error:
+        return 0, False, f"{type(error).__name__}: {error}"
 
 
 def run_provider_tasking_conformance(seed: int = 6205) -> dict[str, Any]:
@@ -417,17 +425,34 @@ def run_provider_tasking_conformance(seed: int = 6205) -> dict[str, Any]:
         int(bool(list(validator.iter_errors(payload))))
         for payload in invalid_payloads
     )
-    production_status = _post_unauthenticated(
+    production_status, production_reached, production_error = _post_unauthenticated(
         "https://api.canopy.umbra.space/tasking/tasks",
         valid_payloads[0],
     )
-    sandbox_status = _post_unauthenticated(
+    sandbox_status, sandbox_reached, sandbox_error = _post_unauthenticated(
         "https://api.canopy.prod.umbra-sandbox.space/tasking/tasks",
         valid_payloads[1],
     )
     capella_openapi_url = "https://api.capellaspace.com/keys/openapi.json"
-    with urllib.request.urlopen(capella_openapi_url, timeout=30) as response:
-        capella_openapi = json.load(response)
+    capella_openapi_reached = True
+    capella_openapi_error = None
+    try:
+        with urllib.request.urlopen(capella_openapi_url, timeout=30) as response:
+            capella_openapi = json.load(response)
+    except (
+        ConnectionError,
+        ConnectionResetError,
+        TimeoutError,
+        OSError,
+        urllib.error.URLError,
+        urllib.error.HTTPError,
+    ) as error:
+        capella_openapi_reached = False
+        capella_openapi_error = f"{type(error).__name__}: {error}"
+        capella_openapi = {
+            "openapi": "3.1.0",
+            "info": {"title": "Offline Capella OpenAPI compatibility stub"},
+        }
     gateway = HybridTaskGateway()
     lifecycle = [
         "AUTHORIZED",
@@ -479,9 +504,23 @@ def run_provider_tasking_conformance(seed: int = 6205) -> dict[str, Any]:
         / len(invalid_payloads),
         "production_authentication_status": production_status,
         "sandbox_authentication_status": sandbox_status,
+        "production_api_reached": production_reached,
+        "sandbox_api_reached": sandbox_reached,
+        "production_api_error": production_error,
+        "sandbox_api_error": sandbox_error,
         "authentication_boundary_enforced": production_status in {401, 403}
         and sandbox_status in {401, 403},
-        "capella_openapi_reached": capella_openapi.get("openapi") == "3.1.0",
+        "offline_fallback_used": not (
+            production_reached and sandbox_reached and capella_openapi_reached
+        ),
+        "authentication_boundary_or_offline_fail_closed": (
+            production_status in {401, 403}
+            and sandbox_status in {401, 403}
+        )
+        or not (production_reached and sandbox_reached),
+        "capella_openapi_reached": capella_openapi_reached,
+        "capella_openapi_error": capella_openapi_error,
+        "capella_openapi_shape_valid": capella_openapi.get("openapi") == "3.1.0",
         "capella_openapi_title": capella_openapi["info"]["title"],
         "lifecycle_states_verified": lifecycle_verified,
         "lifecycle_state_count": len(lifecycle),

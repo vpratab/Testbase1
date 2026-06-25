@@ -52,17 +52,19 @@ Read these in order:
    Solicitation-aligned GO-4 evidence for NV059, NV061, NV063, and NV065.
 3. `results/go4_enhanced/GO4_ENHANCED_REPORT.md`
    Harder generated metrics for the four highest-readiness topics.
-4. `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md`
+4. `docs/GO4_DEEP_RESEARCH_AND_HARDENING.md`
+   What changed after the deeper research/code-hardening pass.
+5. `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md`
    One proposal-ready packet per topic.
-5. `docs/PHASE1_GO_NO_GO.md`
+6. `docs/PHASE1_GO_NO_GO.md`
    Topic status, scores, submission rule, and external blockers.
-6. `docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md`
+7. `docs/CURRENT_AND_POTENTIAL_ASSESSMENT.md`
    Truthful current-vs-potential assessment.
-7. `results/trl4_wave5/EVIDENCE_INDEX.md`
+8. `results/trl4_wave5/EVIDENCE_INDEX.md`
    Map from topics to strongest measured evidence.
-8. `docs/EXTERNAL_ACCESS_PACKAGES.md`
+9. `docs/EXTERNAL_ACCESS_PACKAGES.md`
    Exact first-month data and integration requests.
-9. `docs/PARTNER_OUTREACH_TEMPLATES.md`
+10. `docs/PARTNER_OUTREACH_TEMPLATES.md`
    Draft outreach for the remaining partner-dependent paths.
 
 ## What is proven now
@@ -146,6 +148,7 @@ Important recent full verification result:
 | Completion audit | `results/completion_audit/COMPLETION_AUDIT.md` |
 | GO-4 solicitation alignment | `results/go4_comparison/GO4_COMPETITIVE_ALIGNMENT.md` |
 | GO-4 enhanced evidence | `results/go4_enhanced/GO4_ENHANCED_REPORT.md` |
+| GO-4 research hardening note | `docs/GO4_DEEP_RESEARCH_AND_HARDENING.md` |
 | Proposal packets | `results/proposal_readiness/TOPIC_PROPOSAL_PACKETS.md` |
 | Independent benchmark | `results/independent_benchmark/INDEPENDENT_BENCHMARK.md` |
 | Dense crossing campaign | `results/dense_crossing/DENSE_CROSSING_REPORT.md` |

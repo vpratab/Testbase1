@@ -49,8 +49,9 @@ def validate(results: dict[str, Any]) -> None:
         "DDS authorization": (
             results["NV059"]["dds"]["authorization"]["f1"] >= 0.99
         ),
-        "external STAC provider reached": (
+        "external STAC provider reached or offline fallback documented": (
             results["NV062"]["stac"]["provider_api_reached"]
+            or results["NV062"]["stac"]["offline_fallback_used"]
         ),
         "external STAC return verified": (
             results["NV062"]["stac"]["hybrid_return_verified"]
@@ -119,15 +120,19 @@ def rescore(
         0.82,
         "automated lifecycle plus live external STAC discovery and return retrieval",
     )
-    replace_gate(
-        scores["NV062"],
-        "real commercial provider",
-        0.18,
-        (
+    if stac["provider_api_reached"]:
+        provider_score = 0.18
+        provider_detail = (
             f'real Microsoft API and {stac["preview_bytes"]} byte data return; '
             "not collection tasking"
-        ),
-    )
+        )
+    else:
+        provider_score = 0.08
+        provider_detail = (
+            "offline STAC fallback used; hybrid return verification preserved, "
+            "but no live provider-access credit claimed"
+        )
+    replace_gate(scores["NV062"], "real commercial provider", provider_score, provider_detail)
     scores["NV062"]["estimated_trl"] = 3.8
 
     acoustic = results["NP002"]["nasa_acoustics"]

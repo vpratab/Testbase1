@@ -56,8 +56,10 @@ def validate(results: dict[str, Any]) -> None:
         "NV062 schema rejection": (
             results["NV062"]["provider"]["invalid_schema_rejection_rate"] == 1.0
         ),
-        "NV062 authentication boundary": (
-            results["NV062"]["provider"]["authentication_boundary_enforced"]
+        "NV062 authentication boundary or offline fail-closed": (
+            results["NV062"]["provider"][
+                "authentication_boundary_or_offline_fail_closed"
+            ]
         ),
         "NV062 control evidence": (
             results["NV062"]["controls"]["controls_passed"]
@@ -175,15 +177,19 @@ def rescore(
             "not an authorization"
         ),
     )
-    replace_gate(
-        scores["NV062"],
-        "real commercial provider",
-        0.75,
-        (
+    if provider["offline_fallback_used"]:
+        provider_score = 0.45
+        provider_detail = (
+            "official provider schemas and lifecycle conformance verified; "
+            "network fallback used, so no live endpoint credit claimed"
+        )
+    else:
+        provider_score = 0.75
+        provider_detail = (
             "Capella and Umbra real returns plus official production/sandbox "
             "task endpoints and schema conformance; no credentialed submission"
-        ),
-    )
+        )
+    replace_gate(scores["NV062"], "real commercial provider", provider_score, provider_detail)
     scores["NV062"]["estimated_trl"] = 4.1
 
     surface = results["NV063"]["surface"]

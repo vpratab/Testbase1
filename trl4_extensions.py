@@ -15,6 +15,7 @@ import ssl
 import tempfile
 import threading
 import time
+import urllib.error
 import urllib.request
 from collections import Counter, defaultdict
 from dataclasses import dataclass
@@ -1120,22 +1121,47 @@ def run_public_stac_return_integration() -> dict[str, Any]:
         method="POST",
     )
     started = time.perf_counter_ns()
-    with urllib.request.urlopen(request, timeout=30) as response:
-        catalog = json.load(response)
-    features = catalog.get("features") or []
-    if not features:
-        raise RuntimeError("Planetary Computer STAC search returned no item")
-    item = features[0]
-    preview_url = item["assets"]["rendered_preview"]["href"]
-    preview_request = urllib.request.Request(
-        preview_url,
-        headers={"User-Agent": "AssureEdge-Phase-I-Feasibility/1.0"},
-    )
-    with urllib.request.urlopen(preview_request, timeout=60) as response:
-        preview = response.read(8 * 1024 * 1024)
-        content_type = response.headers.get("Content-Type")
-    if not preview.startswith(b"\x89PNG"):
-        raise ValueError("external provider preview was not a PNG")
+    provider_api_reached = True
+    offline_fallback_used = False
+    offline_reason = None
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            catalog = json.load(response)
+        features = catalog.get("features") or []
+        if not features:
+            raise RuntimeError("Planetary Computer STAC search returned no item")
+        item = features[0]
+        preview_url = item["assets"]["rendered_preview"]["href"]
+        preview_request = urllib.request.Request(
+            preview_url,
+            headers={"User-Agent": "AssureEdge-Phase-I-Feasibility/1.0"},
+        )
+        with urllib.request.urlopen(preview_request, timeout=60) as response:
+            preview = response.read(8 * 1024 * 1024)
+            content_type = response.headers.get("Content-Type")
+        if not preview.startswith(b"\x89PNG"):
+            raise ValueError("external provider preview was not a PNG")
+    except (
+        ConnectionError,
+        ConnectionResetError,
+        TimeoutError,
+        OSError,
+        urllib.error.URLError,
+        urllib.error.HTTPError,
+    ) as error:
+        provider_api_reached = False
+        offline_fallback_used = True
+        offline_reason = f"{type(error).__name__}: {error}"
+        item = {
+            "id": "offline-stac-sentinel-2-l2a-surrogate",
+            "collection": "sentinel-2-l2a",
+            "properties": {"datetime": query["datetime"].split("/")[0]},
+        }
+        preview = (
+            hashlib.sha384(json.dumps(query, sort_keys=True).encode()).digest()
+            * 2048
+        )
+        content_type = "application/octet-stream"
 
     gateway = HybridTaskGateway()
     task = {
@@ -1179,7 +1205,9 @@ def run_public_stac_return_integration() -> dict[str, Any]:
     return {
         "provider": "Microsoft Planetary Computer",
         "api": endpoint,
-        "provider_api_reached": True,
+        "provider_api_reached": provider_api_reached,
+        "offline_fallback_used": offline_fallback_used,
+        "offline_reason": offline_reason,
         "collection_tasking_claim": False,
         "external_item": item["id"],
         "external_collection": item["collection"],
@@ -1189,7 +1217,10 @@ def run_public_stac_return_integration() -> dict[str, Any]:
         "hybrid_return_verified": verified == return_metadata,
         "elapsed_ms": elapsed_ms,
         "boundary": (
-            "real external discovery and data retrieval; not a commercial "
+            "real external discovery and data retrieval when reachable; offline "
+            "fallback preserves crypto verification but is not provider-access evidence"
+            if offline_fallback_used
+            else "real external discovery and data retrieval; not a commercial "
             "collection-order or accredited provider tasking interface"
         ),
         "evidence": {

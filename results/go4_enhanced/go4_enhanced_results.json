@@ -56,6 +56,8 @@
     },
     "attack_vectors_tested": 10,
     "attacks_blocked": 7500,
+    "audit_p95_us": 4.417,
+    "batch_signature_interval": 100,
     "behavioral_detections": 750,
     "blockchain_style_hash_root": "499e0662d57f55f8cfe8e7f9c0b38e110ee532430154135821860fb511662fd9",
     "bounded_offline_lease_tested": true,
@@ -69,12 +71,16 @@
       "degraded": 1.0,
       "disconnected": 1.0
     },
-    "decision_p50_us": 1.958,
-    "decision_p95_us": 2.5,
-    "decision_p99_us": 5.625,
+    "decision_p50_us": 1.666,
+    "decision_p95_us": 1.834,
+    "decision_p99_us": 2.0,
+    "end_to_end_p50_us": 6.334,
+    "end_to_end_p95_us": 6.958,
+    "end_to_end_p99_us": 62.168660000008224,
     "explicit_limit": "Python policy surrogate. Real CAC/PKI, DDS Security governance, and combat-network segmentation remain Phase I integration work.",
     "false_allows": 0,
     "false_denies": 0,
+    "hash_chain_events": 15000,
     "legitimate_allowed": 7500,
     "legitimate_requests": 7500,
     "nist_sp_800_207_tenets": [
@@ -84,14 +90,30 @@
       "device posture",
       "dynamic risk evaluation"
     ],
-    "signed_receipts": 15000,
+    "signed_batch_receipts": 150,
+    "signed_receipts": 150,
+    "tamper_rejected": true,
     "topic": "DON26BZ03-NV059",
     "total_requests": 15000
   },
   "NV061": {
+    "change_detection": {
+      "f1": 0.7388535031847133,
+      "false_negative_rate": 0.275,
+      "false_negatives": 22,
+      "false_positive_rate": 0.07916666666666666,
+      "false_positives": 19,
+      "precision": 0.7532467532467533,
+      "recall": 0.725,
+      "true_negatives": 221,
+      "true_positives": 58
+    },
+    "change_detection_threshold": 12.0,
     "conformal_coverage_h5": 0.8931666666666667,
-    "conformal_radius_h5_km": 2.617414396551085,
+    "conformal_radius_h5_km": 2.6177878348149184,
     "conformal_target_coverage": 0.9,
+    "ct_mode_mean_probability": 0.9992078758616045,
+    "ct_mode_p95_probability": 0.9992078758616048,
     "explicit_limit": "IMM uses low-order constant-velocity/constant-turn modes on synthetic tracks. Operational composite tracks and analyst disposition truth remain Phase I access work.",
     "hierarchy": {
       "critical": 22,
@@ -110,24 +132,23 @@
       10
     ],
     "imm_rmse_by_horizon_km": {
-      "10": 3.4078047119249426,
-      "3": 1.370657673771436,
-      "5": 1.8457560343766621
+      "10": 3.40793884854548,
+      "3": 1.3706720043059357,
+      "5": 1.8457942018299303
     },
-    "imm_vs_hold_improvement_h5_pct": 67.76529241544152,
-    "imm_vs_kalman_improvement_h5_pct": -1.5374377321984767,
-    "imm_vs_raw_velocity_improvement_h5_pct": 67.58293398555415,
+    "imm_vs_hold_improvement_h5_pct": 67.76462585026583,
+    "imm_vs_kalman_improvement_h5_pct": -1.5395373733956053,
+    "imm_vs_raw_velocity_improvement_h5_pct": 67.58226364948092,
     "kalman_rmse_by_horizon_km": {
       "10": 3.354930981020492,
       "3": 1.3520496723236064,
       "5": 1.8178083627093098
     },
-    "maneuver_detection_rate_ct_mode": 1.0,
     "mean_custody_confidence": 0.8402135554483916,
     "modeled_analyst_time_reduction_pct": 72.1875,
     "priority_recall_at_threat_count": 0.6875,
-    "processing_ms_per_track": 14.270540234375,
-    "processing_ms_total": 4566.572875,
+    "processing_ms_per_track": 12.53255481875,
+    "processing_ms_total": 4010.417542,
     "raw_velocity_rmse_by_horizon_km": {
       "10": 10.858747330282897,
       "3": 3.6857359495091693,
@@ -182,16 +203,18 @@
     "high_confidence_threshold": 35.52791392167116,
     "high_confidence_tier": {
       "f1": 0.8145454545454546,
+      "false_negative_rate": 0.3,
       "false_negatives": 48,
       "false_positive_rate": 0.009375,
       "false_positives": 3,
+      "observed_false_discovery_proportion": 0.02608695652173913,
       "precision": 0.9739130434782609,
       "recall": 0.7,
       "true_negatives": 317,
       "true_positives": 112
     },
     "large_historical_database_required": false,
-    "processing_us_per_track_update": 4.05136574074074,
+    "processing_us_per_track_update": 4.35758875,
     "sample_alerts": [
       {
         "confidence": 0.95073,
@@ -291,9 +314,11 @@
     "watch_threshold": 16.636757748362555,
     "watch_tier": {
       "f1": 0.8061538461538461,
+      "false_negative_rate": 0.18125,
       "false_negatives": 29,
       "false_positive_rate": 0.10625,
       "false_positives": 34,
+      "observed_false_discovery_proportion": 0.20606060606060606,
       "precision": 0.793939393939394,
       "recall": 0.81875,
       "true_negatives": 286,
@@ -310,9 +335,9 @@
       "novel_threat_quality_improvement_pct": 78.98021718384511,
       "novel_threats": 50,
       "overall_quality_improvement_pct": 27.25189565527184,
-      "p50_runtime_us": 1300.938,
-      "p95_runtime_us": 1317.5854,
-      "p99_runtime_us": 1331.69571,
+      "p50_runtime_us": 223.187,
+      "p95_runtime_us": 243.3003,
+      "p99_runtime_us": 261.22685999999976,
       "sensor_information_contribution_pct": {
         "MK-9 Tracker/Illuminator": 7.928852319301455,
         "SPQ-9B": 22.14369046523201,
@@ -324,12 +349,12 @@
     },
     "conflict_pairs": [
       [
-        "SPQ-9B",
-        "SPS-48"
-      ],
-      [
         "MK-9 Tracker/Illuminator",
         "SPY-6(V)3"
+      ],
+      [
+        "SPQ-9B",
+        "SPS-48"
       ]
     ],
     "degraded": {
@@ -340,9 +365,9 @@
       "novel_threat_quality_improvement_pct": 90.11537657359933,
       "novel_threats": 24,
       "overall_quality_improvement_pct": 23.968524466871386,
-      "p50_runtime_us": 899.3545,
-      "p95_runtime_us": 912.74195,
-      "p99_runtime_us": 925.7244999999999,
+      "p50_runtime_us": 201.83350000000002,
+      "p95_runtime_us": 217.9646,
+      "p99_runtime_us": 231.77002999999988,
       "sensor_information_contribution_pct": {
         "MK-9 Tracker/Illuminator": 4.475619783936924,
         "SPQ-9B": 33.16175534466683,
@@ -362,9 +387,9 @@
       "novel_threat_quality_improvement_pct": 91.16568200021533,
       "novel_threats": 24,
       "overall_quality_improvement_pct": 25.78229520900448,
-      "p50_runtime_us": 904.9375,
-      "p95_runtime_us": 911.816,
-      "p99_runtime_us": 923.1561099999999,
+      "p50_runtime_us": 199.667,
+      "p95_runtime_us": 255.87054999999998,
+      "p99_runtime_us": 1128.49003999998,
       "sensor_information_contribution_pct": {
         "MK-9 Tracker/Illuminator": 6.04288936872753,
         "SPQ-9B": 32.57773712561061,
@@ -385,6 +410,32 @@
       "SPY-6(V)2",
       "SLQ-32(V)6"
     ],
+    "scheduler_scaling": {
+      "100": {
+        "mean_tasks": 94.0,
+        "p50_runtime_us": 168.20850000000002,
+        "p95_runtime_us": 177.317,
+        "runtime_per_track_p95_us": 1.7731700000000001
+      },
+      "1000": {
+        "mean_tasks": 94.0,
+        "p50_runtime_us": 343.833,
+        "p95_runtime_us": 362.1353,
+        "runtime_per_track_p95_us": 0.3621353
+      },
+      "300": {
+        "mean_tasks": 94.0,
+        "p50_runtime_us": 204.5625,
+        "p95_runtime_us": 207.05785,
+        "runtime_per_track_p95_us": 0.6901928333333334
+      },
+      "3000": {
+        "mean_tasks": 94.0,
+        "p50_runtime_us": 814.4585,
+        "p95_runtime_us": 867.2022999999999,
+        "runtime_per_track_p95_us": 0.2890674333333333
+      }
+    },
     "ssds_tlr_mapping": {
       "SSDS_CS_TLR-1300": "named beam/resource conflict pairs are checked before assignment",
       "SSDS_CS_TLR-1607": "sensor contribution accounting identifies EW/ES information gaps",
@@ -396,5 +447,5 @@
     "worst_case_complexity": "O(k \u00d7 n log n) per scheduling step"
   },
   "boundary": "All results are synthetic/low-fidelity Phase I surrogates. External integration gaps are preserved per topic.",
-  "generated_at": "2026-06-24T19:29:22Z"
+  "generated_at": "2026-06-25T21:22:31Z"
 }

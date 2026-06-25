@@ -22,9 +22,13 @@ class GO4EnhancedEvidenceTests(unittest.TestCase):
         self.assertLessEqual(result["false_allows"], 1)
         self.assertEqual(result["false_denies"], 0)
         self.assertTrue(result["chain_verified"])
+        self.assertTrue(result["tamper_rejected"])
         self.assertTrue(result["bounded_offline_lease_tested"])
         self.assertGreater(result["behavioral_detections"], 700)
         self.assertLess(result["decision_p95_us"], 100.0)
+        self.assertLess(result["end_to_end_p99_us"], 1_000.0)
+        self.assertEqual(result["hash_chain_events"], result["total_requests"])
+        self.assertLess(result["signed_batch_receipts"], result["hash_chain_events"])
         for mode_accuracy in result["ddil_accuracy"].values():
             self.assertGreaterEqual(mode_accuracy, 0.999)
 
@@ -43,6 +47,9 @@ class GO4EnhancedEvidenceTests(unittest.TestCase):
         self.assertGreater(result["imm_vs_raw_velocity_improvement_h5_pct"], 0.0)
         self.assertGreater(result["priority_recall_at_threat_count"], 0.65)
         self.assertGreater(result["modeled_analyst_time_reduction_pct"], 50.0)
+        self.assertGreaterEqual(result["change_detection"]["recall"], 0.70)
+        self.assertLessEqual(result["change_detection"]["false_positive_rate"], 0.10)
+        self.assertLessEqual(result["change_detection"]["false_negative_rate"], 0.30)
         self.assertGreaterEqual(result["conformal_coverage_h5"], 0.86)
         self.assertLessEqual(result["conformal_coverage_h5"], 0.94)
         self.assertLess(result["conformal_radius_h5_km"], 8.0)
@@ -62,6 +69,11 @@ class GO4EnhancedEvidenceTests(unittest.TestCase):
         self.assertGreaterEqual(result["watch_tier"]["f1"], 0.70)
         self.assertGreaterEqual(result["high_confidence_tier"]["precision"], 0.95)
         self.assertLessEqual(result["high_confidence_tier"]["false_positive_rate"], 0.02)
+        self.assertLessEqual(result["watch_tier"]["false_negative_rate"], 0.30)
+        self.assertLessEqual(
+            result["high_confidence_tier"]["observed_false_discovery_proportion"],
+            0.05,
+        )
         self.assertGreaterEqual(result["high_confidence_tier"]["f1"], 0.75)
         self.assertLess(result["state_kb_for_1000_tracks"], 200.0)
         self.assertLess(result["processing_us_per_track_update"], 50.0)
@@ -90,6 +102,11 @@ class GO4EnhancedEvidenceTests(unittest.TestCase):
         self.assertEqual(result["nominal"]["conflict_violations"], 0)
         self.assertEqual(result["degraded"]["conflict_violations"], 0)
         self.assertEqual(len(result["ssds_tlr_mapping"]), 5)
+        self.assertLess(result["scheduler_scaling"]["3000"]["p95_runtime_us"], 20_000.0)
+        self.assertLess(
+            result["scheduler_scaling"]["3000"]["runtime_per_track_p95_us"],
+            result["scheduler_scaling"]["100"]["runtime_per_track_p95_us"] * 3.0,
+        )
 
     def test_nv065_burst_stress_remains_bounded(self):
         result = run_nv065_enhanced()
